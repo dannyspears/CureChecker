@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Cure Checker: a daily digest of ALS research, treatments, and studies.">
+<meta name="description" content="Cure Checker: daily, plain-language reports on the latest cure research, treatments and trials, disease by disease.">
 <title>Cure Checker</title>
 <style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 </head>
@@ -11,167 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<style>
-/* Layout: Cure Checker, a light-blue daily clinical bulletin. Masthead + date strip, then five stacked sections on a single reading column (max 1080px), with the cause pathway as the one bold visual. */
-:root{
-  --paper:#EEF6FC; --panel:#FFFFFF; --ink:#0F2E4A; --muted:#4E6A84; --line:#CBDDEC;
-  --signal:#1C86C9; --signal-soft:#DAEDFA; --sky:#B9DDF5; --blue:#1F5F99; --blue-soft:#E1EEF8;
-  --amber:#A86A0E; --amber-soft:#FBEFD9;
-  --good:#23794C; --good-soft:#DFF1E6; --warn:#B5462A; --warn-soft:#F8E3DC;
-  --f-display:"Archivo","Arial Narrow",Arial,sans-serif;
-  --f-body:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
-  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --paper:#0B1A28; --panel:#11263A; --ink:#E4F0FA; --muted:#93AEC6; --line:#22405A;
-  --signal:#7CC4F2; --signal-soft:#143A57; --sky:#1F4D72; --blue:#8DB8EE; --blue-soft:#17314D;
-  --amber:#F2B35A; --amber-soft:#3A2C14;
-  --good:#63CB92; --good-soft:#15362A; --warn:#EE8A6C; --warn-soft:#3D1F18; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --paper:#0B1A28; --panel:#11263A; --ink:#E4F0FA; --muted:#93AEC6; --line:#22405A;
-  --signal:#7CC4F2; --signal-soft:#143A57; --sky:#1F4D72; --blue:#8DB8EE; --blue-soft:#17314D;
-  --amber:#F2B35A; --amber-soft:#3A2C14;
-  --good:#63CB92; --good-soft:#15362A; --warn:#EE8A6C; --warn-soft:#3D1F18; color-scheme:dark}
-
-*{box-sizing:border-box}
-body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55;padding-inline:16px;padding-block:0 48px}
-.wrap{max-width:1080px;margin:0 auto}
-a{color:var(--blue)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
-h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.1}
-h2{font-size:clamp(28px,4vw,40px);font-weight:800;font-stretch:88%;letter-spacing:-.01em}
-h3{font-size:20px;font-weight:700;font-stretch:95%}
-p{margin:0}
-.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.mono{font-family:var(--f-mono)}
-
-/* Masthead */
-.mast{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-block:28px 18px;border-bottom:3px solid var(--ink)}
-.brand{display:flex;align-items:center;gap:14px}
-.logo{display:flex;align-items:center;gap:14px}
-.lg-box{width:clamp(46px,6vw,60px);aspect-ratio:1;border-radius:12px;background:var(--signal);display:grid;place-items:center;flex:none}
-.lg-box svg{width:60%;height:auto}
-.lg-text{font-family:var(--f-display);font-weight:900;font-stretch:72%;font-size:clamp(38px,6.4vw,62px);line-height:.88;text-transform:uppercase;letter-spacing:.01em;display:flex;flex-wrap:wrap;column-gap:.2em}
-.lg-1{color:var(--ink)}
-.lg-2{color:var(--signal);font-weight:600}
-.tag{font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
-.datebox{text-align:right;font-family:var(--f-mono);font-size:13px;color:var(--muted)}
-.datebox strong{display:block;font-family:var(--f-display);font-stretch:85%;font-size:22px;color:var(--ink);font-weight:800}
-.strip{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;padding-block:10px;border-bottom:1px solid var(--line);font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
-.strip .live{display:inline-flex;align-items:center;gap:8px;color:var(--ink);font-weight:500;text-transform:uppercase;letter-spacing:.08em}
-.dot{width:9px;height:9px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 0 var(--signal);animation:pulse 2.4s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--signal) 60%,transparent)}70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
-@media (prefers-reduced-motion:reduce){.dot{animation:none}}
-
-/* Hero headline */
-.lead{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;padding-block:32px 8px;align-items:end}
-.lead h1{font-size:clamp(34px,5.4vw,60px);font-weight:800;font-stretch:80%;letter-spacing:-.015em}
-.lead h1 em{font-style:normal;color:var(--signal)}
-.lead p{color:var(--muted);max-width:62ch}
-.toc{display:flex;flex-wrap:wrap;gap:8px;padding-block:20px 8px}
-.toc a{font-family:var(--f-mono);font-size:12.5px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--panel);padding:6px 11px;border-radius:999px}
-.toc a:hover{border-color:var(--ink)}
-
-section{padding-block:52px 8px}
-.sec-head{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;align-items:baseline;margin-bottom:22px;border-top:1px solid var(--line);padding-top:22px}
-.sec-head .num{font-family:var(--f-mono);font-size:13px;color:var(--signal);font-weight:500}
-.sec-head p{grid-column:2;color:var(--muted);max-width:68ch}
-
-/* Cause pathway */
-.path{display:grid;grid-template-columns:1fr 28px 1fr 28px 1.25fr 28px 1fr;align-items:stretch;gap:0}
-.stage{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 16px;display:flex;flex-direction:column;gap:10px;min-width:0}
-.stage.key{border:2px solid var(--signal);background:var(--signal-soft)}
-.stage .eyebrow{color:var(--ink)}
-.stage svg{width:100%;height:auto;max-height:84px}
-.stage ul{margin:0;padding-left:18px;font-size:15px}
-.stage li+li{margin-top:4px}
-.arrow{display:flex;align-items:center;justify-content:center;color:var(--muted)}
-.arrow svg{width:22px;height:22px}
-.bar{display:flex;height:14px;border-radius:7px;overflow:hidden;border:1px solid var(--line)}
-.bar i{display:block}
-.legend{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:11.5px;color:var(--muted)}
-.cause-note{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.cause-note div{font-size:15px;color:var(--muted);border-left:2px solid var(--line);padding-left:12px}
-.cause-note b{color:var(--ink)}
-
-/* Treatments */
-.tx{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:8px;min-width:0}
-.card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
-.pill{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;white-space:nowrap;font-weight:500}
-.p-good{background:var(--good-soft);color:var(--good)}
-.p-blue{background:var(--blue-soft);color:var(--blue)}
-.p-sig{background:var(--amber-soft);color:var(--amber)}
-.p-warn{background:var(--warn-soft);color:var(--warn)}
-.card .who{font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
-.card p{font-size:15.5px}
-.subhead{font-family:var(--f-display);font-stretch:90%;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:30px 0 12px}
-.approved{width:100%;border-collapse:collapse;font-size:15px;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.approved th,.approved td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
-.approved th{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
-.approved tr:last-child td{border-bottom:0}
-.scroll{overflow-x:auto}
-
-/* Verdict */
-.verdict{background:var(--signal-soft);color:var(--ink);border:1px solid var(--sky);border-radius:14px;padding:clamp(22px,4vw,40px);display:grid;grid-template-columns:1fr 1.3fr;gap:32px}
-.verdict .eyebrow{color:var(--signal)}
-.verdict h2{color:var(--ink);margin-top:8px}
-.verdict .big{font-family:var(--f-display);font-stretch:85%;font-weight:700;font-size:clamp(20px,2.4vw,26px);line-height:1.25;margin-top:16px}
-.verdict ol{margin:0;padding-left:0;list-style:none;display:grid;gap:14px;counter-reset:v}
-.verdict li{position:relative;padding-left:44px;counter-increment:v;min-height:28px}
-.verdict li::before{position:absolute;left:0;top:0;content:counter(v);font-family:var(--f-mono);font-size:13px;border:1px solid var(--signal);color:var(--signal);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center}
-.verdict li b{display:block;font-family:var(--f-display);font-stretch:95%;font-size:17px}
-.verdict li span{color:var(--muted);font-size:15.5px}
-.verdict .fine{grid-column:1/-1;font-size:13.5px;color:var(--muted);border-top:1px solid var(--sky);padding-top:14px}
-
-/* Supplements */
-.supp{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.supp h3{margin-bottom:12px}
-.row{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding-block:12px;border-bottom:1px solid var(--line)}
-.row:first-of-type{border-top:1px solid var(--line)}
-.row b{font-size:16px}
-.row p{grid-column:1/-1;font-size:15px;color:var(--muted)}
-.grade{display:inline-flex;gap:3px;align-items:center}
-.grade i{width:9px;height:9px;border-radius:2px;background:var(--line)}
-.grade i.on{background:var(--good)}
-.grade.low i.on{background:var(--amber)}
-.grade.none i.on{background:var(--warn)}
-.gkey{display:flex;flex-wrap:wrap;gap:16px;font-family:var(--f-mono);font-size:12px;color:var(--muted);margin-bottom:16px}
-.gkey span{display:inline-flex;align-items:center;gap:6px}
-.caution{margin-top:22px;background:var(--warn-soft);border-radius:10px;padding:14px 16px;font-size:15px}
-.caution b{color:var(--warn)}
-
-/* Studies */
-.studies{display:grid;gap:0;border-top:2px solid var(--ink)}
-.study{display:grid;grid-template-columns:110px 1fr 120px;gap:6px 20px;padding-block:16px;border-bottom:1px solid var(--line);align-items:start}
-.study time{font-family:var(--f-mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
-.study h3{font-size:18px}
-.study p{font-size:15.5px;margin-top:4px;color:var(--ink)}
-.study .src{font-size:13px;margin-top:4px}
-.study .pill{justify-self:end}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
-.filters button{font-family:var(--f-mono);font-size:12.5px;background:var(--panel);color:var(--ink);border:1px solid var(--line);padding:6px 12px;border-radius:999px;cursor:pointer}
-.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-
-footer{margin-top:56px;padding-top:18px;border-top:3px solid var(--ink);display:grid;grid-template-columns:1fr 1fr;gap:24px;font-size:14px;color:var(--muted)}
-footer b{color:var(--ink)}
-
-@media (max-width:900px){
-  .path{grid-template-columns:1fr}
-  .arrow{height:30px}
-  .arrow svg{transform:rotate(90deg)}
-  .lead,.verdict,.supp,footer{grid-template-columns:1fr}
-  .cause-note{grid-template-columns:1fr}
-}
-@media (max-width:640px){
-  body{font-size:16px}
-  .tx{grid-template-columns:1fr}
-  .study{grid-template-columns:1fr}
-  .study .pill{justify-self:start;grid-row:1}
-  .datebox{text-align:left}
-  .lg-box{width:42px}
-}
-</style>
+<link rel="stylesheet" href="assets/curechecker.css">
 
 <div class="wrap">
 
@@ -179,11 +19,11 @@ footer b{color:var(--ink)}
 <header class="mast">
   <div class="brand">
     <div>
-      <div class="logo" role="img" aria-label="Cure Checker">
+      <a class="logo" href="index.html" aria-label="Cure Checker home">
         <span class="lg-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="var(--paper)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <span class="lg-text" aria-hidden="true"><span class="lg-1">Cure</span><span class="lg-2">Checker</span></span>
-      </div>
-      <div class="tag">ALS edition · Most recent ALS conclusions</div>
+      </a>
+      <div class="tag">Most recent cure conclusions · disease by disease</div>
     </div>
   </div>
   <div class="datebox">
@@ -192,264 +32,47 @@ footer b{color:var(--ink)}
     Daily edition · refreshed 9:00 AM ET
   </div>
 </header>
-<div class="strip">
-  <span class="live"><span class="dot" aria-hidden="true"></span>Today's headline</span>
-  <!-- CURECHECKER:HEADLINE -->
-  <span id="headline">Ulefnersen becomes the first drug to win a Phase 3 trial in FUS-ALS (Sept 22). ACT for ALS passes Congress, extended through 2031.</span>
+
+<!-- ========== HERO + FINDER ========== -->
+<div class="hero">
+  <h1>Where is the cure? <em>Pick a disease</em> and we'll show you.</h1>
+  <p>Each report covers the same six things: the latest cure outlook, what causes the disease, treatments that are working, the newest studies, how other countries treat it, and which natural remedies hold up. Plain language, with sources for every claim.</p>
 </div>
 
-<!-- ========== LEAD ========== -->
-<div class="lead">
-  <h1>ALS has no cure yet. For the genetic forms, it is <em>starting to bend.</em></h1>
-  <p>Cure Checker tracks the cause, the treatments that are working, and the trials underway, and rewrites this page every morning from the latest published results. Plain language, with sources for every claim.</p>
+<div class="finder">
+  <label for="disease-select">Find your disease</label>
+  <select id="disease-select" data-disease-picker data-placeholder="Select a disease…"></select>
 </div>
-<nav class="toc" aria-label="Sections">
-  <a href="#cause">What causes ALS</a>
-  <a href="#treatments">Treatments that are working</a>
-  <a href="#verdict">Our conclusion</a>
-  <a href="#natural">Natural remedies &amp; supplements</a>
-  <a href="#studies">Latest studies</a>
-</nav>
 
-<!-- ========== 1. CAUSE ========== -->
-<section id="cause">
+<section id="diseases">
   <div class="sec-head">
-    <span class="num">01</span><h2>What causes ALS</h2>
-    <p>ALS is a "multi-hit" disease. Genes, environment, and age add up until motor neurons cross a tipping point. In almost every case, that tipping point involves one protein: TDP-43.</p>
+    <h2>All reports</h2>
+    <p><span id="disease-count"></span> covered so far. New diseases are added every week.</p>
   </div>
-
-  <div class="path" role="img" aria-label="Pathway: risk factors lead to TDP-43 leaving the nucleus and clumping, which causes cell damage, which kills motor neurons and causes muscle weakness.">
-    <div class="stage">
-      <span class="eyebrow">Step 1 · The hits</span>
-      <h3>Risk adds up</h3>
-      <div class="bar" aria-hidden="true"><i style="width:12%;background:var(--signal)"></i><i style="width:88%;background:var(--blue-soft)"></i></div>
-      <div class="legend"><span>~10–15% inherited</span><span>~85–90% sporadic</span></div>
-      <ul>
-        <li><b>Genes:</b> C9orf72, SOD1, TARDBP, FUS and 40+ others</li>
-        <li><b>Environment:</b> pesticides, heavy metals, smoking, military service</li>
-        <li><b>Age:</b> most diagnoses come between 55 and 75</li>
-      </ul>
-    </div>
-    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-    <div class="stage key">
-      <span class="eyebrow">Step 2 · The tipping point</span>
-      <h3>TDP-43 leaves the nucleus and clumps</h3>
-      <svg viewBox="0 0 200 84" aria-hidden="true">
-        <ellipse cx="100" cy="42" rx="92" ry="36" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/>
-        <circle cx="70" cy="42" r="22" fill="var(--blue-soft)" stroke="var(--blue)" stroke-width="2" stroke-dasharray="4 3"/>
-        <text x="70" y="46" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">nucleus</text>
-        <path d="M92 40 C108 30 118 30 132 36" fill="none" stroke="var(--signal)" stroke-width="2" stroke-dasharray="3 3"/>
-        <g fill="var(--warn)"><circle cx="140" cy="38" r="6"/><circle cx="149" cy="44" r="5"/><circle cx="141" cy="49" r="4.5"/><circle cx="153" cy="35" r="3.5"/></g>
-        <text x="148" y="68" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">TDP-43 clumps</text>
-      </svg>
-      <ul>
-        <li>Seen in about <b>97% of all ALS cases</b>, inherited or not</li>
-        <li>Lost from the nucleus, it can no longer edit the cell's RNA messages</li>
-      </ul>
-    </div>
-    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-    <div class="stage">
-      <span class="eyebrow">Step 3 · The damage</span>
-      <h3>Five things go wrong at once</h3>
-      <ul>
-        <li><b>Bad RNA edits:</b> repair genes like STMN2 and UNC13A get garbled</li>
-        <li><b>Clean-up fails:</b> the cell's protein recycling (autophagy) slows</li>
-        <li><b>Energy drops:</b> mitochondria falter</li>
-        <li><b>Over-excitation:</b> too much glutamate signalling</li>
-        <li><b>Immune attack:</b> microglia start removing motor neurons</li>
-      </ul>
-    </div>
-    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-    <div class="stage">
-      <span class="eyebrow">Step 4 · The result</span>
-      <h3>Motor neurons die</h3>
-      <svg viewBox="0 0 200 70" aria-hidden="true">
-        <circle cx="30" cy="35" r="13" fill="var(--muted)" opacity=".5"/>
-        <path d="M43 35 H90" stroke="var(--muted)" stroke-width="3" opacity=".5"/>
-        <path d="M100 35 H118" stroke="var(--muted)" stroke-width="3" stroke-dasharray="4 5" opacity=".5"/>
-        <path d="M130 22 Q160 14 186 26 Q190 35 186 44 Q160 56 130 48 Q126 35 130 22Z" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="2"/>
-        <text x="158" y="39" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--warn)">muscle</text>
-      </svg>
-      <ul>
-        <li>Nerve signals stop reaching muscles</li>
-        <li>Weakness spreads to limbs, speech, swallowing and breathing</li>
-        <li>Average survival 2–5 years after symptoms begin</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="cause-note">
-    <div><b>Newest clue (Aug 2026):</b> Salk Institute scientists showed microglia use "TAM" receptors to tag and destroy motor neurons in ALS mice, pointing at the immune system as an active driver.</div>
-    <div><b>Environment (Aug 2026):</b> a meta-analysis of 11 studies found on-the-job pesticide exposure linked to about <b>60% higher</b> ALS risk, nearly 3× at high exposure.</div>
-    <div><b>Clean-up failure (Feb 2026):</b> motor neurons lose chaperone-mediated autophagy, a selective protein-recycling system they depend on more than other cells.</div>
-  </div>
+  <div class="tiles" id="disease-tiles"></div>
 </section>
 
-<!-- ========== 2. TREATMENTS ========== -->
-<section id="treatments">
+<section id="how">
   <div class="sec-head">
-    <span class="num">02</span><h2>Treatments that are working</h2>
-    <p>The clearest wins come from drugs that silence a single faulty gene. These help a minority of patients with that gene, but the benefit is the largest ALS has ever seen.</p>
+    <h2>What's in every report</h2>
+    <p>The same format for every disease, so you can compare them side by side.</p>
   </div>
-
-  <div class="tx">
-    <article class="card">
-      <div class="top"><h3>Ulefnersen</h3><span class="pill p-good">Phase 3 win</span></div>
-      <div class="who">Otsuka / Ionis · FUS-ALS · announced Sept 22, 2026</div>
-      <p>The FUSION trial met its main goal (p = 0.0005), improving function and survival together over 72 weeks. It is the first placebo-controlled proof that targeting the cause of a genetic ALS works. FDA filing planned; early access program being set up.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Tofersen (Qalsody)</h3><span class="pill p-good">FDA approved</span></div>
-      <div class="who">Biogen / Ionis · SOD1-ALS · long-term data Dec 2025</div>
-      <p>After 3–5 years on the drug, about 1 in 4 people stabilized or <b>improved</b> in strength and breathing, and survival reached nearly 5 years versus a typical 2–3. Doctors called that "unheard of" in SOD1-ALS.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>AP-101</h3><span class="pill p-sig">Promising · Phase 2</span></div>
-      <div class="who">AL-S Pharma · sporadic and SOD1-ALS · Mar 2026</div>
-      <p>An antibody against misfolded SOD1. Lowered nerve-damage markers (NfL, pNfH), delayed the need for ventilation, and showed survival benefit in both sporadic ALS and SOD1 carriers. Small trial; needs Phase 3.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>PrimeC</h3><span class="pill p-sig">Promising · Phase 2</span></div>
-      <div class="who">NeuroSense · sporadic ALS · published Mar 2026</div>
-      <p>A combination of two existing drugs (ciprofloxacin + celecoxib). Slowed decline by 2.23 points on the ALS function scale versus placebo and cut NfL by 9.4%.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>CNM-Au8</h3><span class="pill p-blue">Seeking approval</span></div>
-      <div class="who">Clene · sporadic ALS · NDA planned Q3 2026</div>
-      <p>Gold nanocrystals that boost nerve-cell energy. FDA said biomarker and survival data may support accelerated approval; confirmatory Phase 3 to start in 2027.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>RAG-17</h3><span class="pill p-sig">Early signal · Phase 1</span></div>
-      <div class="who">Ractigen · SOD1-ALS · Apr 2026</div>
-      <p>A single dose cut neurofilament light chain, a marker of nerve damage, by 81%, with good safety. Early, but a strong biological signal.</p>
-    </article>
-  </div>
-
-  <div class="subhead">Already approved in the U.S. (and one in Japan)</div>
-  <div class="scroll">
-  <table class="approved">
-    <thead><tr><th>Drug</th><th>For</th><th>What it does</th></tr></thead>
-    <tbody>
-      <tr><td><b>Riluzole</b> (1995)</td><td>All ALS</td><td>Lowers glutamate over-excitation. Adds roughly 2–3 months of survival on average.</td></tr>
-      <tr><td><b>Edaravone</b> (IV 2017, oral 2022)</td><td>All ALS</td><td>Antioxidant. Modest slowing of functional decline in some patients.</td></tr>
-      <tr><td><b>Tofersen</b> (2023)</td><td>SOD1-ALS (~2%)</td><td>Silences the faulty SOD1 gene. Largest benefit of any approved ALS drug.</td></tr>
-      <tr><td><b>Rozebalamin</b> (Japan, 2024)</td><td>Early ALS</td><td>Ultra-high-dose methylcobalamin (B12) by injection. Not FDA approved.</td></tr>
-    </tbody>
-  </table>
-  </div>
-</section>
-
-<!-- ========== 3. VERDICT ========== -->
-<section id="verdict">
-  <div class="verdict">
-    <div>
-      <span class="eyebrow">Cure Checker's conclusion · Oct 2026</span>
-      <h2>Where the cure will come from</h2>
-      <p class="big">There is no cure for ALS today. Our view: the cure will not be one pill. It will be a matched combination, chosen by each person's genetic subtype, started before symptoms spread.</p>
-    </div>
-    <ol>
-      <li><b>Gene silencing for inherited ALS: nearly there.</b><span>Tofersen and now ulefnersen show that turning off a toxic gene can halt, and sometimes partly reverse, the disease. Expect the same approach for C9orf72, the most common ALS gene.</span></li>
-      <li><b>Fixing TDP-43 for everyone else: the real cure target.</b><span>Because TDP-43 fails in ~97% of cases, drugs that restore it or repair the RNA it mis-edits (STMN2, UNC13A) could treat sporadic ALS. ACE-2223 entered human testing this year.</span></li>
-      <li><b>Calming the immune attack: the force multiplier.</b><span>New microglia findings and trials like COYA 302 and foralumab suggest pairing a root-cause drug with immune control.</span></li>
-      <li><b>Catching it early: the timing that makes it work.</b><span>Blood tests for neurofilament light can flag ALS months before symptoms in gene carriers. Treating then gives any drug its best chance.</span></li>
-    </ol>
-    <p class="fine">This is Cure Checker's editorial assessment of published evidence, not medical advice. Treatment decisions belong with a neurologist, ideally at a multidisciplinary ALS clinic.</p>
-  </div>
-</section>
-
-<!-- ========== 4. NATURAL ========== -->
-<section id="natural">
-  <div class="sec-head">
-    <span class="num">04</span><h2>Natural remedies &amp; supplements</h2>
-    <p>No supplement prevents or cures ALS. Some have real evidence behind them, many do not. We rate each by the strength of human evidence.</p>
-  </div>
-  <div class="gkey">
-    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Good human evidence</span>
-    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Observational / mixed</span>
-    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>Tested, did not work</span>
-  </div>
-  <div class="supp">
-    <div>
-      <h3>For lowering risk</h3>
-      <div class="row"><b>Omega-3 fats (fish, flax, walnuts)</b><span class="grade low" title="Observational"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>Large Harvard cohorts linked higher omega-3 intake, especially ALA, to lower ALS risk and slower progression. Food sources are preferred.</p></div>
-      <div class="row"><b>Vitamin E (from diet)</b><span class="grade low" title="Observational"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>Pooled data from about 1 million people tied long-term vitamin E intake to lower risk. Nuts, seeds and leafy greens are good sources.</p></div>
-      <div class="row"><b>Fruits, vegetables &amp; carotenoids</b><span class="grade low" title="Observational"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>Diets rich in antioxidants and carotenoids (orange and dark-green produce) are associated with lower risk and better function.</p></div>
-      <div class="row"><b>Avoid pesticides &amp; smoking</b><span class="grade low" title="Observational"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>Not a supplement, but the best-supported prevention step. Use protective gear if you work with farm or lawn chemicals.</p></div>
-    </div>
-    <div>
-      <h3>For symptoms and slowing decline</h3>
-      <div class="row"><b>High-calorie diet</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
-        <p>Weight loss predicts faster decline. In the LIPCAL-ALS trial, extra calories helped fast-progressing patients live longer. Work with a dietitian.</p></div>
-      <div class="row"><b>Ultra-high-dose methylcobalamin (B12)</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
-        <p>Japan's JETALS trial slowed decline in early ALS using 50 mg injections twice weekly. Store-bought oral B12 is not the same dose or route.</p></div>
-      <div class="row"><b>Vitamin D (if low)</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>Mixed results. Reasonable to correct a measured deficiency for bone and muscle health.</p></div>
-      <div class="row"><b>Cannabis / CBD for spasticity &amp; cramps</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>Small studies suggest relief of stiffness, cramps, appetite and sleep. Discuss interactions with your care team.</p></div>
-      <div class="row"><b>Creatine, CoQ10, lithium</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
-        <p>Each was tested in controlled ALS trials and did not slow the disease.</p></div>
-    </div>
-  </div>
-  <p class="caution"><b>Be careful:</b> unregulated "stem cell" clinics and high-dose supplement stacks can be costly and harmful. Tell your neurologist about everything you take.</p>
-</section>
-
-<!-- ========== 5. STUDIES ========== -->
-<section id="studies">
-  <div class="sec-head">
-    <span class="num">05</span><h2>Latest studies &amp; what they concluded</h2>
-    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
-  </div>
-  <div class="filters" role="group" aria-label="Filter studies">
-    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
-    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
-    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
-    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
-  </div>
-  <!-- CURECHECKER:STUDIES (newest first) -->
-  <div class="studies" id="studies-list">
-    <div class="study" data-k="underway"><time>Sep 28, 2026</time><div><h3>Foralumab (BANYAN, Phase 2a)</h3><p>First ALS patients dosed with a nasal anti-CD3 antibody meant to calm brain inflammation. Underway.</p><div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/28/3369755/0/en/tiziana-life-sciences-announces-first-participants-dosed-in-als-banyan-clinical-trial-of-intranasal-foralumab.html" target="_blank" rel="noopener">Tiziana Life Sciences</a></div></div><span class="pill p-blue">Underway</span></div>
-    <div class="study" data-k="science"><time>Sep 28, 2026</time><div><h3>ACT for ALS reauthorized by Congress</h3><p>Extends federal funding for expanded access, biomarker and natural-history research through 2031. Sent to the President for signature.</p><div class="src"><a href="https://alsnetwork.org/als-network-celebrates-final-congressional-passage-of-act-for-als-reauthorization-act/" target="_blank" rel="noopener">ALS Network</a></div></div><span class="pill p-good">Policy</span></div>
-    <div class="study" data-k="result"><time>Sep 22, 2026</time><div><h3>Ulefnersen (FUSION, Phase 3)</h3><p>Met primary endpoint: significant improvement in function and survival in FUS-ALS, with favorable safety. First successful FUS-ALS trial.</p><div class="src"><a href="https://www.neurologylive.com/view/ulefnersen-meets-primary-end-point-phase-3-fusion-trial-fus-als" target="_blank" rel="noopener">NeurologyLive</a></div></div><span class="pill p-good">Positive</span></div>
-    <div class="study" data-k="underway"><time>Sep 2026</time><div><h3>COYA 302 (ALSTARS, Phase 2/3)</h3><p>Passed 100 participants enrolled. Tests an immune-modulating combo (low-dose IL-2 + CTLA4-Ig). Full enrollment expected in 2026.</p><div class="src"><a href="https://alsnewstoday.com/news/phase-2-3-alstars-trial-coya-302-approaches-full-enrollment/" target="_blank" rel="noopener">ALS News Today</a></div></div><span class="pill p-blue">Underway</span></div>
-    <div class="study" data-k="result"><time>Sep 16, 2026</time><div><h3>NX210c (SEALS, Phase 2)</h3><p>Missed its primary goal on biomarkers after six weeks. Exploratory signs of slower motor decline; more analyses coming.</p><div class="src"><a href="https://www.clinicaltrialsarena.com/news/axoltis-phase-ii-als-trial-fails-company-points-to-exploratory-endpoints/" target="_blank" rel="noopener">Clinical Trials Arena</a></div></div><span class="pill p-warn">Missed goal</span></div>
-    <div class="study" data-k="science"><time>Aug 15, 2026</time><div><h3>Microglia and TAM receptors (Nature Communications)</h3><p>Immune cells in the spinal cord actively destroy motor neurons in ALS mice. A new immune target.</p><div class="src"><a href="https://timesofsandiego.com/health/2026/09/08/salk-institute-researchers-make-progress-on-als-and-autoimmune-disease-treatments/" target="_blank" rel="noopener">Times of San Diego / Salk</a></div></div><span class="pill p-blue">Science</span></div>
-    <div class="study" data-k="science"><time>Aug 2026</time><div><h3>Pesticides and ALS risk (meta-analysis)</h3><p>11 studies: occupational pesticide exposure linked to ~60% higher ALS risk, up to ~3× at high exposure; signal seen in men.</p><div class="src"><a href="https://www.news-medical.net/news/20260804/Occupational-pesticide-exposure-may-significantly-increase-ALS-risk.aspx" target="_blank" rel="noopener">News-Medical</a></div></div><span class="pill p-blue">Science</span></div>
-    <div class="study" data-k="underway"><time>Jul 2026</time><div><h3>HEALEY Platform, Regimen I (NUZ-001)</h3><p>Enrollment completed; topline results moved up to Q2 2027.</p><div class="src"><a href="https://www.manilatimes.net/2026/07/17/tmt-newswire/pr-newswire/healey-als-platform-trial-regimen-i-enrolment-completed-topline-results-for-nuz-001-accelerated-to-q2-cy2027/2386375/amp" target="_blank" rel="noopener">PR Newswire</a></div></div><span class="pill p-blue">Underway</span></div>
-    <div class="study" data-k="underway"><time>2026</time><div><h3>ACE-2223 (Phase 1a)</h3><p>First oral drug designed to break up aggregated TDP-43 enters human testing.</p><div class="src"><a href="https://alsnewstoday.com/news/first-participant-dosed-clinical-trial-experimental-als-treatment/" target="_blank" rel="noopener">ALS News Today</a></div></div><span class="pill p-blue">Underway</span></div>
-    <div class="study" data-k="underway"><time>2026</time><div><h3>Pridopidine (PREVAiLS, Phase 3)</h3><p>Pivotal trial in early, rapidly progressing ALS is enrolling, including sites in Canada.</p><div class="src"><a href="https://www.neurologylive.com/view/fda-clears-pivotal-phase-3-prevails-study-pridopidine-early-rapidly-progressive-als" target="_blank" rel="noopener">NeurologyLive</a></div></div><span class="pill p-blue">Underway</span></div>
-    <div class="study" data-k="result"><time>May 4, 2026</time><div><h3>CNM-Au8 regulatory update</h3><p>FDA feedback supports an accelerated-approval application based on NfL and survival data; filing planned Q3 2026.</p><div class="src"><a href="https://www.stocktitan.net/news/CLNN/after-successful-fda-meeting-clene-filing-accelerated-approval-nda-5xztmxerx2bb.html" target="_blank" rel="noopener">Clene release</a></div></div><span class="pill p-sig">Promising</span></div>
-    <div class="study" data-k="result"><time>Apr 30, 2026</time><div><h3>Dazucorilant (DAZALS, Phase 2)</h3><p>Primary endpoint not met; exploratory analyses hint at a survival benefit in subgroups.</p><div class="src"><a href="https://als.ca/news/clinical-research-trials-update-may-2026/" target="_blank" rel="noopener">ALS Canada</a></div></div><span class="pill p-warn">Missed goal</span></div>
-    <div class="study" data-k="result"><time>Apr 21, 2026</time><div><h3>RAG-17 (Phase 1)</h3><p>Single dose reduced neurofilament light chain by 81% in SOD1-ALS with favorable safety.</p><div class="src"><a href="https://als.ca/news/clinical-research-trials-update-may-2026/" target="_blank" rel="noopener">ALS Canada</a></div></div><span class="pill p-sig">Promising</span></div>
-    <div class="study" data-k="result"><time>Mar 19, 2026</time><div><h3>AP-101 (Phase 2)</h3><p>Antibody to misfolded SOD1: lower nerve-damage markers, delayed ventilation and survival benefit in sporadic and SOD1-ALS.</p><div class="src"><a href="https://al-spharma.com/news/additional-phase-2-data-of-al-s-pharmas-lead-program-ap-101-further-demonstrate-clinically-meaningful-disease-modification-and-prolonged-survival-in-als/" target="_blank" rel="noopener">AL-S Pharma</a></div></div><span class="pill p-sig">Promising</span></div>
-    <div class="study" data-k="result"><time>Mar 2026</time><div><h3>PrimeC (PARADIGM, Phase 2)</h3><p>2.23-point slower decline on ALSFRS-R vs placebo and 9.4% NfL reduction; safety goals met.</p><div class="src"><a href="https://als.ca/news/clinical-research-trials-update-may-2026/" target="_blank" rel="noopener">ALS Canada</a></div></div><span class="pill p-sig">Promising</span></div>
-    <div class="study" data-k="science"><time>Feb 4, 2026</time><div><h3>Chaperone-mediated autophagy (Acta Neuropath. Comm.)</h3><p>Motor neurons lose a selective protein clean-up system they rely on heavily, a possible new drug target.</p><div class="src"><a href="https://www.eurekalert.org/news-releases/1126374" target="_blank" rel="noopener">EurekAlert</a></div></div><span class="pill p-blue">Science</span></div>
-    <div class="study" data-k="result"><time>Dec 22, 2025</time><div><h3>Tofersen long-term (VALOR extension)</h3><p>About 25% stabilized or improved over 3–5 years; survival near 5 years in SOD1-ALS.</p><div class="src"><a href="https://medicine.washu.edu/news/new-als-drug-stabilizes-decline-with-trend-toward-improved-strength-mobility-for-some/" target="_blank" rel="noopener">WashU Medicine</a></div></div><span class="pill p-good">Positive</span></div>
+  <div class="howto">
+    <div><b>Most recent cure information</b>Our plain-language verdict on how close a cure is, and where it will come from.</div>
+    <div><b>Cause &amp; treatments</b>How the disease starts, and which treatments are actually working, with trial results.</div>
+    <div><b>Studies &amp; the world</b>The newest studies, what other countries approve, and live trial counts by country.</div>
   </div>
 </section>
 
 <footer>
-  <div><b>About Cure Checker.</b> An independent daily digest of ALS research, rebuilt every morning at 9:00 AM Eastern from trial announcements, peer-reviewed papers and patient-organization updates. Every study entry links to its source.</div>
-  <div><b>Not medical advice.</b> Summaries are simplified and early-phase results often fail to hold up. Talk with a neurologist before changing treatment or starting supplements. To find trials, see <a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a>.</div>
+  <div><b>About Cure Checker.</b> An independent, AI-assisted daily digest of medical research, rebuilt every morning at 9:00 AM Eastern from trial announcements, peer-reviewed papers and patient-organization updates. Every study entry links to its source.</div>
+  <div><b>Not medical advice.</b> No doctors review these pages. Summaries are simplified, and early-phase results often don't hold up. Talk with your doctor before changing treatment or starting supplements.</div>
+  <div class="foot-links"><a href="index.html">All diseases</a><a href="terms.html">Terms of Use</a><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
 </footer>
 </div>
 
-<script>
-(function(){
-  var btns=document.querySelectorAll('.filters button');
-  var rows=document.querySelectorAll('#studies-list .study');
-  btns.forEach(function(b){
-    b.addEventListener('click',function(){
-      var f=b.getAttribute('data-f');
-      btns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
-      rows.forEach(function(r){r.hidden=!(f==='all'||r.getAttribute('data-k')===f)});
-    });
-  });
-})();
-</script>
+<script src="assets/diseases.js"></script>
+<script src="assets/curechecker.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,291 @@
+/* Cure Checker shared styles. Every disease report and the landing page use this file. Layout: masthead + date strip, then stacked sections on a single reading column (max 1080px). */
+:root{
+  --paper:#EEF6FC; --panel:#FFFFFF; --ink:#0F2E4A; --muted:#4E6A84; --line:#CBDDEC;
+  --signal:#1C86C9; --signal-soft:#DAEDFA; --sky:#B9DDF5; --blue:#1F5F99; --blue-soft:#E1EEF8;
+  --amber:#A86A0E; --amber-soft:#FBEFD9;
+  --good:#23794C; --good-soft:#DFF1E6; --warn:#B5462A; --warn-soft:#F8E3DC;
+  --f-display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0B1A28; --panel:#11263A; --ink:#E4F0FA; --muted:#93AEC6; --line:#22405A;
+  --signal:#7CC4F2; --signal-soft:#143A57; --sky:#1F4D72; --blue:#8DB8EE; --blue-soft:#17314D;
+  --amber:#F2B35A; --amber-soft:#3A2C14;
+  --good:#63CB92; --good-soft:#15362A; --warn:#EE8A6C; --warn-soft:#3D1F18; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0B1A28; --panel:#11263A; --ink:#E4F0FA; --muted:#93AEC6; --line:#22405A;
+  --signal:#7CC4F2; --signal-soft:#143A57; --sky:#1F4D72; --blue:#8DB8EE; --blue-soft:#17314D;
+  --amber:#F2B35A; --amber-soft:#3A2C14;
+  --good:#63CB92; --good-soft:#15362A; --warn:#EE8A6C; --warn-soft:#3D1F18; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55;padding-inline:16px;padding-block:0 48px}
+.wrap{max-width:1080px;margin:0 auto}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.1}
+h2{font-size:clamp(28px,4vw,40px);font-weight:800;font-stretch:88%;letter-spacing:-.01em}
+h3{font-size:20px;font-weight:700;font-stretch:95%}
+p{margin:0}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mono{font-family:var(--f-mono)}
+
+/* Masthead */
+.mast{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-block:28px 18px;border-bottom:3px solid var(--ink)}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{display:flex;align-items:center;gap:14px}
+.lg-box{width:clamp(46px,6vw,60px);aspect-ratio:1;border-radius:12px;background:var(--signal);display:grid;place-items:center;flex:none}
+.lg-box svg{width:60%;height:auto}
+.lg-text{font-family:var(--f-display);font-weight:900;font-stretch:72%;font-size:clamp(38px,6.4vw,62px);line-height:.88;text-transform:uppercase;letter-spacing:.01em;display:flex;flex-wrap:wrap;column-gap:.2em}
+.lg-1{color:var(--ink)}
+.lg-2{color:var(--signal);font-weight:600}
+.tag{font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+.datebox{text-align:right;font-family:var(--f-mono);font-size:13px;color:var(--muted)}
+.datebox strong{display:block;font-family:var(--f-display);font-stretch:85%;font-size:22px;color:var(--ink);font-weight:800}
+.strip{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;padding-block:10px;border-bottom:1px solid var(--line);font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+.strip .live{display:inline-flex;align-items:center;gap:8px;color:var(--ink);font-weight:500;text-transform:uppercase;letter-spacing:.08em}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 0 var(--signal);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--signal) 60%,transparent)}70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.dot{animation:none}}
+
+/* Hero headline */
+.lead{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;padding-block:32px 8px;align-items:end}
+.lead h1{font-size:clamp(34px,5.4vw,60px);font-weight:800;font-stretch:80%;letter-spacing:-.015em}
+.lead h1 em{font-style:normal;color:var(--signal)}
+.lead p{color:var(--muted);max-width:62ch}
+.toc{display:flex;flex-wrap:wrap;gap:8px;padding-block:20px 8px}
+.toc a{font-family:var(--f-mono);font-size:12.5px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--panel);padding:6px 11px;border-radius:999px}
+.toc a:hover{border-color:var(--ink)}
+
+section{padding-block:52px 8px}
+.sec-head{display:grid;grid-template-columns:1fr;gap:6px 16px;align-items:baseline;margin-bottom:22px;border-top:1px solid var(--line);padding-top:22px}
+.sec-head p{color:var(--muted);max-width:68ch}
+
+/* Cause pathway */
+.path{display:grid;grid-template-columns:1fr 28px 1fr 28px 1.25fr 28px 1fr;align-items:stretch;gap:0}
+.stage{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.stage.key{border:2px solid var(--signal);background:var(--signal-soft)}
+.stage .eyebrow{color:var(--ink)}
+.stage svg{width:100%;height:auto;max-height:84px}
+.stage ul{margin:0;padding-left:18px;font-size:15px}
+.stage li+li{margin-top:4px}
+.arrow{display:flex;align-items:center;justify-content:center;color:var(--muted)}
+.arrow svg{width:22px;height:22px}
+.bar{display:flex;height:14px;border-radius:7px;overflow:hidden;border:1px solid var(--line)}
+.bar i{display:block}
+.legend{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:11.5px;color:var(--muted)}
+.cause-note{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cause-note div{font-size:15px;color:var(--muted);border-left:2px solid var(--line);padding-left:12px}
+.cause-note b{color:var(--ink)}
+
+/* Treatments */
+.tx{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.pill{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;white-space:nowrap;font-weight:500}
+.p-good{background:var(--good-soft);color:var(--good)}
+.p-blue{background:var(--blue-soft);color:var(--blue)}
+.p-sig{background:var(--amber-soft);color:var(--amber)}
+.p-warn{background:var(--warn-soft);color:var(--warn)}
+.card .who{font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+.card p{font-size:15.5px}
+.subhead{font-family:var(--f-display);font-stretch:90%;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:30px 0 12px}
+.approved{width:100%;border-collapse:collapse;font-size:15px;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.approved th,.approved td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.approved th{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.approved tr:last-child td{border-bottom:0}
+.scroll{overflow-x:auto}
+
+/* Verdict */
+.verdict{background:var(--signal-soft);color:var(--ink);border:1px solid var(--sky);border-radius:14px;padding:clamp(22px,4vw,40px);display:grid;grid-template-columns:1fr 1.3fr;gap:32px}
+.verdict .eyebrow{color:var(--signal)}
+.verdict h2{color:var(--ink);margin-top:8px}
+.verdict .big{font-family:var(--f-display);font-stretch:85%;font-weight:700;font-size:clamp(20px,2.4vw,26px);line-height:1.25;margin-top:16px}
+.verdict ol{margin:0;padding-left:0;list-style:none;display:grid;gap:14px;counter-reset:v}
+.verdict li{position:relative;padding-left:44px;counter-increment:v;min-height:28px}
+.verdict li::before{position:absolute;left:0;top:0;content:counter(v);font-family:var(--f-mono);font-size:13px;border:1px solid var(--signal);color:var(--signal);border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center}
+.verdict li b{display:block;font-family:var(--f-display);font-stretch:95%;font-size:17px}
+.verdict li span{color:var(--muted);font-size:15.5px}
+.verdict .fine{grid-column:1/-1;font-size:13.5px;color:var(--muted);border-top:1px solid var(--sky);padding-top:14px}
+
+/* Supplements */
+.supp{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.supp h3{margin-bottom:12px}
+.row{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding-block:12px;border-bottom:1px solid var(--line)}
+.row:first-of-type{border-top:1px solid var(--line)}
+.row b{font-size:16px}
+.row p{grid-column:1/-1;font-size:15px;color:var(--muted)}
+.grade{display:inline-flex;gap:3px;align-items:center}
+.grade i{width:9px;height:9px;border-radius:2px;background:var(--line)}
+.grade i.on{background:var(--good)}
+.grade.low i.on{background:var(--amber)}
+.grade.none i.on{background:var(--warn)}
+.gkey{display:flex;flex-wrap:wrap;gap:16px;font-family:var(--f-mono);font-size:12px;color:var(--muted);margin-bottom:16px}
+.gkey span{display:inline-flex;align-items:center;gap:6px}
+.caution{margin-top:22px;background:var(--warn-soft);border-radius:10px;padding:14px 16px;font-size:15px}
+.caution b{color:var(--warn)}
+
+/* Studies */
+.studies{display:grid;gap:0;border-top:2px solid var(--ink)}
+.study{display:grid;grid-template-columns:110px 1fr 120px;gap:6px 20px;padding-block:16px;border-bottom:1px solid var(--line);align-items:start}
+.study time{font-family:var(--f-mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.study h3{font-size:18px}
+.study p{font-size:15.5px;margin-top:4px;color:var(--ink)}
+.study .src{font-size:13px;margin-top:4px}
+.study .pill{justify-self:end}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.filters button{font-family:var(--f-mono);font-size:12.5px;background:var(--panel);color:var(--ink);border:1px solid var(--line);padding:6px 12px;border-radius:999px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* Around the world */
+.world th:first-child,.world td:first-child{position:sticky;left:0;background:var(--panel);z-index:1}
+.world td{white-space:nowrap}
+.world td:first-child{white-space:normal;min-width:170px}
+.world td small{display:block;font-size:12.5px;color:var(--muted);white-space:normal}
+.c{display:inline-block;font-family:var(--f-mono);font-size:12px;padding:2px 7px;border-radius:4px}
+.c-yes{background:var(--good-soft);color:var(--good)}
+.c-off{background:var(--warn-soft);color:var(--warn)}
+.c-mid{background:var(--amber-soft);color:var(--amber)}
+.c-no{color:var(--muted)}
+.wkey{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;color:var(--muted);margin-top:10px}
+.abroad{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line);display:grid;gap:12px}
+.timeline li{display:grid;grid-template-columns:64px 1fr;gap:12px;padding-left:14px;position:relative;font-size:15.5px}
+.timeline li::before{content:"";position:absolute;left:-6px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--signal)}
+.timeline time{font-family:var(--f-mono);font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.live-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:28px}
+.cbars{display:grid;gap:6px}
+.cbar{display:grid;grid-template-columns:120px 1fr 32px;gap:10px;align-items:center;font-size:14px}
+.cbar span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cbar i{display:block;height:12px;border-radius:3px;background:var(--signal)}
+.cbar.us i{background:var(--muted)}
+.cbar b{font-family:var(--f-mono);font-size:13px;font-weight:500;text-align:right}
+.trials{display:grid;border-top:2px solid var(--ink)}
+.trial{padding-block:10px;border-bottom:1px solid var(--line);font-size:15px}
+.trial .who{font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+.more{margin-top:12px;font-family:var(--f-mono);font-size:12.5px;background:var(--panel);color:var(--ink);border:1px solid var(--line);padding:6px 12px;border-radius:999px;cursor:pointer}
+.status-note{font-size:14px;color:var(--muted)}
+
+footer{margin-top:56px;padding-top:18px;border-top:3px solid var(--ink);display:grid;grid-template-columns:1fr 1fr;gap:24px;font-size:14px;color:var(--muted)}
+footer b{color:var(--ink)}
+
+@media (max-width:900px){
+  .path{grid-template-columns:1fr}
+  .arrow{height:30px}
+  .arrow svg{transform:rotate(90deg)}
+  .lead,.verdict,.supp,footer,.live-grid{grid-template-columns:1fr}
+  .cause-note,.abroad{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .tx{grid-template-columns:1fr}
+  .study{grid-template-columns:1fr}
+  .study .pill{justify-self:start;grid-row:1}
+  .datebox{text-align:left}
+  .lg-box{width:42px}
+}
+
+/* Disease navigation bar (top of every report) */
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding-block:12px;border-bottom:1px solid var(--line);font-family:var(--f-mono);font-size:13px}
+.crumbs a{color:var(--ink);text-decoration:none}
+.crumbs a:hover{text-decoration:underline}
+.crumbs label{display:inline-flex;align-items:center;gap:8px;color:var(--muted)}
+select[data-disease-picker]{font:inherit;font-family:var(--f-body);font-size:15px;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:7px 10px;max-width:100%}
+select[data-disease-picker]:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+.mast a.logo{text-decoration:none}
+
+/* Landing page */
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;padding-block:36px 10px;align-items:end}
+.hero h1{font-size:clamp(34px,5.4vw,60px);font-weight:800;font-stretch:80%;letter-spacing:-.015em}
+.hero h1 em{font-style:normal;color:var(--signal)}
+.hero p{color:var(--muted);max-width:60ch}
+.finder{margin-top:28px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;display:grid;grid-template-columns:auto 1fr;gap:10px 16px;align-items:center}
+.finder label{font-family:var(--f-display);font-stretch:90%;font-weight:700;font-size:18px}
+.finder select{width:100%;font-size:17px;padding:11px 12px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.tile{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column;gap:8px;color:var(--ink);text-decoration:none;min-height:190px;transition:border-color .15s,transform .15s}
+.tile:hover{border-color:var(--signal);transform:translateY(-2px)}
+.tile:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+.tile .eyebrow{color:var(--signal)}
+.tile h3{font-size:24px;font-weight:800;font-stretch:88%}
+.tile p{font-size:15.5px;color:var(--muted)}
+.tile-foot{margin-top:auto;display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+.tile-foot span:last-child{color:var(--signal);font-size:18px;line-height:1}
+.howto{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.howto div{font-size:15px;color:var(--muted);border-left:2px solid var(--line);padding-left:12px}
+.howto b{color:var(--ink);display:block}
+@media (prefers-reduced-motion:reduce){.tile{transition:none}.tile:hover{transform:none}}
+@media (max-width:900px){.hero,.howto{grid-template-columns:1fr}}
+@media (max-width:640px){.finder{grid-template-columns:1fr}}
+/* Disease color palettes.
+   The landing page keeps the default light-blue tokens above. Each disease report sets
+   <body data-palette="..."> and its landing tile gets the same palette, so every disease has its own look.
+   To add a palette, copy one block (light + both dark variants) and change the values. */
+[data-palette="violet"]{
+  --paper:#F4F1FB; --panel:#FFFFFF; --ink:#2A1F4A; --muted:#645A82; --line:#DCD3EE;
+  --signal:#6D4BC3; --signal-soft:#EAE3F8; --sky:#CFC1F0; --blue:#5A3FA8; --blue-soft:#ECE6F8}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="violet"]{
+  --paper:#15102A; --panel:#1E1838; --ink:#EEEAFB; --muted:#ABA2CA; --line:#352C58;
+  --signal:#B39CF0; --signal-soft:#2D2452; --sky:#4A3C80; --blue:#C2B2F2; --blue-soft:#2A2248}}
+:root[data-theme="dark"] [data-palette="violet"]{
+  --paper:#15102A; --panel:#1E1838; --ink:#EEEAFB; --muted:#ABA2CA; --line:#352C58;
+  --signal:#B39CF0; --signal-soft:#2D2452; --sky:#4A3C80; --blue:#C2B2F2; --blue-soft:#2A2248}
+
+[data-palette="gold"]{
+  --paper:#FBF6EA; --panel:#FFFFFF; --ink:#3A2A0E; --muted:#76623C; --line:#EADDBF;
+  --signal:#9E6512; --signal-soft:#F8ECCF; --sky:#EFD9A6; --blue:#85570F; --blue-soft:#F6EBD3}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="gold"]{
+  --paper:#1C160B; --panel:#282012; --ink:#F8F0DE; --muted:#C5B48E; --line:#45391F;
+  --signal:#F0BF5A; --signal-soft:#3D3018; --sky:#6A5427; --blue:#F2C878; --blue-soft:#352A15}}
+:root[data-theme="dark"] [data-palette="gold"]{
+  --paper:#1C160B; --panel:#282012; --ink:#F8F0DE; --muted:#C5B48E; --line:#45391F;
+  --signal:#F0BF5A; --signal-soft:#3D3018; --sky:#6A5427; --blue:#F2C878; --blue-soft:#352A15}
+
+/* Landing tiles preview each disease's color */
+.tile[data-palette]{border-top:5px solid var(--signal)}
+/* Sources (bottom of every report) */
+.sources{display:grid;grid-template-columns:repeat(2,1fr);gap:4px 36px}
+.sources .subhead{margin-top:18px}
+.srclist{margin:0;padding-left:22px;font-size:14.5px;color:var(--muted)}
+.srclist li{margin-bottom:7px;padding-left:2px}
+.srclist li::marker{font-family:var(--f-mono);font-size:12px}
+.srclist a{color:var(--ink);text-decoration-color:var(--line);text-underline-offset:2px}
+.srclist a:hover{text-decoration-color:var(--signal)}
+.src-note{margin-top:18px;font-size:13.5px;color:var(--muted)}
+@media (max-width:760px){.sources{grid-template-columns:1fr}}
+/* More disease palettes: teal (Parkinson's) and plum (Alzheimer's, purple ribbon) */
+[data-palette="teal"]{
+  --paper:#EEF7F5; --panel:#FFFFFF; --ink:#0E3330; --muted:#4C6B67; --line:#C7E0DB;
+  --signal:#13786C; --signal-soft:#DCF0EC; --sky:#B3DDD5; --blue:#0F5F56; --blue-soft:#E0F0ED}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="teal"]{
+  --paper:#0A1C1A; --panel:#102925; --ink:#E2F4F1; --muted:#92B8B2; --line:#1F423D;
+  --signal:#5CCFBE; --signal-soft:#12403A; --sky:#1F5A52; --blue:#7FD8CA; --blue-soft:#143631}}
+:root[data-theme="dark"] [data-palette="teal"]{
+  --paper:#0A1C1A; --panel:#102925; --ink:#E2F4F1; --muted:#92B8B2; --line:#1F423D;
+  --signal:#5CCFBE; --signal-soft:#12403A; --sky:#1F5A52; --blue:#7FD8CA; --blue-soft:#143631}
+
+[data-palette="plum"]{
+  --paper:#F8F0F6; --panel:#FFFFFF; --ink:#3A1236; --muted:#74586F; --line:#E8D2E3;
+  --signal:#8E2C83; --signal-soft:#F4E0EF; --sky:#E4BFDB; --blue:#74246B; --blue-soft:#F2E3EE}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="plum"]{
+  --paper:#1D0C1A; --panel:#2A1426; --ink:#F7E8F3; --muted:#C7A6BE; --line:#48273F;
+  --signal:#E28AD3; --signal-soft:#45203E; --sky:#6A3460; --blue:#EBA6DF; --blue-soft:#3A1B34}}
+:root[data-theme="dark"] [data-palette="plum"]{
+  --paper:#1D0C1A; --panel:#2A1426; --ink:#F7E8F3; --muted:#C7A6BE; --line:#48273F;
+  --signal:#E28AD3; --signal-soft:#45203E; --sky:#6A3460; --blue:#EBA6DF; --blue-soft:#3A1B34}
+
+/* Footer links (Terms of Use on every page) */
+.foot-links{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px 18px;padding-top:14px;border-top:1px solid var(--line);font-family:var(--f-mono);font-size:12.5px}
+.foot-links a{color:var(--ink)}
+
+/* Terms of Use page */
+.legal{max-width:760px;padding-block:36px 10px}
+.legal h1{font-size:clamp(34px,5vw,52px);font-weight:800;font-stretch:82%;letter-spacing:-.015em}
+.legal .meta{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);margin-top:10px}
+.legal .summary{margin-top:24px;background:var(--signal-soft);border:1px solid var(--sky);border-radius:12px;padding:18px 20px;font-size:17px}
+.legal h2{font-size:24px;font-weight:800;font-stretch:90%;margin:34px 0 10px}
+.legal p,.legal li{color:var(--ink);font-size:16.5px}
+.legal p+p{margin-top:12px}
+.legal ul{margin:10px 0 0;padding-left:22px}
+.legal li+li{margin-top:6px}

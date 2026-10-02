@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Cure Checker: a daily digest of ALS research, treatments, and studies.">
+<title>Cure Checker: ALS</title>
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body data-disease="als" data-palette="violet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/curechecker.css">
+
+<div class="wrap">
+
+<nav class="crumbs" aria-label="Diseases">
+  <a href="index.html">← All diseases</a>
+  <label>Switch disease <select data-disease-picker data-placeholder="Choose a disease…"></select></label>
+</nav>
+
+<!-- ========== MASTHEAD ========== -->
+<header class="mast">
+  <div class="brand">
+    <div>
+      <a class="logo" href="index.html" aria-label="Cure Checker home">
+        <span class="lg-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="var(--paper)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="lg-text" aria-hidden="true"><span class="lg-1">Cure</span><span class="lg-2">Checker</span></span>
+      </a>
+      <div class="tag">ALS edition · Most recent ALS conclusions</div>
+    </div>
+  </div>
+  <div class="datebox">
+    <!-- CURECHECKER:DATE -->
+    <strong id="edition-date">Friday, October 2, 2026</strong>
+    Daily edition · refreshed 9:00 AM ET
+  </div>
+</header>
+<div class="strip">
+  <span class="live"><span class="dot" aria-hidden="true"></span>Today's headline</span>
+  <!-- CURECHECKER:HEADLINE -->
+  <span id="headline">Ulefnersen becomes the first drug to win a Phase 3 trial in FUS-ALS (Sept 22). ACT for ALS passes Congress, extended through 2031.</span>
+</div>
+
+<!-- ========== LEAD ========== -->
+<div class="lead">
+  <h1>ALS has no cure yet. For the genetic forms, it is <em>starting to bend.</em></h1>
+  <p>Cure Checker tracks the cause, the treatments that are working, and the trials underway, and rewrites this page every morning from the latest published results. Plain language, with sources for every claim.</p>
+</div>
+<nav class="toc" aria-label="Sections">
+  <a href="#verdict">Most recent cure information</a>
+  <a href="#cause">What causes ALS</a>
+  <a href="#treatments">Treatments that are working</a>
+  <a href="#studies">Latest studies</a>
+  <a href="#world">Around the world</a>
+  <a href="#natural">Natural remedies &amp; supplements</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<!-- ========== CURE INFORMATION (top) ========== -->
+<section id="verdict">
+  <div class="verdict">
+    <div>
+      <span class="eyebrow">Cure Checker's conclusion · Oct 2026</span>
+      <h2>Most recent cure information</h2>
+      <p class="big">There is no cure for ALS today. Our view: the cure will not be one pill. It will be a matched combination, chosen by each person's genetic subtype, started before symptoms spread.</p>
+    </div>
+    <ol>
+      <li><b>Gene silencing for inherited ALS: nearly there.</b><span>Tofersen and now ulefnersen show that turning off a toxic gene can halt, and sometimes partly reverse, the disease. Expect the same approach for C9orf72, the most common ALS gene.</span></li>
+      <li><b>Fixing TDP-43 for everyone else: the real cure target.</b><span>Because TDP-43 fails in ~97% of cases, drugs that restore it or repair the RNA it mis-edits (STMN2, UNC13A) could treat sporadic ALS. ACE-2223 entered human testing this year.</span></li>
+      <li><b>Calming the immune attack: the force multiplier.</b><span>New microglia findings and trials like COYA 302 and foralumab suggest pairing a root-cause drug with immune control.</span></li>
+      <li><b>Catching it early: the timing that makes it work.</b><span>Blood tests for neurofilament light can flag ALS months before symptoms in gene carriers. Treating then gives any drug its best chance.</span></li>
+    </ol>
+    <p class="fine">This is Cure Checker's editorial assessment of published evidence, not medical advice. Treatment decisions belong with a neurologist, ideally at a multidisciplinary ALS clinic.</p>
+  </div>
+</section>
+
+<!-- ========== 1. CAUSE ========== -->
+<section id="cause">
+  <div class="sec-head">
+    <h2>What causes ALS</h2>
+    <p>ALS is a "multi-hit" disease. Genes, environment, and age add up until motor neurons cross a tipping point. In almost every case, that tipping point involves one protein: TDP-43.</p>
+  </div>
+
+  <div class="path" role="img" aria-label="Pathway: risk factors lead to TDP-43 leaving the nucleus and clumping, which causes cell damage, which kills motor neurons and causes muscle weakness.">
+    <div class="stage">
+      <span class="eyebrow">Step 1 · The hits</span>
+      <h3>Risk adds up</h3>
+      <div class="bar" aria-hidden="true"><i style="width:12%;background:var(--signal)"></i><i style="width:88%;background:var(--blue-soft)"></i></div>
+      <div class="legend"><span>~10–15% inherited</span><span>~85–90% sporadic</span></div>
+      <ul>
+        <li><b>Genes:</b> C9orf72, SOD1, TARDBP, FUS and 40+ others</li>
+        <li><b>Environment:</b> pesticides, heavy metals, smoking, military service</li>
+        <li><b>Age:</b> most diagnoses come between 55 and 75</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage key">
+      <span class="eyebrow">Step 2 · The tipping point</span>
+      <h3>TDP-43 leaves the nucleus and clumps</h3>
+      <svg viewBox="0 0 200 84" aria-hidden="true">
+        <ellipse cx="100" cy="42" rx="92" ry="36" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/>
+        <circle cx="70" cy="42" r="22" fill="var(--blue-soft)" stroke="var(--blue)" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="70" y="46" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">nucleus</text>
+        <path d="M92 40 C108 30 118 30 132 36" fill="none" stroke="var(--signal)" stroke-width="2" stroke-dasharray="3 3"/>
+        <g fill="var(--warn)"><circle cx="140" cy="38" r="6"/><circle cx="149" cy="44" r="5"/><circle cx="141" cy="49" r="4.5"/><circle cx="153" cy="35" r="3.5"/></g>
+        <text x="148" y="68" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">TDP-43 clumps</text>
+      </svg>
+      <ul>
+        <li>Seen in about <b>97% of all ALS cases</b>, inherited or not</li>
+        <li>Lost from the nucleus, it can no longer edit the cell's RNA messages</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 3 · The damage</span>
+      <h3>Five things go wrong at once</h3>
+      <ul>
+        <li><b>Bad RNA edits:</b> repair genes like STMN2 and UNC13A get garbled</li>
+        <li><b>Clean-up fails:</b> the cell's protein recycling (autophagy) slows</li>
+        <li><b>Energy drops:</b> mitochondria falter</li>
+        <li><b>Over-excitation:</b> too much glutamate signalling</li>
+        <li><b>Immune attack:</b> microglia start removing motor neurons</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 4 · The result</span>
+      <h3>Motor neurons die</h3>
+      <svg viewBox="0 0 200 70" aria-hidden="true">
+        <circle cx="30" cy="35" r="13" fill="var(--muted)" opacity=".5"/>
+        <path d="M43 35 H90" stroke="var(--muted)" stroke-width="3" opacity=".5"/>
+        <path d="M100 35 H118" stroke="var(--muted)" stroke-width="3" stroke-dasharray="4 5" opacity=".5"/>
+        <path d="M130 22 Q160 14 186 26 Q190 35 186 44 Q160 56 130 48 Q126 35 130 22Z" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="2"/>
+        <text x="158" y="39" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--warn)">muscle</text>
+      </svg>
+      <ul>
+        <li>Nerve signals stop reaching muscles</li>
+        <li>Weakness spreads to limbs, speech, swallowing and breathing</li>
+        <li>Average survival 2–5 years after symptoms begin</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cause-note">
+    <div><b>Newest clue (Aug 2026):</b> Salk Institute scientists showed microglia use "TAM" receptors to tag and destroy motor neurons in ALS mice, pointing at the immune system as an active driver.</div>
+    <div><b>Environment (Aug 2026):</b> a meta-analysis of 11 studies found on-the-job pesticide exposure linked to about <b>60% higher</b> ALS risk, nearly 3× at high exposure.</div>
+    <div><b>Clean-up failure (Feb 2026):</b> motor neurons lose chaperone-mediated autophagy, a selective protein-recycling system they depend on more than other cells.</div>
+  </div>
+</section>
+
+<!-- ========== 2. TREATMENTS ========== -->
+<section id="treatments">
+  <div class="sec-head">
+    <h2>Treatments that are working</h2>
+    <p>The clearest wins come from drugs that silence a single faulty gene. These help a minority of patients with that gene, but the benefit is the largest ALS has ever seen.</p>
+  </div>
+
+  <div class="tx">
+    <article class="card">
+      <div class="top"><h3>Ulefnersen</h3><span class="pill p-good">Phase 3 win</span></div>
+      <div class="who">Otsuka / Ionis · FUS-ALS · announced Sept 22, 2026</div>
+      <p>The FUSION trial met its main goal (p = 0.0005), improving function and survival together over 72 weeks. It is the first placebo-controlled proof that targeting the cause of a genetic ALS works. FDA filing planned; early access program being set up.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Tofersen (Qalsody)</h3><span class="pill p-good">FDA approved</span></div>
+      <div class="who">Biogen / Ionis · SOD1-ALS · long-term data Dec 2025</div>
+      <p>After 3–5 years on the drug, about 1 in 4 people stabilized or <b>improved</b> in strength and breathing, and survival reached nearly 5 years versus a typical 2–3. Doctors called that "unheard of" in SOD1-ALS.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>AP-101</h3><span class="pill p-sig">Promising · Phase 2</span></div>
+      <div class="who">AL-S Pharma · sporadic and SOD1-ALS · Mar 2026</div>
+      <p>An antibody against misfolded SOD1. Lowered nerve-damage markers (NfL, pNfH), delayed the need for ventilation, and showed survival benefit in both sporadic ALS and SOD1 carriers. Small trial; needs Phase 3.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>PrimeC</h3><span class="pill p-sig">Promising · Phase 2</span></div>
+      <div class="who">NeuroSense · sporadic ALS · published Mar 2026</div>
+      <p>A combination of two existing drugs (ciprofloxacin + celecoxib). Slowed decline by 2.23 points on the ALS function scale versus placebo and cut NfL by 9.4%.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>CNM-Au8</h3><span class="pill p-blue">Seeking approval</span></div>
+      <div class="who">Clene · sporadic ALS · NDA planned Q3 2026</div>
+      <p>Gold nanocrystals that boost nerve-cell energy. FDA said biomarker and survival data may support accelerated approval; confirmatory Phase 3 to start in 2027.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>RAG-17</h3><span class="pill p-sig">Early signal · Phase 1</span></div>
+      <div class="who">Ractigen · SOD1-ALS · Apr 2026</div>
+      <p>A single dose cut neurofilament light chain, a marker of nerve damage, by 81%, with good safety. Early, but a strong biological signal.</p>
+    </article>
+  </div>
+
+  <div class="subhead">Already approved in the U.S. (and one in Japan)</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Drug</th><th>For</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><b>Riluzole</b> (1995)</td><td>All ALS</td><td>Lowers glutamate over-excitation. Adds roughly 2–3 months of survival on average.</td></tr>
+      <tr><td><b>Edaravone</b> (IV 2017, oral 2022)</td><td>All ALS</td><td>Antioxidant. Modest slowing of functional decline in some patients.</td></tr>
+      <tr><td><b>Tofersen</b> (2023)</td><td>SOD1-ALS (~2%)</td><td>Silences the faulty SOD1 gene. Largest benefit of any approved ALS drug.</td></tr>
+      <tr><td><b>Rozebalamin</b> (Japan, 2024)</td><td>Early ALS</td><td>Ultra-high-dose methylcobalamin (B12) by injection. Not FDA approved.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ========== 3. STUDIES ========== -->
+<section id="studies">
+  <div class="sec-head">
+    <h2>Latest studies &amp; what they concluded</h2>
+    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter studies">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
+    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
+    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
+  </div>
+  <!-- CURECHECKER:STUDIES (newest first) -->
+  <div class="studies" id="studies-list">
+    <div class="study" data-k="underway"><time>Sep 28, 2026</time><div><h3>Foralumab (BANYAN, Phase 2a)</h3><p>First ALS patients dosed with a nasal anti-CD3 antibody meant to calm brain inflammation. Underway.</p><div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/28/3369755/0/en/tiziana-life-sciences-announces-first-participants-dosed-in-als-banyan-clinical-trial-of-intranasal-foralumab.html" target="_blank" rel="noopener">Tiziana Life Sciences</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="science"><time>Sep 28, 2026</time><div><h3>ACT for ALS reauthorized by Congress</h3><p>Extends federal funding for expanded access, biomarker and natural-history research through 2031. Sent to the President for signature.</p><div class="src"><a href="https://alsnetwork.org/als-network-celebrates-final-congressional-passage-of-act-for-als-reauthorization-act/" target="_blank" rel="noopener">ALS Network</a></div></div><span class="pill p-good">Policy</span></div>
+    <div class="study" data-k="result"><time>Sep 22, 2026</time><div><h3>Ulefnersen (FUSION, Phase 3)</h3><p>Met primary endpoint: significant improvement in function and survival in FUS-ALS, with favorable safety. First successful FUS-ALS trial.</p><div class="src"><a href="https://www.neurologylive.com/view/ulefnersen-meets-primary-end-point-phase-3-fusion-trial-fus-als" target="_blank" rel="noopener">NeurologyLive</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="underway"><time>Sep 2026</time><div><h3>COYA 302 (ALSTARS, Phase 2/3)</h3><p>Passed 100 participants enrolled. Tests an immune-modulating combo (low-dose IL-2 + CTLA4-Ig). Full enrollment expected in 2026.</p><div class="src"><a href="https://alsnewstoday.com/news/phase-2-3-alstars-trial-coya-302-approaches-full-enrollment/" target="_blank" rel="noopener">ALS News Today</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="result"><time>Sep 16, 2026</time><div><h3>NX210c (SEALS, Phase 2)</h3><p>Missed its primary goal on biomarkers after six weeks. Exploratory signs of slower motor decline; more analyses coming.</p><div class="src"><a href="https://www.clinicaltrialsarena.com/news/axoltis-phase-ii-als-trial-fails-company-points-to-exploratory-endpoints/" target="_blank" rel="noopener">Clinical Trials Arena</a></div></div><span class="pill p-warn">Missed goal</span></div>
+    <div class="study" data-k="science"><time>Aug 15, 2026</time><div><h3>Microglia and TAM receptors (Nature Communications)</h3><p>Immune cells in the spinal cord actively destroy motor neurons in ALS mice. A new immune target.</p><div class="src"><a href="https://timesofsandiego.com/health/2026/09/08/salk-institute-researchers-make-progress-on-als-and-autoimmune-disease-treatments/" target="_blank" rel="noopener">Times of San Diego / Salk</a></div></div><span class="pill p-blue">Science</span></div>
+    <div class="study" data-k="science"><time>Aug 2026</time><div><h3>Pesticides and ALS risk (meta-analysis)</h3><p>11 studies: occupational pesticide exposure linked to ~60% higher ALS risk, up to ~3× at high exposure; signal seen in men.</p><div class="src"><a href="https://www.news-medical.net/news/20260804/Occupational-pesticide-exposure-may-significantly-increase-ALS-risk.aspx" target="_blank" rel="noopener">News-Medical</a></div></div><span class="pill p-blue">Science</span></div>
+    <div class="study" data-k="underway"><time>Jul 2026</time><div><h3>HEALEY Platform, Regimen I (NUZ-001)</h3><p>Enrollment completed; topline results moved up to Q2 2027.</p><div class="src"><a href="https://www.manilatimes.net/2026/07/17/tmt-newswire/pr-newswire/healey-als-platform-trial-regimen-i-enrolment-completed-topline-results-for-nuz-001-accelerated-to-q2-cy2027/2386375/amp" target="_blank" rel="noopener">PR Newswire</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="underway"><time>2026</time><div><h3>ACE-2223 (Phase 1a)</h3><p>First oral drug designed to break up aggregated TDP-43 enters human testing.</p><div class="src"><a href="https://alsnewstoday.com/news/first-participant-dosed-clinical-trial-experimental-als-treatment/" target="_blank" rel="noopener">ALS News Today</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="underway"><time>2026</time><div><h3>Pridopidine (PREVAiLS, Phase 3)</h3><p>Pivotal trial in early, rapidly progressing ALS is enrolling, including sites in Canada.</p><div class="src"><a href="https://www.neurologylive.com/view/fda-clears-pivotal-phase-3-prevails-study-pridopidine-early-rapidly-progressive-als" target="_blank" rel="noopener">NeurologyLive</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="result"><time>May 4, 2026</time><div><h3>CNM-Au8 regulatory update</h3><p>FDA feedback supports an accelerated-approval application based on NfL and survival data; filing planned Q3 2026.</p><div class="src"><a href="https://www.stocktitan.net/news/CLNN/after-successful-fda-meeting-clene-filing-accelerated-approval-nda-5xztmxerx2bb.html" target="_blank" rel="noopener">Clene release</a></div></div><span class="pill p-sig">Promising</span></div>
+    <div class="study" data-k="result"><time>Apr 30, 2026</time><div><h3>Dazucorilant (DAZALS, Phase 2)</h3><p>Primary endpoint not met; exploratory analyses hint at a survival benefit in subgroups.</p><div class="src"><a href="https://als.ca/news/clinical-research-trials-update-may-2026/" target="_blank" rel="noopener">ALS Canada</a></div></div><span class="pill p-warn">Missed goal</span></div>
+    <div class="study" data-k="result"><time>Apr 21, 2026</time><div><h3>RAG-17 (Phase 1)</h3><p>Single dose reduced neurofilament light chain by 81% in SOD1-ALS with favorable safety.</p><div class="src"><a href="https://als.ca/news/clinical-research-trials-update-may-2026/" target="_blank" rel="noopener">ALS Canada</a></div></div><span class="pill p-sig">Promising</span></div>
+    <div class="study" data-k="result"><time>Mar 19, 2026</time><div><h3>AP-101 (Phase 2)</h3><p>Antibody to misfolded SOD1: lower nerve-damage markers, delayed ventilation and survival benefit in sporadic and SOD1-ALS.</p><div class="src"><a href="https://al-spharma.com/news/additional-phase-2-data-of-al-s-pharmas-lead-program-ap-101-further-demonstrate-clinically-meaningful-disease-modification-and-prolonged-survival-in-als/" target="_blank" rel="noopener">AL-S Pharma</a></div></div><span class="pill p-sig">Promising</span></div>
+    <div class="study" data-k="result"><time>Mar 2026</time><div><h3>PrimeC (PARADIGM, Phase 2)</h3><p>2.23-point slower decline on ALSFRS-R vs placebo and 9.4% NfL reduction; safety goals met.</p><div class="src"><a href="https://als.ca/news/clinical-research-trials-update-may-2026/" target="_blank" rel="noopener">ALS Canada</a></div></div><span class="pill p-sig">Promising</span></div>
+    <div class="study" data-k="science"><time>Feb 4, 2026</time><div><h3>Chaperone-mediated autophagy (Acta Neuropath. Comm.)</h3><p>Motor neurons lose a selective protein clean-up system they rely on heavily, a possible new drug target.</p><div class="src"><a href="https://www.eurekalert.org/news-releases/1126374" target="_blank" rel="noopener">EurekAlert</a></div></div><span class="pill p-blue">Science</span></div>
+    <div class="study" data-k="result"><time>Dec 22, 2025</time><div><h3>Tofersen long-term (VALOR extension)</h3><p>About 25% stabilized or improved over 3–5 years; survival near 5 years in SOD1-ALS.</p><div class="src"><a href="https://medicine.washu.edu/news/new-als-drug-stabilizes-decline-with-trend-toward-improved-strength-mobility-for-some/" target="_blank" rel="noopener">WashU Medicine</a></div></div><span class="pill p-good">Positive</span></div>
+  </div>
+</section>
+
+<!-- ========== 4. AROUND THE WORLD ========== -->
+<section id="world" data-condition="amyotrophic lateral sclerosis">
+  <div class="sec-head">
+    <h2>How other countries treat ALS</h2>
+    <p>Regulators don't all agree. Some treatments are approved in Japan or Korea and nowhere else, and some countries let patients get drugs years before approval. Here is who allows what, how that changed over time, and where trials are recruiting today.</p>
+  </div>
+
+  <div class="subhead">Who has approved what</div>
+  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 2, 2026) -->
+  <div class="scroll">
+  <table class="approved world">
+    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
+    <tbody>
+      <tr><td><b>Riluzole</b><small>All ALS</small></td><td><span class="c c-yes">1995</span></td><td><span class="c c-yes">1996</span></td><td><span class="c c-yes">1996</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td></tr>
+      <tr><td><b>Edaravone</b><small>All ALS</small></td><td><span class="c c-yes">2017</span></td><td><span class="c c-off">Withdrawn</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">2018</span></td><td><span class="c c-yes">2015</span></td><td><span class="c c-yes">2015</span></td><td><span class="c c-yes">2019</span></td><td><span class="c c-yes">2023</span></td><td><span class="c c-yes">2019</span></td></tr>
+      <tr><td><b>Tofersen</b><small>SOD1-ALS</small></td><td><span class="c c-yes">2023</span></td><td><span class="c c-yes">2024</span></td><td><span class="c c-yes">2025</span></td><td><span class="c c-yes">2025</span></td><td><span class="c c-yes">2024</span></td><td><span class="c c-no">—</span></td><td><span class="c c-mid">Trial</span></td><td><span class="c c-yes">2026</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Ultra-high-dose B12</b> (Rozebalamin)<small>Early ALS</small></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">2024</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Lenzumestrocel</b> (Neuronata-R)<small>Stem-cell therapy</small></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-mid">2014, conditional</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>AMX0035</b> (Relyvrio / Albrioza)<small>All ALS</small></td><td><span class="c c-off">2022, pulled 2024</span></td><td><span class="c c-off">Rejected 2023</span></td><td><span class="c c-no">—</span></td><td><span class="c c-off">2022, pulled 2024</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Masitinib</b><small>All ALS</small></td><td><span class="c c-mid">Trial</span></td><td><span class="c c-off">Rejected 2024</span></td><td><span class="c c-no">—</span></td><td><span class="c c-off">Rejected 2024</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="wkey">
+    <span><span class="c c-yes">2015</span> approved (year)</span>
+    <span><span class="c c-mid">Trial</span> conditional, or in trials only</span>
+    <span><span class="c c-off">Rejected</span> refused or withdrawn</span>
+    <span><span class="c c-no">—</span> not approved, or no approval on record</span>
+  </div>
+
+  <div class="subhead">Available abroad, not in the U.S.</div>
+  <div class="abroad">
+    <article class="card">
+      <div class="top"><h3>Rozebalamin</h3><span class="pill p-good">Japan</span></div>
+      <div class="who">Eisai · approved Sept 2024</div>
+      <p>50 mg methylcobalamin injected twice a week. Japan's JETALS Phase 3 showed slower decline in early ALS. U.S. patients have sought it through named-patient import programs.</p>
+      <div class="src"><a href="https://www.eisai.com/news/2024/news202469.html" target="_blank" rel="noopener">Eisai</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Neuronata-R</h3><span class="pill p-sig">South Korea</span></div>
+      <div class="who">Corestemchemon · conditional since 2014</div>
+      <p>The patient's own bone-marrow stem cells, injected into the spinal fluid. Phase 3 missed its main goal overall but helped slow progressors. Korea renewed its approval in May 2026.</p>
+      <div class="src"><a href="https://www.prnewswire.com/news-releases/neuronata-r-retains-conditional-approval-in-south-korea-302827142.html" target="_blank" rel="noopener">PR Newswire</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Early access</h3><span class="pill p-blue">France · Germany</span></div>
+      <div class="who">Tofersen · from early 2022</div>
+      <p>Both countries gave SOD1-ALS patients tofersen more than a year before the U.S. approved it. Their real-world results now add to the evidence. Ask your neurologist about expanded-access programs.</p>
+      <div class="src"><a href="https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(24)00074-9/fulltext" target="_blank" rel="noopener">eClinicalMedicine</a></div>
+    </article>
+  </div>
+
+  <div class="subhead">How it changed over time</div>
+  <ol class="timeline">
+    <li><time>1995</time><span><b>U.S.</b> approves riluzole, the first ALS drug. Europe follows in 1996.</span></li>
+    <li><time>2014</time><span><b>South Korea</b> conditionally approves Neuronata-R, the world's first ALS stem-cell therapy.</span></li>
+    <li><time>2015</time><span><b>Japan and South Korea</b> approve edaravone, two years before the U.S.</span></li>
+    <li><time>2019</time><span><b>Europe:</b> the edaravone application is withdrawn. <b>China and Switzerland</b> approve it.</span></li>
+    <li><time>2022</time><span><b>Canada and the U.S.</b> approve AMX0035 on Phase 2 data. <b>France and Germany</b> open early access to tofersen.</span></li>
+    <li><time>2023</time><span><b>U.S.</b> approves tofersen. <b>Europe</b> rejects AMX0035.</span></li>
+    <li><time>2024</time><span>AMX0035 fails Phase 3 and is pulled. <b>EU and Japan</b> approve tofersen, and <b>Japan</b> approves Rozebalamin.</span></li>
+    <li><time>2025</time><span><b>Canada and the UK</b> approve tofersen.</span></li>
+    <li><time>2026</time><span><b>Australia</b> provisionally approves tofersen. <b>Korea</b> keeps Neuronata-R on the market.</span></li>
+  </ol>
+
+  <div class="subhead">Where ALS trials are recruiting right now</div>
+  <div class="live-grid">
+    <div>
+      <p class="status-note" id="ct-status">Loading live data from ClinicalTrials.gov…</p>
+      <div class="cbars" id="ct-bars"></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:10px">Drug trials with no U.S. site</h3>
+      <div class="trials" id="ct-abroad"></div>
+      <button type="button" class="more" id="ct-more" hidden></button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 5. NATURAL ========== -->
+<section id="natural">
+  <div class="sec-head">
+    <h2>Natural remedies &amp; supplements</h2>
+    <p>No supplement prevents or cures ALS. Some have real evidence behind them, many do not. We rate each by the strength of human evidence.</p>
+  </div>
+  <div class="gkey">
+    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Good human evidence</span>
+    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Observational / mixed</span>
+    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>Tested, did not work</span>
+  </div>
+  <div class="supp">
+    <div>
+      <h3>For lowering risk</h3>
+      <div class="row"><b>Omega-3 fats (fish, flax, walnuts)</b><span class="grade low" title="Observational"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Large Harvard cohorts linked higher omega-3 intake, especially ALA, to lower ALS risk and slower progression. Food sources are preferred.</p></div>
+      <div class="row"><b>Vitamin E (from diet)</b><span class="grade low" title="Observational"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Pooled data from about 1 million people tied long-term vitamin E intake to lower risk. Nuts, seeds and leafy greens are good sources.</p></div>
+      <div class="row"><b>Fruits, vegetables &amp; carotenoids</b><span class="grade low" title="Observational"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Diets rich in antioxidants and carotenoids (orange and dark-green produce) are associated with lower risk and better function.</p></div>
+      <div class="row"><b>Avoid pesticides &amp; smoking</b><span class="grade low" title="Observational"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Not a supplement, but the best-supported prevention step. Use protective gear if you work with farm or lawn chemicals.</p></div>
+    </div>
+    <div>
+      <h3>For symptoms and slowing decline</h3>
+      <div class="row"><b>High-calorie diet</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>Weight loss predicts faster decline. In the LIPCAL-ALS trial, extra calories helped fast-progressing patients live longer. Work with a dietitian.</p></div>
+      <div class="row"><b>Ultra-high-dose methylcobalamin (B12)</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>Japan's JETALS trial slowed decline in early ALS using 50 mg injections twice weekly. Store-bought oral B12 is not the same dose or route.</p></div>
+      <div class="row"><b>Vitamin D (if low)</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Mixed results. Reasonable to correct a measured deficiency for bone and muscle health.</p></div>
+      <div class="row"><b>Cannabis / CBD for spasticity &amp; cramps</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Small studies suggest relief of stiffness, cramps, appetite and sleep. Discuss interactions with your care team.</p></div>
+      <div class="row"><b>Creatine, CoQ10, lithium</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>Each was tested in controlled ALS trials and did not slow the disease.</p></div>
+    </div>
+  </div>
+  <p class="caution"><b>Be careful:</b> unregulated "stem cell" clinics and high-dose supplement stacks can be costly and harmful. Tell your neurologist about everything you take.</p>
+</section>
+
+<!-- ========== SOURCES ========== -->
+<!-- CURECHECKER:SOURCES (add a source here whenever a claim on this page uses it) -->
+<section id="sources">
+  <div class="sec-head">
+    <h2>Sources</h2>
+    <p>Everything this report is based on, grouped by section. Checked October 2, 2026.</p>
+  </div>
+  <div class="sources">
+    <div>
+      <div class="subhead">Cure outlook &amp; cause</div>
+      <ol class="srclist">
+        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11964425/" target="_blank" rel="noopener">Drug screening and validation targeting TDP-43 proteinopathy for ALS</a> (TDP-43 in ~97% of cases). PubMed Central</li>
+        <li><a href="https://timesofsandiego.com/health/2026/09/08/salk-institute-researchers-make-progress-on-als-and-autoimmune-disease-treatments/" target="_blank" rel="noopener">Salk Institute researchers make progress on ALS (microglia and TAM receptors)</a>. Times of San Diego</li>
+        <li><a href="https://www.news-medical.net/news/20260804/Occupational-pesticide-exposure-may-significantly-increase-ALS-risk.aspx" target="_blank" rel="noopener">Occupational pesticide exposure may significantly increase ALS risk</a>. News-Medical, Aug 2026</li>
+        <li><a href="https://www.eurekalert.org/news-releases/1126374" target="_blank" rel="noopener">Motor neurons lose chaperone-mediated autophagy</a>. EurekAlert, Feb 2026</li>
+      </ol>
+      <div class="subhead">Treatments that are working</div>
+      <ol class="srclist">
+        <li><a href="https://www.neurologylive.com/view/ulefnersen-meets-primary-end-point-phase-3-fusion-trial-fus-als" target="_blank" rel="noopener">Ulefnersen meets primary end point in Phase 3 FUSION trial</a>. NeurologyLive</li>
+        <li><a href="https://medicine.washu.edu/news/new-als-drug-stabilizes-decline-with-trend-toward-improved-strength-mobility-for-some/" target="_blank" rel="noopener">New ALS drug stabilizes decline (tofersen long-term data)</a>. WashU Medicine</li>
+        <li><a href="https://al-spharma.com/news/additional-phase-2-data-of-al-s-pharmas-lead-program-ap-101-further-demonstrate-clinically-meaningful-disease-modification-and-prolonged-survival-in-als/" target="_blank" rel="noopener">Additional Phase 2 data for AP-101</a>. AL-S Pharma</li>
+        <li><a href="https://als.ca/news/clinical-research-trials-update-may-2026/" target="_blank" rel="noopener">Clinical research &amp; trials update, May 2026 (PrimeC, RAG-17, dazucorilant)</a>. ALS Canada</li>
+        <li><a href="https://www.stocktitan.net/news/CLNN/after-successful-fda-meeting-clene-filing-accelerated-approval-nda-5xztmxerx2bb.html" target="_blank" rel="noopener">Clene to file CNM-Au8 accelerated-approval NDA</a>. Clene release</li>
+        <li><a href="https://www.als-mnd.org/support-for-pals-cals/approved-drugs/riluzole-tiglutik/" target="_blank" rel="noopener">Riluzole</a>. ALS/MND Alliance</li>
+        <li><a href="https://www.als.org/navigating-als/living-with-als/fda-approved-drugs/edaravone" target="_blank" rel="noopener">Edaravone</a>. ALS Association</li>
+        <li><a href="https://www.eisai.com/news/2024/news202469.html" target="_blank" rel="noopener">Rozebalamin approved in Japan for ALS</a>. Eisai, Sept 2024</li>
+      </ol>
+      <div class="subhead">Latest studies</div>
+      <ol class="srclist">
+        <li><a href="https://www.globenewswire.com/news-release/2026/09/28/3369755/0/en/tiziana-life-sciences-announces-first-participants-dosed-in-als-banyan-clinical-trial-of-intranasal-foralumab.html" target="_blank" rel="noopener">First participants dosed in BANYAN trial of intranasal foralumab</a>. Tiziana Life Sciences</li>
+        <li><a href="https://alsnetwork.org/als-network-celebrates-final-congressional-passage-of-act-for-als-reauthorization-act/" target="_blank" rel="noopener">ACT for ALS Reauthorization Act passes Congress</a>. ALS Network</li>
+        <li><a href="https://alsnewstoday.com/news/phase-2-3-alstars-trial-coya-302-approaches-full-enrollment/" target="_blank" rel="noopener">ALSTARS trial of COYA 302 approaches full enrollment</a>. ALS News Today</li>
+        <li><a href="https://www.clinicaltrialsarena.com/news/axoltis-phase-ii-als-trial-fails-company-points-to-exploratory-endpoints/" target="_blank" rel="noopener">Axoltis Phase II ALS trial (NX210c) misses goal</a>. Clinical Trials Arena</li>
+        <li><a href="https://www.manilatimes.net/2026/07/17/tmt-newswire/pr-newswire/healey-als-platform-trial-regimen-i-enrolment-completed-topline-results-for-nuz-001-accelerated-to-q2-cy2027/2386375/amp" target="_blank" rel="noopener">HEALEY Platform Regimen I enrollment complete</a>. PR Newswire</li>
+        <li><a href="https://alsnewstoday.com/news/first-participant-dosed-clinical-trial-experimental-als-treatment/" target="_blank" rel="noopener">First participant dosed with ACE-2223</a>. ALS News Today</li>
+        <li><a href="https://www.neurologylive.com/view/fda-clears-pivotal-phase-3-prevails-study-pridopidine-early-rapidly-progressive-als" target="_blank" rel="noopener">FDA clears pivotal PREVAiLS study of pridopidine</a>. NeurologyLive</li>
+      </ol>
+    </div>
+    <div>
+      <div class="subhead">Around the world</div>
+      <ol class="srclist">
+        <li><a href="https://alsnewstoday.com/news/china-becomes-6th-country-to-approve-edaravone-infusion-therapy-for-als/" target="_blank" rel="noopener">China becomes 6th country to approve edaravone</a>. ALS News Today</li>
+        <li><a href="https://www.ema.europa.eu/en/documents/withdrawal-report/withdrawal-assessment-report-radicava_en.pdf" target="_blank" rel="noopener">Radicava (edaravone) withdrawal assessment report</a>. European Medicines Agency</li>
+        <li><a href="https://www.tga.gov.au/resources/prescription-medicines-registrations/radicava-teva-pharma-australia-pty-ltd" target="_blank" rel="noopener">Radicava registration</a>. Therapeutic Goods Administration (Australia)</li>
+        <li><a href="https://www.pmda.go.jp/files/000277928.pdf" target="_blank" rel="noopener">Qalsody (tofersen) deliberation report</a>. PMDA (Japan)</li>
+        <li><a href="https://www.biogen.ca/en-ca/news/2025-02-news.html" target="_blank" rel="noopener">Qalsody receives conditional approval from Health Canada</a>. Biogen Canada</li>
+        <li><a href="https://www.mndassociation.org/sites/default/files/public/2025-07/Biogen%20MHRA%20release.pdf" target="_blank" rel="noopener">Qalsody approved in the UK</a>. MND Association / Biogen</li>
+        <li><a href="https://www.tga.gov.au/resources/prescription-medicines-registrations/qalsody-biogen-australia-pty-ltd" target="_blank" rel="noopener">Qalsody registration</a>. Therapeutic Goods Administration (Australia)</li>
+        <li><a href="https://www.tricals.org/news/amylyx-withdraws-relyvrio-amx0035-from-u-s-and-canadian-markets" target="_blank" rel="noopener">Amylyx withdraws Relyvrio/AMX0035 from U.S. and Canadian markets</a>. TRICALS</li>
+        <li><a href="https://www.amylyx.com/news/amylyx-pharmaceuticals-receives-negative-chmp-opinion-on-its-marketing-authorisation-application-for-amx0035-for-the-treatment-of-als-in-the-european-union-following-re-examination-process" target="_blank" rel="noopener">Negative CHMP opinion for AMX0035 after re-examination</a>. Amylyx</li>
+        <li><a href="https://alsnewstoday.com/news/als-oral-therapy-masitinib-rejected-health-canada/" target="_blank" rel="noopener">Masitinib rejected by Health Canada</a>. ALS News Today</li>
+        <li><a href="https://www.medscape.com/viewarticle/ema-confirms-rejection-neurodegenerative-disease-drugs-2024a1000j3p" target="_blank" rel="noopener">EMA confirms rejection of masitinib</a>. Medscape</li>
+        <li><a href="https://www.prnewswire.com/news-releases/neuronata-r-retains-conditional-approval-in-south-korea-302827142.html" target="_blank" rel="noopener">Neuronata-R retains conditional approval in South Korea</a>. PR Newswire</li>
+        <li><a href="https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(24)00074-9/fulltext" target="_blank" rel="noopener">Tofersen in the German early access program</a>. eClinicalMedicine</li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13429897/" target="_blank" rel="noopener">Tofersen real-world evidence in France (FORSLA)</a>. PubMed Central</li>
+        <li><a href="https://clinicaltrials.gov/data-api/api" target="_blank" rel="noopener">ClinicalTrials.gov API</a>. Live recruiting-trial data, loaded each time this page opens</li>
+      </ol>
+      <div class="subhead">Natural remedies &amp; supplements</div>
+      <ol class="srclist">
+        <li><a href="https://jamanetwork.com/journals/jamaneurology/fullarticle/1886776" target="_blank" rel="noopener">Dietary omega-3 fatty acid intake and risk for ALS</a>. JAMA Neurology, 2014</li>
+        <li><a href="https://academic.oup.com/aje/article/173/6/595/182634" target="_blank" rel="noopener">Vitamin E intake and risk of ALS: pooled analysis of 5 cohorts</a>. American Journal of Epidemiology</li>
+        <li><a href="https://onlinelibrary.wiley.com/doi/10.1002/ana.23820" target="_blank" rel="noopener">Intakes of vitamin C and carotenoids and risk of ALS</a>. Annals of Neurology, 2013</li>
+        <li><a href="https://onlinelibrary.wiley.com/doi/10.1002/ana.25661" target="_blank" rel="noopener">Effect of high-caloric nutrition on survival in ALS (LIPCAL-ALS)</a>. Annals of Neurology, 2020</li>
+        <li><a href="https://alsnewstoday.com/news/high-dose-b12-slows-functional-decline-early-stage-als-data-show/" target="_blank" rel="noopener">High-dose B12 slows functional decline in early-stage ALS (JETALS)</a>. ALS News Today</li>
+      </ol>
+    </div>
+  </div>
+  <p class="src-note">The vitamin D, cannabis, and creatine / CoQ10 / lithium summaries reflect the general trial record and don't yet have individual citations here.</p>
+</section>
+
+<footer>
+  <div><b>About Cure Checker.</b> An independent, AI-assisted daily digest of medical research, rebuilt every morning at 9:00 AM Eastern from trial announcements, peer-reviewed papers and patient-organization updates. Every study entry links to its source.</div>
+  <div><b>Not medical advice.</b> No doctors review these pages. Summaries are simplified, and early-phase results often don't hold up. Talk with your doctor before changing treatment or starting supplements.</div>
+  <div class="foot-links"><a href="index.html">All diseases</a><a href="terms.html">Terms of Use</a><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+</footer>
+</div>
+
+<script src="assets/diseases.js"></script>
+<script src="assets/curechecker.js"></script>
+
+</body>
+</html>
