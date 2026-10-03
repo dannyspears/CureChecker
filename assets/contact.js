@@ -3,7 +3,7 @@
 // Make a free form at formspree.io (or a similar service), then paste its address here.
 // Leave it empty ("") and the form shows "Opening soon" instead of sending.
 window.CURECHECKER_CONTACT = {
-  endpoint: ""   // e.g. "https://formspree.io/f/abcdwxyz"
+  endpoint: "https://formspree.io/f/xeaoywqg"   // e.g. "https://formspree.io/f/abcdwxyz"
 };
 // ─────────────────────────────────────────────────────────────────────────
 (function(){
