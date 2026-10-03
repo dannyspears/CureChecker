@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Cure Checker: a daily digest of multiple sclerosis research, treatments, and studies.">
+<title>Cure Checker: Multiple Sclerosis</title>
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body data-disease="multiple-sclerosis" data-palette="orange">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/curechecker.css">
+
+<div class="wrap">
+
+<!-- Donation bar: links come from assets/donate.js -->
+<div class="donate-bar" aria-label="Support Cure Checker"></div>
+
+<nav class="crumbs" aria-label="Diseases">
+  <a href="index.html">← All diseases</a>
+  <label>Switch disease <select data-disease-picker data-placeholder="Choose a disease…"></select></label>
+</nav>
+
+<!-- ========== MASTHEAD ========== -->
+<header class="mast">
+  <div class="brand">
+    <div>
+      <a class="logo" href="index.html" aria-label="Cure Checker home">
+        <span class="lg-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="var(--paper)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="lg-text" aria-hidden="true"><span class="lg-1">Cure</span><span class="lg-2">Checker</span></span>
+      </a>
+      <div class="tag">MS edition · Most recent multiple sclerosis conclusions</div>
+    </div>
+  </div>
+  <div class="datebox">
+    <!-- CURECHECKER:DATE -->
+    <strong id="edition-date">Friday, October 2, 2026</strong>
+    Updated daily · 9:00 AM ET
+  </div>
+</header>
+<div class="strip">
+  <span class="live"><span class="dot" aria-hidden="true"></span>Today's headline</span>
+  <!-- CURECHECKER:HEADLINE -->
+  <span id="headline">FDA accepts Roche's fenebrutinib for priority review in relapsing and primary progressive MS (Sept 30). Novartis's remibrutinib wins two Phase 3 trials (Sept).</span>
+</div>
+
+<!-- ========== LEAD ========== -->
+<div class="lead">
+  <h1>MS has no cure yet. Relapses can now be nearly stopped, and the fight has <em>moved to progression.</em></h1>
+  <p>Cure Checker tracks the cause, the treatments that are working, and the trials underway, and rewrites this page every morning from the latest published results. Plain language, with sources for every claim.</p>
+</div>
+<nav class="toc" aria-label="Sections">
+  <a href="#verdict">Most recent cure information</a>
+  <a href="#cause">What causes MS</a>
+  <a href="#treatments">Treatments that are working</a>
+  <a href="#studies">Latest studies</a>
+  <a href="#world">Around the world</a>
+  <a href="#registries">Every registry</a>
+  <a href="#natural">Natural remedies &amp; supplements</a>
+  <a href="#support-groups">Support groups</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<!-- ========== CURE INFORMATION (top) ========== -->
+<section id="verdict">
+  <div class="verdict">
+    <div>
+      <span class="eyebrow">Cure Checker's conclusion · Oct 2026</span>
+      <h2>Most recent cure information</h2>
+      <p class="big">There is no cure for MS today. More than 20 approved drugs can sharply cut relapses, but slow, "smoldering" damage keeps worsening disability for many people. Our view: a cure will need three things: a reset of the immune system, drugs that reach inflammation hidden inside the brain, and repair of lost myelin. Stopping the Epstein-Barr virus could prevent MS altogether.</p>
+    </div>
+    <ol>
+      <li><b>Brain-penetrating BTK pills: the progression fighters.</b><span>Tolebrutinib became the first drug approved in Europe for progressive MS without relapses (June 2026). Fenebrutinib matched Ocrevus in primary progressive MS and is under FDA priority review.</span></li>
+      <li><b>Resetting the immune system: the closest thing to a cure today.</b><span>Stem-cell transplants stop new disease activity for years in most patients treated. Early CAR-T reports describe drug-free remission in a few patients with progressive MS.</span></li>
+      <li><b>Preventing MS: targeting the Epstein-Barr virus.</b><span>Nearly everyone with MS has had Epstein-Barr virus (EBV). Vaccine trials are now testing whether blocking EBV can calm or even prevent MS.</span></li>
+      <li><b>Repairing myelin: the missing piece.</b><span>No approved drug rebuilds the nerve coating MS strips away. Remyelination trials and new myelin-protecting drugs are the next frontier.</span></li>
+    </ol>
+    <p class="fine">This is Cure Checker's editorial assessment of published evidence, not medical advice. Treatment decisions belong with a neurologist, ideally an MS specialist.</p>
+  </div>
+</section>
+
+<!-- ========== 1. CAUSE ========== -->
+<section id="cause">
+  <div class="sec-head">
+    <h2>What causes MS</h2>
+    <p>MS is an autoimmune disease: the immune system attacks myelin, the protective coating around nerve fibers in the brain and spinal cord. The strongest trigger found so far is the Epstein-Barr virus, acting on top of genes and lifestyle.</p>
+  </div>
+
+  <div class="path" role="img" aria-label="Pathway: Epstein-Barr virus, genes, low vitamin D and smoking add up; immune cells cross into the brain and attack myelin; nerve fibers are damaged and smoldering inflammation continues; relapses and disability result.">
+    <div class="stage">
+      <span class="eyebrow">Step 1 · The hits</span>
+      <h3>Risk adds up</h3>
+      <div class="bar" aria-hidden="true"><i style="width:99%;background:var(--signal)"></i><i style="width:1%;background:var(--blue-soft)"></i></div>
+      <div class="legend"><span>nearly all have had EBV</span></div>
+      <ul>
+        <li><b>Virus:</b> EBV infection raises MS risk about 32-fold</li>
+        <li><b>Genes:</b> HLA-DRB1*15:01 plus 200+ smaller variants</li>
+        <li><b>Lifestyle:</b> low vitamin D and sunlight, smoking, obesity in the teen years</li>
+        <li><b>Who:</b> women 2–3× more often, usually diagnosed between 20 and 40</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage key">
+      <span class="eyebrow">Step 2 · The tipping point</span>
+      <h3>Immune cells attack myelin</h3>
+      <svg viewBox="0 0 200 84" aria-hidden="true">
+        <rect x="12" y="34" width="176" height="16" rx="8" fill="var(--blue-soft)" stroke="var(--blue)" stroke-width="2"/>
+        <g fill="var(--signal)"><rect x="20" y="30" width="34" height="24" rx="10"/><rect x="146" y="30" width="34" height="24" rx="10"/></g>
+        <rect x="62" y="30" width="34" height="24" rx="10" fill="none" stroke="var(--warn)" stroke-width="2" stroke-dasharray="4 3"/>
+        <g fill="var(--warn)"><circle cx="110" cy="20" r="6"/><circle cx="126" cy="16" r="5"/><circle cx="118" cy="66" r="5"/></g>
+        <text x="79" y="76" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">myelin lost</text>
+      </svg>
+      <ul>
+        <li>B and T cells cross into the brain and spinal cord and strip myelin away</li>
+        <li>Each attack leaves a scar (lesion) visible on MRI</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 3 · The damage</span>
+      <h3>Nerves short-circuit</h3>
+      <ul>
+        <li><b>Slower signals:</b> bare nerve fibers conduct poorly</li>
+        <li><b>Fiber loss:</b> repeated attacks cut the fibers themselves</li>
+        <li><b>Smoldering inflammation:</b> immune cells trapped behind the blood-brain barrier keep doing damage between relapses</li>
+        <li><b>Repair fails:</b> myelin-making cells stop rebuilding</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 4 · The result</span>
+      <h3>Relapses, then progression</h3>
+      <svg viewBox="0 0 200 70" aria-hidden="true">
+        <path d="M14 22 L40 22 L46 40 L54 26 L80 28 L86 46 L94 32 L120 34 L186 58" fill="none" stroke="var(--warn)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+        <text x="62" y="62" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">relapses</text>
+        <text x="160" y="40" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--warn)">progression</text>
+      </svg>
+      <ul>
+        <li>Vision problems, numbness, weakness, fatigue and walking trouble</li>
+        <li>Disability can build without relapses, which is the main unmet need</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cause-note">
+    <div><b>The EBV link:</b> in a study of 10 million U.S. military members, Epstein-Barr infection raised MS risk about 32-fold. It's now seen as the leading trigger.</div>
+    <div><b>Brain-reaching drugs (2026):</b> BTK inhibitors cross into the brain and calm the immune cells that drive smoldering damage. That's why they're the first drugs to slow progression without relapses.</div>
+    <div><b>Early warning (Sept 2026):</b> a 72-study analysis found lesions in the corpus callosum were the strongest early sign that a first episode will become MS.</div>
+  </div>
+</section>
+
+<!-- ========== 2. TREATMENTS ========== -->
+<section id="treatments">
+  <div class="sec-head">
+    <h2>Treatments that are working</h2>
+    <p>Relapsing MS can often be brought almost to a standstill. 2026's breakthroughs are oral drugs that reach inside the brain, the first to slow progression without relapses.</p>
+  </div>
+
+  <div class="tx">
+    <article class="card">
+      <div class="top"><h3>Tolebrutinib (Cenrifki)</h3><span class="pill p-good">Approved · EU</span></div>
+      <div class="who">Sanofi · non-relapsing secondary progressive MS · EU June 2026</div>
+      <p>The first drug for people whose MS worsens without relapses. In the HERCULES trial it cut the risk of 6-month disability progression by 31%. The FDA turned it down in December 2025 over severe liver injury, including one death, so strict liver monitoring is required in Europe.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Fenebrutinib</h3><span class="pill p-blue">FDA priority review</span></div>
+      <div class="who">Roche · relapsing and primary progressive MS · Sept 30, 2026</div>
+      <p>Cut relapses by 51–59% versus teriflunomide, and matched Ocrevus at slowing disability in primary progressive MS. It's an Ocrevus-level result from a pill, and the first BTK drug filed for both forms.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Remibrutinib</h3><span class="pill p-good">Phase 3 win</span></div>
+      <div class="who">Novartis · relapsing MS · REMODEL-1 &amp; 2 · Sept 2026</div>
+      <p>Beat teriflunomide on relapses and MRI lesions in about 2,000 adults, with no liver safety signal. Full data come at MSToronto (Oct 21–23), with global filings planned.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Stem-cell transplant (aHSCT)</h3><span class="pill p-sig">Strong results</span></div>
+      <div class="who">Highly active relapsing MS · BEAT-MS trial ongoing</div>
+      <p>Chemotherapy wipes out the immune system, which then regrows from the patient's own stem cells. In one series of 145 patients, 80% had no disease activity at 2 years and 68% at 4 years. It carries real risks, so it's reserved for aggressive MS.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>CAR-T cell therapy</h3><span class="pill p-sig">Early signal</span></div>
+      <div class="who">Progressive MS · ~32 patients treated worldwide</div>
+      <p>Disability scores improved in 8 of 12 evaluable patients. Two people with secondary progressive MS stayed in drug-free remission at 12 and 6 months. The FDA cleared a Phase 1b/2 trial in September 2026.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>EBV vaccine</h3><span class="pill p-blue">Phase 2 underway</span></div>
+      <div class="who">Horizon trial · 180 adults with early relapsing MS</div>
+      <p>Tests whether a vaccine that stops Epstein-Barr virus from reactivating can reduce MS activity. If it works, the same idea could one day prevent MS.</p>
+    </article>
+  </div>
+
+  <div class="subhead">Standard treatment today</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Treatment</th><th>For</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><b>Interferons, glatiramer</b> (from 1993)</td><td>Relapsing MS</td><td>The first MS drugs. Modest relapse reduction, long safety record.</td></tr>
+      <tr><td><b>Oral drugs</b> (fingolimod, teriflunomide, dimethyl fumarate, cladribine, siponimod and others)</td><td>Relapsing MS</td><td>Pills that block or trap immune cells. Moderate to high effect.</td></tr>
+      <tr><td><b>Anti-CD20 antibodies</b> (ocrelizumab, ofatumumab, ublituximab)</td><td>Relapsing MS; ocrelizumab also primary progressive</td><td>Remove B cells. Among the most effective options.</td></tr>
+      <tr><td><b>Natalizumab, alemtuzumab</b></td><td>Highly active MS</td><td>Very effective, with serious-risk monitoring.</td></tr>
+      <tr><td><b>Steroids</b></td><td>Relapses</td><td>Speed recovery from an attack. They don't change the long-term course.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ========== 3. STUDIES ========== -->
+<section id="studies">
+  <div class="sec-head">
+    <h2>Latest studies &amp; what they concluded</h2>
+    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter studies">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
+    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
+    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
+  </div>
+  <!-- CURECHECKER:STUDIES (newest first) -->
+  <div class="studies" id="studies-list">
+    <div class="study" data-k="science"><time>Sep 30, 2026</time><div><h3>FDA accepts fenebrutinib for priority review</h3><p>First BTK inhibitor filed in both relapsing and primary progressive MS.</p><div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/30/3371506/0/en/roche-s-fenebrutinib-is-the-first-btk-inhibitor-to-receive-u-s-fda-filing-acceptance-in-both-relapsing-and-primary-progressive-multiple-sclerosis.html" target="_blank" rel="noopener">Roche / GlobeNewswire</a></div></div><span class="pill p-blue">Policy</span></div>
+    <div class="study" data-k="result"><time>Sep 28, 2026</time><div><h3>Stem-cell transplant calms MS long-term (biomarkers)</h3><p>After aHSCT, inflammation and nerve-damage markers in blood and spinal fluid stayed low for years, consistent with lasting disease quiet.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42809446/" target="_blank" rel="noopener">Neurology: Neuroimmunology &amp; Neuroinflammation · PubMed</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="underway"><time>Sep 15, 2026</time><div><h3>FDA clears CAR-T trial in progressive MS</h3><p>Phase 1b/2 trial of C-CAR168, a CAR-T therapy that targets two B-cell markers (CD20 and BCMA), in people whose progressive MS didn't respond to other treatment.</p><div class="src"><a href="https://multiplesclerosisnewstoday.com/news-posts/2026/09/15/fda-gives-go-ahead-trial-testing-car-t-cell-therapy-progressive-ms/" target="_blank" rel="noopener">MS News Today</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="result"><time>Sep 2026</time><div><h3>Remibrutinib (REMODEL-1 &amp; 2, Phase 3)</h3><p>Lower relapse rates and fewer MRI lesions than teriflunomide in ~2,000 adults with relapsing MS, with no liver safety signal.</p><div class="src"><a href="https://www.novartis.com/news/media-releases/novartis-remibrutinib-high-efficacy-oral-btk-inhibitor-significantly-reduces-relapse-rates-and-shows-favorable-safety-profile-phase-iii-rms-trials" target="_blank" rel="noopener">Novartis</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>Sep 2026</time><div><h3>Talk therapy for depression in MS (ACTION-MS)</h3><p>63% had a meaningful drop in depression with cognitive behavioral therapy versus 33% with supportive listening. A small trial (60 people).</p><div class="src"><a href="https://mymsaa.org/news/whats-new-in-ms-research-september-2026" target="_blank" rel="noopener">MSAA</a></div></div><span class="pill p-sig">Promising</span></div>
+    <div class="study" data-k="result"><time>2026</time><div><h3>Fenebrutinib (FENhance 1 &amp; 2, FENtrepid, Phase 3)</h3><p>51.1% and 58.5% fewer relapses than teriflunomide. Matched Ocrevus on disability progression in primary progressive MS.</p><div class="src"><a href="https://www.neurologylive.com/view/fenebrutinib-hits-key-phase-3-marks-relapsing-primary-progressive-ms" target="_blank" rel="noopener">NeurologyLive</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>Jul 21, 2026</time><div><h3>Ponesimod after up to 13 years</h3><p>Long-term extension in relapsing MS: no new safety concerns and consistently low disease activity.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42561748/" target="_blank" rel="noopener">Multiple Sclerosis and Related Disorders · PubMed</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="science"><time>Jun 23, 2026</time><div><h3>EU approves tolebrutinib (Cenrifki)</h3><p>First medicine approved for non-relapsing secondary progressive MS in Europe, with mandatory liver monitoring.</p><div class="src"><a href="https://www.sanofi.com/en/media-room/press-releases/2026/2026-06-23-05-00-00-3315699" target="_blank" rel="noopener">Sanofi</a></div></div><span class="pill p-good">Approved</span></div>
+    <div class="study" data-k="result"><time>2026</time><div><h3>CAR-T in MS: systematic review</h3><p>About 32 patients treated so far. Disability improved in 8 of 12 who could be evaluated. Cytokine release syndrome, an immune overreaction, occurred in 62.5%, mostly mild.</p><div class="src"><a href="https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1965459/abstract" target="_blank" rel="noopener">Frontiers in Immunology</a></div></div><span class="pill p-sig">Promising</span></div>
+    <div class="study" data-k="science"><time>Dec 24, 2025</time><div><h3>FDA rejects tolebrutinib</h3><p>The complete response letter cited severe drug-induced liver injury, including a death, and unclear benefit for many patients.</p><div class="src"><a href="https://www.fiercebiotech.com/biotech/fda-cites-severe-liver-injury-risk-unclear-benefit-behind-sanofis-ms-drug-rejection" target="_blank" rel="noopener">Fierce Biotech</a></div></div><span class="pill p-warn">Rejected</span></div>
+    <div class="study" data-k="underway"><time>Nov 2025</time><div><h3>EBV vaccine (Horizon, Phase 2)</h3><p>180 adults diagnosed with relapsing MS in the last two years receive vaccine or placebo over six months.</p><div class="src"><a href="https://multiplesclerosisnewstoday.com/news-posts/2025/11/21/phase-2-trial-tests-experimental-ebv-vaccine-safety-early-ms/" target="_blank" rel="noopener">MS News Today</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="science"><time>Aug 26, 2025</time><div><h3>UAE gives tolebrutinib its first approval</h3><p>The United Arab Emirates became the first country to approve a drug for non-relapsing secondary progressive MS.</p><div class="src"><a href="https://multiplesclerosisnewstoday.com/news-posts/2025/08/29/tolebrutinib-gets-uae-ok-progressive-ms-world-1st/" target="_blank" rel="noopener">MS News Today</a></div></div><span class="pill p-good">Approved</span></div>
+  </div>
+</section>
+
+<!-- ========== 4. AROUND THE WORLD ========== -->
+<section id="world" data-condition="multiple sclerosis">
+  <div class="sec-head">
+    <h2>How other countries treat MS</h2>
+    <p>The biggest 2026 split: Europe and the UAE approved the first drug for progressive MS without relapses, while the FDA refused it over liver safety. Some European centers also use stem-cell transplants more readily.</p>
+  </div>
+
+  <div class="subhead">Who has approved what</div>
+  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 2, 2026) -->
+  <div class="scroll">
+  <table class="approved world">
+    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
+    <tbody>
+      <tr><td><b>Interferons, glatiramer</b><small>Relapsing MS</small></td><td><span class="c c-yes">1993</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td></tr>
+      <tr><td><b>Ocrelizumab</b> (Ocrevus)<small>Relapsing &amp; primary progressive</small></td><td><span class="c c-yes">2017</span></td><td><span class="c c-yes">2018</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td></tr>
+      <tr><td><b>Tolebrutinib</b> (Cenrifki)<small>Non-relapsing SPMS</small></td><td><span class="c c-off">Rejected 2025</span></td><td><span class="c c-yes">2026</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Fenebrutinib</b><small>Relapsing &amp; primary progressive</small></td><td><span class="c c-mid">Priority review</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Remibrutinib</b><small>Relapsing MS</small></td><td><span class="c c-mid">Filing planned</span></td><td><span class="c c-mid">Filing planned</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="wkey">
+    <span><span class="c c-yes">2017</span> approved (year)</span>
+    <span><span class="c c-mid">Review</span> under review, or filing planned</span>
+    <span><span class="c c-off">Rejected</span> refused or withdrawn</span>
+    <span><span class="c c-no">—</span> not approved, or no approval on record</span>
+  </div>
+
+  <div class="subhead">Available abroad, not in the U.S.</div>
+  <div class="abroad">
+    <article class="card">
+      <div class="top"><h3>Tolebrutinib in Europe</h3><span class="pill p-good">EU</span></div>
+      <div class="who">Sanofi · approved June 23, 2026</div>
+      <p>European regulators decided the benefit outweighed the liver risk, with mandatory monitoring. The FDA disagreed. People with non-relapsing SPMS now have a treatment option in Europe that U.S. patients don't.</p>
+      <div class="src"><a href="https://www.neurologylive.com/view/where-tolebrutinib-fits-weighing-eu-approval-fda-divergence-and-road-ahead-nrspms" target="_blank" rel="noopener">NeurologyLive</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Tolebrutinib in the UAE</h3><span class="pill p-sig">World first</span></div>
+      <div class="who">Emirates Drug Establishment · Aug 26, 2025</div>
+      <p>The United Arab Emirates approved it ten months before Europe, the first approval anywhere for progressive MS without relapses.</p>
+      <div class="src"><a href="https://link.springer.com/article/10.1007/s40265-025-02264-z" target="_blank" rel="noopener">Drugs: First Approval</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Stem-cell transplant</h3><span class="pill p-blue">Europe</span></div>
+      <div class="who">ECTRIMS / EBMT recommendations · 2024</div>
+      <p>European MS and transplant societies issued joint guidance on using aHSCT for highly active relapsing MS. In the U.S. it's still largely done through trials such as BEAT-MS.</p>
+      <div class="src"><a href="https://www.nature.com/articles/s41582-024-01050-x" target="_blank" rel="noopener">Nature Reviews Neurology</a></div>
+    </article>
+  </div>
+
+  <div class="subhead">How it changed over time</div>
+  <ol class="timeline">
+    <li><time>1993</time><span><b>U.S.</b> approves interferon beta-1b, the first MS drug.</span></li>
+    <li><time>2010</time><span><b>U.S.</b> approves fingolimod, the first MS pill.</span></li>
+    <li><time>2017</time><span><b>U.S.</b> approves ocrelizumab, the first drug for primary progressive MS. <b>Europe</b> follows in 2018.</span></li>
+    <li><time>2022</time><span><b>U.S. study</b> of 10 million military members establishes Epstein-Barr virus as the leading MS trigger.</span></li>
+    <li><time>2024</time><span><b>Europe:</b> ECTRIMS and EBMT publish stem-cell transplant recommendations.</span></li>
+    <li><time>2025</time><span>The <b>UAE</b> approves tolebrutinib (Aug). The <b>U.S. FDA</b> rejects it (Dec).</span></li>
+    <li><time>2026</time><span>The <b>EU</b> approves tolebrutinib (June). Fenebrutinib and remibrutinib win Phase 3, and the <b>FDA</b> accepts fenebrutinib for priority review.</span></li>
+  </ol>
+
+  <div class="subhead">Where MS trials are recruiting right now</div>
+  <div class="live-grid">
+    <div>
+      <p class="status-note" id="ct-status">Loading live data from ClinicalTrials.gov…</p>
+      <div class="cbars" id="ct-bars"></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:10px">Drug trials with no U.S. site</h3>
+      <div class="trials" id="ct-abroad"></div>
+      <button type="button" class="more" id="ct-more" hidden></button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EVERY REGISTRY ========== -->
+<section id="registries">
+  <div class="sec-head">
+    <h2>Every registry, checked</h2>
+    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
+  </div>
+  <div class="reg-stats" id="reg-stats"></div>
+  <div class="reg-grid">
+    <div class="reg-panel"><h3>Newest published clinical trials</h3><span class="reg-src">PubMed · U.S. National Library of Medicine</span><div class="trials" id="reg-pubmed"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest Cochrane systematic reviews</h3><span class="reg-src">Cochrane Database of Systematic Reviews, via PubMed</span><div class="trials" id="reg-cochrane"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest trials in the EU registry</h3><span class="reg-src" id="reg-ctis-src">EU Clinical Trials Information System</span><div class="trials" id="reg-ctis"></div></div>
+    <div class="reg-panel"><h3>Newest UK &amp; international registrations</h3><span class="reg-src">ISRCTN registry</span><div class="trials" id="reg-isrctn"><p class="status-note">Loading…</p></div></div>
+  </div>
+  <div class="subhead">FDA records for the medicines in this report</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Medicine</th><th>Brand</th><th>FDA application</th><th>Original approval</th></tr></thead>
+    <tbody id="reg-fda"></tbody>
+  </table>
+  </div>
+  <p class="reg-note">From Drugs@FDA via FDA's openFDA service. Some older brands are missing from FDA's open data, and newly approved drugs can take a few weeks to appear. An approval may be for a different disease than this one.</p>
+  <div class="subhead">Search every registry yourself</div>
+  <div class="reg-links" id="reg-links"></div>
+  <p class="reg-note">The WHO's ICTRP gathers trials from registries worldwide, including China, Japan, India, Iran, Australia and Brazil. Cochrane CENTRAL and OpenMD don't allow automated access, so they're linked here for you to search directly.</p>
+</section>
+<!-- ========== 5. NATURAL ========== -->
+<section id="natural">
+  <div class="sec-head">
+    <h2>Natural remedies &amp; supplements</h2>
+    <p>No supplement cures MS. Vitamin D, exercise and not smoking have the best support. Some popular supplements can cause real problems. We rate each by the strength of human evidence.</p>
+  </div>
+  <div class="gkey">
+    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Good human evidence</span>
+    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Observational / mixed</span>
+    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>Tested, did not work</span>
+  </div>
+  <div class="supp">
+    <div>
+      <h3>For lowering risk and disease activity</h3>
+      <div class="row"><b>Vitamin D</b><span class="grade low" title="Mixed"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Low levels are linked to higher MS risk and more activity, and recent trials in very early MS suggest high doses may reduce new activity. Have your level checked and dose it with your doctor.</p></div>
+      <div class="row"><b>Don't smoke</b><span class="grade low" title="Observational"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Smoking raises the risk of getting MS and of faster progression. Quitting is one of the strongest steps a person can take.</p></div>
+      <div class="row"><b>Healthy weight in childhood and the teen years</b><span class="grade low" title="Observational"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Obesity in adolescence is linked to higher MS risk later, especially in people with genetic risk.</p></div>
+    </div>
+    <div>
+      <h3>For symptoms and slowing decline</h3>
+      <div class="row"><b>Exercise &amp; walking</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>Improves fatigue, strength, mood and walking. Benefits look largest in the first five years after diagnosis. A September 2026 study found even 20-minute walks improved brain connectivity.</p></div>
+      <div class="row"><b>Light therapy for fatigue</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>A small 2026 study found bright-light glasses reduced fatigue within days. It's promising, but early.</p></div>
+      <div class="row"><b>Special MS diets (Swank, Wahls, paleo)</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Some people feel better, but trials are small and don't show the diets change the disease. A balanced, plant-rich diet is reasonable.</p></div>
+      <div class="row"><b>High-dose biotin, simvastatin</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>Both were tested in large progressive-MS trials and didn't slow disability.</p></div>
+    </div>
+  </div>
+  <p class="caution"><b>Be careful:</b> high-dose biotin can make blood tests give false results, including thyroid and heart tests. Overseas "stem cell" clinics that aren't part of a regulated trial can be dangerous and costly. Tell your neurologist about everything you take.</p>
+</section>
+
+<!-- ========== SUPPORT GROUPS ========== -->
+<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 2, 2026; only add groups whose link you have verified) -->
+<section id="support-groups">
+  <div class="sec-head">
+    <h2>Support groups &amp; communities</h2>
+    <p>You don't have to face MS alone. These groups connect patients, families and caregivers with people who understand. Most are free.</p>
+  </div>
+  <div class="groups">
+    <article class="group">
+      <div class="top"><h3>National MS Society online communities</h3><span class="pill p-good">Support groups</span></div>
+      <div class="who">People with MS · families</div>
+      <p>Virtual groups, the MSFriends® phone program, Discord communities and one-on-one peer connections.</p>
+      <a class="join" href="https://www.nationalmssociety.org/resources/get-connected/online-communities" target="_blank" rel="noopener">Get connected ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Shift.ms</h3><span class="pill p-good">Online community</span></div>
+      <div class="who">People with MS, especially the newly diagnosed</div>
+      <p>An independent social network founded by people with MS, open worldwide.</p>
+      <a class="join" href="https://shift.ms/" target="_blank" rel="noopener">Join ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>MyMSTeam</h3><span class="pill p-blue">Social network</span></div>
+      <div class="who">People with MS</div>
+      <p>A free social network with interest groups and medically reviewed articles.</p>
+      <a class="join" href="https://www.mymsteam.com/" target="_blank" rel="noopener">Join ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>My MSAA Community</h3><span class="pill p-blue">Online forum</span></div>
+      <div class="who">People with MS · care partners</div>
+      <p>The Multiple Sclerosis Association of America's online forum and support programs.</p>
+      <a class="join" href="https://mymsaa.org/" target="_blank" rel="noopener">Visit MSAA ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>MS Society UK Forum</h3><span class="pill p-blue">Online forum</span></div>
+      <div class="who">Everyone affected by MS · UK</div>
+      <p>The UK MS Society's active community forum.</p>
+      <a class="join" href="https://forum.mssociety.org.uk/" target="_blank" rel="noopener">Visit forum ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>MS-UK Peer Support Pods</h3><span class="pill p-blue">Virtual groups</span></div>
+      <div class="who">People with MS · UK</div>
+      <p>Themed Zoom groups led by volunteers who live with MS.</p>
+      <a class="join" href="https://www.ms-uk.org/" target="_blank" rel="noopener">Learn more ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>r/MultipleSclerosis on Reddit</h3><span class="pill p-sig">Reddit</span></div>
+      <div class="who">Anyone affected by MS</div>
+      <p>A large, open Reddit community for people with MS.</p>
+      <a class="join" href="https://www.reddit.com/r/MultipleSclerosis/" target="_blank" rel="noopener">Open on Reddit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>MS groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
+      <div class="who">Search results</div>
+      <p>Many MS groups. This link searches Facebook (a login is required).</p>
+      <a class="join" href="https://www.facebook.com/search/groups/?q=multiple%20sclerosis%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
+    </article>
+  </div>
+  <p class="reg-note">The National MS Society also offers MSFriends®, free one-to-one phone support from volunteers who have MS.</p>
+  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about treatment with your doctor. Think about your privacy, because Reddit and many forums are public, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
+</section>
+<!-- ========== SOURCES ========== -->
+<!-- CURECHECKER:SOURCES (add a source here whenever a claim on this page uses it) -->
+<section id="sources">
+  <div class="sec-head">
+    <h2>Sources</h2>
+    <p>Everything this report is based on, grouped by section. Checked October 2, 2026.</p>
+  </div>
+  <div class="sources">
+    <div>
+      <div class="subhead">Cure outlook &amp; cause</div>
+      <ol class="srclist">
+        <li><a href="https://www.science.org/doi/10.1126/science.abj8222" target="_blank" rel="noopener">Longitudinal analysis reveals high prevalence of Epstein-Barr virus associated with multiple sclerosis</a>. Science, 2022</li>
+        <li><a href="https://mymsaa.org/news/whats-new-in-ms-research-september-2026" target="_blank" rel="noopener">What's new in MS research, September 2026</a>. Multiple Sclerosis Association of America</li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12837059/" target="_blank" rel="noopener">CAR T cells as a novel therapeutic strategy for MS</a>. PubMed Central</li>
+        <li><a href="https://www.nature.com/articles/s41582-024-01050-x" target="_blank" rel="noopener">aHSCT for MS: recommendations from ECTRIMS and EBMT</a>. Nature Reviews Neurology</li>
+      </ol>
+      <div class="subhead">Treatments that are working</div>
+      <ol class="srclist">
+        <li><a href="https://www.sanofi.com/en/media-room/press-releases/2026/2026-06-23-05-00-00-3315699" target="_blank" rel="noopener">Cenrifki (tolebrutinib) approved in the EU</a>. Sanofi, June 23, 2026</li>
+        <li><a href="https://www.neurologylive.com/view/tolebrutinib-approved-eu-nonrelapsing-secondary-progressive-ms-marking-first-disability-targeting-therapy-indication" target="_blank" rel="noopener">Tolebrutinib approved in EU for nonrelapsing SPMS</a>. NeurologyLive</li>
+        <li><a href="https://www.fiercebiotech.com/biotech/fda-cites-severe-liver-injury-risk-unclear-benefit-behind-sanofis-ms-drug-rejection" target="_blank" rel="noopener">FDA cites severe liver injury risk behind tolebrutinib rejection</a>. Fierce Biotech</li>
+        <li><a href="https://www.neurologylive.com/view/fenebrutinib-hits-key-phase-3-marks-relapsing-primary-progressive-ms" target="_blank" rel="noopener">Fenebrutinib hits key Phase 3 marks</a>. NeurologyLive</li>
+        <li><a href="https://www.novartis.com/news/media-releases/novartis-remibrutinib-high-efficacy-oral-btk-inhibitor-significantly-reduces-relapse-rates-and-shows-favorable-safety-profile-phase-iii-rms-trials" target="_blank" rel="noopener">Remibrutinib Phase III results in relapsing MS</a>. Novartis</li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8907141/" target="_blank" rel="noopener">aHSCT reduces neurofilament light and brain atrophy in aggressive MS</a>. PubMed Central</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT04047628" target="_blank" rel="noopener">BEAT-MS trial (NCT04047628)</a>. ClinicalTrials.gov</li>
+      </ol>
+      <div class="subhead">Latest studies</div>
+      <ol class="srclist">
+        <li><a href="https://www.globenewswire.com/news-release/2026/09/30/3371506/0/en/roche-s-fenebrutinib-is-the-first-btk-inhibitor-to-receive-u-s-fda-filing-acceptance-in-both-relapsing-and-primary-progressive-multiple-sclerosis.html" target="_blank" rel="noopener">Fenebrutinib receives FDA filing acceptance</a>. Roche, Sept 30, 2026</li>
+        <li><a href="https://multiplesclerosisnewstoday.com/news-posts/2026/09/15/fda-gives-go-ahead-trial-testing-car-t-cell-therapy-progressive-ms/" target="_blank" rel="noopener">FDA gives go-ahead for CAR-T trial in progressive MS</a>. MS News Today</li>
+        <li><a href="https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1965459/abstract" target="_blank" rel="noopener">CAR-T in multiple sclerosis: systematic review</a>. Frontiers in Immunology, 2026</li>
+        <li><a href="https://multiplesclerosisnewstoday.com/news-posts/2025/11/21/phase-2-trial-tests-experimental-ebv-vaccine-safety-early-ms/" target="_blank" rel="noopener">Phase 2 trial tests experimental EBV vaccine in early MS</a>. MS News Today</li>
+        <li><a href="https://www.sanofi.com/en/media-room/press-releases/2025/2025-12-24-06-00-00-3210238" target="_blank" rel="noopener">Update on tolebrutinib U.S. submission</a>. Sanofi, Dec 24, 2025</li>
+      </ol>
+    </div>
+    <div>
+      <div class="subhead">Around the world</div>
+      <ol class="srclist">
+        <li><a href="https://www.neurologylive.com/view/where-tolebrutinib-fits-weighing-eu-approval-fda-divergence-and-road-ahead-nrspms" target="_blank" rel="noopener">Where tolebrutinib fits: EU approval and FDA divergence</a>. NeurologyLive</li>
+        <li><a href="https://multiplesclerosisnewstoday.com/news-posts/2025/08/29/tolebrutinib-gets-uae-ok-progressive-ms-world-1st/" target="_blank" rel="noopener">Tolebrutinib gets UAE OK, a world first</a>. MS News Today</li>
+        <li><a href="https://link.springer.com/article/10.1007/s40265-025-02264-z" target="_blank" rel="noopener">Tolebrutinib: first approval</a>. Drugs, 2025</li>
+        <li><a href="https://www.msboracsaborac.com/en/blog/latest-ms-drugs-approved-2025-2026-cenrifki-tolebrutinib-pediatric" target="_blank" rel="noopener">Latest MS drugs approved in 2025–2026</a>. msboracsaborac.com</li>
+        <li><a href="https://clinicaltrials.gov/data-api/api" target="_blank" rel="noopener">ClinicalTrials.gov API</a>. Live recruiting-trial data, loaded each time this page opens</li>
+      </ol>
+      <div class="subhead">Natural remedies &amp; supplements</div>
+      <ol class="srclist">
+        <li><a href="https://mymsaa.org/news/whats-new-in-ms-research-september-2026" target="_blank" rel="noopener">Walking, lifestyle, light therapy and CBT studies (Sept 2026 roundup)</a>. MSAA</li>
+      </ol>
+      <div class="subhead">Registries &amp; databases</div>
+      <ol class="srclist">
+        <li><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a>. U.S. National Library of Medicine. Live recruiting-trial data</li>
+        <li><a href="https://trialsearch.who.int/" target="_blank" rel="noopener">International Clinical Trials Registry Platform (ICTRP)</a>. World Health Organization</li>
+        <li><a href="https://euclinicaltrials.eu/" target="_blank" rel="noopener">Clinical Trials Information System (CTIS)</a>. European Medicines Agency. Daily snapshot</li>
+        <li><a href="https://www.isrctn.com/" target="_blank" rel="noopener">ISRCTN registry</a>. Live via the ISRCTN API</li>
+        <li><a href="https://www.cochranelibrary.com/central" target="_blank" rel="noopener">Cochrane Central Register of Controlled Trials (CENTRAL)</a>. Cochrane Library</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a>. U.S. National Library of Medicine. Live via NCBI E-utilities</li>
+        <li><a href="https://europepmc.org/" target="_blank" rel="noopener">Europe PMC</a>. Papers and preprints, live via its REST API</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/" target="_blank" rel="noopener">Drugs@FDA</a>, live via <a href="https://open.fda.gov/" target="_blank" rel="noopener">openFDA</a>. U.S. Food and Drug Administration</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines" target="_blank" rel="noopener">Medicines database</a>. European Medicines Agency</li>
+        <li><a href="https://openmd.com/" target="_blank" rel="noopener">OpenMD</a>. Medical search engine</li>
+      </ol>
+    </div>
+  </div>
+  <p class="src-note">The vitamin D, smoking, teen-obesity, diet, biotin and simvastatin summaries, the drug-approval years in the standard-treatment table, and the biotin lab-test warning reflect the established published record and FDA safety communications. They don't yet have individual citations here.</p>
+</section>
+
+<footer>
+  <div><b>About Cure Checker.</b> An independent, AI-assisted daily digest of medical research, rebuilt every morning at 9:00 AM Eastern from trial announcements, peer-reviewed papers and patient-organization updates. Every study entry links to its source.</div>
+  <div><b>Not medical advice.</b> No doctors review these pages. Summaries are simplified, and early-phase results often don't hold up. Talk with your doctor before changing treatment or starting supplements.</div>
+  <div class="foot-links"><a href="index.html">All diseases</a><a href="terms.html">Terms of Use</a><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+</footer>
+</div>
+
+<script src="assets/analytics.js"></script>
+<script src="assets/diseases.js"></script>
+<script src="assets/registry-snapshot.js"></script>
+<script src="assets/curechecker.js"></script>
+<script src="assets/donate.js"></script>
+<script src="assets/newsletter.js"></script>
+
+</body>
+</html>

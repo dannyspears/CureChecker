@@ -15,6 +15,9 @@
 
 <div class="wrap">
 
+<!-- Donation bar: links come from assets/donate.js -->
+<div class="donate-bar" aria-label="Support Cure Checker"></div>
+
 <nav class="crumbs" aria-label="Diseases">
   <a href="index.html">← All diseases</a>
   <label>Switch disease <select data-disease-picker data-placeholder="Choose a disease…"></select></label>
@@ -33,8 +36,8 @@
   </div>
   <div class="datebox">
     <!-- CURECHECKER:DATE -->
-    <strong id="edition-date">Saturday, October 3, 2026</strong>
-    Daily edition · refreshed 9:00 AM ET
+    <strong id="edition-date">Friday, October 2, 2026</strong>
+    Updated daily · 9:00 AM ET
   </div>
 </header>
 <div class="strip">
@@ -54,7 +57,9 @@
   <a href="#treatments">Treatments that are working</a>
   <a href="#studies">Latest studies</a>
   <a href="#world">Around the world</a>
+  <a href="#registries">Every registry</a>
   <a href="#natural">Natural remedies &amp; supplements</a>
+  <a href="#support-groups">Support groups</a>
   <a href="#sources">Sources</a>
 </nav>
 
@@ -223,6 +228,7 @@
     <div class="study" data-k="result"><time>2026</time><div><h3>GT-02287 (Phase 1b)</h3><p>A brain-penetrating drug that boosts the GCase enzyme lowered a toxic byproduct in spinal fluid, a sign the target was hit. Extension ends September 2026.</p><div class="src"><a href="https://www.neurologylive.com/view/brain-penetrant-molecule-gt-02287-demonstrates-reversal-glucosylsphinogosine-parkinsons" target="_blank" rel="noopener">NeurologyLive</a></div></div><span class="pill p-sig">Promising</span></div>
     <div class="study" data-k="result"><time>Jun 2026</time><div><h3>BIA 28-6156 (ACTIVATE, Phase 2b)</h3><p>The GBA-targeted drug missed its goals and was discontinued for Parkinson's.</p><div class="src"><a href="https://parkinsons.org/research/latest-advances" target="_blank" rel="noopener">Parkinsons.org</a></div></div><span class="pill p-warn">Missed goal</span></div>
     <div class="study" data-k="result"><time>Jun 2026</time><div><h3>STEM-PD cell therapy (12 months)</h3><p>An off-the-shelf, frozen stem-cell dopamine product reported 12-month outcomes at ISSCR 2026, adding to the evidence for cell replacement.</p><div class="src"><a href="https://www.isscr.org/isscr-news/new-clinical-data-presented-at-isscr-2026-advance-stem-cell-based-cell-therapy-for-parkinsons-disease" target="_blank" rel="noopener">ISSCR</a></div></div><span class="pill p-sig">Promising</span></div>
+    <div class="study" data-k="result"><time>May 22, 2026</time><div><h3>Aerobic exercise and brain MRI</h3><p>Progressive aerobic exercise did not show a protective effect on an MRI marker of brain-cell damage, but it made levodopa work better.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42170720/" target="_blank" rel="noopener">Neurorehabilitation and Neural Repair · PubMed</a></div></div><span class="pill p-sig">Mixed</span></div>
     <div class="study" data-k="result"><time>May 21, 2026</time><div><h3>BIIB122 (LUMA, Phase 2b)</h3><p>Didn't slow progression in 648 people with early Parkinson's despite over 90% LRRK2 inhibition. Discontinued for idiopathic Parkinson's.</p><div class="src"><a href="https://investors.biogen.com/news-releases/news-release-details/biogen-and-denali-therapeutics-provide-update-phase-2b-luma" target="_blank" rel="noopener">Biogen</a></div></div><span class="pill p-warn">Missed goal</span></div>
     <div class="study" data-k="science"><time>May 20, 2026</time><div><h3>Japan covers Amchepry under national insurance</h3><p>The iPS-cell therapy is priced at about ¥55.3 million per patient. Treatment expected to begin in fall 2026.</p><div class="src"><a href="https://www.japantimes.co.jp/news/2026/05/13/japan/science-health/ips-parkinsons-disease/" target="_blank" rel="noopener">The Japan Times</a></div></div><span class="pill p-good">Policy</span></div>
     <div class="study" data-k="science"><time>Mar 6, 2026</time><div><h3>Japan approves Amchepry</h3><p>World's first approval of an iPS-cell-derived therapy for Parkinson's. Conditional, time-limited approval for 7 years.</p><div class="src"><a href="https://parkinsonsnewstoday.com/news/japan-grants-conditional-approval-amchepry-parkinsons/" target="_blank" rel="noopener">Parkinson's News Today</a></div></div><span class="pill p-good">Approved</span></div>
@@ -309,6 +315,31 @@
   </div>
 </section>
 
+<!-- ========== EVERY REGISTRY ========== -->
+<section id="registries">
+  <div class="sec-head">
+    <h2>Every registry, checked</h2>
+    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
+  </div>
+  <div class="reg-stats" id="reg-stats"></div>
+  <div class="reg-grid">
+    <div class="reg-panel"><h3>Newest published clinical trials</h3><span class="reg-src">PubMed · U.S. National Library of Medicine</span><div class="trials" id="reg-pubmed"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest Cochrane systematic reviews</h3><span class="reg-src">Cochrane Database of Systematic Reviews, via PubMed</span><div class="trials" id="reg-cochrane"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest trials in the EU registry</h3><span class="reg-src" id="reg-ctis-src">EU Clinical Trials Information System</span><div class="trials" id="reg-ctis"></div></div>
+    <div class="reg-panel"><h3>Newest UK &amp; international registrations</h3><span class="reg-src">ISRCTN registry</span><div class="trials" id="reg-isrctn"><p class="status-note">Loading…</p></div></div>
+  </div>
+  <div class="subhead">FDA records for the medicines in this report</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Medicine</th><th>Brand</th><th>FDA application</th><th>Original approval</th></tr></thead>
+    <tbody id="reg-fda"></tbody>
+  </table>
+  </div>
+  <p class="reg-note">From Drugs@FDA via FDA's openFDA service. Some older brands are missing from FDA's open data, and newly approved drugs can take a few weeks to appear. An approval may be for a different disease than this one.</p>
+  <div class="subhead">Search every registry yourself</div>
+  <div class="reg-links" id="reg-links"></div>
+  <p class="reg-note">The WHO's ICTRP gathers trials from registries worldwide, including China, Japan, India, Iran, Australia and Brazil. Cochrane CENTRAL and OpenMD don't allow automated access, so they're linked here for you to search directly.</p>
+</section>
 <!-- ========== 5. NATURAL ========== -->
 <section id="natural">
   <div class="sec-head">
@@ -333,7 +364,7 @@
     <div>
       <h3>For symptoms and slowing decline</h3>
       <div class="row"><b>Aerobic &amp; high-intensity exercise</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
-        <p>Improves movement, balance and mood in trials. Large trials are testing whether vigorous exercise also slows the disease. Work with a physical therapist.</p></div>
+        <p>Improves movement, balance and mood in trials. A 2026 trial didn't find a brain-protecting effect on MRI, but exercise made levodopa work better. Larger trials are testing whether vigorous exercise slows the disease. Work with a physical therapist.</p></div>
       <div class="row"><b>Mucuna pruriens (velvet bean)</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
         <p>Contains natural levodopa, so it can act like the drug, but doses in supplements vary widely. Never combine it with levodopa unless your neurologist supervises.</p></div>
       <div class="row"><b>Vitamin D (if low)</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
@@ -345,6 +376,66 @@
   <p class="caution"><b>Be careful:</b> protein-rich meals can block levodopa from being absorbed, so ask about timing your doses. Some supplements, like St. John's wort, can interact with MAO-B inhibitors. Tell your neurologist about everything you take.</p>
 </section>
 
+<!-- ========== SUPPORT GROUPS ========== -->
+<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 2, 2026; only add groups whose link you have verified) -->
+<section id="support-groups">
+  <div class="sec-head">
+    <h2>Support groups &amp; communities</h2>
+    <p>You don't have to face Parkinson's alone. These groups connect patients, families and caregivers with people who understand. Most are free.</p>
+  </div>
+  <div class="groups">
+    <article class="group">
+      <div class="top"><h3>PD Conversations</h3><span class="pill p-good">Online community</span></div>
+      <div class="who">People with Parkinson's · care partners</div>
+      <p>The Parkinson's Foundation's online community, with groups for newly diagnosed, young-onset, caregiving and Spanish speakers.</p>
+      <a class="join" href="https://www.pdconversations.org/s/" target="_blank" rel="noopener">Join ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Parkinson's Buddy Network</h3><span class="pill p-good">Online community</span></div>
+      <div class="who">People with Parkinson's · care partners</div>
+      <p>The Michael J. Fox Foundation's network for making connections, with 12,000+ members in 84 countries.</p>
+      <a class="join" href="https://www.michaeljfox.org/parkinsons-buddy-network" target="_blank" rel="noopener">Join ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Mayo Clinic Connect</h3><span class="pill p-blue">Moderated forum</span></div>
+      <div class="who">Anyone affected by Parkinson's</div>
+      <p>A Parkinson's discussion group moderated by Mayo Clinic staff.</p>
+      <a class="join" href="https://connect.mayoclinic.org/group/parkinsons-disease/" target="_blank" rel="noopener">Visit group ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Cure Parkinson's on HealthUnlocked</h3><span class="pill p-blue">Online forum</span></div>
+      <div class="who">People with Parkinson's · families</div>
+      <p>Active discussion groups on treatments, research and daily life.</p>
+      <a class="join" href="https://healthunlocked.com/cure-parkinsons" target="_blank" rel="noopener">Visit forum ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>MyParkinsonsTeam</h3><span class="pill p-blue">Social network</span></div>
+      <div class="who">People with Parkinson's</div>
+      <p>A free social network for people living with Parkinson's.</p>
+      <a class="join" href="https://www.myparkinsonsteam.com/" target="_blank" rel="noopener">Join ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Parkinson's UK Forum</h3><span class="pill p-blue">Online forum</span></div>
+      <div class="who">Everyone affected · UK</div>
+      <p>The UK charity's forum, with sections for the newly diagnosed and for young-onset Parkinson's.</p>
+      <a class="join" href="https://forum.parkinsons.org.uk/" target="_blank" rel="noopener">Visit forum ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>r/Parkinsons on Reddit</h3><span class="pill p-sig">Reddit</span></div>
+      <div class="who">Anyone affected by Parkinson's</div>
+      <p>An open Reddit community for patients, families and caregivers.</p>
+      <a class="join" href="https://www.reddit.com/r/Parkinsons/" target="_blank" rel="noopener">Open on Reddit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Parkinson's groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
+      <div class="who">Search results</div>
+      <p>Many local and online groups. This link searches Facebook (a login is required).</p>
+      <a class="join" href="https://www.facebook.com/search/groups/?q=Parkinson%27s%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
+    </article>
+  </div>
+  <p class="reg-note">Many groups have separate sections for young-onset Parkinson's, care partners and Spanish speakers. Local exercise and boxing groups can double as social support.</p>
+  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about treatment with your doctor. Think about your privacy, because Reddit and many forums are public, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
+</section>
 <!-- ========== SOURCES ========== -->
 <!-- CURECHECKER:SOURCES (add a source here whenever a claim on this page uses it) -->
 <section id="sources">
@@ -396,6 +487,19 @@
         <li><a href="https://www.bluerocktx.com/bluerock-therapeutics-investigative-cell-therapy-bemdaneprocel-for-treating-parkinsons-disease-receives-pioneering-regenerative-medical-product-designation-in-japan/" target="_blank" rel="noopener">Bemdaneprocel receives Pioneering Regenerative Medical Product designation in Japan</a>. BlueRock Therapeutics</li>
         <li><a href="https://clinicaltrials.gov/data-api/api" target="_blank" rel="noopener">ClinicalTrials.gov API</a>. Live recruiting-trial data, loaded each time this page opens</li>
       </ol>
+      <div class="subhead">Registries &amp; databases</div>
+      <ol class="srclist">
+        <li><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a>. U.S. National Library of Medicine. Live recruiting-trial data</li>
+        <li><a href="https://trialsearch.who.int/" target="_blank" rel="noopener">International Clinical Trials Registry Platform (ICTRP)</a>. World Health Organization</li>
+        <li><a href="https://euclinicaltrials.eu/" target="_blank" rel="noopener">Clinical Trials Information System (CTIS)</a>. European Medicines Agency. Daily snapshot</li>
+        <li><a href="https://www.isrctn.com/" target="_blank" rel="noopener">ISRCTN registry</a>. Live via the ISRCTN API</li>
+        <li><a href="https://www.cochranelibrary.com/central" target="_blank" rel="noopener">Cochrane Central Register of Controlled Trials (CENTRAL)</a>. Cochrane Library</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a>. U.S. National Library of Medicine. Live via NCBI E-utilities</li>
+        <li><a href="https://europepmc.org/" target="_blank" rel="noopener">Europe PMC</a>. Papers and preprints, live via its REST API</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/" target="_blank" rel="noopener">Drugs@FDA</a>, live via <a href="https://open.fda.gov/" target="_blank" rel="noopener">openFDA</a>. U.S. Food and Drug Administration</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines" target="_blank" rel="noopener">Medicines database</a>. European Medicines Agency</li>
+        <li><a href="https://openmd.com/" target="_blank" rel="noopener">OpenMD</a>. Medical search engine</li>
+      </ol>
     </div>
   </div>
   <p class="src-note">The natural-remedies ratings (exercise, caffeine, mucuna, vitamin D, and the CoQ10 / creatine / vitamin E / inosine trials) and the levodopa-protein interaction reflect the long-standing published trial record and standard clinical guidance. They don't yet have individual citations here.</p>
@@ -408,8 +512,12 @@
 </footer>
 </div>
 
+<script src="assets/analytics.js"></script>
 <script src="assets/diseases.js"></script>
+<script src="assets/registry-snapshot.js"></script>
 <script src="assets/curechecker.js"></script>
+<script src="assets/donate.js"></script>
+<script src="assets/newsletter.js"></script>
 
 </body>
 </html>

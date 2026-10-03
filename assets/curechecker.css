@@ -34,11 +34,12 @@ p{margin:0}
 /* Masthead */
 .mast{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-block:28px 18px;border-bottom:3px solid var(--ink)}
 .brand{display:flex;align-items:center;gap:14px}
-.logo{display:flex;align-items:center;gap:14px}
-.lg-box{width:clamp(46px,6vw,60px);aspect-ratio:1;border-radius:12px;background:var(--signal);display:grid;place-items:center;flex:none}
+/* Stacked logo: CURE over CHECKER, the two lines together as tall as the check box */
+.logo{--lg:clamp(54px,7vw,72px);display:flex;align-items:center;gap:calc(var(--lg)*.22)}
+.lg-box{width:var(--lg);aspect-ratio:1;border-radius:calc(var(--lg)*.2);background:var(--signal);display:grid;place-items:center;flex:none}
 .lg-box svg{width:60%;height:auto}
-.lg-text{font-family:var(--f-display);font-weight:900;font-stretch:72%;font-size:clamp(38px,6.4vw,62px);line-height:.88;text-transform:uppercase;letter-spacing:.01em;display:flex;flex-wrap:wrap;column-gap:.2em}
-.lg-1{color:var(--ink)}
+.lg-text{font-family:var(--f-display);font-stretch:72%;font-size:calc(var(--lg)*.6);line-height:.8;text-transform:uppercase;letter-spacing:.01em;display:flex;flex-direction:column;justify-content:space-between;height:var(--lg);padding-block:calc(var(--lg)*.035)}
+.lg-1{color:var(--ink);font-weight:900}
 .lg-2{color:var(--signal);font-weight:600}
 .tag{font-family:var(--f-mono);font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
 .datebox{text-align:right;font-family:var(--f-mono);font-size:13px;color:var(--muted)}
@@ -183,7 +184,7 @@ footer b{color:var(--ink)}
   .study{grid-template-columns:1fr}
   .study .pill{justify-self:start;grid-row:1}
   .datebox{text-align:left}
-  .lg-box{width:42px}
+  .logo{--lg:50px}
 }
 
 /* Disease navigation bar (top of every report) */
@@ -289,3 +290,135 @@ select[data-disease-picker]:focus-visible{outline:3px solid var(--signal);outlin
 .legal p+p{margin-top:12px}
 .legal ul{margin:10px 0 0;padding-left:22px}
 .legal li+li{margin-top:6px}
+/* More disease palettes: orange (multiple sclerosis ribbon) and rose (cystic fibrosis, "65 Roses") */
+[data-palette="orange"]{
+  --paper:#FCF3EC; --panel:#FFFFFF; --ink:#3B1E0C; --muted:#7A5B44; --line:#F0D9C6;
+  --signal:#B4530F; --signal-soft:#FBE6D5; --sky:#F3C9A6; --blue:#8F400B; --blue-soft:#F8E9DC}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="orange"]{
+  --paper:#1D120A; --panel:#2A1A0F; --ink:#FBEEE4; --muted:#CDAE96; --line:#4A3020;
+  --signal:#F59E5B; --signal-soft:#452A16; --sky:#6E4426; --blue:#F7B27C; --blue-soft:#3A2414}}
+:root[data-theme="dark"] [data-palette="orange"]{
+  --paper:#1D120A; --panel:#2A1A0F; --ink:#FBEEE4; --muted:#CDAE96; --line:#4A3020;
+  --signal:#F59E5B; --signal-soft:#452A16; --sky:#6E4426; --blue:#F7B27C; --blue-soft:#3A2414}
+
+[data-palette="rose"]{
+  --paper:#FBF0F3; --panel:#FFFFFF; --ink:#3D1220; --muted:#7A5662; --line:#EFD3DC;
+  --signal:#B1365F; --signal-soft:#F9E1E9; --sky:#F0BDCD; --blue:#8E2A4C; --blue-soft:#F6E4EA}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="rose"]{
+  --paper:#1E0C12; --panel:#2C141C; --ink:#FBE9EF; --muted:#CFA5B3; --line:#4D2533;
+  --signal:#F28BAE; --signal-soft:#48202E; --sky:#703448; --blue:#F5A6C1; --blue-soft:#3B1A26}}
+:root[data-theme="dark"] [data-palette="rose"]{
+  --paper:#1E0C12; --panel:#2C141C; --ink:#FBE9EF; --muted:#CFA5B3; --line:#4D2533;
+  --signal:#F28BAE; --signal-soft:#48202E; --sky:#703448; --blue:#F5A6C1; --blue-soft:#3B1A26}
+/* Every registry, checked (live registry and database panel on each report) */
+.reg-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:22px}
+.reg-stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 14px 12px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.reg-stat b{font-family:var(--f-display);font-stretch:85%;font-size:30px;font-weight:800;line-height:1;color:var(--signal);font-variant-numeric:tabular-nums}
+.reg-stat span{font-size:13.5px;color:var(--ink);line-height:1.3}
+.reg-stat small{font-family:var(--f-mono);font-size:11px;color:var(--muted);letter-spacing:.04em}
+.reg-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px 28px}
+.reg-panel h3{font-size:18px}
+.reg-panel .reg-src{display:block;font-family:var(--f-mono);font-size:11.5px;color:var(--muted);margin:2px 0 10px;letter-spacing:.04em}
+.reg-panel .trials{min-height:40px}
+.reg-links{display:flex;flex-wrap:wrap;gap:8px}
+.reg-links a{font-family:var(--f-mono);font-size:12.5px;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--panel);padding:7px 12px;border-radius:999px}
+.reg-links a:hover{border-color:var(--signal)}
+.reg-note{margin-top:14px;font-size:13.5px;color:var(--muted)}
+@media (max-width:760px){.reg-grid{grid-template-columns:1fr}}
+/* Donations (landing page) */
+.donate{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:clamp(20px,3vw,30px);display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:center}
+.donate h2{font-size:clamp(26px,3.4vw,34px)}
+.donate p{color:var(--muted);margin-top:10px;max-width:52ch}
+.donate .fine{font-size:13px;margin-top:12px}
+.donate-buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.donate-btn{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:84px;padding:12px;border-radius:12px;text-decoration:none;color:#fff;text-align:center;transition:transform .15s,filter .15s}
+.donate-btn b{font-family:var(--f-display);font-stretch:90%;font-size:21px;font-weight:800}
+.donate-btn small{font-family:var(--f-mono);font-size:12px;opacity:.92;word-break:break-all}
+.donate-btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.donate-btn:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.donate-venmo{background:#0074DE}
+.donate-cashapp{background:#00A93A}
+.donate-paypal{background:#003087}
+.donate-btn.is-off{background:var(--blue-soft);color:var(--muted);cursor:default}
+.donate-btn.is-off:hover{transform:none;filter:none}
+@media (prefers-reduced-motion:reduce){.donate-btn{transition:none}.donate-btn:hover{transform:none}}
+@media (max-width:760px){.donate{grid-template-columns:1fr}}
+@media (max-width:420px){.donate-buttons{grid-template-columns:1fr}}
+/* Support groups & communities (each report) */
+.groups{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.group{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.group .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.group h3{font-size:17px}
+.group .who{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.group p{font-size:15px}
+.group .join{margin-top:auto;align-self:flex-start;font-family:var(--f-mono);font-size:12.5px;text-decoration:none;color:var(--paper);background:var(--signal);padding:7px 12px;border-radius:999px}
+.group .join:hover{filter:brightness(1.08)}
+.group .join:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+@media (max-width:900px){.groups{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.groups{grid-template-columns:1fr}}
+/* Slim donation bar (top of every disease page) */
+.donate-bar{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:2px 10px;padding:6px 0;margin:0 -16px;padding-inline:16px;background:var(--signal-soft);border-bottom:1px solid var(--line);font-family:var(--f-mono);font-size:11.5px;color:var(--muted);letter-spacing:.02em;min-height:28px}
+.donate-bar .db-links{display:inline-flex;align-items:center;gap:6px}
+.donate-bar .db-link{color:var(--ink);font-weight:500;text-decoration:underline;text-decoration-color:var(--sky);text-underline-offset:3px}
+.donate-bar a.db-link:hover{text-decoration-color:var(--signal)}
+.donate-bar .db-link.is-off{color:var(--muted);text-decoration:none;opacity:.75;cursor:default}
+.donate-bar .db-sep{opacity:.6}
+@media (max-width:480px){.donate-bar .db-text{display:none}.donate-bar::before{content:"Donate:"}}
+/* More disease palettes: indigo (Huntington's, blue/purple), slate (glioblastoma, grey brain-cancer ribbon), forest (CJD) */
+[data-palette="indigo"]{--paper:#F1F2FB; --panel:#FFFFFF; --ink:#1B2150; --muted:#585E86; --line:#D6D9F0; --signal:#3A4AB0; --signal-soft:#E3E6F8; --sky:#C2C8EE; --blue:#2E3B93; --blue-soft:#E6E9F7}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="indigo"]{--paper:#0E1129; --panel:#161A38; --ink:#E9EBFB; --muted:#A3A8CF; --line:#2B3160; --signal:#9AA6F2; --signal-soft:#232A5A; --sky:#39417E; --blue:#AEB8F5; --blue-soft:#1E2450}}
+:root[data-theme="dark"] [data-palette="indigo"]{--paper:#0E1129; --panel:#161A38; --ink:#E9EBFB; --muted:#A3A8CF; --line:#2B3160; --signal:#9AA6F2; --signal-soft:#232A5A; --sky:#39417E; --blue:#AEB8F5; --blue-soft:#1E2450}
+[data-palette="slate"]{--paper:#F2F4F6; --panel:#FFFFFF; --ink:#1E2731; --muted:#5B6672; --line:#D5DBE1; --signal:#4A5A6E; --signal-soft:#E4E8ED; --sky:#C5CDD6; --blue:#3B4858; --blue-soft:#E7EBEF}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="slate"]{--paper:#101418; --panel:#192027; --ink:#E8EDF2; --muted:#A3AEBA; --line:#2E3842; --signal:#A9B8C9; --signal-soft:#26303A; --sky:#3E4B58; --blue:#BCC8D6; --blue-soft:#202932}}
+:root[data-theme="dark"] [data-palette="slate"]{--paper:#101418; --panel:#192027; --ink:#E8EDF2; --muted:#A3AEBA; --line:#2E3842; --signal:#A9B8C9; --signal-soft:#26303A; --sky:#3E4B58; --blue:#BCC8D6; --blue-soft:#202932}
+[data-palette="forest"]{--paper:#EFF6F1; --panel:#FFFFFF; --ink:#13301F; --muted:#4F6B59; --line:#CCE2D3; --signal:#2E7D4F; --signal-soft:#DCEFE3; --sky:#B6DCC3; --blue:#226240; --blue-soft:#E1F0E6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="forest"]{--paper:#0B1A11; --panel:#11261A; --ink:#E3F3E8; --muted:#97BBA3; --line:#20402C; --signal:#6FCF97; --signal-soft:#163A25; --sky:#245A39; --blue:#8ADBAA; --blue-soft:#14301F}}
+:root[data-theme="dark"] [data-palette="forest"]{--paper:#0B1A11; --panel:#11261A; --ink:#E3F3E8; --muted:#97BBA3; --line:#20402C; --signal:#6FCF97; --signal-soft:#163A25; --sky:#245A39; --blue:#8ADBAA; --blue-soft:#14301F}
+
+/* More disease palettes: olive (FOP), cyan (COPD) */
+[data-palette="olive"]{--paper:#F5F6EC; --panel:#FFFFFF; --ink:#262B0C; --muted:#646A45; --line:#DEE2C6; --signal:#5E6A12; --signal-soft:#ECEFD6; --sky:#D3D9A9; --blue:#4A540D; --blue-soft:#EEF0DC}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="olive"]{--paper:#15170A; --panel:#1F2310; --ink:#F0F2E1; --muted:#B5BB92; --line:#383D1E; --signal:#C4D45A; --signal-soft:#2F3515; --sky:#4F5823; --blue:#D2DF7C; --blue-soft:#272C12}}
+:root[data-theme="dark"] [data-palette="olive"]{--paper:#15170A; --panel:#1F2310; --ink:#F0F2E1; --muted:#B5BB92; --line:#383D1E; --signal:#C4D45A; --signal-soft:#2F3515; --sky:#4F5823; --blue:#D2DF7C; --blue-soft:#272C12}
+[data-palette="cyan"]{--paper:#ECF6F9; --panel:#FFFFFF; --ink:#0B2C38; --muted:#4A6873; --line:#C4DFE8; --signal:#0F6E8A; --signal-soft:#D9EEF4; --sky:#AFD7E4; --blue:#0B5A71; --blue-soft:#DDEFF5}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="cyan"]{--paper:#08181E; --panel:#0E242C; --ink:#E2F3F8; --muted:#90B4C0; --line:#1D3F4B; --signal:#5CC6E6; --signal-soft:#123845; --sky:#1F5566; --blue:#80D3EC; --blue-soft:#11303B}}
+:root[data-theme="dark"] [data-palette="cyan"]{--paper:#08181E; --panel:#0E242C; --ink:#E2F3F8; --muted:#90B4C0; --line:#1D3F4B; --signal:#5CC6E6; --signal-soft:#123845; --sky:#1F5566; --blue:#80D3EC; --blue-soft:#11303B}
+
+/* Keep the top 'Switch disease' drop-down inside the page margins (long disease names) */
+.crumbs label{max-width:100%;min-width:0}
+.crumbs select{max-width:min(260px,58vw);text-overflow:ellipsis}
+
+/* On phones the cause pathway stacks in one column, so let its diagrams grow for legibility */
+@media (max-width:900px){.stage svg{max-height:150px}}
+
+/* More disease palettes: coral (Batten), sage (Tay-Sachs), lime (PKU), crimson (Marfan, red ribbon), umber (EDS), navy (Prader-Willi) */
+[data-palette="coral"]{--paper:#FCF1EE; --panel:#FFFFFF; --ink:#3D1710; --muted:#7B5A52; --line:#F0D6CF; --signal:#C0452B; --signal-soft:#FBE3DC; --sky:#F2BFB2; --blue:#9B3620; --blue-soft:#FAE6E0}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="coral"]{--paper:#1F0E0A; --panel:#2D1712; --ink:#FBEAE6; --muted:#CFA79D; --line:#4D2B24; --signal:#F08A70; --signal-soft:#482219; --sky:#773B2D; --blue:#F4A590; --blue-soft:#3A1C15}}
+:root[data-theme="dark"] [data-palette="coral"]{--paper:#1F0E0A; --panel:#2D1712; --ink:#FBEAE6; --muted:#CFA79D; --line:#4D2B24; --signal:#F08A70; --signal-soft:#482219; --sky:#773B2D; --blue:#F4A590; --blue-soft:#3A1C15}
+[data-palette="sage"]{--paper:#F1F5F0; --panel:#FFFFFF; --ink:#1C2A1C; --muted:#596B59; --line:#D3E0D2; --signal:#4F7550; --signal-soft:#E1ECE0; --sky:#BCD3BB; --blue:#3E5E3F; --blue-soft:#E5EFE4}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="sage"]{--paper:#0F1710; --panel:#172318; --ink:#E6F0E5; --muted:#A4B9A3; --line:#2B402C; --signal:#9DCB9E; --signal-soft:#1E3320; --sky:#3E5F40; --blue:#B3DAB4; --blue-soft:#1A2C1B}}
+:root[data-theme="dark"] [data-palette="sage"]{--paper:#0F1710; --panel:#172318; --ink:#E6F0E5; --muted:#A4B9A3; --line:#2B402C; --signal:#9DCB9E; --signal-soft:#1E3320; --sky:#3E5F40; --blue:#B3DAB4; --blue-soft:#1A2C1B}
+[data-palette="lime"]{--paper:#F3F8E9; --panel:#FFFFFF; --ink:#1E2E08; --muted:#5B6E3D; --line:#D8E6BE; --signal:#4A7C0F; --signal-soft:#E4F0CC; --sky:#C3DF97; --blue:#3B6409; --blue-soft:#E8F2D6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="lime"]{--paper:#11190A; --panel:#1A260F; --ink:#EDF5DD; --muted:#AFC48A; --line:#33481E; --signal:#A6DB5A; --signal-soft:#263A14; --sky:#476B24; --blue:#BDE87F; --blue-soft:#1F3112}}
+:root[data-theme="dark"] [data-palette="lime"]{--paper:#11190A; --panel:#1A260F; --ink:#EDF5DD; --muted:#AFC48A; --line:#33481E; --signal:#A6DB5A; --signal-soft:#263A14; --sky:#476B24; --blue:#BDE87F; --blue-soft:#1F3112}
+[data-palette="crimson"]{--paper:#FBEFF0; --panel:#FFFFFF; --ink:#3A0D14; --muted:#7A5359; --line:#F0D3D6; --signal:#A8182B; --signal-soft:#F8DFE2; --sky:#EBB4BA; --blue:#86121F; --blue-soft:#F6E1E4}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="crimson"]{--paper:#1F0A0D; --panel:#2C1317; --ink:#FBE8EA; --muted:#CFA3A9; --line:#4C262B; --signal:#F28B98; --signal-soft:#46181F; --sky:#77343D; --blue:#F5A6B0; --blue-soft:#3A1A1E}}
+:root[data-theme="dark"] [data-palette="crimson"]{--paper:#1F0A0D; --panel:#2C1317; --ink:#FBE8EA; --muted:#CFA3A9; --line:#4C262B; --signal:#F28B98; --signal-soft:#46181F; --sky:#77343D; --blue:#F5A6B0; --blue-soft:#3A1A1E}
+[data-palette="umber"]{--paper:#F6F1EB; --panel:#FFFFFF; --ink:#2B1B0E; --muted:#6E5A47; --line:#E3D6C7; --signal:#7A4A22; --signal-soft:#EDE1D3; --sky:#D6BFA6; --blue:#603A19; --blue-soft:#EFE5D9}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="umber"]{--paper:#17110A; --panel:#221A11; --ink:#F4ECE2; --muted:#BCA992; --line:#3F3223; --signal:#D9A86F; --signal-soft:#34281A; --sky:#6A4D2E; --blue:#E5BE8C; --blue-soft:#2C2115}}
+:root[data-theme="dark"] [data-palette="umber"]{--paper:#17110A; --panel:#221A11; --ink:#F4ECE2; --muted:#BCA992; --line:#3F3223; --signal:#D9A86F; --signal-soft:#34281A; --sky:#6A4D2E; --blue:#E5BE8C; --blue-soft:#2C2115}
+[data-palette="navy"]{--paper:#EEF1F8; --panel:#FFFFFF; --ink:#0F1B3D; --muted:#55608A; --line:#CDD5EA; --signal:#2A4A9E; --signal-soft:#E0E7F6; --sky:#BAC8E8; --blue:#1F3A82; --blue-soft:#E4EAF7}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="navy"]{--paper:#0B1022; --panel:#131B38; --ink:#E8ECFA; --muted:#9AA6D0; --line:#28345E; --signal:#8FA8F0; --signal-soft:#1C2750; --sky:#34447F; --blue:#A9BCF5; --blue-soft:#19214A}}
+:root[data-theme="dark"] [data-palette="navy"]{--paper:#0B1022; --panel:#131B38; --ink:#E8ECFA; --muted:#9AA6D0; --line:#28345E; --signal:#8FA8F0; --signal-soft:#1C2750; --sky:#34447F; --blue:#A9BCF5; --blue-soft:#19214A}
+
+/* Newsletter sign-up (assets/newsletter.js) */
+.newsletter{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:clamp(20px,3vw,30px);margin:40px 0 28px;display:grid;grid-template-columns:1fr 1.1fr;gap:24px;align-items:center}
+.newsletter h2{font-size:clamp(24px,3vw,30px)}
+.newsletter p{color:var(--muted);margin-top:8px;max-width:48ch}
+.nl-form{display:grid;gap:8px;min-width:0}
+.nl-form label{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.nl-form select,.nl-form input[type=email]{width:100%;min-width:0;box-sizing:border-box;font:inherit;font-size:16px;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:inherit}
+.nl-form button{font:inherit;font-weight:700;padding:12px 16px;border:0;border-radius:10px;background:var(--signal);color:var(--paper);cursor:pointer;margin-top:4px}
+.nl-form button:disabled,.nl-form select:disabled,.nl-form input:disabled{opacity:.55;cursor:not-allowed}
+.nl-form small{color:var(--muted);font-size:12px;line-height:1.4}
+.nl-form select:focus-visible,.nl-form input:focus-visible,.nl-form button:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+@media (max-width:720px){.newsletter{grid-template-columns:1fr}}

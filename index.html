@@ -28,8 +28,8 @@
   </div>
   <div class="datebox">
     <!-- CURECHECKER:DATE -->
-    <strong id="edition-date">Saturday, October 3, 2026</strong>
-    Daily edition · refreshed 9:00 AM ET
+    <strong id="edition-date">Friday, October 2, 2026</strong>
+    Updated daily · 9:00 AM ET
   </div>
 </header>
 
@@ -46,10 +46,22 @@
 
 <section id="diseases">
   <div class="sec-head">
-    <h2>All reports</h2>
-    <p><span id="disease-count"></span> covered so far. New diseases are added every week.</p>
+    <h2>Most popular reports</h2>
+    <p><span id="disease-count"></span> covered so far, with new diseases added every week. <span id="tiles-note"></span> Use the search box above to find any disease.</p>
   </div>
   <div class="tiles" id="disease-tiles"></div>
+  <button type="button" class="more" id="tiles-more" hidden></button>
+</section>
+
+<section id="support">
+  <div class="donate">
+    <div>
+      <h2>Support Cure Checker</h2>
+      <p>Cure Checker is free for everyone searching for answers. Donations help cover the costs of gathering research every day and adding new diseases each week.</p>
+      <p class="fine">Donations are voluntary and support running this website. They are not tax-deductible. See our <a href="terms.html">Terms of Use</a>.</p>
+    </div>
+    <div class="donate-buttons" id="donate-buttons" aria-label="Donate"></div>
+  </div>
 </section>
 
 <section id="how">
@@ -71,8 +83,11 @@
 </footer>
 </div>
 
+<script src="assets/analytics.js"></script>
 <script src="assets/diseases.js"></script>
 <script src="assets/curechecker.js"></script>
+<script src="assets/donate.js"></script>
+<script src="assets/newsletter.js"></script>
 
 </body>
 </html>

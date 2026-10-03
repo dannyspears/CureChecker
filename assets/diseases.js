@@ -1,6 +1,13 @@
 // The list of disease reports on Cure Checker.
 // To add a disease: create its page (copy an existing report), then add one entry here.
 // The landing page tiles and every "Switch disease" drop-down are built from this list.
+//
+// Fields used by the "Every registry, checked" section on each report:
+//   search  - plain search term for registries (EU CTIS, ISRCTN, WHO ICTRP, Europe PMC, OpenMD).
+//             tools/update-registries.ps1 also reads this to build the EU CTIS snapshot.
+//   pubmed  - PubMed query (title-field searches keep results on topic)
+//   drugs   - medicines from the report to look up live in Drugs@FDA (via openFDA)
+//   cancer  - true adds National Cancer Institute links
 window.CURECHECKER_DISEASES = [
   {
     slug: "als",
@@ -9,7 +16,11 @@ window.CURECHECKER_DISEASES = [
     palette: "violet",
     category: "Neurological",
     summary: "Gene-silencing drugs are changing inherited ALS. TDP-43 is the target for everyone else.",
-    updated: "Oct 2, 2026"
+    updated: "Oct 2, 2026",
+    search: "amyotrophic lateral sclerosis",
+    pubmed: "\"amyotrophic lateral sclerosis\"[ti] OR \"motor neuron disease\"[ti]",
+    drugs: ["riluzole", "edaravone", "tofersen"],
+    cancer: false
   },
   {
     slug: "osteosarcoma",
@@ -18,7 +29,11 @@ window.CURECHECKER_DISEASES = [
     palette: "gold",
     category: "Cancer · Bone",
     summary: "Survival has been flat for 40 years. Two new immune and antibody-drug approaches just posted wins.",
-    updated: "Oct 2, 2026"
+    updated: "Oct 2, 2026",
+    search: "osteosarcoma",
+    pubmed: "osteosarcoma[ti]",
+    drugs: ["methotrexate", "doxorubicin", "cisplatin", "regorafenib", "cabozantinib", "mifamurtide"],
+    cancer: true
   },
   {
     slug: "parkinsons",
@@ -27,7 +42,11 @@ window.CURECHECKER_DISEASES = [
     palette: "teal",
     category: "Neurological",
     summary: "Japan approved the first stem-cell therapy. Drugs to slow the disease are now in Phase 3.",
-    updated: "Oct 2, 2026"
+    updated: "Oct 2, 2026",
+    search: "parkinson",
+    pubmed: "parkinson*[ti]",
+    drugs: ["levodopa", "foslevodopa", "istradefylline", "tavapadon", "apomorphine"],
+    cancer: false
   },
   {
     slug: "alzheimers",
@@ -36,6 +55,179 @@ window.CURECHECKER_DISEASES = [
     palette: "plum",
     category: "Neurological · Dementia",
     summary: "Two drugs now slow early disease, and blood tests can catch it years before symptoms.",
-    updated: "Oct 2, 2026"
+    updated: "Oct 2, 2026",
+    search: "alzheimer",
+    pubmed: "alzheimer*[ti]",
+    drugs: ["donepezil", "memantine", "lecanemab", "donanemab", "brexpiprazole"],
+    cancer: false
+  },
+  {
+    slug: "multiple-sclerosis",
+    name: "Multiple sclerosis (MS)",
+    page: "multiple-sclerosis.html",
+    palette: "orange",
+    category: "Neurological · Autoimmune",
+    summary: "Relapses can be nearly stopped. New brain-reaching pills are the first to slow progression.",
+    updated: "Oct 2, 2026",
+    search: "multiple sclerosis",
+    pubmed: "\"multiple sclerosis\"[ti]",
+    drugs: ["interferon beta", "ocrelizumab", "fingolimod", "cladribine", "tolebrutinib", "fenebrutinib"],
+    cancer: false
+  },
+  {
+    slug: "cystic-fibrosis",
+    name: "Cystic fibrosis (CF)",
+    page: "cystic-fibrosis.html",
+    palette: "rose",
+    category: "Genetic · Lungs",
+    summary: "Modulator pills now cover ~95% of U.S. patients. Inhaled gene therapies aim to fix the rest.",
+    updated: "Oct 2, 2026",
+    search: "cystic fibrosis",
+    pubmed: "\"cystic fibrosis\"[ti]",
+    drugs: ["ivacaftor", "elexacaftor", "vanzacaftor", "dornase", "tobramycin"],
+    cancer: false
+  },
+  {
+    slug: "huntingtons",
+    name: "Huntington's disease",
+    page: "huntingtons.html",
+    palette: "indigo",
+    category: "Genetic · Neurological",
+    summary: "A one-time gene therapy has been filed for approval, and pills that lower huntingtin are in late trials.",
+    updated: "Oct 2, 2026",
+    search: "huntington",
+    pubmed: "huntington*[ti]",
+    drugs: ["tetrabenazine", "deutetrabenazine", "valbenazine"],
+    cancer: false
+  },
+  {
+    slug: "glioblastoma",
+    name: "Glioblastoma (GBM)",
+    page: "glioblastoma.html",
+    palette: "slate",
+    category: "Cancer · Brain",
+    summary: "Survival has barely moved in 20 years. Getting drugs and immune cells past the brain's barrier is the new front.",
+    updated: "Oct 2, 2026",
+    search: "glioblastoma",
+    pubmed: "glioblastoma[ti]",
+    drugs: ["temozolomide", "lomustine", "bevacizumab"],
+    cancer: true
+  },
+  {
+    slug: "cjd",
+    name: "Creutzfeldt-Jakob disease (CJD)",
+    page: "cjd.html",
+    palette: "forest",
+    category: "Prion · Neurological",
+    summary: "No treatment exists yet, but the first drugs that lower the prion protein are now in human trials.",
+    updated: "Oct 2, 2026",
+    search: "creutzfeldt",
+    pubmed: "creutzfeldt*[ti] OR \"prion disease\"[ti]",
+    drugs: ["quinacrine", "doxycycline"],
+    cancer: false
+  },
+  {
+    slug: "fop",
+    name: "Fibrodysplasia ossificans progressiva (FOP)",
+    page: "fop.html",
+    palette: "olive",
+    category: "Genetic · Bone · \"Stone Man Syndrome\"",
+    summary: "Three FDA-approved drugs now slow new bone growth. Two of them were approved in the last two months.",
+    updated: "Oct 2, 2026",
+    search: "fibrodysplasia ossificans progressiva",
+    pubmed: "\"fibrodysplasia ossificans progressiva\"[ti]",
+    drugs: ["palovarotene", "garetosmab", "zilurgisertib"],
+    cancer: false
+  },
+  {
+    slug: "copd",
+    name: "COPD (chronic obstructive pulmonary disease)",
+    page: "copd.html",
+    palette: "cyan",
+    category: "Lungs · Chronic",
+    summary: "New biologic injections are cutting flare-ups, and a drug that works beyond eosinophils is up for approval.",
+    updated: "Oct 2, 2026",
+    search: "chronic obstructive pulmonary disease",
+    pubmed: "\"chronic obstructive pulmonary disease\"[ti] OR COPD[ti]",
+    drugs: ["dupilumab", "mepolizumab", "ensifentrine", "tiotropium", "roflumilast"],
+    cancer: false
+  },
+  {
+    slug: "batten",
+    name: "Batten disease (CLN2)",
+    page: "batten.html",
+    palette: "coral",
+    category: "Genetic · Childhood brain",
+    summary: "One enzyme treatment slows CLN2, and one-time gene therapy is in early trials.",
+    updated: "Oct 2, 2026",
+    search: "neuronal ceroid lipofuscinosis",
+    pubmed: "CLN2[ti] OR \"Batten disease\"[ti] OR \"neuronal ceroid lipofuscinos*\"[ti]",
+    drugs: ["cerliponase alfa", "miglustat"],
+    cancer: false
+  },
+  {
+    slug: "tay-sachs",
+    name: "Tay-Sachs disease",
+    page: "tay-sachs.html",
+    palette: "sage",
+    category: "Genetic · Childhood brain",
+    summary: "Gene therapy has corrected the missing enzyme in children, and a second-generation trial was just cleared.",
+    updated: "Oct 2, 2026",
+    search: "tay-sachs",
+    pubmed: "tay-sachs[ti] OR \"GM2 gangliosidosis\"[ti] OR sandhoff[ti]",
+    drugs: ["miglustat"],
+    cancer: false
+  },
+  {
+    slug: "pku",
+    name: "Phenylketonuria (PKU)",
+    page: "pku.html",
+    palette: "lime",
+    category: "Genetic · Metabolic",
+    summary: "PKU is no longer a diet-only disease. Three medicines now lower phenylalanine, and a fourth approach is in the lab.",
+    updated: "Oct 2, 2026",
+    search: "phenylketonuria",
+    pubmed: "phenylketonuria[ti] OR PKU[ti]",
+    drugs: ["sapropterin", "sepiapterin", "pegvaliase"],
+    cancer: false
+  },
+  {
+    slug: "marfan",
+    name: "Marfan syndrome",
+    page: "marfan.html",
+    palette: "crimson",
+    category: "Genetic · Connective tissue",
+    summary: "No cure yet, but monitoring, drugs and aortic surgery prevent its most dangerous complication.",
+    updated: "Oct 2, 2026",
+    search: "marfan",
+    pubmed: "marfan[ti]",
+    drugs: ["losartan", "irbesartan", "atenolol"],
+    cancer: false
+  },
+  {
+    slug: "eds",
+    name: "Ehlers-Danlos syndrome (EDS)",
+    page: "eds.html",
+    palette: "umber",
+    category: "Genetic · Connective tissue",
+    summary: "A Phase 3 trial of celiprolol for vascular EDS is under way, and new diagnostic rules are due this year.",
+    updated: "Oct 2, 2026",
+    search: "ehlers-danlos",
+    pubmed: "\"Ehlers-Danlos\"[ti]",
+    drugs: ["celiprolol"],
+    cancer: false
+  },
+  {
+    slug: "prader-willi",
+    name: "Prader-Willi syndrome",
+    page: "prader-willi.html",
+    palette: "navy",
+    category: "Genetic · Hormonal",
+    summary: "The first drug for PWS's constant hunger is approved, and its benefits held for two years.",
+    updated: "Oct 2, 2026",
+    search: "prader-willi",
+    pubmed: "\"Prader-Willi\"[ti]",
+    drugs: ["diazoxide choline", "somatropin"],
+    cancer: false
   }
 ];
