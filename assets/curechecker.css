@@ -422,3 +422,6 @@ select[data-disease-picker]:focus-visible{outline:3px solid var(--signal);outlin
 .nl-form small{color:var(--muted);font-size:12px;line-height:1.4}
 .nl-form select:focus-visible,.nl-form input:focus-visible,.nl-form button:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
 @media (max-width:720px){.newsletter{grid-template-columns:1fr}}
+
+/* Landing page mission paragraph */
+.hero .mission{font-size:1.12em;color:var(--ink);max-width:62ch}
