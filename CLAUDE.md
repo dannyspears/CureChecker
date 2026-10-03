@@ -5,6 +5,7 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 
 ## Files
 - `about.html`: the About us page (purpose and mission; static, edit by hand).
+- `assets/contact.js`: the Contact us form on about.html. The owner pastes a Formspree-style form address into the `endpoint` line at the top; empty means the form shows 'Opening soon'. Never edit or invent that address.
 - `index.html`: landing page. Tiles and the drop-down are generated from `assets/diseases.js`. Don't hand-edit tiles.
 - `assets/diseases.js`: the one list of diseases (slug, name, page, category, summary, updated).
 - `assets/curechecker.css`: shared styles for every page.
@@ -48,6 +49,7 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - Put text labels outside/below shapes (not on outlines), keep every label inside the viewBox, and use font-size 10–11. On phones the diagrams render up to 150px tall, so check new ones at phone width (375px) for overlaps or clipped labels.
 
 ## Every page
+- The footer link row also includes a Contact link (`about.html#contact`), right after About us.
 - The footer must include the `.foot-links` row with BOTH the About us link (`about.html`) and the Terms of Use link (`terms.html`). Copy the footer from an existing report.
 - `terms.html` states that content is AI-gathered daily, isn't medical advice, and isn't reviewed by doctors. Keep the site's wording consistent with it. The Terms and About wording must stay consistent with each other.
 
