@@ -16,6 +16,7 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
    - Most recent cure information (`#verdict`): verdict paragraph + 4 numbered points
    - What causes it (`#cause`): 4-step pathway + 3 dated "clues"
    - Treatments that are working (`#treatments`): 6 cards + standard-treatment table
+   - Where people find expert care (`.centers` list at the end of #treatments): 4 to 6 verified centers, official designation or published/trial evidence only, no rankings, each with its own source link, plus the not-a-ranking note (`.centers-note`). Add the same sources to #sources under "Expert care centers".
    - Latest studies (`#studies`): newest first, each with `data-k` = result | underway | science
    - Around the world (`#world`, set `data-condition` to the ClinicalTrials.gov search term): approvals table, 3 "available abroad" cards, timeline, live panel
    - Natural remedies & supplements (`#natural`): graded rows + caution box
@@ -51,3 +52,4 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 
 ## Daily refresh markers
 `<!-- CURECHECKER:DATE -->`, `HEADLINE`, `STUDIES` and `WORLD-APPROVALS` comments mark the blocks that get updated each morning, on every report page.
+- Expert care centers list: leave it alone during the daily refresh except to fix a dead link, remove a facility whose designation ended, or add a newly designated center, always with a source read that day.
