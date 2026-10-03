@@ -4,6 +4,7 @@ Static site: a landing page (`index.html`) plus one report page per disease (`al
 No build step. Preview locally with the `site` config in `.claude/launch.json` (serves on http://localhost:5500).
 
 ## Files
+- `about.html`: the About us page (purpose and mission; static, edit by hand).
 - `index.html`: landing page. Tiles and the drop-down are generated from `assets/diseases.js`. Don't hand-edit tiles.
 - `assets/diseases.js`: the one list of diseases (slug, name, page, category, summary, updated).
 - `assets/curechecker.css`: shared styles for every page.
@@ -47,8 +48,8 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - Put text labels outside/below shapes (not on outlines), keep every label inside the viewBox, and use font-size 10–11. On phones the diagrams render up to 150px tall, so check new ones at phone width (375px) for overlaps or clipped labels.
 
 ## Every page
-- The footer must include the `.foot-links` row with the link to `terms.html` (Terms of Use). Copy the footer from an existing report.
-- `terms.html` states that content is AI-gathered daily, isn't medical advice, and isn't reviewed by doctors. Keep the site's wording consistent with it.
+- The footer must include the `.foot-links` row with BOTH the About us link (`about.html`) and the Terms of Use link (`terms.html`). Copy the footer from an existing report.
+- `terms.html` states that content is AI-gathered daily, isn't medical advice, and isn't reviewed by doctors. Keep the site's wording consistent with it. The Terms and About wording must stay consistent with each other.
 
 ## Daily refresh markers
 `<!-- CURECHECKER:DATE -->`, `HEADLINE`, `STUDIES` and `WORLD-APPROVALS` comments mark the blocks that get updated each morning, on every report page.
