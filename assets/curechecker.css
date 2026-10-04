@@ -444,3 +444,20 @@ select[data-disease-picker]:focus-visible{outline:3px solid var(--signal);outlin
 .contact-form button:disabled,.contact-form select:disabled,.contact-form input:disabled,.contact-form textarea:disabled{opacity:.55;cursor:not-allowed}
 .contact-form small,.contact-form .ct-status{color:var(--muted);font-size:13px;line-height:1.4;margin:0}
 .contact-form select:focus-visible,.contact-form input:focus-visible,.contact-form textarea:focus-visible,.contact-form button:focus-visible{outline:3px solid var(--signal);outline-offset:2px}
+
+/* Palettes added Oct 2026: brick = Duchenne, mint = type 1 diabetes, lavender = pancreatic cancer, bronze = FTD, magenta = lupus */
+[data-palette="brick"]{--paper:#F9F0EE; --panel:#FFFFFF; --ink:#2E1210; --muted:#75504A; --line:#EBD4CF; --signal:#943A2B; --signal-soft:#F3E0DC; --sky:#E2B9B0; --blue:#7A2B1F; --blue-soft:#F5E6E2}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="brick"]{--paper:#1B0D0B; --panel:#261512; --ink:#F8E9E6; --muted:#C9A39C; --line:#47271F; --signal:#E27474; --signal-soft:#3A1C17; --sky:#7A3A2E; --blue:#F0A0A0; --blue-soft:#2E1612}}
+:root[data-theme="dark"] [data-palette="brick"]{--paper:#1B0D0B; --panel:#261512; --ink:#F8E9E6; --muted:#C9A39C; --line:#47271F; --signal:#E27474; --signal-soft:#3A1C17; --sky:#7A3A2E; --blue:#F0A0A0; --blue-soft:#2E1612}
+[data-palette="mint"]{--paper:#ECF8F2; --panel:#FFFFFF; --ink:#0B261B; --muted:#4A6A5C; --line:#CBE6D8; --signal:#0B7A5B; --signal-soft:#D8F1E5; --sky:#A6DDC4; --blue:#09634A; --blue-soft:#E0F4EA}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="mint"]{--paper:#071A13; --panel:#0E261D; --ink:#E3F8EE; --muted:#92C0AC; --line:#1E4334; --signal:#4FE3A6; --signal-soft:#113629; --sky:#2A6B52; --blue:#86EDC2; --blue-soft:#0E2E22}}
+:root[data-theme="dark"] [data-palette="mint"]{--paper:#071A13; --panel:#0E261D; --ink:#E3F8EE; --muted:#92C0AC; --line:#1E4334; --signal:#4FE3A6; --signal-soft:#113629; --sky:#2A6B52; --blue:#86EDC2; --blue-soft:#0E2E22}
+[data-palette="lavender"]{--paper:#F6F2FC; --panel:#FFFFFF; --ink:#22163A; --muted:#64587E; --line:#E0D6F0; --signal:#8E3FB8; --signal-soft:#ECE2F8; --sky:#CDB8EC; --blue:#73309A; --blue-soft:#EFE8FA}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="lavender"]{--paper:#140E20; --panel:#1E162E; --ink:#F1EBFB; --muted:#B3A6CF; --line:#3A2E52; --signal:#DDA0F0; --signal-soft:#2C2045; --sky:#5B437F; --blue:#E8BDF7; --blue-soft:#241A38}}
+:root[data-theme="dark"] [data-palette="lavender"]{--paper:#140E20; --panel:#1E162E; --ink:#F1EBFB; --muted:#B3A6CF; --line:#3A2E52; --signal:#DDA0F0; --signal-soft:#2C2045; --sky:#5B437F; --blue:#E8BDF7; --blue-soft:#241A38}
+[data-palette="bronze"]{--paper:#F8F4EA; --panel:#FFFFFF; --ink:#2A2210; --muted:#6B604A; --line:#E6DCC5; --signal:#86651A; --signal-soft:#F0E7D0; --sky:#DCC995; --blue:#6C5013; --blue-soft:#F3ECDB}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="bronze"]{--paper:#17130A; --panel:#221C10; --ink:#F6F0E1; --muted:#C2B48F; --line:#40361F; --signal:#D9B866; --signal-soft:#332914; --sky:#6E5A2A; --blue:#E8CD86; --blue-soft:#2A2213}}
+:root[data-theme="dark"] [data-palette="bronze"]{--paper:#17130A; --panel:#221C10; --ink:#F6F0E1; --muted:#C2B48F; --line:#40361F; --signal:#D9B866; --signal-soft:#332914; --sky:#6E5A2A; --blue:#E8CD86; --blue-soft:#2A2213}
+[data-palette="magenta"]{--paper:#FCF0F8; --panel:#FFFFFF; --ink:#33102A; --muted:#7A4E6C; --line:#F0D2E6; --signal:#B0187F; --signal-soft:#F8DEEF; --sky:#EDB0D9; --blue:#8E0F65; --blue-soft:#F9E6F3}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="magenta"]{--paper:#1F0918; --panel:#2B1022; --ink:#FBE8F5; --muted:#D29EC2; --line:#4E2042; --signal:#F57FCF; --signal-soft:#3D1432; --sky:#86306E; --blue:#F9A6DE; --blue-soft:#33102A}}
+:root[data-theme="dark"] [data-palette="magenta"]{--paper:#1F0918; --panel:#2B1022; --ink:#FBE8F5; --muted:#D29EC2; --line:#4E2042; --signal:#F57FCF; --signal-soft:#3D1432; --sky:#86306E; --blue:#F9A6DE; --blue-soft:#33102A}

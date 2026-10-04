@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Cure Checker: a daily digest of pancreatic cancer research, treatments, and studies.">
+<title>Cure Checker: Pancreatic cancer</title>
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body data-disease="pancreatic-cancer" data-palette="lavender">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/curechecker.css">
+
+<div class="wrap">
+
+<!-- Donation bar: links come from assets/donate.js -->
+<div class="donate-bar" aria-label="Support Cure Checker"></div>
+
+<nav class="crumbs" aria-label="Diseases">
+  <a href="index.html">← All diseases</a>
+  <label>Switch disease <select data-disease-picker data-placeholder="Choose a disease…"></select></label>
+</nav>
+
+<!-- ========== MASTHEAD ========== -->
+<header class="mast">
+  <div class="brand">
+    <div>
+      <a class="logo" href="index.html" aria-label="Cure Checker home">
+        <span class="lg-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="var(--paper)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="lg-text" aria-hidden="true"><span class="lg-1">Cure</span><span class="lg-2">Checker</span></span>
+      </a>
+      <div class="tag">Pancreatic cancer edition · Most recent pancreatic cancer conclusions</div>
+    </div>
+  </div>
+  <div class="datebox">
+    <!-- CURECHECKER:DATE -->
+    <strong id="edition-date">Saturday, October 3, 2026</strong>
+    Updated daily · 9:00 AM ET
+  </div>
+</header>
+<div class="strip">
+  <span class="live"><span class="dot" aria-hidden="true"></span>Today's headline</span>
+  <!-- CURECHECKER:HEADLINE -->
+  <span id="headline">FDA approves daraxonrasib (Rasonque), a first-of-its-kind pill that blocks many forms of RAS, the gene behind 9 in 10 pancreatic cancers (Aug 26). In its Phase 3 trial, median survival was 13.2 months vs 6.7 on chemo.</span>
+</div>
+
+<!-- ========== LEAD ========== -->
+<div class="lead">
+  <h1>For the first time, a drug aimed at pancreatic cancer's main driver gene is <em>approved and extending lives.</em></h1>
+  <p>Cure Checker tracks the cause, the treatments that are working, and the trials underway, and rewrites this page every morning from the latest published results. Plain language, with sources for every claim.</p>
+</div>
+<nav class="toc" aria-label="Sections">
+  <a href="#verdict">Most recent cure information</a>
+  <a href="#cause">What causes pancreatic cancer</a>
+  <a href="#treatments">Treatments that are working</a>
+  <a href="#studies">Latest studies</a>
+  <a href="#world">Around the world</a>
+  <a href="#registries">Every registry</a>
+  <a href="#natural">Natural remedies &amp; supplements</a>
+  <a href="#support-groups">Support groups</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<!-- ========== CURE INFORMATION (top) ========== -->
+<section id="verdict">
+  <div class="verdict">
+    <div>
+      <span class="eyebrow">Cure Checker's conclusion · Oct 2026</span>
+      <h2>Most recent cure information</h2>
+      <p class="big">Pancreatic cancer can be cured mainly when surgery removes it all, and only about 1 in 5 people can have that surgery when they are diagnosed. About 14% of people are alive five years after diagnosis, and about 3% once it has spread. There is still no cure for cancer that has spread. Our view: drugs that switch off RAS, the gene that drives about 9 in 10 cases, are the biggest change in decades. Whether they can raise the cure rate depends on trials now testing them earlier, right after diagnosis and after surgery.</p>
+    </div>
+    <ol>
+      <li><b>A new kind of RAS blocker is approved.</b><span>The FDA approved daraxonrasib (Rasonque) on August 26, 2026 for spread cancer after earlier treatment. In the RASolute 302 trial (500 patients), people on the pill lived a median 13.2 months versus 6.7 months on chemo. It doesn't cure the cancer, and rash and mouth sores are common.</span></li>
+      <li><b>Moving RAS drugs earlier: the test that matters for cures.</b><span>Phase 3 trials are testing daraxonrasib as the first treatment for spread cancer (RASolute 303), after surgery (RASolute 304), and paired with zoldonrasib for KRAS G12D tumors (RASolute 309). Results are still years away.</span></li>
+      <li><b>Personal vaccines after surgery: unproven so far.</b><span>BioNTech's mRNA vaccine autogene cevumeran is in a 260-patient Phase 2 trial after surgery. A different KRAS vaccine, ELI-002 7P, missed its main goal in June 2026. Vaccines haven't yet been shown to prevent relapse.</span></li>
+      <li><b>Strong chemo after surgery is still the backbone.</b><span>In the PRODIGE 24 trial, 43% of people given modified FOLFIRINOX after surgery were alive at five years, versus 31% on gemcitabine. Any new drug will be added to this, not replace it.</span></li>
+    </ol>
+    <p class="fine">This is Cure Checker's editorial assessment of published evidence, not medical advice. Treatment decisions belong with an oncologist, ideally at a center that treats many pancreatic cancers. Ask about tumor and genetic testing, which can open up treatment options.</p>
+  </div>
+</section>
+
+<!-- ========== 1. CAUSE ========== -->
+<section id="cause">
+  <div class="sec-head">
+    <h2>What causes pancreatic cancer</h2>
+    <p>Most pancreatic cancers start in the cells lining the ducts that carry digestive juices. The first step is almost always a broken RAS gene, usually KRAS, which gets stuck in the "on" position and tells cells to keep growing. Over years, more genes break, and the cancer often spreads before it causes symptoms.</p>
+  </div>
+
+  <div class="path" role="img" aria-label="Pathway: smoking, obesity, chronic pancreatitis and inherited genes raise risk; a KRAS mutation gets stuck on; more brake genes are lost as precancer turns to cancer; the cancer often spreads before it is found.">
+    <div class="stage">
+      <span class="eyebrow">Step 1 · The hits</span>
+      <h3>Risk adds up</h3>
+      <ul>
+        <li><b>Age:</b> the median age at diagnosis is 71</li>
+        <li><b>Lifestyle and health:</b> cigarette smoking, obesity, and long-term inflammation of the pancreas (chronic pancreatitis)</li>
+        <li><b>Inherited genes:</b> a family history, and genes such as BRCA1, BRCA2, PALB2 and ATM</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage key">
+      <span class="eyebrow">Step 2 · The tipping point</span>
+      <h3>KRAS gets stuck "on"</h3>
+      <svg viewBox="0 0 200 100" aria-hidden="true">
+        <rect x="18" y="28" width="64" height="30" rx="15" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/>
+        <circle cx="35" cy="43" r="11" fill="var(--blue-soft)" stroke="var(--blue)" stroke-width="1.5"/>
+        <text x="50" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">normal</text>
+        <rect x="118" y="28" width="64" height="30" rx="15" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="2"/>
+        <circle cx="165" cy="43" r="11" fill="var(--warn)"/>
+        <text x="150" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--warn)">stuck on</text>
+      </svg>
+      <ul>
+        <li>RAS mutations are found in <b>more than 90%</b> of pancreatic cancers</li>
+        <li>It is one of the earliest gene changes, and the target of daraxonrasib</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 3 · The damage</span>
+      <h3>The brakes come off</h3>
+      <ul>
+        <li><b>Precancer first:</b> KRAS changes start small growths in the ducts called PanIN</li>
+        <li><b>More genes break:</b> the "brake" genes CDKN2A, TP53 and SMAD4 are lost as these turn into cancer</li>
+        <li><b>TP53:</b> altered in about 60–77% of tumors</li>
+        <li><b>Inherited BRCA changes:</b> the target of the drug olaparib</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 4 · The result</span>
+      <h3>It spreads before it's found</h3>
+      <svg viewBox="0 0 200 100" aria-hidden="true">
+        <path d="M14 46 C22 30 44 28 60 34 C76 40 96 36 110 42 C118 46 114 58 102 58 C84 58 70 54 52 60 C34 66 10 62 14 46 Z" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="2"/>
+        <circle cx="32" cy="48" r="7" fill="var(--warn)"/>
+        <path d="M120 46 H140" stroke="var(--muted)" stroke-width="2.5" stroke-dasharray="4 5" opacity=".6"/>
+        <g fill="var(--warn)"><circle cx="156" cy="30" r="4"/><circle cx="172" cy="48" r="3.5"/><circle cx="154" cy="60" r="3"/><circle cx="182" cy="26" r="3"/></g>
+        <text x="62" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">pancreas</text>
+        <text x="166" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--warn)">spread</text>
+      </svg>
+      <ul>
+        <li>Early cancer causes few symptoms. Later signs include yellow skin (jaundice), belly or back pain, and weight loss</li>
+        <li>About <b>half</b> of people are diagnosed after it has spread</li>
+        <li>5-year survival is about 44% if it hasn't spread and about 3% if it has</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cause-note">
+    <div><b>Newest clue (Sept 30, 2026):</b> researchers in <i>Cancer Research</i> showed that tumors escape daraxonrasib in different ways depending on their exact KRAS change. One patient whose cancer escaped this way was helped by a follow-up drug the lab tests predicted.</div>
+    <div><b>Making RAS drugs last (Sept 23, 2026):</b> a study in <i>Cell</i> found that in mice, adding an immune signal (an IL-21 mimic) turned short-lived responses to KRAS-blocking drugs into long-lasting remissions. This has not been tested in people yet.</div>
+    <div><b>Why it's so common to RAS (May 31, 2026):</b> the RASolute 302 report in the <i>New England Journal of Medicine</i> noted that cancer-causing RAS mutations are present in more than 90% of cases, which is why one RAS drug can help most patients.</div>
+  </div>
+</section>
+
+<!-- ========== 2. TREATMENTS ========== -->
+<section id="treatments">
+  <div class="sec-head">
+    <h2>Treatments that are working</h2>
+    <p>For decades, progress in pancreatic cancer came in small steps from stronger chemo combinations. In 2026, a targeted pill aimed at RAS nearly doubled survival in spread cancer that had already been treated.</p>
+  </div>
+
+  <div class="tx">
+    <article class="card">
+      <div class="top"><h3>Daraxonrasib (Rasonque)</h3><span class="pill p-good">FDA approved</span></div>
+      <div class="who">Revolution Medicines pill · spread cancer after earlier treatment · Aug 26, 2026</div>
+      <p>In RASolute 302 (500 patients), median survival was 13.2 months versus 6.7 months on chemo, and tumors shrank in 30% versus 11%. Only 1.2% stopped it because of side effects, versus 11.2% on chemo. Rash and mouth sores are common. It's taken once a day.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>NALIRIFOX (Onivyde combination)</h3><span class="pill p-blue">FDA approved</span></div>
+      <div class="who">Liposomal irinotecan combo · first treatment for spread cancer · Feb 13, 2024</div>
+      <p>Liposomal irinotecan with oxaliplatin, 5-FU and leucovorin. In NAPOLI 3 (770 patients), median survival was 11.1 months versus 9.2 months with gemcitabine plus nab-paclitaxel.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Olaparib (Lynparza)</h3><span class="pill p-blue">FDA approved</span></div>
+      <div class="who">AstraZeneca pill · inherited BRCA changes · Dec 27, 2019</div>
+      <p>Given after platinum chemo has kept spread cancer in check. In POLO, it doubled the time before the cancer grew (7.4 vs 3.8 months), but overall survival was about the same (18.9 vs 18.1 months). About 5–7% of people with spread disease carry an inherited BRCA change.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Modified FOLFIRINOX after surgery</h3><span class="pill p-good">Standard care</span></div>
+      <div class="who">PRODIGE 24 trial · after the tumor is removed</div>
+      <p>Four-drug chemo after surgery. Median survival was 53.5 months versus 35.5 with gemcitabine, and 43.2% versus 31.4% were alive at five years. It's harder to tolerate, so it's for people who are fit enough.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Autogene cevumeran (mRNA vaccine)</h3><span class="pill p-sig">Promising · Phase 2</span></div>
+      <div class="who">BioNTech / Genentech · after surgery · trial continuing (Aug 28, 2026)</div>
+      <p>A vaccine made for each patient's tumor. In a Phase 1 study, the 8 patients whose immune systems responded had not reached a median time to relapse after about 3 years, versus 13.4 months in non-responders. The 260-patient IMcode003 trial is testing it with chemo.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>ELI-002 7P (KRAS vaccine)</h3><span class="pill p-warn">Missed goal</span></div>
+      <div class="who">Elicio · after surgery · June 15, 2026 (company release)</div>
+      <p>In the 144-patient AMPLIFY-7P trial, it did not significantly extend the time without relapse compared with watching. The company points to benefit in some subgroups, but those were looked at after the fact. A useful negative result.</p>
+    </article>
+  </div>
+
+  <div class="subhead">Standard treatment today</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Treatment</th><th>For</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><b>Surgery</b> (Whipple or distal pancreatectomy)</td><td>Cancer that can be fully removed (about 20%)</td><td>Removes the tumor. The best chance of long-term survival.</td></tr>
+      <tr><td><b>mFOLFIRINOX or gemcitabine + capecitabine</b></td><td>After surgery</td><td>Chemo to lower the chance of relapse. S-1 is an option in Asia.</td></tr>
+      <tr><td><b>FOLFIRINOX, NALIRIFOX (2024), gemcitabine + nab-paclitaxel (2013)</b></td><td>First treatment for advanced cancer</td><td>Combination chemo that slows the cancer and extends life by months.</td></tr>
+      <tr><td><b>Daraxonrasib</b> (2026)</td><td>Spread cancer after earlier treatment</td><td>Daily pill that blocks RAS. Nearly doubled median survival versus chemo.</td></tr>
+      <tr><td><b>Liposomal irinotecan + 5-FU</b> (2015)</td><td>After gemcitabine</td><td>Second-line chemo. Median survival 6.1 vs 4.2 months in NAPOLI-1.</td></tr>
+      <tr><td><b>Olaparib</b> (2019)</td><td>Inherited BRCA changes</td><td>Maintenance pill after platinum chemo. Delays growth.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="subhead">Where people find expert care</div>
+  <ul class="centers">
+    <li><b>Memorial Sloan Kettering Cancer Center</b> <span class="loc">New York, New York, USA</span><p>An NCI-designated Comprehensive Cancer Center and, by its own statement, a National Pancreas Foundation Center of Excellence. Its Dr. Eileen O'Reilly was lead author of the RASolute 302 trial report.</p><div class="src"><a href="https://www.mskcc.org/cancer-care/types/pancreatic" target="_blank" rel="noopener">Pancreatic cancer</a> &middot; <a href="https://www.mskcc.org/news/how-daraxonrasib-could-improve-pancreatic-cancer-treatment-offering-new-hope" target="_blank" rel="noopener">MSK and daraxonrasib</a></div></li>
+    <li><b>Dana-Farber Cancer Institute</b> <span class="loc">Boston, Massachusetts, USA</span><p>Part of the Dana-Farber/Harvard Cancer Center, an NCI-designated Comprehensive Cancer Center. Dr. Brian Wolpin, who directs its Hale Family Center for Pancreatic Cancer Research, led the RASolute 302 trial.</p><div class="src"><a href="https://blog.dana-farber.org/insight/2026/08/daraxonrasib-pancreatic-cancer-fda-approval/" target="_blank" rel="noopener">Daraxonrasib Q&amp;A</a> &middot; <a href="https://www.cancer.gov/research/infrastructure/cancer-centers/find" target="_blank" rel="noopener">NCI-designated centers</a></div></li>
+    <li><b>The Pancreas Center at Columbia University Irving Medical Center / NewYork-Presbyterian</b> <span class="loc">New York, New York, USA</span><p>A National Pancreas Foundation Center of Excellence for pancreatic cancer. Columbia's Herbert Irving Comprehensive Cancer Center is NCI-designated, and one of its doctors co-authored the RASolute 302 report.</p><div class="src"><a href="https://columbiasurgery.org/news/columbia-named-center-excellence-pancreatic-cancer" target="_blank" rel="noopener">NPF designation</a> &middot; <a href="https://pubmed.ncbi.nlm.nih.gov/42223072/" target="_blank" rel="noopener">RASolute 302</a></div></li>
+    <li><b>UC Davis Comprehensive Cancer Center</b> <span class="loc">Sacramento, California, USA</span><p>Recognized in December 2025 as a National Pancreas Foundation Pancreatic Cancer Clinical Center and Academic Center of Excellence. NCI-designated Comprehensive Cancer Center.</p><div class="src"><a href="https://health.ucdavis.edu/patients-visitors/news/headlines/cancer-center-earns-national-pancreas-foundation-center-of-excellence-designation/2025/12" target="_blank" rel="noopener">NPF designation</a></div></li>
+    <li><b>MUSC Hollings Cancer Center</b> <span class="loc">Charleston, South Carolina, USA</span><p>Named a National Pancreas Foundation Center of Excellence for pancreatic cancer in October 2025, the only one in South Carolina. NCI-designated Clinical Cancer Center.</p><div class="src"><a href="https://hollingscancercenter.musc.edu/content-hub/News/2025/10/14/pancreatic-cancer-pancreatitis-center-of-excellence" target="_blank" rel="noopener">NPF designation</a></div></li>
+    <li><b>European Pancreas Center, Heidelberg University Hospital</b> <span class="loc">Heidelberg, Germany</span><p>Says it treats over 2,000 patients a year, with more than 700 having pancreas surgery (the center's own figures). A Heidelberg University Hospital doctor co-authored the RASolute 302 report.</p><div class="src"><a href="https://www.heidelberg-university-hospital.com/diseases-treatments/cancer-and-tumor-diseases/european-pancreas-center/" target="_blank" rel="noopener">European Pancreas Center</a> &middot; <a href="https://pubmed.ncbi.nlm.nih.gov/42223072/" target="_blank" rel="noopener">RASolute 302</a></div></li>
+  </ul>
+  <p class="fine centers-note">These are centers recognized for expertise in this condition, not a ranking, and Cure Checker does not endorse or rate any facility. Outcomes depend on the individual. Ask your doctor which center fits your situation.</p>
+</section>
+
+<!-- ========== 3. STUDIES ========== -->
+<section id="studies">
+  <div class="sec-head">
+    <h2>Latest studies &amp; what they concluded</h2>
+    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter studies">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
+    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
+    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
+  </div>
+  <!-- CURECHECKER:STUDIES (newest first) -->
+  <div class="studies" id="studies-list">
+    <div class="study" data-k="science"><time>Sep 30, 2026</time><div><h3>How tumors escape daraxonrasib (Cancer Research)</h3><p>Resistance takes different routes in KRAS G12D and G12R tumors. In one G12R patient, a trametinib-based combination chosen from lab-grown tumor tests controlled the cancer for about 5 months.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42814859/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-blue">Science</span></div>
+    <div class="study" data-k="science"><time>Sep 23, 2026</time><div><h3>Immune boost makes KRAS-drug responses last, in mice (Cell)</h3><p>An IL-21 mimic, working through CD4 T cells, turned short responses to KRAS inhibitors into lasting remissions in mice. Human testing has not started.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42777708/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-blue">Science</span></div>
+    <div class="study" data-k="underway"><time>Aug 28, 2026</time><div><h3>Zoldonrasib + daraxonrasib vs chemo, first line (RASolute 309, Phase 3)</h3><p>A two-RAS-drug, chemo-free combination for spread cancer with the KRAS G12D change. About 400 patients planned.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT07805954" target="_blank" rel="noopener">ClinicalTrials.gov</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="underway"><time>Aug 28, 2026</time><div><h3>mRNA vaccine trial after surgery continues (IMcode003, Phase 2)</h3><p>BioNTech stopped its colorectal cancer vaccine trial but said the pancreatic trial of autogene cevumeran with atezolizumab and mFOLFIRINOX continues as planned.</p><div class="src"><a href="https://www.biontech.com/us/en/home/mediaroom/news/statements/2026/08/BioNTech-Provides-Update-on-Phase-2-Clinical-Trial-of-Autogene-Cevumeran-in-Resected-Colorectal-Cancer.html" target="_blank" rel="noopener">BioNTech</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="science"><time>Aug 26, 2026</time><div><h3>FDA approves daraxonrasib (Rasonque)</h3><p>For adults with metastatic pancreatic adenocarcinoma after at least one prior treatment, or who can't have multi-drug chemo. Approved 6.5 months ahead of the review deadline.</p><div class="src"><a href="https://www.fda.gov/news-events/press-announcements/fda-approves-first-class-targeted-therapy-metastatic-pancreatic-cancer" target="_blank" rel="noopener">FDA</a></div></div><span class="pill p-good">Policy</span></div>
+    <div class="study" data-k="result"><time>Jul 15, 2026</time><div><h3>Zoldonrasib + chemo, first line (Phase 1/2, ESMO GI)</h3><p>In 81 patients with KRAS G12D tumors, tumors shrank in 82% with mFOLFIRINOX and 61% with gemcitabine + nab-paclitaxel. Early, small and not yet peer-reviewed.</p><div class="src"><a href="https://ascopost.com/news/july-2026/kras-g12d-mutated-metastatic-pancreatic-cancer-zoldonrasib-plus-chemotherapy/" target="_blank" rel="noopener">The ASCO Post</a></div></div><span class="pill p-sig">Early</span></div>
+    <div class="study" data-k="science"><time>Jul 7, 2026</time><div><h3>EMA starts fast "phased review" of daraxonrasib</h3><p>Europe's regulator is assessing data in stages to speed a decision. No approval date yet.</p><div class="src"><a href="https://www.ema.europa.eu/en/news/ema-fast-tracks-review-medicine-metastatic-pancreatic-cancer" target="_blank" rel="noopener">EMA</a></div></div><span class="pill p-blue">Policy</span></div>
+    <div class="study" data-k="result"><time>Jun 15, 2026</time><div><h3>ELI-002 7P vaccine after surgery (AMPLIFY-7P, Phase 2)</h3><p>Did not meet its main goal of longer relapse-free survival in 144 patients. Subgroup signals were found after the fact (company release).</p><div class="src"><a href="https://elicio.com/press_releases/elicio-therapeutics-reports-results-from-phase-2-amplify-7p-study-and-outlines-refined-phase-3-development-strategy-for-eli-002-7p-in-adjuvant-pancreatic-cancer/" target="_blank" rel="noopener">Elicio</a></div></div><span class="pill p-warn">Missed goal</span></div>
+    <div class="study" data-k="result"><time>May 31, 2026</time><div><h3>Daraxonrasib vs chemo (RASolute 302, Phase 3, NEJM)</h3><p>500 patients: median survival 13.2 vs 6.7 months (hazard ratio 0.40), time before growth 7.2 vs 3.6 months. Grade 3 or worse side effects 61.8% vs 69.6%.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42223072/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>May 25, 2026</time><div><h3>Vitamin D-like drug paricalcitol + chemo (run-in trial, Nature Cancer)</h3><p>Safe to add to gemcitabine + nab-paclitaxel in 36 patients and changed the tumor's surroundings. Oral dosing caused high calcium in 42%. Not a test of survival.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42185478/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-blue">Early</span></div>
+    <div class="study" data-k="result"><time>May 15, 2026</time><div><h3>Liposomal irinotecan + S-1 vs + 5-FU (NAPAN, Phase 1/2)</h3><p>Swapping in S-1 did not help in second-line treatment: median survival 6.0 vs 9.1 months in 120 patients.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41921365/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-warn">Missed goal</span></div>
+    <div class="study" data-k="result"><time>May 7, 2026</time><div><h3>mFOLFIRINOX with or without targeted radiation (SABER, Phase 2)</h3><p>In locally advanced cancer, adding SBRT radiation didn't improve survival (28.9 vs 28.1 months). Closed early with only 37 patients.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42098550/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-warn">No gain</span></div>
+    <div class="study" data-k="science"><time>May 1, 2026</time><div><h3>FDA allows expanded access to daraxonrasib</h3><p>FDA signed a "safe to proceed" letter on April 30, two days after the request, so patients could get the drug before approval.</p><div class="src"><a href="https://www.fda.gov/news-events/press-announcements/fda-permits-expanded-access-investigational-pancreatic-cancer-drug" target="_blank" rel="noopener">FDA</a></div></div><span class="pill p-good">Policy</span></div>
+    <div class="study" data-k="result"><time>Apr 30, 2026</time><div><h3>Mistletoe extract: quality of life (MISTRAL, Phase 3)</h3><p>In 290 patients, mistletoe injections did not improve quality of life or weight. The authors see no reason to recommend it.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42059487/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-warn">No benefit</span></div>
+    <div class="study" data-k="underway"><time>Mar 9, 2026</time><div><h3>Daraxonrasib as first treatment (RASolute 303, Phase 3)</h3><p>Tests daraxonrasib alone or with gemcitabine + nab-paclitaxel against chemo alone in newly diagnosed spread cancer. About 900 patients planned.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT07491445" target="_blank" rel="noopener">ClinicalTrials.gov</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="result"><time>Mar 2, 2026</time><div><h3>Radiofrequency ablation + chemo (PELICAN, randomized)</h3><p>Burning the tumor with RFA did not extend survival (12.1 vs 11.6 months) in 188 patients and lowered quality of life.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41915391/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-warn">Missed goal</span></div>
+    <div class="study" data-k="underway"><time>Dec 15, 2025</time><div><h3>Daraxonrasib after surgery (RASolute 304, Phase 3)</h3><p>Tests whether daraxonrasib after surgery and chemo keeps the cancer away longer than watching. About 500 patients planned.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT07252232" target="_blank" rel="noopener">ClinicalTrials.gov</a></div></div><span class="pill p-blue">Underway</span></div>
+  </div>
+</section>
+
+<!-- ========== 4. AROUND THE WORLD ========== -->
+<section id="world" data-condition="Pancreatic Cancer">
+  <div class="sec-head">
+    <h2>How other countries treat pancreatic cancer</h2>
+    <p>Chemo and surgery are similar in most countries. The differences: the new RAS pill is approved only in the U.S. so far, Japan uses the S-1 pill after surgery, and BRCA and liposomal-irinotecan treatments reached Europe a few years after the U.S.</p>
+  </div>
+
+  <div class="subhead">Who has approved what</div>
+  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 3, 2026) -->
+  <div class="scroll">
+  <table class="approved world">
+    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
+    <tbody>
+      <tr><td><b>Daraxonrasib</b> (Rasonque)<small>Spread cancer, after earlier treatment</small></td><td><span class="c c-yes">2026</span></td><td><span class="c c-mid">Under review</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>NALIRIFOX</b><small>First treatment, spread cancer</small></td><td><span class="c c-yes">2024</span></td><td><span class="c c-yes">2024</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Liposomal irinotecan + 5-FU</b><small>After gemcitabine</small></td><td><span class="c c-yes">2015</span></td><td><span class="c c-yes">2016</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Olaparib</b> (Lynparza)<small>Inherited BRCA, maintenance</small></td><td><span class="c c-yes">2019</span></td><td><span class="c c-yes">2020</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">2020</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>S-1</b><small>After surgery</small></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-mid">Standard care</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="wkey">
+    <span><span class="c c-yes">2024</span> approved (year)</span>
+    <span><span class="c c-mid">Trial</span> guideline-only, filing, or in trials</span>
+    <span><span class="c c-off">Rejected</span> refused or withdrawn</span>
+    <span><span class="c c-no">—</span> not approved, or no approval on record</span>
+  </div>
+
+  <div class="subhead">Available abroad, not in the U.S.</div>
+  <div class="abroad">
+    <article class="card">
+      <div class="top"><h3>S-1 after surgery</h3><span class="pill p-good">Japan</span></div>
+      <div class="who">Chemo pill · JASPAC 01 trial, 2016</div>
+      <p>In 385 Japanese patients, 5-year survival was 44.1% with S-1 versus 24.4% with gemcitabine. It became standard after surgery in Japan, and NCI calls it an option in Asia. S-1 has no record in Drugs@FDA.</p>
+      <div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/27265347/" target="_blank" rel="noopener">The Lancet (PubMed)</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Mistletoe extract</h3><span class="pill p-warn">No benefit</span></div>
+      <div class="who">Complementary injection · MISTRAL trial, Sweden</div>
+      <p>A widespread complementary therapy. In a 290-patient placebo-controlled trial, it did not extend survival (7.8 vs 8.3 months) or improve quality of life. Not worth traveling for.</p>
+      <div class="src"><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11539882/" target="_blank" rel="noopener">Deutsches Ärzteblatt</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Daraxonrasib in Europe</h3><span class="pill p-blue">Under review</span></div>
+      <div class="who">EMA phased review · started July 7, 2026</div>
+      <p>Approved only in the U.S. so far. Europe's regulator is reviewing it in stages to speed a decision. Health Canada worked with the FDA on its review, and Japan's regulator observed. Neither has approved it yet as far as we could find.</p>
+      <div class="src"><a href="https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma" target="_blank" rel="noopener">FDA</a> &middot; <a href="https://www.ema.europa.eu/en/news/ema-fast-tracks-review-medicine-metastatic-pancreatic-cancer" target="_blank" rel="noopener">EMA</a></div>
+    </article>
+  </div>
+
+  <div class="subhead">How it changed over time</div>
+  <ol class="timeline">
+    <li><time>1996</time><span><b>U.S.:</b> FDA approves gemcitabine, for years the main pancreatic cancer drug.</span></li>
+    <li><time>2005</time><span><b>Canada-led</b> PA.3 trial: adding erlotinib to gemcitabine adds only a little (6.2 vs 5.9 months). <b>U.S.</b> approves the combination.</span></li>
+    <li><time>2011</time><span>The <b>FOLFIRINOX</b> trial shows 11.1 vs 6.8 months over gemcitabine in spread cancer.</span></li>
+    <li><time>2013</time><span><b>U.S.:</b> nab-paclitaxel + gemcitabine approved after the MPACT trial.</span></li>
+    <li><time>2015</time><span><b>U.S.:</b> liposomal irinotecan approved after gemcitabine. <b>Europe</b> follows in 2016.</span></li>
+    <li><time>2016</time><span><b>Japan:</b> JASPAC 01 makes S-1 the standard after surgery.</span></li>
+    <li><time>2018</time><span><b>France and Canada:</b> PRODIGE 24 makes mFOLFIRINOX the strongest chemo after surgery.</span></li>
+    <li><time>2019</time><span><b>U.S.:</b> olaparib for inherited BRCA changes. <b>EU</b> and <b>Japan</b> follow in 2020.</span></li>
+    <li><time>2024</time><span><b>U.S. and EU:</b> NALIRIFOX approved as a first treatment.</span></li>
+    <li><time>2026</time><span><b>U.S.:</b> daraxonrasib, which blocks many forms of RAS, approved Aug 26. <b>EU:</b> phased review under way.</span></li>
+  </ol>
+
+  <div class="subhead">Where pancreatic cancer trials are recruiting right now</div>
+  <div class="live-grid">
+    <div>
+      <p class="status-note" id="ct-status">Loading live data from ClinicalTrials.gov…</p>
+      <div class="cbars" id="ct-bars"></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:10px">Drug trials with no U.S. site</h3>
+      <div class="trials" id="ct-abroad"></div>
+      <button type="button" class="more" id="ct-more" hidden></button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EVERY REGISTRY ========== -->
+<section id="registries">
+  <div class="sec-head">
+    <h2>Every registry, checked</h2>
+    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
+  </div>
+  <div class="reg-stats" id="reg-stats"></div>
+  <div class="reg-grid">
+    <div class="reg-panel"><h3>Newest published clinical trials</h3><span class="reg-src">PubMed · U.S. National Library of Medicine</span><div class="trials" id="reg-pubmed"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest Cochrane systematic reviews</h3><span class="reg-src">Cochrane Database of Systematic Reviews, via PubMed</span><div class="trials" id="reg-cochrane"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest trials in the EU registry</h3><span class="reg-src" id="reg-ctis-src">EU Clinical Trials Information System</span><div class="trials" id="reg-ctis"></div></div>
+    <div class="reg-panel"><h3>Newest UK &amp; international registrations</h3><span class="reg-src">ISRCTN registry</span><div class="trials" id="reg-isrctn"><p class="status-note">Loading…</p></div></div>
+  </div>
+  <div class="subhead">FDA records for the medicines in this report</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Medicine</th><th>Brand</th><th>FDA application</th><th>Original approval</th></tr></thead>
+    <tbody id="reg-fda"></tbody>
+  </table>
+  </div>
+  <p class="reg-note">From Drugs@FDA via FDA's openFDA service. Some older brands are missing from FDA's open data, and newly approved drugs can take a few weeks to appear. An approval may be for a different disease than this one.</p>
+  <div class="subhead">Search every registry yourself</div>
+  <div class="reg-links" id="reg-links"></div>
+  <p class="reg-note">The WHO's ICTRP gathers trials from registries worldwide, including China, Japan, India, Iran, Australia and Brazil. Cochrane CENTRAL and OpenMD don't allow automated access, so they're linked here for you to search directly.</p>
+</section>
+<!-- ========== 5. NATURAL ========== -->
+<section id="natural">
+  <div class="sec-head">
+    <h2>Natural remedies &amp; supplements</h2>
+    <p>No supplement prevents or cures pancreatic cancer. The best-studied "natural" product, mistletoe, failed in a large trial. What does help is treating the digestion and weight-loss problems this cancer causes. We rate each by the strength of human evidence.</p>
+  </div>
+  <div class="gkey">
+    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Good human evidence</span>
+    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Observational / mixed</span>
+    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>Lab only, or could cause harm</span>
+  </div>
+  <div class="supp">
+    <div>
+      <h3>Claims you'll see online</h3>
+      <div class="row"><b>Mistletoe extract</b><span class="grade none" title="Tested, no benefit"><i class="on"></i><i></i><i></i></span>
+        <p>Tested properly in 290 patients against placebo (MISTRAL). It did not extend survival or improve quality of life, and caused skin reactions at the injection site in 66%.</p></div>
+      <div class="row"><b>Curcumin (turmeric)</b><span class="grade none" title="Very limited"><i class="on"></i><i></i><i></i></span>
+        <p>In a 25-patient trial of 8 g a day, 2 people showed some activity. Very little reached the blood. No controlled trial shows it helps.</p></div>
+      <div class="row"><b>High-dose antioxidant stacks</b><span class="grade none" title="Could cause harm"><i class="on"></i><i></i><i></i></span>
+        <p>Many chemo drugs work partly through oxidative damage. In a large breast-cancer study (SWOG S0221), antioxidants during chemo were linked to more relapses. No such study exists for pancreatic cancer, so ask your oncologist first.</p></div>
+      <div class="row"><b>Ketogenic diet</b><span class="grade low" title="Small trial"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>A 32-patient trial of a medically supervised keto diet with chemo showed trends toward longer survival (13.7 vs 10.2 months), but it was too small to prove anything. Only try it with a medical team.</p></div>
+    </div>
+    <div>
+      <h3>For recovery and quality of life</h3>
+      <div class="row"><b>Pancreatic enzyme pills (PERT)</b><span class="grade low" title="Mostly observational"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>About 72% of people with advanced pancreatic cancer can't digest food well. Prescription enzymes with meals were linked to about 3.8 months longer survival in a review of mostly observational studies.</p></div>
+      <div class="row"><b>Nutrition support during chemo</b><span class="grade low" title="One small trial"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>In a 60-patient Japanese trial, an easy-to-digest "elemental" drink during chemo helped keep weight and strength, and survival was longer (21.4 vs 12.8 months). One small trial, so it needs confirming. Work with a dietitian.</p></div>
+      <div class="row"><b>Ear acupressure for sleep</b><span class="grade low" title="One small trial"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>In an 80-patient trial in Taiwan, 4 weeks of ear acupressure improved sleep and insomnia during chemo. It doesn't treat the cancer.</p></div>
+      <div class="row"><b>Vitamin D-like drugs</b><span class="grade none" title="Early research"><i class="on"></i><i></i><i></i></span>
+        <p>A prescription vitamin D-like drug (paricalcitol) is being studied with chemo, but it raised calcium in some patients. Store-bought vitamin D is not a treatment.</p></div>
+    </div>
+  </div>
+  <p class="caution"><b>Be careful:</b> herbal products and high-dose antioxidants can interfere with chemo, and daraxonrasib already causes rash and mouth sores, so check before adding creams or supplements. Clinics selling "natural" or "immune" cancer cures can delay treatment that works. Tell the oncology team about everything you take.</p>
+</section>
+
+<!-- ========== SUPPORT GROUPS ========== -->
+<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 3, 2026; only add groups whose link you have verified) -->
+<section id="support-groups">
+  <div class="sec-head">
+    <h2>Support groups &amp; communities</h2>
+    <p>You don't have to face pancreatic cancer alone. These groups connect patients, families and caregivers with people who understand. Most are free.</p>
+  </div>
+  <div class="groups">
+    <article class="group">
+      <div class="top"><h3>PanCAN Patient Services</h3><span class="pill p-good">Case managers</span></div>
+      <div class="who">Patients · caregivers · U.S.</div>
+      <p>Free one-to-one help from case managers, including finding specialists and clinical trials, plus a Survivor &amp; Caregiver Network for peer support.</p>
+      <a class="join" href="https://pancan.org/facing-pancreatic-cancer/patient-services/" target="_blank" rel="noopener">Get support ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Pancreatic Cancer UK</h3><span class="pill p-good">Nurse line</span></div>
+      <div class="who">Anyone affected · UK</div>
+      <p>A specialist nurse support line by phone, email or WhatsApp, plus "Circles," online peer groups on WhatsApp and Facebook.</p>
+      <a class="join" href="https://www.pancreaticcancer.org.uk/support-for-you/" target="_blank" rel="noopener">Get support ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Pancare Foundation</h3><span class="pill p-good">Support groups</span></div>
+      <div class="who">Upper GI cancers · Australia</div>
+      <p>A nurse and counsellor helpline and PanSupport groups for people living with pancreatic and other upper GI cancers.</p>
+      <a class="join" href="https://www.pancare.org.au/" target="_blank" rel="noopener">Get support ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Hirshberg Foundation support groups</h3><span class="pill p-blue">Group finder</span></div>
+      <div class="who">Patients · caregivers</div>
+      <p>A list of virtual and in-person groups for pancreatic cancer, including weekly peer Zoom calls and caregiver groups.</p>
+      <a class="join" href="https://pancreatic.org/patients/pancreatic-cancer-patient-support-groups/" target="_blank" rel="noopener">Find a group ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Let's Win Pancreatic Cancer</h3><span class="pill p-blue">Online community</span></div>
+      <div class="who">Patients · families</div>
+      <p>A nonprofit online community sharing science-based treatment news, survivor stories, and a clinical trial finder.</p>
+      <a class="join" href="https://letswinpc.org/" target="_blank" rel="noopener">Learn more ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Smart Patients</h3><span class="pill p-blue">Online community</span></div>
+      <div class="who">Cancer patients · caregivers</div>
+      <p>An online community where patients and caregivers learn from each other, with a group for pancreatic cancer.</p>
+      <a class="join" href="https://www.smartpatients.com/" target="_blank" rel="noopener">Join ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Pancreatic cancer groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
+      <div class="who">Search results</div>
+      <p>Many private pancreatic cancer and Whipple-surgery groups exist. This link searches Facebook (a login is required).</p>
+      <a class="join" href="https://www.facebook.com/search/groups/?q=pancreatic%20cancer%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
+    </article>
+  </div>
+  <p class="reg-note">Pancreatic cancer often moves quickly, and caregivers carry a lot. Most of these groups welcome family members, and PanCAN's case managers can help with trial searches and genetic test results.</p>
+  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about treatment with your doctor. Think about your privacy, because Reddit and many forums are public, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
+</section>
+<!-- ========== SOURCES ========== -->
+<!-- CURECHECKER:SOURCES (add a source here whenever a claim on this page uses it) -->
+<section id="sources">
+  <div class="sec-head">
+    <h2>Sources</h2>
+    <p>Everything this report is based on, grouped by section. Checked October 3, 2026.</p>
+  </div>
+  <div class="sources">
+    <div>
+      <div class="subhead">Cure outlook &amp; cause</div>
+      <ol class="srclist">
+        <li><a href="https://www.cancer.gov/types/pancreatic/hp/pancreatic-treatment-pdq" target="_blank" rel="noopener">Pancreatic Cancer Treatment (PDQ®), Health Professional Version</a>. National Cancer Institute</li>
+        <li><a href="https://www.cancer.gov/types/pancreatic/patient/pancreatic-treatment-pdq" target="_blank" rel="noopener">Pancreatic Cancer Treatment (PDQ®), Patient Version</a>. National Cancer Institute</li>
+        <li><a href="https://seer.cancer.gov/statfacts/html/pancreas.html" target="_blank" rel="noopener">Cancer Stat Facts: Pancreatic Cancer</a>. NCI SEER Program</li>
+        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11049225/" target="_blank" rel="noopener">Significance of TP53, CDKN2A, SMAD4 and KRAS in Pancreatic Cancer</a>. PubMed Central</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42814859/" target="_blank" rel="noopener">Allele-specific mechanisms guide salvage therapy to overcome daraxonrasib resistance in pancreatic cancer</a>. Cancer Research, Sept 30, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42777708/" target="_blank" rel="noopener">CD4 T cells convert transient responses to KRAS inhibition to durable remissions in pancreatic cancer</a>. Cell, Sept 23, 2026</li>
+      </ol>
+      <div class="subhead">Treatments that are working</div>
+      <ol class="srclist">
+        <li><a href="https://www.fda.gov/news-events/press-announcements/fda-approves-first-class-targeted-therapy-metastatic-pancreatic-cancer" target="_blank" rel="noopener">FDA approves first-in-class targeted therapy for metastatic pancreatic cancer</a>. U.S. Food and Drug Administration, Aug 26, 2026</li>
+        <li><a href="https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma" target="_blank" rel="noopener">FDA approves daraxonrasib for metastatic pancreatic adenocarcinoma</a>. U.S. Food and Drug Administration, Aug 26, 2026</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=220910" target="_blank" rel="noopener">Rasonque (daraxonrasib), NDA 220910: approved Aug 26, 2026</a>. Drugs@FDA</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42223072/" target="_blank" rel="noopener">Daraxonrasib or chemotherapy in previously treated metastatic pancreatic cancer (RASolute 302)</a>. New England Journal of Medicine, online May 31, 2026</li>
+        <li><a href="https://pancan.org/news/fda-approves-rasonque-daraxonrasib/" target="_blank" rel="noopener">FDA approves RASONQUE (daraxonrasib)</a>. Pancreatic Cancer Action Network, Aug 26, 2026</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=207793" target="_blank" rel="noopener">Onivyde (irinotecan liposome), NDA 207793: approved Oct 22, 2015; NALIRIFOX supplement Feb 13, 2024</a>. Drugs@FDA</li>
+        <li><a href="https://pancan.org/news/fda-approves-new-first-line-treatment-option-for-metastatic-pancreatic-cancer-what-you-need-to-know/" target="_blank" rel="noopener">FDA approves new first-line treatment option for metastatic pancreatic cancer (NALIRIFOX)</a>. Pancreatic Cancer Action Network</li>
+        <li><a href="https://www.esmo.org/oncology-news/fda-approves-olaparib-for-germline-brca-mutated-metastatic-pancreatic-adenocarcinoma" target="_blank" rel="noopener">FDA approves olaparib for germline BRCA-mutated metastatic pancreatic adenocarcinoma</a>. ESMO, Dec 2019</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=208558" target="_blank" rel="noopener">Lynparza (olaparib), NDA 208558: pancreatic supplement Dec 27, 2019</a>. Drugs@FDA</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/39972124/" target="_blank" rel="noopener">RNA neoantigen vaccines prime long-lived CD8+ T cells in pancreatic cancer</a>. Nature, 2025</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT05968326" target="_blank" rel="noopener">IMcode003: autogene cevumeran + atezolizumab + mFOLFIRINOX after surgery (NCT05968326)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://elicio.com/press_releases/elicio-therapeutics-reports-results-from-phase-2-amplify-7p-study-and-outlines-refined-phase-3-development-strategy-for-eli-002-7p-in-adjuvant-pancreatic-cancer/" target="_blank" rel="noopener">Elicio reports results from Phase 2 AMPLIFY-7P</a>. Elicio Therapeutics (company release), June 15, 2026</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=021660" target="_blank" rel="noopener">Abraxane (nab-paclitaxel), NDA 021660: pancreatic supplement Sept 6, 2013</a>. Drugs@FDA</li>
+        <li><a href="https://pancan.org/press-releases/press-release-september-6-2013-abraxane-approved-for-treatment-of-pancreatic-cancer/" target="_blank" rel="noopener">Abraxane approved for treatment of pancreatic cancer</a>. Pancreatic Cancer Action Network, Sept 6, 2013</li>
+      </ol>
+      <div class="subhead">Expert care centers</div>
+      <ol class="srclist">
+        <li><a href="https://www.cancer.gov/research/infrastructure/cancer-centers/find" target="_blank" rel="noopener">Find an NCI-Designated Cancer Center</a>. National Cancer Institute, updated June 10, 2026</li>
+        <li><a href="https://www.mskcc.org/cancer-care/types/pancreatic" target="_blank" rel="noopener">Pancreatic cancer</a>. Memorial Sloan Kettering Cancer Center</li>
+        <li><a href="https://www.mskcc.org/news/how-daraxonrasib-could-improve-pancreatic-cancer-treatment-offering-new-hope" target="_blank" rel="noopener">FDA approves daraxonrasib for pancreatic cancer: what patients need to know</a>. Memorial Sloan Kettering Cancer Center</li>
+        <li><a href="https://blog.dana-farber.org/insight/2026/08/daraxonrasib-pancreatic-cancer-fda-approval/" target="_blank" rel="noopener">Daraxonrasib for pancreatic cancer: a Q&amp;A with Brian Wolpin</a>. Dana-Farber Cancer Institute, Aug 26, 2026</li>
+        <li><a href="https://columbiasurgery.org/news/columbia-named-center-excellence-pancreatic-cancer" target="_blank" rel="noopener">Columbia named Center of Excellence for pancreatic cancer</a>. Columbia Surgery</li>
+        <li><a href="https://health.ucdavis.edu/patients-visitors/news/headlines/cancer-center-earns-national-pancreas-foundation-center-of-excellence-designation/2025/12" target="_blank" rel="noopener">Cancer center earns National Pancreas Foundation Center of Excellence designation</a>. UC Davis Health, Dec 9, 2025</li>
+        <li><a href="https://hollingscancercenter.musc.edu/content-hub/News/2025/10/14/pancreatic-cancer-pancreatitis-center-of-excellence" target="_blank" rel="noopener">MUSC named Center of Excellence for pancreatic cancer and pancreatitis</a>. MUSC Hollings Cancer Center, Oct 14, 2025</li>
+        <li><a href="https://www.heidelberg-university-hospital.com/diseases-treatments/cancer-and-tumor-diseases/european-pancreas-center/" target="_blank" rel="noopener">European Pancreas Center</a>. Heidelberg University Hospital</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42223072/" target="_blank" rel="noopener">RASolute 302 author list and sites</a>. New England Journal of Medicine, via PubMed</li>
+      </ol>
+    </div>
+    <div>
+      <div class="subhead">Latest studies</div>
+      <ol class="srclist">
+        <li><a href="https://clinicaltrials.gov/study/NCT07805954" target="_blank" rel="noopener">RASolute 309: zoldonrasib + daraxonrasib vs gemcitabine + nab-paclitaxel (NCT07805954)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://www.biontech.com/us/en/home/mediaroom/news/statements/2026/08/BioNTech-Provides-Update-on-Phase-2-Clinical-Trial-of-Autogene-Cevumeran-in-Resected-Colorectal-Cancer.html" target="_blank" rel="noopener">BioNTech provides update on Phase 2 trial of autogene cevumeran</a>. BioNTech, Aug 28, 2026</li>
+        <li><a href="https://ascopost.com/news/july-2026/kras-g12d-mutated-metastatic-pancreatic-cancer-zoldonrasib-plus-chemotherapy/" target="_blank" rel="noopener">KRAS G12D–mutated metastatic pancreatic cancer: zoldonrasib plus chemotherapy</a>. The ASCO Post, July 15, 2026</li>
+        <li><a href="https://www.ema.europa.eu/en/news/ema-fast-tracks-review-medicine-metastatic-pancreatic-cancer" target="_blank" rel="noopener">EMA fast tracks review of a medicine for metastatic pancreatic cancer</a>. European Medicines Agency, July 7, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42185478/" target="_blank" rel="noopener">Gemcitabine and nab-paclitaxel with or without paricalcitol for metastatic pancreatic cancer</a>. Nature Cancer, May 25, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41921365/" target="_blank" rel="noopener">Liposomal irinotecan plus S-1 vs plus 5-FU in metastatic pancreatic cancer (NAPAN)</a>. European Journal of Cancer, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42098550/" target="_blank" rel="noopener">mFOLFIRINOX with or without SBRT in locally advanced pancreatic cancer (SABER)</a>. Annals of Surgical Oncology, May 7, 2026</li>
+        <li><a href="https://www.fda.gov/news-events/press-announcements/fda-permits-expanded-access-investigational-pancreatic-cancer-drug" target="_blank" rel="noopener">FDA permits expanded access for investigational pancreatic cancer drug</a>. U.S. Food and Drug Administration, May 1, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42059487/" target="_blank" rel="noopener">Mistletoe extract in advanced pancreatic cancer: quality of life (MISTRAL)</a>. Palliative Medicine, Apr 30, 2026</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT07491445" target="_blank" rel="noopener">RASolute 303: daraxonrasib first line (NCT07491445)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41915391/" target="_blank" rel="noopener">Radiofrequency ablation and chemotherapy vs chemotherapy only (PELICAN)</a>. JAMA Network Open, Mar 2, 2026</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT07252232" target="_blank" rel="noopener">RASolute 304: daraxonrasib after surgery (NCT07252232)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT06625320" target="_blank" rel="noopener">RASolute 302 (NCT06625320)</a>. ClinicalTrials.gov</li>
+      </ol>
+      <div class="subhead">Around the world</div>
+      <ol class="srclist">
+        <li><a href="https://www.takeda.com/newsroom/shire-news-releases/2016/xbbgwf/" target="_blank" rel="noopener">Shire granted EU marketing authorization of Onivyde</a>. Takeda (Shire), Oct 18, 2016</li>
+        <li><a href="https://digestivecancers.eu/ema-approves-new-first-line-treatment-option-for-metastatic-pancreatic-cancer/" target="_blank" rel="noopener">EMA approves new first-line treatment option for metastatic pancreatic cancer (NALIRIFOX)</a>. Digestive Cancers Europe, 2024</li>
+        <li><a href="https://www.astrazeneca.com/media-centre/press-releases/2020/lynparza-approved-in-the-eu-for-brca-mutated-metastatic-pancreatic-cancer.html" target="_blank" rel="noopener">Lynparza approved in the EU for BRCA-mutated metastatic pancreatic cancer</a>. AstraZeneca, July 8, 2020</li>
+        <li><a href="https://www.astrazeneca.com/media-centre/press-releases/2020/lynparza-approved-in-japan-for-three-cancers.html" target="_blank" rel="noopener">Lynparza approved in Japan for advanced ovarian, prostate and pancreatic cancers</a>. AstraZeneca, Dec 28, 2020</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/27265347/" target="_blank" rel="noopener">Adjuvant S-1 versus gemcitabine for resected pancreatic cancer (JASPAC 01)</a>. The Lancet, 2016</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=020509" target="_blank" rel="noopener">Gemzar (gemcitabine), NDA 020509: approved May 15, 1996</a>. Drugs@FDA</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=021743" target="_blank" rel="noopener">Tarceva (erlotinib), NDA 021743: supplement Nov 2, 2005</a>. Drugs@FDA</li>
+        <li><a href="https://clinicaltrials.gov/data-api/api" target="_blank" rel="noopener">ClinicalTrials.gov API</a>. Live recruiting-trial data, loaded each time this page opens</li>
+      </ol>
+      <div class="subhead">Natural remedies &amp; supplements</div>
+      <ol class="srclist">
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11539882/" target="_blank" rel="noopener">Mistletoe extract in patients with advanced pancreatic cancer (MISTRAL)</a>. Deutsches Ärzteblatt International, 2024</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/18628464/" target="_blank" rel="noopener">Phase II trial of curcumin in patients with advanced pancreatic cancer</a>. Clinical Cancer Research, 2008</li>
+        <li><a href="https://ascopost.com/issues/february-25-2020/using-antioxidants-and-other-supplements-with-chemotherapy-may-increase-risk-of-breast-cancer-recurrence-and-mortality/" target="_blank" rel="noopener">Using antioxidants with chemotherapy may increase risk of recurrence (SWOG S0221)</a>. The ASCO Post</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41817106/" target="_blank" rel="noopener">Gemcitabine, nab-paclitaxel, cisplatin with or without a medically supervised ketogenic diet</a>. Cancer, Mar 15, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/32631175/" target="_blank" rel="noopener">Pancreatic exocrine insufficiency and enzyme replacement therapy in advanced pancreatic cancer: meta-analysis</a>. United European Gastroenterology Journal, 2020</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41794391/" target="_blank" rel="noopener">Early elemental diet supplementation during chemotherapy in advanced pancreatic cancer</a>. Clinical Nutrition ESPEN, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/40179142/" target="_blank" rel="noopener">Auricular acupressure in pancreatic cancer patients undergoing chemotherapy</a>. Cancer Nursing, 2026</li>
+      </ol>
+      <div class="subhead">Support groups</div>
+      <ol class="srclist">
+        <li><a href="https://pancan.org/facing-pancreatic-cancer/patient-services/" target="_blank" rel="noopener">Patient Services</a>. Pancreatic Cancer Action Network</li>
+        <li><a href="https://www.pancreaticcancer.org.uk/support-for-you/" target="_blank" rel="noopener">Support for you</a>. Pancreatic Cancer UK</li>
+        <li><a href="https://www.pancare.org.au/" target="_blank" rel="noopener">Pancare Foundation</a></li>
+        <li><a href="https://pancreatic.org/patients/pancreatic-cancer-patient-support-groups/" target="_blank" rel="noopener">Pancreatic cancer patient support groups</a>. Hirshberg Foundation for Pancreatic Cancer Research</li>
+        <li><a href="https://letswinpc.org/" target="_blank" rel="noopener">Let's Win Pancreatic Cancer</a></li>
+        <li><a href="https://www.smartpatients.com/" target="_blank" rel="noopener">Smart Patients</a></li>
+      </ol>
+      <div class="subhead">Registries &amp; databases</div>
+      <ol class="srclist">
+        <li><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a>. U.S. National Library of Medicine. Live recruiting-trial data</li>
+        <li><a href="https://trialsearch.who.int/" target="_blank" rel="noopener">International Clinical Trials Registry Platform (ICTRP)</a>. World Health Organization</li>
+        <li><a href="https://euclinicaltrials.eu/" target="_blank" rel="noopener">Clinical Trials Information System (CTIS)</a>. European Medicines Agency. Daily snapshot</li>
+        <li><a href="https://www.isrctn.com/" target="_blank" rel="noopener">ISRCTN registry</a>. Live via the ISRCTN API</li>
+        <li><a href="https://www.cochranelibrary.com/central" target="_blank" rel="noopener">Cochrane Central Register of Controlled Trials (CENTRAL)</a>. Cochrane Library</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a>. U.S. National Library of Medicine. Live via NCBI E-utilities</li>
+        <li><a href="https://europepmc.org/" target="_blank" rel="noopener">Europe PMC</a>. Papers and preprints, live via its REST API</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/" target="_blank" rel="noopener">Drugs@FDA</a>, live via <a href="https://open.fda.gov/" target="_blank" rel="noopener">openFDA</a>. U.S. Food and Drug Administration</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines" target="_blank" rel="noopener">Medicines database</a>. European Medicines Agency</li>
+        <li><a href="https://openmd.com/" target="_blank" rel="noopener">OpenMD</a>. Medical search engine</li>
+        <li><a href="https://www.cancer.gov/" target="_blank" rel="noopener">National Cancer Institute</a>, including PDQ summaries and the NCI clinical trials search</li>
+      </ol>
+    </div>
+  </div>
+  <p class="src-note">Not individually sourced: the "ask about tumor and genetic testing" advice and dietitian suggestions reflect standard supportive-care practice rather than a single study. S-1's U.S. status is based on finding no S-1 record in Drugs@FDA. Zoldonrasib results are early congress data, and ELI-002 7P results come from a company release; neither is peer-reviewed yet. Expert care centers: MSK's National Pancreas Foundation status is from MSK's own page, and Heidelberg's patient numbers are the center's own figures; the National Pancreas Foundation's directory blocks automated checks, so it could not be confirmed there. Approvals outside the U.S., EU and Japan (UK, Canada, South Korea, China, Australia, Switzerland) could not be verified from a regulator and are marked "—". No pancreatic-cancer-specific Reddit community could be verified (Reddit blocks automated checks), so none is listed.</p>
+</section>
+
+<footer>
+  <div><b>About Cure Checker.</b> An independent, AI-assisted daily digest of medical research, rebuilt every morning at 9:00 AM Eastern from trial announcements, peer-reviewed papers and patient-organization updates. Every study entry links to its source.</div>
+  <div><b>Not medical advice.</b> No doctors review these pages. Summaries are simplified, and early-phase results often don't hold up. Talk with your doctor before changing treatment or starting supplements.</div>
+  <div class="foot-links"><a href="index.html">All diseases</a><a href="about.html">About us</a><a href="about.html#contact">Contact</a><a href="terms.html">Terms of Use</a><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+</footer>
+</div>
+
+<script src="assets/analytics.js"></script>
+<script src="assets/diseases.js"></script>
+<script src="assets/registry-snapshot.js"></script>
+<script src="assets/curechecker.js"></script>
+<script src="assets/donate.js"></script>
+<script src="assets/newsletter.js"></script>
+
+</body>
+</html>

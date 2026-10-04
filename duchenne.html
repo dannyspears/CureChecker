@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Cure Checker: a daily digest of Duchenne muscular dystrophy research, treatments, and studies.">
+<title>Cure Checker: Duchenne</title>
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body data-disease="duchenne" data-palette="brick">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/curechecker.css">
+
+<div class="wrap">
+
+<!-- Donation bar: links come from assets/donate.js -->
+<div class="donate-bar" aria-label="Support Cure Checker"></div>
+
+<nav class="crumbs" aria-label="Diseases">
+  <a href="index.html">← All diseases</a>
+  <label>Switch disease <select data-disease-picker data-placeholder="Choose a disease…"></select></label>
+</nav>
+
+<!-- ========== MASTHEAD ========== -->
+<header class="mast">
+  <div class="brand">
+    <div>
+      <a class="logo" href="index.html" aria-label="Cure Checker home">
+        <span class="lg-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="var(--paper)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="lg-text" aria-hidden="true"><span class="lg-1">Cure</span><span class="lg-2">Checker</span></span>
+      </a>
+      <div class="tag">DMD edition · Most recent Duchenne conclusions</div>
+    </div>
+  </div>
+  <div class="datebox">
+    <!-- CURECHECKER:DATE -->
+    <strong id="edition-date">Saturday, October 3, 2026</strong>
+    Updated daily · 9:00 AM ET
+  </div>
+</header>
+<div class="strip">
+  <span class="live"><span class="dot" aria-hidden="true"></span>Today's headline</span>
+  <!-- CURECHECKER:HEADLINE -->
+  <span id="headline">The FDA extended its review of deramiocel, a cell therapy for Duchenne, to November 22, 2026, after an advisory panel voted 9–3 against it in July. Decisions on two exon-skipping drugs are due in early 2027.</span>
+</div>
+
+<!-- ========== LEAD ========== -->
+<div class="lead">
+  <h1>Duchenne muscular dystrophy has no cure yet. Several medicines can slow it, and <em>a one-time gene therapy is approved for boys who can still walk.</em></h1>
+  <p>Cure Checker tracks the cause, the treatments that are working, and the trials underway, and rewrites this page every morning from the latest published results. Plain language, with sources for every claim.</p>
+</div>
+<nav class="toc" aria-label="Sections">
+  <a href="#verdict">Most recent cure information</a>
+  <a href="#cause">What causes Duchenne</a>
+  <a href="#treatments">Treatments that are working</a>
+  <a href="#studies">Latest studies</a>
+  <a href="#world">Around the world</a>
+  <a href="#registries">Every registry</a>
+  <a href="#natural">Natural remedies &amp; daily care</a>
+  <a href="#support-groups">Support groups</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<!-- ========== CURE INFORMATION (top) ========== -->
+<section id="verdict">
+  <div class="verdict">
+    <div>
+      <span class="eyebrow">Cure Checker's conclusion · Oct 2026</span>
+      <h2>Most recent cure information</h2>
+      <p class="big">There is no cure for Duchenne muscular dystrophy (DMD). It is caused by changes in the DMD gene that leave muscles without dystrophin, a protein that protects muscle fibers. Steroids (deflazacort, prednisone or vamorolone) and givinostat slow the loss of strength. Four exon-skipping drugs are approved in the U.S. for certain gene changes, but only under accelerated approval. Elevidys, a one-time gene therapy, makes a shortened dystrophin. Since November 14, 2025 it carries a boxed warning for serious liver injury and is limited to people 4 and older who can still walk. Our view: today's treatments slow Duchenne, they do not stop it, and several new drugs face FDA decisions in the next five months.</p>
+    </div>
+    <ol>
+      <li><b>Gene therapy, now with limits.</b><span>After two deaths from acute liver failure in people who could no longer walk, the FDA added a boxed warning to Elevidys on November 14, 2025 and removed the non-walking group from its label.</span></li>
+      <li><b>Exon-skipping evidence is still thin.</b><span>The ESSENCE trial of casimersen and golodirsen missed its main goal in November 2025. The FDA is reviewing a request to give them full approval anyway, with a decision due February 28, 2027.</span></li>
+      <li><b>Not every gene therapy works.</b><span>Pfizer's gene therapy, fordadistrogene movaparvovec, did no better than placebo in its Phase 3 CIFFREO trial (published March 2026), and Pfizer stopped developing it.</span></li>
+      <li><b>More FDA decisions ahead.</b><span>Deramiocel (due November 22, 2026), z-rostudirsen for exon 51 (due January 21, 2027) and del-zota for exon 44 (accepted September 2026) are all under FDA review.</span></li>
+    </ol>
+    <p class="fine">This is Cure Checker's editorial assessment of published evidence, not medical advice. Care decisions belong with a Duchenne-experienced neuromuscular team.</p>
+  </div>
+</section>
+
+<!-- ========== 1. CAUSE ========== -->
+<section id="cause">
+  <div class="sec-head">
+    <h2>What causes Duchenne muscular dystrophy</h2>
+    <p>Duchenne happens when a change in the DMD gene on the X chromosome stops the body from making dystrophin. Without it, muscle fibers are damaged each time they work.</p>
+  </div>
+
+  <div class="path" role="img" aria-label="Pathway: a change in the DMD gene on the X chromosome; muscles make no dystrophin; muscle fibers break down and are lost; walking, breathing and heart problems follow.">
+    <div class="stage">
+      <span class="eyebrow">Step 1 · The gene</span>
+      <h3>The DMD gene is changed</h3>
+      <div class="bar" aria-hidden="true"><i style="width:30%;background:var(--signal)"></i><i style="width:70%;background:var(--blue-soft)"></i></div>
+      <div class="legend"><span>~1 in 3,300</span><span>boys</span></div>
+      <ul>
+        <li><b>X-linked:</b> boys have one X chromosome, so one changed copy causes the disease</li>
+        <li><b>Often passed down:</b> from a mother who carries the change, though some cases are new</li>
+        <li><b>Becker cousin:</b> a milder form, Becker, comes from changes in the same gene</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage key">
+      <span class="eyebrow">Step 2 · The tipping point</span>
+      <h3>No dystrophin is made</h3>
+      <svg viewBox="0 0 200 100" aria-hidden="true">
+        <g stroke="var(--blue)" stroke-width="3" stroke-linecap="round" fill="none"><path d="M16 30 H72"/><path d="M16 42 H72"/><path d="M16 54 H72"/></g>
+        <g stroke="var(--warn)" stroke-width="3" stroke-linecap="round" fill="none" stroke-dasharray="6 5"><path d="M116 30 H184"/><path d="M116 42 H184"/><path d="M116 54 H184"/></g>
+        <text x="44" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">dystrophin</text>
+        <text x="150" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">none</text>
+      </svg>
+      <ul>
+        <li>Dystrophin helps hold muscle fibers together and protects them as they contract</li>
+        <li>It is needed in the muscles that move the body and in the heart</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 3 · The damage</span>
+      <h3>Muscle is slowly lost</h3>
+      <ul>
+        <li><b>Early childhood:</b> signs usually appear between ages 3 and 6</li>
+        <li><b>Childhood:</b> muscle weakness keeps growing</li>
+        <li><b>Teen years:</b> most need a wheelchair by adolescence</li>
+        <li><b>Heart:</b> heart-muscle disease (cardiomyopathy) usually begins in the teens</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 4 · The result</span>
+      <h3>Heart and breathing risks</h3>
+      <svg viewBox="0 0 200 100" aria-hidden="true">
+        <path d="M30 14 V60" stroke="var(--blue)" stroke-width="16" stroke-linecap="round"/>
+        <path d="M130 44 V60" stroke="var(--warn)" stroke-width="16" stroke-linecap="round"/>
+        <text x="30" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">healthy</text>
+        <text x="130" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--warn)">weakened</text>
+      </svg>
+      <ul>
+        <li>Weak breathing and heart muscles can cause life-threatening problems in a person's 20s or 30s</li>
+        <li>Steroids, heart medicines and breathing support help people live longer</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cause-note">
+    <div><b>The Becker clue:</b> people with Becker muscular dystrophy make a shorter but partly working dystrophin and have a milder disease. Exon skipping and micro-dystrophin gene therapy both try to copy this.</div>
+    <div><b>Five years after gene therapy (2026):</b> all 4 boys in the first Elevidys study were still walking five years later. That is a very small study without a placebo group.</div>
+    <div><b>Steroids and growth (2026):</b> a 2026 study found that prednisone, but not vamorolone, lowered blood markers of bone and cartilage growth in young boys with Duchenne.</div>
+  </div>
+</section>
+
+<!-- ========== 2. TREATMENTS ========== -->
+<section id="treatments">
+  <div class="sec-head">
+    <h2>Treatments that are working</h2>
+    <p>Steroids are the base of care. Newer drugs and a gene therapy add to them for some people. Heart, lung and physical care protect the body as the disease moves on.</p>
+  </div>
+
+  <div class="tx">
+    <article class="card">
+      <div class="top"><h3>Steroids: deflazacort &amp; prednisone</h3><span class="pill p-good">Standard</span></div>
+      <div class="who">Emflaza approved Feb 9, 2017 · ages 2 and older</div>
+      <p>Daily steroids slow the loss of muscle strength. Long-term use can weaken bones and slow growth. Steroids must never be stopped suddenly.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Agamree (vamorolone)</h3><span class="pill p-good">FDA approved</span></div>
+      <div class="who">Approved Oct 26, 2023 · ages 2 and older</div>
+      <p>A steroid-like drug. Studies suggest it works about as well as prednisone with less effect on bone and growth.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Duvyzat (givinostat)</h3><span class="pill p-good">FDA approved</span></div>
+      <div class="who">Approved Mar 21, 2024 · ages 6 and older</div>
+      <p>The first non-steroid pill for all gene types. In an 18-month trial in boys also taking steroids, it slowed the decline in four-stair-climb time compared with placebo. Watch for low platelets and high triglycerides.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Elevidys gene therapy</h3><span class="pill p-sig">Approved · restricted</span></div>
+      <div class="who">One-time infusion · ages 4+ who can walk · boxed warning</div>
+      <p>Makes a shortened "micro-dystrophin". Its main Phase 3 trial (EMBARK) missed its main goal at one year, but the FDA gave full approval for walking patients in 2024 based on other measures. It can cause serious, sometimes fatal liver injury.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Exon-skipping drugs</h3><span class="pill p-sig">Accelerated approval</span></div>
+      <div class="who">Exondys 51 · Vyondys 53 · Viltepso · Amondys 45</div>
+      <p>Weekly infusions for specific gene changes (exons 51, 53 or 45). They raise dystrophin a little. Benefit on strength has not yet been confirmed: ESSENCE and RACER53 missed their main goals.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Heart, lung &amp; physical care</h3><span class="pill p-good">Standard</span></div>
+      <div class="who">Neuromuscular team · cardiology · pulmonology · therapy</div>
+      <p>Regular heart and breathing checks, heart medicines, breathing support, stretching and physical therapy are part of the international care guidelines.</p>
+    </article>
+  </div>
+
+  <div class="subhead">Standard treatment today</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Treatment</th><th>For</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><b>Corticosteroids (deflazacort, prednisone, vamorolone)</b></td><td>Most people with Duchenne</td><td>Slows loss of strength. Needs bone, growth and weight monitoring.</td></tr>
+      <tr><td><b>Givinostat (Duvyzat)</b></td><td>Ages 6 and older</td><td>Slows muscle decline. Needs blood-count and lipid checks.</td></tr>
+      <tr><td><b>Delandistrogene moxeparvovec (Elevidys)</b></td><td>Ages 4+, still walking, eligible antibody test</td><td>One-time gene therapy. Weekly liver tests for 3 months after.</td></tr>
+      <tr><td><b>Exon-skipping drugs</b></td><td>Only certain gene changes</td><td>Raise dystrophin slightly. Accelerated approval only.</td></tr>
+      <tr><td><b>Heart, breathing &amp; physical care</b></td><td>Everyone</td><td>Protects the heart and lungs and keeps joints flexible.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="subhead">Where people find expert care</div>
+  <ul class="centers">
+    <li><b>Nationwide Children's Hospital</b> <span class="loc">Columbus, Ohio, USA</span><p>A PPMD Certified Duchenne Care Center and a study site in Sarepta's Phase 3 EMBARK and ENVISION gene-therapy trials.</p><div class="src"><a href="https://www.parentprojectmd.org/care/find-a-certified-duchenne-care-center/" target="_blank" rel="noopener">PPMD Certified Duchenne Care Centers</a> &middot; <a href="https://clinicaltrials.gov/study/NCT05096221" target="_blank" rel="noopener">EMBARK (NCT05096221)</a></div></li>
+    <li><b>Children's Hospital of Philadelphia</b> <span class="loc">Philadelphia, Pennsylvania, USA</span><p>Certified by PPMD in June 2025 as a Duchenne Care Center and the first to receive PPMD's Clinical Research Designation.</p><div class="src"><a href="https://www.parentprojectmd.org/ppmd-announces-childrens-hospital-of-philadelphia-as-cdcc-recipient-of-inaugural-clinical-research-designation/" target="_blank" rel="noopener">PPMD announcement</a></div></li>
+    <li><b>Boston Children's Hospital</b> <span class="loc">Boston, Massachusetts, USA</span><p>A PPMD Certified Duchenne Care Center since 2023, and a study site in the EMBARK, ENVISION and HOPE-3 trials.</p><div class="src"><a href="https://www.parentprojectmd.org/ppmd-announces-pediatric-certified-duchenne-care-center-at-boston-childrens/" target="_blank" rel="noopener">PPMD announcement</a> &middot; <a href="https://clinicaltrials.gov/study/NCT05126758" target="_blank" rel="noopener">HOPE-3 (NCT05126758)</a></div></li>
+    <li><b>UC Davis Physical Medicine &amp; Rehabilitation</b> <span class="loc">Sacramento, California, USA</span><p>A PPMD Certified Duchenne Care Center and a study site in EMBARK and HOPE-3. A UC Davis physician is the first author of the published HOPE-3 trial.</p><div class="src"><a href="https://www.parentprojectmd.org/care/find-a-certified-duchenne-care-center/" target="_blank" rel="noopener">PPMD Certified Duchenne Care Centers</a> &middot; <a href="https://pubmed.ncbi.nlm.nih.gov/42526472/" target="_blank" rel="noopener">HOPE-3 in The Lancet</a></div></li>
+    <li><b>Cincinnati Children's Hospital Medical Center</b> <span class="loc">Cincinnati, Ohio, USA</span><p>A PPMD Certified Duchenne Care Center and a study site in the HOPE-3 trial of deramiocel.</p><div class="src"><a href="https://www.parentprojectmd.org/care/find-a-certified-duchenne-care-center/" target="_blank" rel="noopener">PPMD Certified Duchenne Care Centers</a> &middot; <a href="https://clinicaltrials.gov/study/NCT05126758" target="_blank" rel="noopener">HOPE-3 (NCT05126758)</a></div></li>
+    <li><b>Great Ormond Street Hospital</b> <span class="loc">London, United Kingdom</span><p>A study site in the Phase 3 EMBARK and ENVISION gene-therapy trials.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT05881408" target="_blank" rel="noopener">ENVISION (NCT05881408)</a></div></li>
+  </ul>
+  <p class="fine centers-note">These are centers recognized for expertise in this condition, not a ranking, and Cure Checker does not endorse or rate any facility. Outcomes depend on the individual. Ask your doctor which center fits your situation.</p>
+</section>
+
+<!-- ========== 3. STUDIES ========== -->
+<section id="studies">
+  <div class="sec-head">
+    <h2>Latest studies &amp; what they concluded</h2>
+    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter studies">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
+    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
+    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
+  </div>
+  <!-- CURECHECKER:STUDIES (newest first) -->
+  <div class="studies" id="studies-list">
+    <div class="study" data-k="underway"><time>Sep 8, 2026</time><div><h3>FDA accepts del-zota for priority review</h3><p>The FDA accepted Avidity's application for accelerated approval of delpacibart zotadirsen (del-zota) for people whose gene change can be treated by skipping exon 44. A Phase 3 confirmatory trial, SAFARI44, has started. Acceptance is not approval.</p><div class="src"><a href="https://cureduchenne.org/research/fda-grants-priority-review-to-potential-duchenne-treatment-del-zota/" target="_blank" rel="noopener">CureDuchenne</a> · <a href="https://dmdwarrior.com/del-zota-dmd44-fda-priority-review/" target="_blank" rel="noopener">DMD Warrior</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="underway"><time>Aug 2026</time><div><h3>FDA extends deramiocel review to Nov 22, 2026</h3><p>After the July advisory vote, Capricor sent more HOPE-3 data, including 24-month follow-up. The FDA treated it as a major amendment and moved its decision date from August 22 to November 22, 2026.</p><div class="src"><a href="https://www.cgtlive.com/view/fda-extends-deramiocel-review-dmd" target="_blank" rel="noopener">CGTLive</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="science"><time>Aug 4, 2026</time><div><h3>Elevidys label adds an FDA-authorized antibody test</h3><p>The FDA approved a label update naming an authorized test to pick patients whose antibodies to the gene therapy's virus shell are low enough to treat.</p><div class="src"><a href="https://www.fda.gov/media/194345/download" target="_blank" rel="noopener">FDA approval letter</a></div></div><span class="pill p-blue">Policy</span></div>
+    <div class="study" data-k="science"><time>Aug 3, 2026</time><div><h3>Prednisone, not vamorolone, lowers bone-growth markers</h3><p>Blood samples from a trial in boys aged 4 to under 7 showed that prednisone lowered 10 proteins linked to bone and cartilage growth. Vamorolone did not, and levels recovered after switching to vamorolone.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42547787/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-blue">Science</span></div>
+    <div class="study" data-k="result"><time>Jul 29, 2026</time><div><h3>Deramiocel: HOPE-3 Phase 3 published, panel votes no</h3><p>In 106 people aged 10 and older, the cell therapy slowed loss of arm function compared with placebo at 12 months (p=0.029). The same day, an FDA advisory committee voted 9–3 that the evidence does not show it works for Duchenne heart disease, citing changes to the analysis plan.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42526472/" target="_blank" rel="noopener">PubMed (The Lancet)</a> · <a href="https://www.cgtlive.com/view/fda-panel-votes-against-deramiocel-duchenne-cardiomyopathy" target="_blank" rel="noopener">CGTLive</a></div></div><span class="pill p-sig">Mixed</span></div>
+    <div class="study" data-k="underway"><time>Jul 20, 2026</time><div><h3>FDA accepts z-rostudirsen (DYNE-251) for review</h3><p>The FDA accepted Dyne's application for accelerated approval of z-rostudirsen for exon 51 skipping, with priority review and a decision date of January 21, 2027. The Phase 3 FORZETTO confirmatory trial is underway.</p><div class="src"><a href="https://www.globenewswire.com/news-release/2026/07/20/3329635/0/en/dyne-therapeutics-announces-u-s-fda-acceptance-of-biologics-license-application-bla-for-z-rostudirsen-in-exon-51-duchenne-muscular-dystrophy-dmd.html" target="_blank" rel="noopener">Company release</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="underway"><time>Jun 30, 2026</time><div><h3>FDA reviews full approval for Amondys 45 and Vyondys 53</h3><p>Even though ESSENCE missed its main goal, the FDA accepted Sarepta's request to convert casimersen and golodirsen to full approval. The decision date is February 28, 2027.</p><div class="src"><a href="https://www.neurologylive.com/view/fda-accepts-sarepta-sndas-casimersen-golodirsen-dmd" target="_blank" rel="noopener">NeurologyLive</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="underway"><time>Jun 24, 2026</time><div><h3>RGX-202 gene therapy finishes dosing, filing planned</h3><p>Regenxbio finished dosing its confirmatory study (63 people treated in total) and said it planned to file for accelerated approval in the third quarter of 2026. It reports that over 93% reached its microdystrophin goal at week 12.</p><div class="src"><a href="https://www.prnewswire.com/news-releases/regenxbio-completes-dosing-in-confirmatory-study-of-rgx-202-marking-completion-of-registrational-development-program-and-supporting-planned-bla-submission-in-q3-2026-302808616.html" target="_blank" rel="noopener">Company release</a></div></div><span class="pill p-sig">Promising</span></div>
+    <div class="study" data-k="result"><time>Jun 3, 2026</time><div><h3>Elevidys: five-year results in the first 4 boys</h3><p>All four boys treated at ages 4 to 7 were still walking at five years, and their North Star scores were well above matched untreated boys from other studies. No new safety signals were seen.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42237476/" target="_blank" rel="noopener">PubMed (Muscle &amp; Nerve)</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="science"><time>May 12, 2026</time><div><h3>NICE recommends givinostat in England</h3><p>England's NICE recommended givinostat on the NHS for people aged 6 and older who can walk or stand, but not for those who can no longer walk.</p><div class="src"><a href="https://www.duchenneuk.org/news/givinostat-approved-for-use-in-nhs-england" target="_blank" rel="noopener">Duchenne UK</a></div></div><span class="pill p-blue">Policy</span></div>
+    <div class="study" data-k="result"><time>Mar 11, 2026</time><div><h3>SGT-003 gene therapy update at MDA 2026</h3><p>Solid Biosciences reported strong microdystrophin levels, restored partner proteins and lower muscle-damage markers. The 40 children dosed so far used a steroid-only immune regimen. These are early, uncontrolled data from a company presentation.</p><div class="src"><a href="https://www.solidbio.com/letter-to-the-duchenne-community-march2026/" target="_blank" rel="noopener">Company letter</a></div></div><span class="pill p-sig">Early signal · Phase 1/2</span></div>
+    <div class="study" data-k="result"><time>Mar 2026</time><div><h3>Pfizer gene therapy fails Phase 3 (CIFFREO)</h3><p>In 122 walking boys aged 4 to 7, fordadistrogene movaparvovec did no better than placebo on the North Star score at one year. Serious side effects were more common, and Pfizer ended development.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41722591/" target="_blank" rel="noopener">PubMed (Lancet Neurology)</a></div></div><span class="pill p-warn">Missed goal</span></div>
+    <div class="study" data-k="result"><time>Jan 26, 2026</time><div><h3>EMBARK: three-year Elevidys results</h3><p>Sarepta reported that the 52 treated boys stayed above their starting North Star score at year 3. The comparison was with 73 untreated boys from other studies (an external control), not a placebo group. Topline company data, not yet peer reviewed.</p><div class="src"><a href="https://www.parentprojectmd.org/sarepta-shares-topline-three-year-embark-data-for-elevidys-in-ambulatory-duchenne-patients/" target="_blank" rel="noopener">PPMD</a></div></div><span class="pill p-sig">Mixed</span></div>
+    <div class="study" data-k="science"><time>Nov 14, 2025</time><div><h3>FDA adds boxed warning, limits Elevidys</h3><p>After two deaths from acute liver failure in people who could not walk, the FDA added a boxed warning, removed the non-walking group from the label and required a 200-person liver-safety study.</p><div class="src"><a href="https://www.fda.gov/news-events/press-announcements/fda-approves-new-safety-warning-and-revised-indication-limits-use-elevidys-following-reports-fatal" target="_blank" rel="noopener">FDA</a></div></div><span class="pill p-blue">Policy</span></div>
+    <div class="study" data-k="result"><time>Nov 4, 2025</time><div><h3>ESSENCE: casimersen and golodirsen miss main goal</h3><p>In 225 boys aged 6 to 13, the change in stair-climbing speed at 96 weeks was not significantly better than placebo. Dystrophin rose, and no new safety issues appeared.</p><div class="src"><a href="https://www.clinicaltrialsarena.com/news/sarepta-dmd-two-drugs-fail-confirmatory-trial/" target="_blank" rel="noopener">Clinical Trials Arena</a></div></div><span class="pill p-warn">Missed goal</span></div>
+  </div>
+</section>
+
+<!-- ========== 4. AROUND THE WORLD ========== -->
+<section id="world" data-condition="Duchenne Muscular Dystrophy">
+  <div class="sec-head">
+    <h2>How other countries treat Duchenne</h2>
+    <p>Steroids are used worldwide. Newer drugs differ a lot by country: Europe refused Elevidys and eteplirsen, and Japan approved Elevidys conditionally for younger children.</p>
+  </div>
+
+  <div class="subhead">What's available</div>
+  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 3, 2026) -->
+  <div class="scroll">
+  <table class="approved world">
+    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
+    <tbody>
+      <tr><td><b>Deflazacort (Emflaza)</b><small>Steroid</small></td><td><span class="c c-yes">Approved 2017</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Vamorolone (Agamree)</b><small>Steroid-like</small></td><td><span class="c c-yes">Approved 2023</span></td><td><span class="c c-yes">Approved 2023</span></td><td><span class="c c-yes">Approved 2024</span></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Givinostat (Duvyzat)</b><small>Non-steroid pill</small></td><td><span class="c c-yes">Approved 2024</span></td><td><span class="c c-yes">Conditional 2025</span></td><td><span class="c c-yes">Approved 2024</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Delandistrogene moxeparvovec (Elevidys)</b><small>Gene therapy</small></td><td><span class="c c-yes">Approved 2023</span></td><td><span class="c c-off">Refused</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Conditional 2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Eteplirsen (Exondys 51)</b><small>Exon 51 skipping</small></td><td><span class="c c-yes">Accelerated 2016</span></td><td><span class="c c-off">Refused</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Viltolarsen (Viltepso)</b><small>Exon 53 skipping</small></td><td><span class="c c-yes">Accelerated 2020</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Conditional 2020</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Golodirsen (Vyondys 53) &amp; casimersen (Amondys 45)</b><small>Exon 53 / 45 skipping</small></td><td><span class="c c-yes">Accelerated 2019 / 2021</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Ataluren (Translarna)</b><small>Nonsense mutations</small></td><td><span class="c c-no">—</span></td><td><span class="c c-off">Expired 2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="wkey">
+    <span><span class="c c-yes">Approved</span> approved for Duchenne (full, accelerated or conditional)</span>
+    <span><span class="c c-off">Refused</span> refused, or authorization ended</span>
+    <span><span class="c c-no">—</span> not verified for this report</span>
+  </div>
+
+  <div class="subhead">What's being studied abroad</div>
+  <div class="abroad">
+    <article class="card">
+      <div class="top"><h3>Japan</h3><span class="pill p-good">Conditional approval</span></div>
+      <div class="who">Elevidys · ages 3 to under 8</div>
+      <p>Japan approved Elevidys in May 2025 under a conditional, time-limited pathway for up to seven years. More data are needed for full approval. It is the first approval to include 3-year-olds.</p>
+      <div class="src"><a href="https://musculardystrophynews.com/news/dmd-gene-therapy-elevidys-wins-conditional-approval-japan/" target="_blank" rel="noopener">Muscular Dystrophy News</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Australia &amp; Canada</h3><span class="pill p-blue">IMPACT DUCHENNE</span></div>
+      <div class="who">Solid Biosciences · SGT-003 · Phase 3</div>
+      <p>A randomized, placebo-controlled Phase 3 trial of the SGT-003 gene therapy is recruiting in Sydney, Calgary, Vancouver and Toronto, with U.S. sites listed as not yet recruiting.</p>
+      <div class="src"><a href="https://clinicaltrials.gov/study/NCT07160634" target="_blank" rel="noopener">ClinicalTrials.gov</a> · <a href="https://www.parentprojectmd.org/solid-biosciences-shares-updates-on-sgt-003/" target="_blank" rel="noopener">PPMD</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Outside the U.S.</h3><span class="pill p-blue">SAFARI44</span></div>
+      <div class="who">Avidity · del-zota · exon 44 · Phase 3</div>
+      <p>The confirmatory Phase 3 trial of del-zota is underway outside the United States while the FDA reviews it for accelerated approval.</p>
+      <div class="src"><a href="https://dmdwarrior.com/del-zota-dmd44-fda-priority-review/" target="_blank" rel="noopener">DMD Warrior</a></div>
+    </article>
+  </div>
+
+  <div class="subhead">How it changed over time</div>
+  <ol class="timeline">
+    <li><time>2016</time><span>The <b>FDA</b> grants accelerated approval to eteplirsen (Exondys 51) on September 19.</span></li>
+    <li><time>2017</time><span>The FDA approves deflazacort (Emflaza) on February 9.</span></li>
+    <li><time>2020</time><span>Japan approves viltolarsen in March, its first approval anywhere. The FDA follows on August 12.</span></li>
+    <li><time>2023</time><span>The FDA approves Elevidys (June 22), the first Duchenne gene therapy, and vamorolone (October 26). The EU approves vamorolone in December.</span></li>
+    <li><time>2024</time><span>The FDA approves givinostat (March 21) and expands Elevidys (June 20), even though EMBARK missed its main goal.</span></li>
+    <li><time>2025</time><span>Translarna's EU authorization expires (March). Two deaths lead to a boxed warning and a walking-only Elevidys label (November 14). ESSENCE misses its main goal.</span></li>
+    <li><time>2026</time><span>Pfizer's CIFFREO fails (March). HOPE-3 published and FDA panel votes against deramiocel (July). Several new drugs go to the FDA.</span></li>
+  </ol>
+
+  <div class="subhead">Where Duchenne trials are recruiting right now</div>
+  <div class="live-grid">
+    <div>
+      <p class="status-note" id="ct-status">Loading live data from ClinicalTrials.gov…</p>
+      <div class="cbars" id="ct-bars"></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:10px">Drug trials with no U.S. site</h3>
+      <div class="trials" id="ct-abroad"></div>
+      <button type="button" class="more" id="ct-more" hidden></button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EVERY REGISTRY ========== -->
+<section id="registries">
+  <div class="sec-head">
+    <h2>Every registry, checked</h2>
+    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
+  </div>
+  <div class="reg-stats" id="reg-stats"></div>
+  <div class="reg-grid">
+    <div class="reg-panel"><h3>Newest published clinical trials</h3><span class="reg-src">PubMed · U.S. National Library of Medicine</span><div class="trials" id="reg-pubmed"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest Cochrane systematic reviews</h3><span class="reg-src">Cochrane Database of Systematic Reviews, via PubMed</span><div class="trials" id="reg-cochrane"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest trials in the EU registry</h3><span class="reg-src" id="reg-ctis-src">EU Clinical Trials Information System</span><div class="trials" id="reg-ctis"></div></div>
+    <div class="reg-panel"><h3>Newest UK &amp; international registrations</h3><span class="reg-src">ISRCTN registry</span><div class="trials" id="reg-isrctn"><p class="status-note">Loading…</p></div></div>
+  </div>
+  <div class="subhead">FDA records for the medicines in this report</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Medicine</th><th>Brand</th><th>FDA application</th><th>Original approval</th></tr></thead>
+    <tbody id="reg-fda"></tbody>
+  </table>
+  </div>
+  <p class="reg-note">From Drugs@FDA via FDA's openFDA service. Some older brands are missing from FDA's open data, and newly approved drugs can take a few weeks to appear. An approval may be for a different disease than this one.</p>
+  <div class="subhead">Search every registry yourself</div>
+  <div class="reg-links" id="reg-links"></div>
+  <p class="reg-note">The WHO's ICTRP gathers trials from registries worldwide, including China, Japan, India, Iran, Australia and Brazil. Cochrane CENTRAL and OpenMD don't allow automated access, so they're linked here for you to search directly.</p>
+</section>
+
+<!-- ========== 5. NATURAL ========== -->
+<section id="natural">
+  <div class="sec-head">
+    <h2>Natural remedies &amp; daily care</h2>
+    <p>No supplement replaces dystrophin or stops Duchenne. Daily care that protects muscles, bones, heart and lungs matters most. We rate each by the strength of evidence.</p>
+  </div>
+  <div class="gkey">
+    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Strong expert consensus</span>
+    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Limited / mixed evidence</span>
+    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>No evidence, or possible harm</span>
+  </div>
+  <div class="supp">
+    <div>
+      <h3>Helpful daily care</h3>
+      <div class="row"><b>Stretching &amp; physical therapy</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>Care guidelines recommend regular stretching and supervised therapy to keep joints flexible.</p></div>
+      <div class="row"><b>Vaccines, including yearly flu shots</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>PPMD advises keeping vaccines up to date and getting a flu shot every year. People on daily steroids should avoid live vaccines when possible.</p></div>
+      <div class="row"><b>Creatine</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>A 2013 Cochrane review found short-term creatine raised muscle strength in muscular dystrophies. Ask the care team first.</p></div>
+    </div>
+    <div>
+      <h3>Promoted without evidence, or risky</h3>
+      <div class="row"><b>Unapproved stem cell clinics</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>The FDA warns these products are unapproved and have caused serious harm, including infections and blindness.</p></div>
+      <div class="row"><b>Stopping steroids suddenly</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>This can cause a life-threatening adrenal crisis. Steroids must be lowered slowly under medical care.</p></div>
+      <div class="row"><b>"Cure" supplements</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>No supplement has been shown to restore dystrophin or stop Duchenne.</p></div>
+    </div>
+  </div>
+  <p class="caution"><b>Be careful:</b> people with Duchenne should never receive the anesthesia drug succinylcholine, which can cause dangerous potassium levels. Anyone on daily steroids needs stress-dose steroids for surgery or serious illness. Tell every emergency and surgical team about Duchenne and the steroids.</p>
+</section>
+
+<!-- ========== SUPPORT GROUPS ========== -->
+<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 3, 2026; only add groups whose link you have verified) -->
+<section id="support-groups">
+  <div class="sec-head">
+    <h2>Support groups &amp; communities</h2>
+    <p>Duchenne affects the whole family, and other families understand. Most of these are free.</p>
+  </div>
+  <div class="groups">
+    <article class="group">
+      <div class="top"><h3>PPMD Connect Groups</h3><span class="pill p-good">Community</span></div>
+      <div class="who">Parent Project Muscular Dystrophy</div>
+      <p>Local groups for families living with Duchenne and Becker, run through the largest U.S. Duchenne nonprofit.</p>
+      <a class="join" href="https://www.parentprojectmd.org/connect-with-the-community/find-a-local-connect-group/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Muscular Dystrophy Association</h3><span class="pill p-good">Support</span></div>
+      <div class="who">MDA · U.S.</div>
+      <p>Supports people with neuromuscular diseases, including Duchenne, with care-center networks, resources and events.</p>
+      <a class="join" href="https://www.mda.org/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>CureDuchenne</h3><span class="pill p-blue">Research &amp; community</span></div>
+      <div class="who">Families · research news</div>
+      <p>Funds research and shares plain-language updates on Duchenne treatments and trials.</p>
+      <a class="join" href="https://cureduchenne.org/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Duchenne UK</h3><span class="pill p-blue">UK</span></div>
+      <div class="who">Families in the UK</div>
+      <p>A UK charity that funds research, pushes for access to new treatments and supports families.</p>
+      <a class="join" href="https://www.duchenneuk.org/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>World Duchenne Organization</h3><span class="pill p-blue">International</span></div>
+      <div class="who">Global network of patient groups</div>
+      <p>Connects Duchenne and Becker patient organizations around the world.</p>
+      <a class="join" href="https://www.worldduchenne.org/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Duchenne groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
+      <div class="who">Search results</div>
+      <p>Many private parent and caregiver groups exist. This link searches Facebook (a login is required).</p>
+      <a class="join" href="https://www.facebook.com/search/groups/?q=Duchenne%20muscular%20dystrophy%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
+    </article>
+  </div>
+  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about treatment with your doctor. Protect your privacy, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
+</section>
+
+<!-- ========== SOURCES ========== -->
+<!-- CURECHECKER:SOURCES (add a source here whenever a claim on this page uses it) -->
+<section id="sources">
+  <div class="sec-head">
+    <h2>Sources</h2>
+    <p>Everything this report is based on, grouped by section. Checked October 3, 2026.</p>
+  </div>
+  <div class="sources">
+    <div>
+      <div class="subhead">Cure outlook &amp; treatments</div>
+      <ol class="srclist">
+        <li><a href="https://medlineplus.gov/genetics/condition/duchenne-and-becker-muscular-dystrophy/" target="_blank" rel="noopener">Duchenne and Becker muscular dystrophy</a>. MedlinePlus Genetics, U.S. National Library of Medicine</li>
+        <li><a href="https://www.fda.gov/vaccines-blood-biologics/tissue-tissue-products/elevidys" target="_blank" rel="noopener">ELEVIDYS</a>. FDA (approval letters and current indication)</li>
+        <li><a href="https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapy-treatment-certain-patients-duchenne-muscular-dystrophy" target="_blank" rel="noopener">FDA approves first gene therapy for certain patients with Duchenne</a>. FDA, June 22, 2023</li>
+        <li><a href="https://www.fda.gov/news-events/press-announcements/fda-expands-approval-gene-therapy-patients-duchenne-muscular-dystrophy" target="_blank" rel="noopener">FDA expands approval of gene therapy for patients with Duchenne</a>. FDA, June 20, 2024</li>
+        <li><a href="https://www.fda.gov/news-events/press-announcements/fda-approves-new-safety-warning-and-revised-indication-limits-use-elevidys-following-reports-fatal" target="_blank" rel="noopener">FDA approves new safety warning and revised indication that limits use of Elevidys</a>. FDA, November 14, 2025</li>
+        <li><a href="https://www.parentprojectmd.org/fda-approves-new-safety-warning-and-revised-indication-for-elevidys/" target="_blank" rel="noopener">FDA approves new safety warning and revised indication for ELEVIDYS</a>. Parent Project Muscular Dystrophy, November 14, 2025</li>
+        <li><a href="https://www.parentprojectmd.org/sarepta-announces-fda-approval-to-begin-endeavor-cohort-8-dosing-in-non-ambulatory-individuals-living-with-duchenne/" target="_blank" rel="noopener">FDA approval to begin ENDEAVOR Cohort 8 dosing in non-ambulatory individuals</a>. Parent Project Muscular Dystrophy, November 25, 2025</li>
+        <li><a href="https://www.fda.gov/news-events/press-announcements/fda-approves-nonsteroidal-treatment-duchenne-muscular-dystrophy" target="_blank" rel="noopener">FDA approves nonsteroidal treatment for Duchenne muscular dystrophy</a>. FDA, March 21, 2024</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/215239s000lbl.pdf" target="_blank" rel="noopener">Agamree (vamorolone) prescribing information</a>. FDA, 2023</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/208684s006,208685s007lbl.pdf" target="_blank" rel="noopener">Emflaza (deflazacort) prescribing information</a>. FDA, 2024</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/206488s035lbl.pdf" target="_blank" rel="noopener">Exondys 51 (eteplirsen) prescribing information</a>. FDA, 2024</li>
+        <li><a href="https://www.neurologylive.com/view/puzzling-preliminary-results-announced-viltolarsen-confirmatory-trial-duchenne-muscular-dystrophy" target="_blank" rel="noopener">Preliminary results announced for viltolarsen's confirmatory trial (RACER53)</a>. NeurologyLive, 2024</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/29395989/" target="_blank" rel="noopener">Diagnosis and management of Duchenne muscular dystrophy, part 1</a>. Lancet Neurology, 2018</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/29395990/" target="_blank" rel="noopener">Diagnosis and management of Duchenne muscular dystrophy, part 2</a>. Lancet Neurology, 2018</li>
+      </ol>
+      <div class="subhead">Latest studies</div>
+      <ol class="srclist">
+        <li><a href="https://cureduchenne.org/research/fda-grants-priority-review-to-potential-duchenne-treatment-del-zota/" target="_blank" rel="noopener">FDA grants priority review to potential Duchenne treatment del-zota</a>. CureDuchenne, September 8, 2026</li>
+        <li><a href="https://dmdwarrior.com/del-zota-dmd44-fda-priority-review/" target="_blank" rel="noopener">FDA accepts del-zota application for priority review in DMD44</a>. DMD Warrior, September 2026</li>
+        <li><a href="https://www.cgtlive.com/view/fda-extends-deramiocel-review-dmd" target="_blank" rel="noopener">FDA extends deramiocel review for Duchenne</a>. CGTLive, August 2026</li>
+        <li><a href="https://www.fda.gov/media/194345/download" target="_blank" rel="noopener">ELEVIDYS supplement approval letter</a>. FDA, August 4, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42547787/" target="_blank" rel="noopener">Prednisone, not vamorolone, suppresses novel serum bone and cartilage biomarkers</a>. Scientific Reports, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42526472/" target="_blank" rel="noopener">Deramiocel in advanced Duchenne (HOPE-3): a phase 3 trial</a>. The Lancet, 2026</li>
+        <li><a href="https://www.cgtlive.com/view/fda-panel-votes-against-deramiocel-duchenne-cardiomyopathy" target="_blank" rel="noopener">FDA panel votes against deramiocel for Duchenne cardiomyopathy</a>. CGTLive, July 2026</li>
+        <li><a href="https://www.globenewswire.com/news-release/2026/07/20/3329635/0/en/dyne-therapeutics-announces-u-s-fda-acceptance-of-biologics-license-application-bla-for-z-rostudirsen-in-exon-51-duchenne-muscular-dystrophy-dmd.html" target="_blank" rel="noopener">FDA acceptance of BLA for z-rostudirsen</a>. Dyne Therapeutics press release (a company source), July 20, 2026</li>
+        <li><a href="https://www.neurologylive.com/view/fda-accepts-sarepta-sndas-casimersen-golodirsen-dmd" target="_blank" rel="noopener">FDA accepts Sarepta's sNDAs for casimersen and golodirsen</a>. NeurologyLive, June 30, 2026</li>
+        <li><a href="https://www.prnewswire.com/news-releases/regenxbio-completes-dosing-in-confirmatory-study-of-rgx-202-marking-completion-of-registrational-development-program-and-supporting-planned-bla-submission-in-q3-2026-302808616.html" target="_blank" rel="noopener">REGENXBIO completes dosing in confirmatory study of RGX-202</a>. Regenxbio press release (a company source), June 24, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42237476/" target="_blank" rel="noopener">Five-year outcomes with delandistrogene moxeparvovec: a phase 1/2a study</a>. Muscle &amp; Nerve, 2026</li>
+        <li><a href="https://www.duchenneuk.org/news/givinostat-approved-for-use-in-nhs-england" target="_blank" rel="noopener">Givinostat approved for use in NHS England</a>. Duchenne UK, 2026</li>
+        <li><a href="https://www.solidbio.com/letter-to-the-duchenne-community-march2026/" target="_blank" rel="noopener">Letter to the Duchenne community, March 2026</a>. Solid Biosciences (a company source)</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41722591/" target="_blank" rel="noopener">Fordadistrogene movaparvovec in ambulatory Duchenne (CIFFREO): a phase 3 study</a>. Lancet Neurology, March 2026</li>
+        <li><a href="https://www.parentprojectmd.org/sarepta-shares-topline-three-year-embark-data-for-elevidys-in-ambulatory-duchenne-patients/" target="_blank" rel="noopener">Sarepta shares topline three-year EMBARK data</a>. Parent Project Muscular Dystrophy, January 26, 2026</li>
+        <li><a href="https://www.clinicaltrialsarena.com/news/sarepta-dmd-two-drugs-fail-confirmatory-trial/" target="_blank" rel="noopener">Two of Sarepta's DMD drugs fail to meet primary endpoint in confirmatory trial</a>. Clinical Trials Arena, November 4, 2025</li>
+      </ol>
+      <div class="subhead">Expert care centers</div>
+      <ol class="srclist">
+        <li><a href="https://www.parentprojectmd.org/care/find-a-certified-duchenne-care-center/" target="_blank" rel="noopener">Find a Certified Duchenne Care Center</a>. Parent Project Muscular Dystrophy</li>
+        <li><a href="https://www.parentprojectmd.org/ppmd-announces-childrens-hospital-of-philadelphia-as-cdcc-recipient-of-inaugural-clinical-research-designation/" target="_blank" rel="noopener">PPMD announces Children's Hospital of Philadelphia as CDCC</a>. Parent Project Muscular Dystrophy, June 12, 2025</li>
+        <li><a href="https://www.parentprojectmd.org/ppmd-announces-pediatric-certified-duchenne-care-center-at-boston-childrens/" target="_blank" rel="noopener">PPMD announces pediatric Certified Duchenne Care Center at Boston Children's Hospital</a>. Parent Project Muscular Dystrophy, June 16, 2023</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT05096221" target="_blank" rel="noopener">EMBARK gene therapy trial (NCT05096221)</a>. ClinicalTrials.gov, U.S. National Library of Medicine</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT05881408" target="_blank" rel="noopener">ENVISION gene therapy trial (NCT05881408)</a>. ClinicalTrials.gov, U.S. National Library of Medicine</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT05126758" target="_blank" rel="noopener">HOPE-3 deramiocel trial (NCT05126758)</a>. ClinicalTrials.gov, U.S. National Library of Medicine</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42526472/" target="_blank" rel="noopener">HOPE-3 author list and affiliations</a>. The Lancet, 2026</li>
+      </ol>
+    </div>
+    <div>
+      <div class="subhead">Around the world</div>
+      <ol class="srclist">
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/agamree" target="_blank" rel="noopener">Agamree</a>. European Medicines Agency (authorized December 14, 2023)</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/duvyzat" target="_blank" rel="noopener">Duvyzat</a>. European Medicines Agency (conditional authorization June 6, 2025)</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/elevidys" target="_blank" rel="noopener">Elevidys: refused</a>. European Medicines Agency, 2025</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/exondys" target="_blank" rel="noopener">Exondys: refused</a>. European Medicines Agency, 2018</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/translarna" target="_blank" rel="noopener">Translarna</a>. European Medicines Agency (authorization expired March 28, 2025)</li>
+        <li><a href="https://www.duchenne.org.uk/vamorolone-approved-in-the-uk/" target="_blank" rel="noopener">Vamorolone approved in the UK</a>. Duchenne Research Fund, January 12, 2024</li>
+        <li><a href="https://pmlive.com/pharma_news/mhra-approves-italfarmacos-duvyzat-to-treat-duchenne-muscular-dystrophy/" target="_blank" rel="noopener">MHRA approves Italfarmaco's Duvyzat</a>. PMLiVE</li>
+        <li><a href="https://www.newswire.ca/news-releases/health-canada-approves-agamree-r-vamorolone-as-the-first-treatment-for-duchenne-muscular-dystrophy-in-canada-863153915.html" target="_blank" rel="noopener">Health Canada approves Agamree</a>. Company press release (a company source), 2025</li>
+        <li><a href="https://musculardystrophynews.com/news/dmd-gene-therapy-elevidys-wins-conditional-approval-japan/" target="_blank" rel="noopener">DMD gene therapy Elevidys wins conditional approval in Japan</a>. Muscular Dystrophy News, May 15, 2025</li>
+        <li><a href="https://link.springer.com/article/10.1007/s40265-020-01339-3" target="_blank" rel="noopener">Viltolarsen: first approval</a>. Drugs, 2020</li>
+        <li><a href="https://www.parentprojectmd.org/solid-biosciences-shares-updates-on-sgt-003/" target="_blank" rel="noopener">Solid Biosciences shares updates on SGT-003</a>. Parent Project Muscular Dystrophy, 2026</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT07160634" target="_blank" rel="noopener">IMPACT DUCHENNE trial of SGT-003 (NCT07160634)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://clinicaltrials.gov/data-api/api" target="_blank" rel="noopener">ClinicalTrials.gov API</a>. Live recruiting-trial data, loaded each time this page opens</li>
+      </ol>
+      <div class="subhead">Natural remedies &amp; daily care</div>
+      <ol class="srclist">
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/23740606/" target="_blank" rel="noopener">Creatine for treating muscle disorders</a>. Cochrane Database of Systematic Reviews, 2013</li>
+        <li><a href="https://www.fda.gov/vaccines-blood-biologics/consumers-biologics/consumer-alert-regenerative-medicine-products-including-stem-cells-and-exosomes" target="_blank" rel="noopener">Consumer alert on regenerative medicine products including stem cells and exosomes</a>. FDA</li>
+        <li><a href="https://www.parentprojectmd.org/care/care-guidelines/by-area/emergency-care/" target="_blank" rel="noopener">Emergency care considerations</a>. Parent Project Muscular Dystrophy</li>
+        <li><a href="https://www.parentprojectmd.org/care/care-guidelines/by-area/emergency-care/surgery-and-anesthesia/" target="_blank" rel="noopener">Surgery &amp; anesthesia</a>. Parent Project Muscular Dystrophy</li>
+      </ol>
+      <div class="subhead">Support groups</div>
+      <ol class="srclist">
+        <li><a href="https://www.parentprojectmd.org/connect-with-the-community/find-a-local-connect-group/" target="_blank" rel="noopener">PPMD Connect Groups</a>. Support group or community, link checked October 3, 2026</li>
+        <li><a href="https://www.mda.org/" target="_blank" rel="noopener">Muscular Dystrophy Association</a>. Support group or community, link checked October 3, 2026</li>
+        <li><a href="https://www.worldduchenne.org/" target="_blank" rel="noopener">World Duchenne Organization</a>. Support group or community, link checked October 3, 2026</li>
+      </ol>
+      <div class="subhead">Registries &amp; databases</div>
+      <ol class="srclist">
+        <li><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a>. U.S. National Library of Medicine</li>
+        <li><a href="https://trialsearch.who.int/" target="_blank" rel="noopener">International Clinical Trials Registry Platform (ICTRP)</a>. World Health Organization</li>
+        <li><a href="https://euclinicaltrials.eu/" target="_blank" rel="noopener">Clinical Trials Information System (CTIS)</a>. European Medicines Agency. Daily snapshot</li>
+        <li><a href="https://www.isrctn.com/" target="_blank" rel="noopener">ISRCTN registry</a>. Live via the ISRCTN API</li>
+        <li><a href="https://www.cochranelibrary.com/central" target="_blank" rel="noopener">Cochrane Central Register of Controlled Trials (CENTRAL)</a>. Cochrane Library</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a>. U.S. National Library of Medicine</li>
+        <li><a href="https://europepmc.org/" target="_blank" rel="noopener">Europe PMC</a>. Papers and preprints</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/" target="_blank" rel="noopener">Drugs@FDA</a>, live via <a href="https://open.fda.gov/" target="_blank" rel="noopener">openFDA</a></li>
+        <li><a href="https://www.ema.europa.eu/en/medicines" target="_blank" rel="noopener">Medicines database</a>. European Medicines Agency</li>
+        <li><a href="https://openmd.com/" target="_blank" rel="noopener">OpenMD</a>. Medical search engine</li>
+      </ol>
+    </div>
+  </div>
+  <p class="src-note">Not individually cited: that boys with Duchenne usually have one X chromosome and that Becker comes from the same gene are drawn from the MedlinePlus Genetics page; the step-by-step symptom ages come from the FDA's 2024 press release and MedlinePlus. Steroid side effects, the role of heart medicines and breathing support, and stretching and physical therapy reflect the 2018 international care considerations rather than a single trial. All "—" cells in the approvals table are unverified, and "Approved 2024" for givinostat in the UK rests on Duchenne UK and PMLiVE, which give December 2024 and January 2025 dates for the MHRA decision. The ESSENCE treatment difference is reported differently by different outlets (0.05 vs 0.06 steps per second), so we leave the number out. The SGT-003, RGX-202, z-rostudirsen and three-year EMBARK results rest on company announcements that are not yet peer reviewed. We could not confirm whether Regenxbio has filed its RGX-202 application yet, or find a decision date for del-zota. No Duchenne Reddit community could be confirmed, so none is listed. Expert care centers: certification status for Nationwide Children's, UC Davis and Cincinnati Children's comes from PPMD's live Certified Duchenne Care Center map. Great Ormond Street is listed for its trial-site role only.</p>
+</section>
+
+<footer>
+  <div><b>About Cure Checker.</b> An independent, AI-assisted daily digest of medical research, rebuilt every morning at 9:00 AM Eastern from trial announcements, peer-reviewed papers and patient-organization updates. Every study entry links to its source.</div>
+  <div><b>Not medical advice.</b> No doctors review these pages. Summaries are simplified, and early-phase results often don't hold up. Talk with your doctor before changing treatment or starting supplements.</div>
+  <div class="foot-links"><a href="index.html">All diseases</a><a href="about.html">About us</a><a href="about.html#contact">Contact</a><a href="terms.html">Terms of Use</a><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+</footer>
+</div>
+
+<script src="assets/analytics.js"></script>
+<script src="assets/diseases.js"></script>
+<script src="assets/registry-snapshot.js"></script>
+<script src="assets/curechecker.js"></script>
+<script src="assets/donate.js"></script>
+<script src="assets/newsletter.js"></script>
+
+</body>
+</html>

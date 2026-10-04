@@ -229,5 +229,70 @@ window.CURECHECKER_DISEASES = [
     pubmed: "\"Prader-Willi\"[ti]",
     drugs: ["diazoxide choline", "somatropin"],
     cancer: false
+  },
+  {
+    slug: "duchenne",
+    name: "Duchenne muscular dystrophy (DMD)",
+    page: "duchenne.html",
+    palette: "brick",
+    category: "Genetic · Muscle",
+    summary: "Elevidys is now limited to patients who can walk, and FDA decisions on deramiocel and z-rostudirsen are due by January 2027.",
+    updated: "Oct 3, 2026",
+    search: "duchenne",
+    pubmed: "duchenne[ti]",
+    drugs: ["deflazacort", "vamorolone", "givinostat", "delandistrogene moxeparvovec", "eteplirsen"],
+    cancer: false
+  },
+  {
+    slug: "type-1-diabetes",
+    name: "Type 1 diabetes",
+    page: "type-1-diabetes.html",
+    palette: "mint",
+    category: "Autoimmune · Metabolic",
+    summary: "Teplizumab is now FDA-approved to slow insulin loss in newly diagnosed children 8 to 17, not just to delay onset.",
+    updated: "Oct 3, 2026",
+    search: "type 1 diabetes",
+    pubmed: "\"type 1 diabetes\"[ti]",
+    drugs: ["teplizumab", "insulin", "pramlintide"],
+    cancer: false
+  },
+  {
+    slug: "pancreatic-cancer",
+    name: "Pancreatic cancer",
+    page: "pancreatic-cancer.html",
+    palette: "lavender",
+    category: "Cancer · Pancreas",
+    summary: "The FDA approved daraxonrasib, a new kind of RAS-blocking pill that nearly doubled survival in previously treated spread cancer.",
+    updated: "Oct 3, 2026",
+    search: "pancreatic cancer",
+    pubmed: "\"pancreatic cancer\"[ti] OR \"pancreatic ductal adenocarcinoma\"[ti]",
+    drugs: ["daraxonrasib", "gemcitabine", "olaparib", "irinotecan liposome"],
+    cancer: true
+  },
+  {
+    slug: "ftd",
+    name: "Frontotemporal dementia (FTD)",
+    page: "ftd.html",
+    palette: "bronze",
+    category: "Neurological · Dementia",
+    summary: "No drug slows FTD yet: latozinemab failed Phase 3, two gene therapies were stopped, and DNL593 results are due in 2027.",
+    updated: "Oct 3, 2026",
+    search: "frontotemporal",
+    pubmed: "frontotemporal[ti]",
+    drugs: ["latozinemab"],
+    cancer: false
+  },
+  {
+    slug: "lupus",
+    name: "Lupus (SLE)",
+    page: "lupus.html",
+    palette: "magenta",
+    category: "Autoimmune · Chronic",
+    summary: "Small trials of one-dose CAR-T cell therapies report lasting remissions, and an FDA decision on Gazyva for lupus is due by December 2026.",
+    updated: "Oct 3, 2026",
+    search: "lupus",
+    pubmed: "lupus[ti]",
+    drugs: ["belimumab", "anifrolumab", "voclosporin", "hydroxychloroquine"],
+    cancer: false
   }
 ];
