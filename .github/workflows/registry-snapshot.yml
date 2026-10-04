@@ -1,0 +1,39 @@
+# Refreshes the EU Clinical Trials Information System (CTIS) snapshot every morning.
+# CTIS blocks requests from web pages, so this job collects the data on GitHub's servers,
+# saves it to assets/registry-snapshot.js, and commits it. GitHub Pages then republishes the site.
+name: Refresh EU registry snapshot
+
+on:
+  schedule:
+    - cron: "0 11 * * *"   # 11:00 UTC daily = 7 AM Eastern (6 AM in winter)
+  workflow_dispatch:         # adds a "Run workflow" button on the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: registry-snapshot
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build snapshot from EU CTIS
+        shell: pwsh
+        run: ./tools/update-registries.ps1
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- assets/registry-snapshot.js; then
+            echo "No changes to the snapshot."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/registry-snapshot.js
+          git commit -m "Refresh EU CTIS registry snapshot"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
