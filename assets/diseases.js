@@ -294,5 +294,70 @@ window.CURECHECKER_DISEASES = [
     pubmed: "lupus[ti]",
     drugs: ["belimumab", "anifrolumab", "voclosporin", "hydroxychloroquine"],
     cancer: false
+  },
+  {
+    slug: "ipf",
+    name: "Idiopathic pulmonary fibrosis (IPF)",
+    page: "ipf.html",
+    palette: "graphite",
+    category: "Lungs · Chronic",
+    summary: "The FDA is reviewing inhaled Tyvaso for IPF after two Phase 3 trials slowed lung-function loss, and the newest IPF pill, Jascayd, won EU approval in July 2026.",
+    updated: "Oct 4, 2026",
+    search: "pulmonary fibrosis",
+    pubmed: "\"idiopathic pulmonary fibrosis\"[ti] OR \"pulmonary fibrosis\"[ti]",
+    drugs: ["nintedanib", "pirfenidone", "nerandomilast"],
+    cancer: false
+  },
+  {
+    slug: "hiv",
+    name: "HIV",
+    page: "hiv.html",
+    palette: "wine",
+    category: "Infectious · Immune",
+    summary: "There is still no cure for people in general, but on August 27, 2026 the FDA approved Bixlenvo, a once-daily two-drug pill for adults whose HIV is already controlled.",
+    updated: "Oct 4, 2026",
+    search: "HIV-1",
+    pubmed: "\"HIV\"[ti] OR \"HIV-1\"[ti]",
+    drugs: ["lenacapavir", "cabotegravir", "dolutegravir"],
+    cancer: false
+  },
+  {
+    slug: "sma",
+    name: "Spinal muscular atrophy (SMA)",
+    page: "sma.html",
+    palette: "taupe",
+    category: "Genetic · Muscle",
+    summary: "The FDA approved Isembyld (apitegromab), the first SMA medicine that targets muscle directly, as an add-on to nusinersen or risdiplam for people 2 and older.",
+    updated: "Oct 4, 2026",
+    search: "spinal muscular atrophy",
+    pubmed: "\"spinal muscular atrophy\"[ti]",
+    drugs: ["nusinersen", "risdiplam", "onasemnogene abeparvovec"],
+    cancer: false
+  },
+  {
+    slug: "crohns",
+    name: "Crohn's disease",
+    page: "crohns.html",
+    palette: "mauve",
+    category: "Digestive · Autoimmune",
+    summary: "Five-year results show guselkumab (Tremfya) kept working through week 240 in the GALAXI 1 extension, and drugs that block TL1A are now in Phase 3 trials.",
+    updated: "Oct 4, 2026",
+    search: "crohn",
+    pubmed: "crohn*[ti]",
+    drugs: ["mirikizumab", "guselkumab", "risankizumab", "ustekinumab", "infliximab", "adalimumab"],
+    cancer: false
+  },
+  {
+    slug: "me-cfs",
+    name: "ME/CFS (chronic fatigue syndrome)",
+    page: "me-cfs.html",
+    palette: "heather",
+    category: "Chronic · Neuroimmune",
+    summary: "There is still no approved treatment, but a July 2026 study found muscle changes in ME/CFS and long COVID that bed rest alone does not cause.",
+    updated: "Oct 4, 2026",
+    search: "chronic fatigue syndrome",
+    pubmed: "\"myalgic encephalomyelitis\"[ti] OR \"chronic fatigue syndrome\"[ti] OR \"ME/CFS\"[ti]",
+    drugs: [],
+    cancer: false
   }
 ];

@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Cure Checker: a daily digest of HIV research, treatments, prevention, and studies.">
+<title>Cure Checker: HIV</title>
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body data-disease="hiv" data-palette="wine">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/curechecker.css">
+
+<div class="wrap">
+
+<!-- Donation bar: links come from assets/donate.js -->
+<div class="donate-bar" aria-label="Support Cure Checker"></div>
+
+<nav class="crumbs" aria-label="Diseases">
+  <a href="index.html">← All diseases</a>
+  <label>Switch disease <select data-disease-picker data-placeholder="Choose a disease…"></select></label>
+</nav>
+
+<!-- ========== MASTHEAD ========== -->
+<header class="mast">
+  <div class="brand">
+    <div>
+      <a class="logo" href="index.html" aria-label="Cure Checker home">
+        <span class="lg-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="var(--paper)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="lg-text" aria-hidden="true"><span class="lg-1">Cure</span><span class="lg-2">Checker</span></span>
+      </a>
+      <div class="tag">HIV edition · Most recent HIV conclusions</div>
+    </div>
+  </div>
+  <div class="datebox">
+    <!-- CURECHECKER:DATE -->
+    <strong id="edition-date">Sunday, October 4, 2026</strong>
+    Updated daily · 9:00 AM ET
+  </div>
+</header>
+<div class="strip">
+  <span class="live"><span class="dot" aria-hidden="true"></span>Today's headline</span>
+  <!-- CURECHECKER:HEADLINE -->
+  <span id="headline">The FDA approved Bixlenvo, a once-daily two-drug pill for adults whose HIV is already controlled, on August 27, 2026. A once-weekly pill and a twice-yearly treatment are in late-stage trials, and neither is approved yet.</span>
+</div>
+
+<!-- ========== LEAD ========== -->
+<div class="lead">
+  <h1>HIV has no cure for people in general. Treatment controls it <em>so well that people can live long, healthy lives and not pass it on through sex.</em></h1>
+  <p>Cure Checker tracks the cause, the treatments that are working, and the trials underway, and rewrites this page every morning from the latest published results. Plain language, with sources for every claim.</p>
+</div>
+<nav class="toc" aria-label="Sections">
+  <a href="#verdict">Most recent cure information</a>
+  <a href="#cause">What causes HIV disease</a>
+  <a href="#treatments">Treatments that are working</a>
+  <a href="#studies">Latest studies</a>
+  <a href="#world">Around the world</a>
+  <a href="#registries">Every registry</a>
+  <a href="#natural">Natural remedies &amp; daily care</a>
+  <a href="#support-groups">Support groups</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<!-- ========== CURE INFORMATION (top) ========== -->
+<section id="verdict">
+  <div class="verdict">
+    <div>
+      <span class="eyebrow">Cure Checker's conclusion · Oct 2026</span>
+      <h2>Most recent cure information</h2>
+      <p class="big">There is no cure for HIV that works for people in general. Daily antiretroviral therapy (ART) keeps the virus under control, and the CDC says people who keep an undetectable viral load will not pass HIV to partners through sex. A small number of people, about ten by April 2026 by one research count, are considered cured or in long-term remission after stem-cell transplants. Those transplants were given to treat life-threatening blood cancers. They are dangerous and are not a treatment for HIV itself. Most of today's progress is about taking medicine less often, for both treatment and prevention. Our view: a cure for everyone will need to clear or permanently silence the virus that hides in resting immune cells. Antibody trials have delayed the virus's return after stopping treatment, but this is still research.</p>
+    </div>
+    <ol>
+      <li><b>Treatment works, and it prevents spread.</b><span>The CDC says all people with HIV should take treatment, and an undetectable viral load means HIV will not be passed on through sex.</span></li>
+      <li><b>A new daily pill.</b><span>On August 27, 2026 the FDA approved Bixlenvo (bictegravir + lenacapavir) for adults whose HIV is already controlled on other medicines.</span></li>
+      <li><b>Longer gaps between doses are coming.</b><span>A once-weekly pill (islatravir + lenacapavir) met its goals in two Phase 3 trials published in 2026. Phase 3 trials of a twice-yearly treatment with two antibodies began in July 2026. Neither is approved.</span></li>
+      <li><b>Remission is still research.</b><span>In the RIO trial, 75% of people given two long-acting antibodies had no viral rebound 20 weeks after stopping ART, compared with 11% on placebo. All of them started ART early in infection. Never stop HIV medicine except in a supervised study.</span></li>
+    </ol>
+    <p class="fine">This is Cure Checker's editorial assessment of published evidence, not medical advice. Care decisions belong with an HIV care team.</p>
+  </div>
+</section>
+
+<!-- ========== 1. CAUSE ========== -->
+<section id="cause">
+  <div class="sec-head">
+    <h2>What causes HIV disease</h2>
+    <p>HIV (human immunodeficiency virus) attacks the immune cells that help the body fight infection. The body can't get rid of it on its own. Without treatment it can lead to AIDS, the most advanced stage.</p>
+  </div>
+
+  <div class="path" role="img" aria-label="Pathway: HIV enters the body; it infects CD4 immune cells and hides in some of them; without treatment CD4 cells are lost and the immune system weakens; untreated, this leads to AIDS, while treatment keeps people healthy.">
+    <div class="stage">
+      <span class="eyebrow">Step 1 · The virus</span>
+      <h3>HIV gets into the body</h3>
+      <div class="bar" aria-hidden="true"><i style="width:78%;background:var(--signal)"></i><i style="width:22%;background:var(--blue-soft)"></i></div>
+      <div class="legend"><span>78% on treatment</span><span>2025, worldwide</span></div>
+      <ul>
+        <li><b>How it spreads:</b> mostly through sex without protection or shared drug-injection equipment</li>
+        <li><b>Worldwide:</b> 41.0 million people were living with HIV in 2025</li>
+        <li><b>Testing:</b> you can't tell from symptoms, so a test is the only way to know</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage key">
+      <span class="eyebrow">Step 2 · The tipping point</span>
+      <h3>HIV hides in immune cells</h3>
+      <svg viewBox="0 0 200 100" aria-hidden="true">
+        <g stroke="var(--blue)" stroke-width="3" stroke-linecap="round" fill="none"><path d="M16 30 H72"/><path d="M16 42 H72"/><path d="M16 54 H72"/></g>
+        <g stroke="var(--warn)" stroke-width="3" stroke-linecap="round" fill="none" stroke-dasharray="6 5"><path d="M116 30 H184"/><path d="M116 42 H184"/><path d="M116 54 H184"/></g>
+        <text x="44" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">active cells</text>
+        <text x="150" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">hidden virus</text>
+      </svg>
+      <ul>
+        <li>HIV infects CD4 cells, a type of white blood cell</li>
+        <li>Some infected cells go quiet. This hidden "reservoir" is why treatment controls HIV but can't clear it</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 3 · The damage</span>
+      <h3>The immune system weakens</h3>
+      <ul>
+        <li><b>Without treatment:</b> CD4 cells are steadily lost</li>
+        <li><b>With treatment:</b> the virus is kept so low a test can't detect it</li>
+        <li><b>If ART stops:</b> virus from the reservoir comes back</li>
+        <li><b>Spread:</b> an undetectable viral load means no spread through sex</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 4 · The result</span>
+      <h3>AIDS, if untreated</h3>
+      <svg viewBox="0 0 200 100" aria-hidden="true">
+        <path d="M50 14 V60" stroke="var(--blue)" stroke-width="14" stroke-linecap="round"/>
+        <path d="M150 48 V60" stroke="var(--warn)" stroke-width="14" stroke-linecap="round"/>
+        <text x="50" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">on treatment</text>
+        <text x="150" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--warn)">no treatment</text>
+      </svg>
+      <ul>
+        <li>AIDS means CD4 cells below 200 per cubic millimeter, or certain serious infections</li>
+        <li>In the U.S., most people with HIV never develop AIDS because treatment stops it</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cause-note">
+    <div><b>Two kinds of cure (NIAID):</b> scientists separate "remission", where the virus stays suppressed without daily medicine, from "eradication", where HIV is gone from the body completely. Neither is available as a treatment today.</div>
+    <div><b>Cures without the "resistance gene" (Dec 1, 2025):</b> most transplant cures used donors with two copies of the CCR5Δ32 mutation, which blocks the usual entry route for HIV. A man in Berlin has stayed in remission more than 6 years off ART after a donor with only one copy, suggesting other factors matter too.</div>
+    <div><b>An immune clue (Dec 1, 2025):</b> a Nature study of four antibody trials found that people who later controlled HIV after stopping ART had more "stem-like" CD8 T cells, a lead for future combination treatments.</div>
+  </div>
+</section>
+
+<!-- ========== 2. TREATMENTS ========== -->
+<section id="treatments">
+  <div class="sec-head">
+    <h2>Treatments that are working</h2>
+    <p>Treatment controls HIV but doesn't cure it. Prevention (PrEP) protects people who don't have HIV. The newest options are about taking medicine less often.</p>
+  </div>
+
+  <div class="tx">
+    <article class="card">
+      <div class="top"><h3>Daily antiretroviral therapy (ART)</h3><span class="pill p-good">Standard</span></div>
+      <div class="who">Everyone with HIV · often one pill a day</div>
+      <p>A combination of HIV medicines. It lowers the virus until tests can't detect it, protects the immune system, and prevents sexual spread. The CDC recommends it for everyone with HIV.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Cabenuva injections</h3><span class="pill p-good">FDA approved</span></div>
+      <div class="who">Cabotegravir + rilpivirine · approved Jan 21, 2021</div>
+      <p>Injections given by a clinician every month or every 2 months instead of daily pills, for people 12 and older whose HIV is already undetectable and who have no resistance to either drug.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Bixlenvo (bictegravir + lenacapavir)</h3><span class="pill p-good">FDA approved</span></div>
+      <div class="who">Approved Aug 27, 2026 · adults already suppressed</div>
+      <p>A once-daily two-drug pill for switching. In two Phase 3 trials (ARTISTRY-1 and ARTISTRY-2) it kept the virus suppressed about as well as the regimens people were already taking.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Once-weekly pill</h3><span class="pill p-sig">Phase 3</span></div>
+      <div class="who">Islatravir + lenacapavir · ISLEND-1 &amp; ISLEND-2</div>
+      <p>In two Phase 3 trials, switching to one pill a week worked as well as daily treatment at 48 weeks. The makers plan to apply for approval. It is not approved yet.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Twice-yearly treatment with antibodies</h3><span class="pill p-sig">Phase 3</span></div>
+      <div class="who">Lenacapavir + teropavimab + zinlirvimab</div>
+      <p>In a Phase 2 trial, 1 of 53 people had detectable virus at 26 weeks, similar to daily pills. Only people whose virus was highly sensitive to both antibodies could join. Phase 3 trials started July 2026.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Prevention shots (PrEP)</h3><span class="pill p-blue">Prevention</span></div>
+      <div class="who">Yeztugo every 6 months · Apretude every 2 months</div>
+      <p>For people who don't have HIV. In PURPOSE 1, none of 2,134 women on twice-yearly lenacapavir got HIV. In PURPOSE 2, 2 of 2,179 participants did. These shots prevent HIV. They don't treat it.</p>
+    </article>
+  </div>
+
+  <div class="subhead">Standard treatment today</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Treatment</th><th>For</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><b>Daily combination ART</b></td><td>Everyone with HIV</td><td>Keeps the virus suppressed. Undetectable means no sexual spread.</td></tr>
+      <tr><td><b>Cabotegravir + rilpivirine injections (Cabenuva)</b></td><td>People 12+ already suppressed</td><td>Clinic injections every 1 or 2 months instead of daily pills.</td></tr>
+      <tr><td><b>Newer switch pills: Bixlenvo, Idvynso</b></td><td>Adults already suppressed</td><td>Two-drug daily pills. Idvynso (doravirine + islatravir) was approved Apr 20, 2026.</td></tr>
+      <tr><td><b>Lenacapavir (Sunlenca)</b></td><td>Adults with multidrug-resistant HIV</td><td>Added to other HIV medicines when the current regimen is failing.</td></tr>
+      <tr><td><b>PrEP: daily pills, Apretude, Yeztugo</b></td><td>People without HIV who are at risk</td><td>Prevents HIV. An HIV test is needed before starting and before each shot.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="subhead">Where people find expert care</div>
+  <ul class="centers">
+    <li><b>Emory University</b> <span class="loc">Atlanta, Georgia, USA</span><p>Home to one of the NIH's Centers for AIDS Research. The Hope Clinic at Emory is a listed site in PURPOSE 2, the Phase 3 trial of twice-yearly lenacapavir for prevention.</p><div class="src"><a href="https://www.niaid.nih.gov/research/cfar-developmental-sites" target="_blank" rel="noopener">NIH Centers for AIDS Research sites</a> &middot; <a href="https://clinicaltrials.gov/study/NCT04925752" target="_blank" rel="noopener">PURPOSE 2 (NCT04925752)</a></div></li>
+    <li><b>Johns Hopkins University</b> <span class="loc">Baltimore, Maryland, USA</span><p>An NIH Center for AIDS Research site and a listed site in the PURPOSE 2 trial.</p><div class="src"><a href="https://www.niaid.nih.gov/research/cfar-developmental-sites" target="_blank" rel="noopener">NIH Centers for AIDS Research sites</a> &middot; <a href="https://clinicaltrials.gov/study/NCT04925752" target="_blank" rel="noopener">PURPOSE 2 (NCT04925752)</a></div></li>
+    <li><b>University of Alabama at Birmingham</b> <span class="loc">Birmingham, Alabama, USA</span><p>An NIH Center for AIDS Research site. Its Sexual Health Research Clinic is a listed site in the PURPOSE 2 trial.</p><div class="src"><a href="https://www.niaid.nih.gov/research/cfar-developmental-sites" target="_blank" rel="noopener">NIH Centers for AIDS Research sites</a> &middot; <a href="https://clinicaltrials.gov/study/NCT04925752" target="_blank" rel="noopener">PURPOSE 2 (NCT04925752)</a></div></li>
+    <li><b>University of California, San Diego</b> <span class="loc">San Diego, California, USA</span><p>An NIH Center for AIDS Research site. Its AntiViral Research Center is a listed site in the PURPOSE 2 trial.</p><div class="src"><a href="https://www.niaid.nih.gov/research/cfar-developmental-sites" target="_blank" rel="noopener">NIH Centers for AIDS Research sites</a> &middot; <a href="https://clinicaltrials.gov/study/NCT04925752" target="_blank" rel="noopener">PURPOSE 2 (NCT04925752)</a></div></li>
+    <li><b>Desmond Tutu Health Foundation</b> <span class="loc">Cape Town, South Africa</span><p>A listed site in PURPOSE 1, the Phase 3 prevention trial in young women, and in ISLEND-2, the Phase 3 trial of the once-weekly treatment pill.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT04994509" target="_blank" rel="noopener">PURPOSE 1 (NCT04994509)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT06630299" target="_blank" rel="noopener">ISLEND-2 (NCT06630299)</a></div></li>
+    <li><b>Hôpitaux Universitaires de Genève</b> <span class="loc">Geneva, Switzerland</span><p>A listed site in ISLEND-2, the Phase 3 trial of the once-weekly islatravir + lenacapavir pill.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT06630299" target="_blank" rel="noopener">ISLEND-2 (NCT06630299)</a></div></li>
+  </ul>
+  <p class="fine centers-note">These are centers recognized for expertise in this condition, not a ranking, and Cure Checker does not endorse or rate any facility. Outcomes depend on the individual. Ask your doctor which center fits your situation.</p>
+</section>
+
+<!-- ========== 3. STUDIES ========== -->
+<section id="studies">
+  <div class="sec-head">
+    <h2>Latest studies &amp; what they concluded</h2>
+    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter studies">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
+    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
+    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
+  </div>
+  <!-- CURECHECKER:STUDIES (newest first) -->
+  <div class="studies" id="studies-list">
+    <div class="study" data-k="underway"><time>Sep 16, 2026</time><div><h3>Once-yearly lenacapavir for prevention: generic supply planned early</h3><p>Gilead said it extended royalty-free licenses with six generic makers to cover an investigational once-a-year lenacapavir shot in 120 high-incidence countries, ahead of results from the ongoing Phase 3 PURPOSE 365 trial. This is a company announcement. There are no results yet and it is not approved.</p><div class="src"><a href="https://www.gilead.com/news/news-details/2026/gilead-accelerates-global-access-planning-for-investigational-once-yearly-lenacapavir-for-hiv-prevention" target="_blank" rel="noopener">Gilead press release</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="science"><time>Sep 9, 2026</time><div><h3>England's NICE drafts a "no" for lenacapavir PrEP</h3><p>NICE's draft guidance said the twice-yearly prevention shot would not be offered on the NHS in England, mainly over cost. Comments closed Sept 30, and a final decision meeting is set for Nov 3, 2026.</p><div class="src"><a href="https://i-base.info/htb/54605" target="_blank" rel="noopener">HIV i-Base</a></div></div><span class="pill p-sig">Policy</span></div>
+    <div class="study" data-k="result"><time>Aug 27, 2026</time><div><h3>FDA approves Bixlenvo</h3><p>A once-daily pill of bictegravir and lenacapavir for adults whose HIV is already suppressed. In ARTISTRY-2 (574 people), 1.3% on Bixlenvo and 1.0% on Biktarvy had detectable virus at week 48, which met the goal of being no worse.</p><div class="src"><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=221104" target="_blank" rel="noopener">Drugs@FDA</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/42105781/" target="_blank" rel="noopener">ARTISTRY-2, Lancet HIV</a> · <a href="https://www.gilead.com/news/news-details/2026/u-s--fda-approves-gileads-bixlenvo-a-new-once-daily-single-tablet-option-for-virologically-suppressed-adults-with-hiv-including-those-on-complex-regimens" target="_blank" rel="noopener">Company release</a></div></div><span class="pill p-good">Approval</span></div>
+    <div class="study" data-k="result"><time>Aug 12, 2026</time><div><h3>Once-weekly pill: ISLEND-2 Phase 3</h3><p>Among 626 adults switching from daily treatment, 0.3% on weekly islatravir + lenacapavir and 1.3% on their usual daily regimen had detectable virus at week 48. The weekly pill was no worse.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42586113/" target="_blank" rel="noopener">The Lancet (PubMed)</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="science"><time>Aug 1, 2026</time><div><h3>Two more possible cures after transplants, reported at AIDS 2026</h3><p>Researchers presented an "Essen patient", the first such case with hepatitis B too, and a "Kansas City patient", the youngest so far. Both got stem-cell transplants for cancer. These are conference reports, not peer-reviewed papers, and the transplants are too risky for anyone without life-threatening cancer.</p><div class="src"><a href="https://www.eatg.org/hiv-news/aids-2026-aidsmap-two-more-people-cured-of-hiv-after-stem-cell-transplants-offering-more-clues-to-long-term-remission/" target="_blank" rel="noopener">EATG (reposting aidsmap)</a></div></div><span class="pill p-blue">Science</span></div>
+    <div class="study" data-k="result"><time>Jul 29, 2026</time><div><h3>Once-weekly pill: ISLEND-1 Phase 3</h3><p>In 607 adults switching from daily Biktarvy, no one on the weekly pill and 1 person (0.3%) on Biktarvy had detectable virus at week 48. Side-effect stop rates were similar (2.0% vs 1.7%).</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42525925/" target="_blank" rel="noopener">N Engl J Med (PubMed)</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="underway"><time>Jul 14, 2026</time><div><h3>Twice-yearly treatment enters Phase 3</h3><p>Two Phase 3 trials, Daybreak 1 and Daybreak 2, began testing lenacapavir with the antibodies teropavimab and zinlirvimab. One compares it with Cabenuva injections. The other compares it with people's current daily pills.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT07682961" target="_blank" rel="noopener">NCT07682961</a> · <a href="https://clinicaltrials.gov/study/NCT07683000" target="_blank" rel="noopener">NCT07683000</a> · <a href="https://www.gilead.com/news/news-details/2026/gilead-to-present-new-hiv-research-at-aids-2026-across-prevention-treatment-and-cure" target="_blank" rel="noopener">Gilead</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="result"><time>Jul 13, 2026</time><div><h3>Lenacapavir PrEP in pregnancy and breastfeeding (PURPOSE 1)</h3><p>Among 487 women who became pregnant during the trial, pregnancy outcomes and side effects were similar across groups. The drug reached breast milk, but babies' blood levels were very low. The authors say the data support faster access for pregnant and breastfeeding women.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42442378/" target="_blank" rel="noopener">Lancet HIV (PubMed)</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>May 27, 2026</time><div><h3>RIO trial: antibodies delay the virus's return after stopping ART</h3><p>68 men who had started ART early in infection stopped treatment after two long-acting antibodies or a placebo. At 20 weeks, 75% on antibodies had no rebound, compared with 11% on placebo. This is a remission study, not a cure.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42202839/" target="_blank" rel="noopener">Lancet HIV (PubMed)</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="science"><time>Apr 13, 2026</time><div><h3>The "Oslo patient": remission after a sibling's stem cells</h3><p>A 63-year-old man got a transplant for myelodysplastic syndrome (a blood cancer) from his brother, who carries two copies of the HIV-blocking CCR5Δ32 mutation. He stopped ART 2 years later. At 4 years after the transplant, no intact HIV was found in blood or gut.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41975092/" target="_blank" rel="noopener">Nature Microbiology (PubMed)</a></div></div><span class="pill p-blue">Science</span></div>
+    <div class="study" data-k="result"><time>Apr 1, 2026</time><div><h3>Cochrane review: lenacapavir PrEP</h3><p>Pooling two trials with 8,660 people, twice-yearly lenacapavir led to a large drop in new infections compared with daily PrEP pills, about 14 fewer per 1,000 people. Injection-site reactions were more common.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41919720/" target="_blank" rel="noopener">Cochrane (PubMed)</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>Feb 17, 2026</time><div><h3>Twice-yearly lenacapavir + two antibodies: Phase 2</h3><p>Among 80 people whose virus was highly sensitive to both antibodies, 1 of 53 on the twice-yearly combination and 0 of 27 on daily pills had detectable virus at week 26. There were no serious side effects from the study drugs.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41720146/" target="_blank" rel="noopener">Lancet Microbe (PubMed)</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="science"><time>Dec 1, 2025</time><div><h3>"Next Berlin patient": remission without a resistant donor</h3><p>A man treated with a stem-cell transplant for leukemia, from a donor with only one copy of CCR5Δ32, has stayed in remission more than 6 years after stopping ART. This shows full genetic resistance isn't required.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41326734/" target="_blank" rel="noopener">Nature (PubMed)</a></div></div><span class="pill p-blue">Science</span></div>
+  </div>
+</section>
+
+<!-- ========== 4. AROUND THE WORLD ========== -->
+<section id="world" data-condition="HIV Infections">
+  <div class="sec-head">
+    <h2>How other countries treat HIV</h2>
+    <p>Daily ART is used worldwide. In 2025, 32.1 million people were on treatment. Long-acting shots for treatment and prevention are approved in fewer places, and approval doesn't always mean public funding.</p>
+  </div>
+
+  <div class="subhead">What's available</div>
+  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 4, 2026) -->
+  <div class="scroll">
+  <table class="approved world">
+    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
+    <tbody>
+      <tr><td><b>Lenacapavir every 6 months (Yeztugo / Yeytuo)</b><small>Prevention (PrEP)</small></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-yes">Approved 2026</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Cabotegravir every 2 months (Apretude)</b><small>Prevention (PrEP)</small></td><td><span class="c c-yes">Approved 2021</span></td><td><span class="c c-yes">Approved 2023</span></td><td><span class="c c-mid">NICE: limited</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Cabotegravir + rilpivirine (Cabenuva / Vocabria + Rekambys)</b><small>Long-acting treatment</small></td><td><span class="c c-yes">Approved 2021</span></td><td><span class="c c-yes">Approved 2020</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Approved 2020</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Bictegravir + lenacapavir (Bixlenvo)</b><small>Daily switch pill</small></td><td><span class="c c-yes">Approved 2026</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Doravirine + islatravir (Idvynso)</b><small>Daily switch pill</small></td><td><span class="c c-yes">Approved 2026</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="wkey">
+    <span><span class="c c-yes">Approved</span> approved by the national regulator</span>
+    <span><span class="c c-mid">NICE: limited</span> recommended for NHS England for a limited group only</span>
+    <span><span class="c c-no">—</span> not verified for this report</span>
+  </div>
+
+  <div class="subhead">What's being studied abroad</div>
+  <div class="abroad">
+    <article class="card">
+      <div class="top"><h3>South Africa &amp; Uganda</h3><span class="pill p-good">PURPOSE 1</span></div>
+      <div class="who">Twice-yearly lenacapavir PrEP · young women</div>
+      <p>No HIV infections occurred among 2,134 women given lenacapavir. A 2026 follow-up looked at women who became pregnant during the trial.</p>
+      <div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/39046157/" target="_blank" rel="noopener">N Engl J Med</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>14 countries</h3><span class="pill p-blue">ISLEND-2</span></div>
+      <div class="who">Once-weekly islatravir + lenacapavir</div>
+      <p>The Phase 3 trial ran at 100 sites in 14 countries and territories, including Argentina, Australia, Japan, South Africa, Switzerland and Thailand.</p>
+      <div class="src"><a href="https://clinicaltrials.gov/study/NCT06630299" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Worldwide</h3><span class="pill p-blue">WHO</span></div>
+      <div class="who">Guidelines · July 14, 2025</div>
+      <p>The WHO recommends twice-yearly lenacapavir as an extra PrEP option, with rapid HIV tests to make long-acting PrEP easier to deliver.</p>
+      <div class="src"><a href="https://www.who.int/news/item/14-07-2025-who-recommends-injectable-lenacapavir-for-hiv-prevention" target="_blank" rel="noopener">World Health Organization</a></div>
+    </article>
+  </div>
+
+  <div class="subhead">How it changed over time</div>
+  <ol class="timeline">
+    <li><time>1981</time><span>On June 5 the <b>CDC</b> publishes the first report of the illness later known as AIDS.</span></li>
+    <li><time>1987</time><span>The <b>FDA</b> approves AZT (Retrovir) on March 19, the first HIV drug.</span></li>
+    <li><time>1996</time><span>Combination therapy ("HAART") is highlighted at the Vancouver AIDS conference. New U.S. AIDS cases fall for the first time.</span></li>
+    <li><time>2009</time><span>The "Berlin patient" is reported in remission after a stem-cell transplant for leukemia.</span></li>
+    <li><time>2012</time><span>The <b>FDA</b> approves Truvada for prevention (PrEP) on July 16.</span></li>
+    <li><time>2021</time><span>Cabenuva becomes the first complete long-acting injectable HIV regimen approved in the U.S. (January 21).</span></li>
+    <li><time>2025</time><span>The <b>FDA</b> approves twice-yearly Yeztugo for prevention on June 18. The WHO recommends it on July 14.</span></li>
+    <li><time>2026</time><span>Weekly-pill Phase 3 results are published (July–August). The FDA approves Bixlenvo (August 27).</span></li>
+  </ol>
+
+  <div class="subhead">Where HIV trials are recruiting right now</div>
+  <div class="live-grid">
+    <div>
+      <p class="status-note" id="ct-status">Loading live data from ClinicalTrials.gov…</p>
+      <div class="cbars" id="ct-bars"></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:10px">Drug trials with no U.S. site</h3>
+      <div class="trials" id="ct-abroad"></div>
+      <button type="button" class="more" id="ct-more" hidden></button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EVERY REGISTRY ========== -->
+<section id="registries">
+  <div class="sec-head">
+    <h2>Every registry, checked</h2>
+    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
+  </div>
+  <div class="reg-stats" id="reg-stats"></div>
+  <div class="reg-grid">
+    <div class="reg-panel"><h3>Newest published clinical trials</h3><span class="reg-src">PubMed · U.S. National Library of Medicine</span><div class="trials" id="reg-pubmed"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest Cochrane systematic reviews</h3><span class="reg-src">Cochrane Database of Systematic Reviews, via PubMed</span><div class="trials" id="reg-cochrane"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest trials in the EU registry</h3><span class="reg-src" id="reg-ctis-src">EU Clinical Trials Information System</span><div class="trials" id="reg-ctis"></div></div>
+    <div class="reg-panel"><h3>Newest UK &amp; international registrations</h3><span class="reg-src">ISRCTN registry</span><div class="trials" id="reg-isrctn"><p class="status-note">Loading…</p></div></div>
+  </div>
+  <div class="subhead">FDA records for the medicines in this report</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Medicine</th><th>Brand</th><th>FDA application</th><th>Original approval</th></tr></thead>
+    <tbody id="reg-fda"></tbody>
+  </table>
+  </div>
+  <p class="reg-note">From Drugs@FDA via FDA's openFDA service. Some older brands are missing from FDA's open data, and newly approved drugs can take a few weeks to appear. An approval may be for a different disease than this one.</p>
+  <div class="subhead">Search every registry yourself</div>
+  <div class="reg-links" id="reg-links"></div>
+  <p class="reg-note">The WHO's ICTRP gathers trials from registries worldwide, including China, Japan, India, Iran, Australia and Brazil. Cochrane CENTRAL and OpenMD don't allow automated access, so they're linked here for you to search directly.</p>
+</section>
+
+<!-- ========== 5. NATURAL ========== -->
+<section id="natural">
+  <div class="sec-head">
+    <h2>Natural remedies &amp; daily care</h2>
+    <p>No supplement or natural product treats or cures HIV. Some can make HIV medicines work less well. We rate each by the strength of evidence.</p>
+  </div>
+  <div class="gkey">
+    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Strong expert consensus</span>
+    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Limited / mixed evidence</span>
+    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>No evidence, or possible harm</span>
+  </div>
+  <div class="supp">
+    <div>
+      <h3>Helpful daily care</h3>
+      <div class="row"><b>Regular physical activity</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>HIV.gov strongly encourages it to lower heart-disease risk and help mood and sleep. A Cochrane review found aerobic exercise appears safe and may improve fitness.</p></div>
+      <div class="row"><b>Quitting smoking</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>Smoking's health risks are even higher for people with HIV, and quitting brings major, immediate benefits.</p></div>
+      <div class="row"><b>Multivitamins</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>A Cochrane review found no consistent clinical benefit from routine use, but they make sense when there is a known deficiency or a poor diet.</p></div>
+    </div>
+    <div>
+      <h3>Promoted without evidence, or risky</h3>
+      <div class="row"><b>St. John's wort</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>Interacts with some HIV drugs and lowered antiretroviral levels in studies. Avoid it unless your HIV doctor says otherwise.</p></div>
+      <div class="row"><b>Garlic, ginkgo, milk thistle supplements</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>Some forms lowered levels of certain HIV medicines in a systematic review. Ask your pharmacist before taking them.</p></div>
+      <div class="row"><b>"Natural HIV cures"</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>No product cures HIV. Replacing ART with remedies lets the virus come back and damage the immune system.</p></div>
+    </div>
+  </div>
+  <p class="caution"><b>Be careful:</b> calcium, iron, zinc, vitamin C and multivitamins can lower the levels of some HIV medicines. Timing can matter, so tell your doctor or pharmacist about everything you take, and never stop HIV treatment on your own.</p>
+</section>
+
+<!-- ========== SUPPORT GROUPS ========== -->
+<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 4, 2026; only add groups whose link you have verified) -->
+<section id="support-groups">
+  <div class="sec-head">
+    <h2>Support groups &amp; communities</h2>
+    <p>A diagnosis can feel isolating, and stigma is still real. These groups connect people who understand. Most are free.</p>
+  </div>
+  <div class="groups">
+    <article class="group">
+      <div class="top"><h3>HIV.gov services locator</h3><span class="pill p-good">Find care</span></div>
+      <div class="who">U.S. government · testing &amp; care</div>
+      <p>Search by location for HIV testing sites, care services and other support near you.</p>
+      <a class="join" href="https://locator.hiv.gov/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>POZ Community Forums</h3><span class="pill p-sig">Forum</span></div>
+      <div class="who">Newly diagnosed · living with HIV · long-term survivors</div>
+      <p>Round-the-clock discussion boards, including forums for women and for friends and family. Posts are public, searchable and can't be deleted, so don't use a name that identifies you.</p>
+      <a class="join" href="https://forums.poz.com/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>The Well Project: A Girl Like Me</h3><span class="pill p-good">Community</span></div>
+      <div class="who">Women living with HIV</div>
+      <p>A blog community where women across the gender spectrum share their experiences of living with HIV.</p>
+      <a class="join" href="https://www.thewellproject.org/a-girl-like-me" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Terrence Higgins Trust</h3><span class="pill p-blue">UK</span></div>
+      <div class="who">THT Direct helpline · groups · online community</div>
+      <p>The UK HIV charity offers a helpline, groups and workshops, counselling and an online community for people living with HIV.</p>
+      <a class="join" href="https://tht.org.uk/get-help/living-well-hiv/support-people-living-hiv" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Positively UK</h3><span class="pill p-blue">UK</span></div>
+      <div class="who">Peer support · group programs</div>
+      <p>One-to-one peer support and groups for people living with HIV, including women's, over-50s and gay men's programs.</p>
+      <a class="join" href="https://positivelyuk.org/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>HIV groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
+      <div class="who">Search results</div>
+      <p>Many private groups exist. This link searches Facebook (a login is required). Think about privacy before joining, since group names can reveal your status.</p>
+      <a class="join" href="https://www.facebook.com/search/groups/?q=HIV%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
+    </article>
+  </div>
+  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about treatment with your doctor. Protect your privacy, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
+</section>
+
+<!-- ========== SOURCES ========== -->
+<!-- CURECHECKER:SOURCES (add a source here whenever a claim on this page uses it) -->
+<section id="sources">
+  <div class="sec-head">
+    <h2>Sources</h2>
+    <p>Everything this report is based on, grouped by section. Checked October 4, 2026.</p>
+  </div>
+  <div class="sources">
+    <div>
+      <div class="subhead">Cure outlook &amp; treatments</div>
+      <ol class="srclist">
+        <li><a href="https://www.cdc.gov/hiv/treatment/index.html" target="_blank" rel="noopener">Treating HIV</a>. CDC</li>
+        <li><a href="https://www.niaid.nih.gov/news-events/science-clear-hiv-undetectable-equals-untransmittable" target="_blank" rel="noopener">The science is clear: with HIV, undetectable equals untransmittable</a>. NIAID</li>
+        <li><a href="https://www.niaid.nih.gov/diseases-conditions/hiv-cure-research" target="_blank" rel="noopener">HIV cure research</a>. NIAID</li>
+        <li><a href="https://www.hiv.gov/hiv-basics/overview/about-hiv-and-aids/what-are-hiv-and-aids" target="_blank" rel="noopener">What are HIV and AIDS?</a>. HIV.gov</li>
+        <li><a href="https://www.hiv.gov/hiv-basics/overview/about-hiv-and-aids/how-is-hiv-transmitted" target="_blank" rel="noopener">How is HIV transmitted?</a>. HIV.gov</li>
+        <li><a href="https://www.unaids.org/en/resources/fact-sheet" target="_blank" rel="noopener">Global HIV &amp; AIDS statistics fact sheet (2025 data)</a>. UNAIDS</li>
+        <li><a href="https://mediahub.fundacionlacaixa.org/en/research-fellowships/health/immunology/2026-04-14/irsicaixa-patient-oslo-ten-people-cured-hiv-virus-8143.html" target="_blank" rel="noopener">From the Berlin patient to the Oslo patient: ten people have now been cured of HIV</a>. "la Caixa" Foundation / IrsiCaixa, April 14, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/19213682/" target="_blank" rel="noopener">Long-term control of HIV by CCR5 Delta32/Delta32 stem-cell transplantation (Berlin patient)</a>. N Engl J Med, Feb 12, 2009</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41326735/" target="_blank" rel="noopener">CD8+ T cell stemness precedes post-intervention control of HIV viraemia</a>. Nature, Dec 1, 2025</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=212888" target="_blank" rel="noopener">Cabenuva (NDA 212888), approved Jan 21, 2021</a>. Drugs@FDA</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=216964" target="_blank" rel="noopener">Idvynso (NDA 216964), approved Apr 20, 2026</a>. Drugs@FDA</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=215973" target="_blank" rel="noopener">Sunlenca (NDA 215973), approved Dec 22, 2022</a>. Drugs@FDA</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=220018" target="_blank" rel="noopener">Yeztugo (NDA 220018), approved June 18, 2025</a>. Drugs@FDA</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/220018s000lbl.pdf" target="_blank" rel="noopener">Yeztugo prescribing information</a>. FDA</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=215499" target="_blank" rel="noopener">Apretude (NDA 215499), approved Dec 20, 2021</a>. Drugs@FDA</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/221104Orig1s000lbl.pdf" target="_blank" rel="noopener">Bixlenvo prescribing information</a>. FDA, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/39602624/" target="_blank" rel="noopener">Twice-yearly lenacapavir for HIV prevention in men and gender-diverse persons (PURPOSE 2)</a>. N Engl J Med, 2024</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/39046157/" target="_blank" rel="noopener">Twice-yearly lenacapavir or daily F/TAF for HIV prevention in cisgender women (PURPOSE 1)</a>. N Engl J Med, 2024</li>
+        <li><a href="https://investors.gilead.com/news/news-details/2025/European-Commission-Authorizes-Twice-Yearly-Yeytuo-Lenacapavir-for-HIV-Prevention/default.aspx" target="_blank" rel="noopener">European Commission authorizes twice-yearly Yeytuo for HIV prevention</a>. Gilead (company source), August 2025</li>
+        <li><a href="https://www.gilead.com/news/news-details/2026/gilead-and-merck-announce-positive-topline-results-from-two-phase-3-studies-evaluating-islatravirlenacapavir-an-oral-once-weekly-hiv-treatment" target="_blank" rel="noopener">Positive topline results from two Phase 3 studies of islatravir/lenacapavir</a>. Gilead and Merck (company source), June 8, 2026</li>
+      </ol>
+      <div class="subhead">Latest studies</div>
+      <ol class="srclist">
+        <li><a href="https://www.gilead.com/news/news-details/2026/gilead-accelerates-global-access-planning-for-investigational-once-yearly-lenacapavir-for-hiv-prevention" target="_blank" rel="noopener">Gilead accelerates global access planning for investigational once-yearly lenacapavir</a>. Gilead (company source), Sept 16, 2026</li>
+        <li><a href="https://i-base.info/htb/54605" target="_blank" rel="noopener">NICE fails to approve lenacapavir for HIV PrEP</a>. HIV i-Base, Sept 9, 2026</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=221104" target="_blank" rel="noopener">Bixlenvo (NDA 221104), approved Aug 27, 2026</a>. Drugs@FDA</li>
+        <li><a href="https://www.gilead.com/news/news-details/2026/u-s--fda-approves-gileads-bixlenvo-a-new-once-daily-single-tablet-option-for-virologically-suppressed-adults-with-hiv-including-those-on-complex-regimens" target="_blank" rel="noopener">U.S. FDA approves Gilead's Bixlenvo</a>. Gilead (company source), Aug 27, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42105781/" target="_blank" rel="noopener">Switching to bictegravir-lenacapavir vs continuing B/F/TAF (ARTISTRY-2)</a>. Lancet HIV, May 6, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42586113/" target="_blank" rel="noopener">Switch to once-weekly islatravir-lenacapavir from daily standard of care (ISLEND-2)</a>. The Lancet, Aug 12, 2026</li>
+        <li><a href="https://www.eatg.org/hiv-news/aids-2026-aidsmap-two-more-people-cured-of-hiv-after-stem-cell-transplants-offering-more-clues-to-long-term-remission/" target="_blank" rel="noopener">Two more people cured of HIV after stem cell transplants (AIDS 2026)</a>. EATG, reposting aidsmap, Aug 1, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42525925/" target="_blank" rel="noopener">Phase 3 trial of weekly oral islatravir-lenacapavir for HIV-1 treatment (ISLEND-1)</a>. N Engl J Med, July 29, 2026</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT07682961" target="_blank" rel="noopener">Lenacapavir, teropavimab and zinlirvimab vs cabotegravir and rilpivirine (NCT07682961)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT07683000" target="_blank" rel="noopener">Lenacapavir, teropavimab and zinlirvimab vs stable oral regimens (NCT07683000)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://www.gilead.com/news/news-details/2026/gilead-to-present-new-hiv-research-at-aids-2026-across-prevention-treatment-and-cure" target="_blank" rel="noopener">Gilead to present new HIV research at AIDS 2026 (names Daybreak 1 and 2)</a>. Gilead (company source), July 21, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42442378/" target="_blank" rel="noopener">Lenacapavir PrEP in pregnant and lactating women (PURPOSE 1 substudy)</a>. Lancet HIV, July 13, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42202839/" target="_blank" rel="noopener">Time to HIV rebound after long-acting bNAbs and treatment interruption (RIO trial)</a>. Lancet HIV, May 27, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41975092/" target="_blank" rel="noopener">Long-term HIV-1 remission after transplant from a CCR5Δ32/Δ32 sibling donor (Oslo patient)</a>. Nature Microbiology, Apr 13, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41919720/" target="_blank" rel="noopener">Lenacapavir as pre-exposure prophylaxis for HIV prevention</a>. Cochrane Database of Systematic Reviews, Apr 1, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41720146/" target="_blank" rel="noopener">Lenacapavir, teropavimab and zinlirvimab: week-26 Phase 2 results</a>. Lancet Microbe, Feb 17, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41326734/" target="_blank" rel="noopener">Sustained HIV-1 remission after heterozygous CCR5Δ32 stem cell transplantation</a>. Nature, Dec 1, 2025</li>
+      </ol>
+      <div class="subhead">Expert care centers</div>
+      <ol class="srclist">
+        <li><a href="https://www.niaid.nih.gov/research/cfar-developmental-sites" target="_blank" rel="noopener">Centers for AIDS Research sites</a>. NIAID, National Institutes of Health</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT04925752" target="_blank" rel="noopener">PURPOSE 2: lenacapavir for HIV PrEP (NCT04925752)</a>. ClinicalTrials.gov, U.S. National Library of Medicine</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT04994509" target="_blank" rel="noopener">PURPOSE 1: lenacapavir and F/TAF PrEP in adolescent girls and young women (NCT04994509)</a>. ClinicalTrials.gov, U.S. National Library of Medicine</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT06630299" target="_blank" rel="noopener">ISLEND-2: weekly islatravir/lenacapavir vs standard of care (NCT06630299)</a>. ClinicalTrials.gov, U.S. National Library of Medicine</li>
+      </ol>
+    </div>
+    <div>
+      <div class="subhead">Around the world</div>
+      <ol class="srclist">
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/yeytuo" target="_blank" rel="noopener">Yeytuo EPAR</a>. European Medicines Agency (EU authorisation Aug 25, 2025)</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/apretude" target="_blank" rel="noopener">Apretude EPAR</a>. European Medicines Agency (EU authorisation Sept 15, 2023)</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/vocabria" target="_blank" rel="noopener">Vocabria EPAR</a>. European Medicines Agency (EU authorisation Dec 17, 2020)</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/rekambys" target="_blank" rel="noopener">Rekambys EPAR</a>. European Medicines Agency (EU authorisation Dec 17, 2020)</li>
+        <li><a href="https://www.nationalhealthexecutive.com/articles/mhra-approves-lenacapavir-hiv-1-prevention" target="_blank" rel="noopener">MHRA approves lenacapavir for HIV-1 prevention</a>. National Health Executive, Dec 22, 2025</li>
+        <li><a href="https://www.catie.ca/catie-news/lenacapavir-yeytuo-injected-every-six-months-approved-for-hiv-prevention-in-canada" target="_blank" rel="noopener">Lenacapavir (Yeytuo) approved for HIV prevention in Canada</a>. CATIE, June 4, 2026</li>
+        <li><a href="https://www.gsk.com/en-gb/media/press-releases/viiv-healthcare-announces-first-global-regulatory-approval-of-cabenuva-the-first-complete-long-acting-regimen-for-the-treatment-of-hiv/" target="_blank" rel="noopener">First global regulatory approval of Cabenuva (Health Canada)</a>. GSK / ViiV Healthcare (company source), March 20, 2020</li>
+        <li><a href="https://www.who.int/news/item/14-07-2025-who-recommends-injectable-lenacapavir-for-hiv-prevention" target="_blank" rel="noopener">WHO recommends injectable lenacapavir for HIV prevention</a>. World Health Organization, July 14, 2025</li>
+        <li><a href="https://www.hiv.gov/hiv-basics/overview/history/hiv-and-aids-timeline" target="_blank" rel="noopener">A timeline of HIV and AIDS</a>. HIV.gov</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=019655" target="_blank" rel="noopener">Retrovir (NDA 019655), approved Mar 19, 1987</a>. Drugs@FDA</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=021752" target="_blank" rel="noopener">Truvada (NDA 021752), PrEP supplement approved July 16, 2012</a>. Drugs@FDA</li>
+        <li><a href="https://clinicaltrials.gov/data-api/api" target="_blank" rel="noopener">ClinicalTrials.gov API</a>. Live recruiting-trial data, loaded each time this page opens</li>
+      </ol>
+      <div class="subhead">Natural remedies &amp; support</div>
+      <ol class="srclist">
+        <li><a href="https://www.hiv.gov/hiv-basics/living-well-with-hiv/taking-care-of-yourself/exercise-and-physical-activity" target="_blank" rel="noopener">Exercise and physical activity</a>. HIV.gov</li>
+        <li><a href="https://www.hiv.gov/hiv-basics/staying-in-hiv-care/other-related-health-issues/smoking" target="_blank" rel="noopener">Tobacco use and HIV</a>. HIV.gov</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/20687068/" target="_blank" rel="noopener">Aerobic exercise interventions for adults living with HIV/AIDS</a>. Cochrane Database of Systematic Reviews, 2010</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/28518221/" target="_blank" rel="noopener">Micronutrient supplementation in adults with HIV infection</a>. Cochrane Database of Systematic Reviews, 2017</li>
+        <li><a href="https://www.nccih.nih.gov/health/st-johns-wort" target="_blank" rel="noopener">St. John's wort</a>. NCCIH</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/27655839/" target="_blank" rel="noopener">Dietary supplement interactions with antiretrovirals: a systematic review</a>. Int J STD AIDS, 2017</li>
+        <li><a href="https://locator.hiv.gov/" target="_blank" rel="noopener">HIV testing sites &amp; care services locator</a>. HIV.gov</li>
+        <li><a href="https://forums.poz.com/" target="_blank" rel="noopener">POZ Community Forums</a>. POZ</li>
+        <li><a href="https://www.thewellproject.org/a-girl-like-me" target="_blank" rel="noopener">A Girl Like Me</a>. The Well Project</li>
+        <li><a href="https://tht.org.uk/get-help/living-well-hiv/support-people-living-hiv" target="_blank" rel="noopener">Support for living well with HIV</a>. Terrence Higgins Trust</li>
+        <li><a href="https://positivelyuk.org/" target="_blank" rel="noopener">Positively UK</a></li>
+      </ol>
+      <div class="subhead">Registries &amp; databases</div>
+      <ol class="srclist">
+        <li><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a>. U.S. National Library of Medicine</li>
+        <li><a href="https://trialsearch.who.int/" target="_blank" rel="noopener">International Clinical Trials Registry Platform (ICTRP)</a>. World Health Organization</li>
+        <li><a href="https://euclinicaltrials.eu/" target="_blank" rel="noopener">Clinical Trials Information System (CTIS)</a>. European Medicines Agency. Daily snapshot</li>
+        <li><a href="https://www.isrctn.com/" target="_blank" rel="noopener">ISRCTN registry</a>. Live via the ISRCTN API</li>
+        <li><a href="https://www.cochranelibrary.com/central" target="_blank" rel="noopener">Cochrane Central Register of Controlled Trials (CENTRAL)</a>. Cochrane Library</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a>. U.S. National Library of Medicine</li>
+        <li><a href="https://europepmc.org/" target="_blank" rel="noopener">Europe PMC</a>. Papers and preprints</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/" target="_blank" rel="noopener">Drugs@FDA</a>, live via <a href="https://open.fda.gov/" target="_blank" rel="noopener">openFDA</a></li>
+        <li><a href="https://www.ema.europa.eu/en/medicines" target="_blank" rel="noopener">Medicines database</a>. European Medicines Agency</li>
+        <li><a href="https://openmd.com/" target="_blank" rel="noopener">OpenMD</a>. Medical search engine</li>
+      </ol>
+    </div>
+  </div>
+  <p class="src-note">Not individually cited: that HIV infects CD4 cells and integrates into their DNA, which reflects the established medical literature. "About ten" cured or in long-term remission is IrsiCaixa's April 2026 count, and the "Essen" and "Kansas City" cases come from conference presentations reported by aidsmap (via EATG), not peer-reviewed papers. Counts differ between sources, and a 2025 Nature paper counted six documented cures before its own case. The Oslo patient's age is 63 in the published paper, while the IrsiCaixa release says 62. The Daybreak 1 and 2 names come from a Gilead release. The two ClinicalTrials.gov records don't list those names. Canada's lenacapavir approval year comes from a CATIE article dated June 4, 2026, which gives no exact approval date. The UK lenacapavir approval date comes from a news report of the MHRA decision. We could not open the MHRA's own page. The "NICE: limited" cell for cabotegravir PrEP means NICE recommended it in October 2025 for a narrow group, as reported by HIV i-Base. All "—" cells in the approvals table are unverified. EU dates are the EMA "marketing authorisation issued" dates. Gilead's release gives Aug 26, 2025 for Yeytuo, and we use the EMA date. A Reddit HIV community is not listed because we could not open Reddit to confirm one is current. Expert care centers: there is no single official designation for HIV care. The four U.S. entries are NIH-funded Centers for AIDS Research (CFAR) sites that are also listed sites in the registered PURPOSE 2 trial. The two others are listed sites in registered Phase 3 trials. Most people get HIV care from local clinics, which the HIV.gov locator can help find.</p>
+</section>
+
+<footer>
+  <div><b>About Cure Checker.</b> An independent, AI-assisted daily digest of medical research, rebuilt every morning at 9:00 AM Eastern from trial announcements, peer-reviewed papers and patient-organization updates. Every study entry links to its source.</div>
+  <div><b>Not medical advice.</b> No doctors review these pages. Summaries are simplified, and early-phase results often don't hold up. Talk with your doctor before changing treatment or starting supplements.</div>
+  <div class="foot-links"><a href="index.html">All diseases</a><a href="about.html">About us</a><a href="about.html#contact">Contact</a><a href="terms.html">Terms of Use</a><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+</footer>
+</div>
+
+<script src="assets/analytics.js"></script>
+<script src="assets/diseases.js"></script>
+<script src="assets/registry-snapshot.js"></script>
+<script src="assets/curechecker.js"></script>
+<script src="assets/donate.js"></script>
+<script src="assets/newsletter.js"></script>
+
+</body>
+</html>

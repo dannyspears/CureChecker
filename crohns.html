@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Cure Checker: a daily digest of Crohn's disease research, treatments, and studies.">
+<title>Cure Checker: Crohn's disease</title>
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body data-disease="crohns" data-palette="mauve">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/curechecker.css">
+
+<div class="wrap">
+
+<!-- Donation bar: links come from assets/donate.js -->
+<div class="donate-bar" aria-label="Support Cure Checker"></div>
+
+<nav class="crumbs" aria-label="Diseases">
+  <a href="index.html">← All diseases</a>
+  <label>Switch disease <select data-disease-picker data-placeholder="Choose a disease…"></select></label>
+</nav>
+
+<!-- ========== MASTHEAD ========== -->
+<header class="mast">
+  <div class="brand">
+    <div>
+      <a class="logo" href="index.html" aria-label="Cure Checker home">
+        <span class="lg-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="var(--paper)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="lg-text" aria-hidden="true"><span class="lg-1">Cure</span><span class="lg-2">Checker</span></span>
+      </a>
+      <div class="tag">Crohn's edition · Most recent Crohn's disease conclusions</div>
+    </div>
+  </div>
+  <div class="datebox">
+    <!-- CURECHECKER:DATE -->
+    <strong id="edition-date">Sunday, October 4, 2026</strong>
+    Updated daily · 9:00 AM ET
+  </div>
+</header>
+<div class="strip">
+  <span class="live"><span class="dot" aria-hidden="true"></span>Today's headline</span>
+  <!-- CURECHECKER:HEADLINE -->
+  <span id="headline">Five-year results published September 1 show guselkumab (Tremfya) kept working in Crohn's disease through week 240 in the GALAXI 1 extension. A new kind of drug that blocks TL1A is now in Phase 3 trials.</span>
+</div>
+
+<!-- ========== LEAD ========== -->
+<div class="lead">
+  <h1>Crohn's disease has no cure yet. But there are more medicines than ever <em>to bring it into long-term remission.</em></h1>
+  <p>Cure Checker tracks the cause, the treatments that are working, and the trials underway, and rewrites this page every morning from the latest published results. Plain language, with sources for every claim.</p>
+</div>
+<nav class="toc" aria-label="Sections">
+  <a href="#verdict">Most recent cure information</a>
+  <a href="#cause">What causes Crohn's</a>
+  <a href="#treatments">Treatments that are working</a>
+  <a href="#studies">Latest studies</a>
+  <a href="#world">Around the world</a>
+  <a href="#registries">Every registry</a>
+  <a href="#natural">Natural remedies &amp; supplements</a>
+  <a href="#support-groups">Support groups</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<!-- ========== CURE INFORMATION (top) ========== -->
+<section id="verdict">
+  <div class="verdict">
+    <div>
+      <span class="eyebrow">Cure Checker's conclusion · Oct 2026</span>
+      <h2>Most recent cure information</h2>
+      <p class="big">There is no cure for Crohn's disease. It is a long-term disease in which the immune system causes inflammation in the digestive tract, and about 1 million people in the U.S. have it. Medicines and surgery can calm the inflammation and keep people in remission, but they do not cure it. Since 2022 the FDA has approved three IL-23 blockers and an oral pill for adults, and on April 15, 2026 it approved Stelara for children 2 and older. Our view: a cure would need to reset the immune response in the gut, and no treatment does that yet. The progress is in longer-lasting remission and new drug targets such as TL1A.</p>
+    </div>
+    <ol>
+      <li><b>More options for young children.</b><span>On April 15, 2026 the FDA approved Stelara (ustekinumab) for moderate to severe Crohn's in children 2 and older. In June, the FDA accepted Takeda's request to approve Entyvio for children 2 and older, with a decision expected in early 2027.</span></li>
+      <li><b>Benefits that last for years.</b><span>Three-year Omvoh (mirikizumab) data and five-year Tremfya (guselkumab) data, both shown or published in 2026, found that most people who stayed on treatment stayed in remission.</span></li>
+      <li><b>A new target: TL1A.</b><span>In a Phase 2b trial published in July 2026, 48% of people on the higher dose of duvakitug had a clear improvement on colonoscopy at week 14, compared with 13% on placebo. Phase 3 trials of duvakitug and of tulisokibart are now recruiting.</span></li>
+      <li><b>Not everything works.</b><span>In March 2026, the Phase 3 ADMIRE CD II trial found that darvadstrocel, a stem-cell treatment for complex fistulas near the anus, did no better than placebo.</span></li>
+    </ol>
+    <p class="fine">This is Cure Checker's editorial assessment of published evidence, not medical advice. Care decisions belong with a gastroenterologist who treats Crohn's disease.</p>
+  </div>
+</section>
+
+<!-- ========== 1. CAUSE ========== -->
+<section id="cause">
+  <div class="sec-head">
+    <h2>What causes Crohn's disease</h2>
+    <p>Doctors aren't sure exactly what causes Crohn's disease. Experts think the immune system overreacts to the normal bacteria in the gut, and that genes, the environment and the gut's microbes all play a part.</p>
+  </div>
+
+  <div class="path" role="img" aria-label="Pathway: genes and environment raise the risk; the immune system attacks normal gut bacteria; inflammation damages the digestive tract; narrowing, fistulas and surgery can follow.">
+    <div class="stage">
+      <span class="eyebrow">Step 1 · The risk</span>
+      <h3>Genes and environment</h3>
+      <div class="bar" aria-hidden="true"><i style="width:30%;background:var(--signal)"></i><i style="width:70%;background:var(--blue-soft)"></i></div>
+      <div class="legend"><span>~1 million</span><span>people in the U.S.</span></div>
+      <ul>
+        <li><b>Families:</b> having a parent or sibling with Crohn's raises the chance</li>
+        <li><b>Smoking:</b> may double the chance of developing it</li>
+        <li><b>Age:</b> most likely to start between ages 20 and 29, but can start at any age</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage key">
+      <span class="eyebrow">Step 2 · The tipping point</span>
+      <h3>The immune system attacks</h3>
+      <svg viewBox="0 0 200 100" aria-hidden="true">
+        <g stroke="var(--blue)" stroke-width="3" stroke-linecap="round" fill="none"><path d="M16 30 H72"/><path d="M16 42 H72"/><path d="M16 54 H72"/></g>
+        <g stroke="var(--warn)" stroke-width="3" stroke-linecap="round" fill="none"><path d="M116 30 l10 -8 l10 8 l10 -8 l10 8 l10 -8 l8 6"/><path d="M116 46 l10 -8 l10 8 l10 -8 l10 8 l10 -8 l8 6"/><path d="M116 62 l10 -8 l10 8 l10 -8 l10 8 l10 -8 l8 6"/></g>
+        <text x="44" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">calm gut</text>
+        <text x="150" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">inflamed gut</text>
+      </svg>
+      <ul>
+        <li>The immune system reacts to bacteria that normally live in the intestines</li>
+        <li>Today's medicines block signals that drive this, such as TNF, IL-23 and JAK enzymes</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 3 · The damage</span>
+      <h3>Inflammation in the gut</h3>
+      <ul>
+        <li><b>Where:</b> most often the small intestine and start of the colon, but anywhere from mouth to anus</li>
+        <li><b>Common symptoms:</b> diarrhea, belly pain and weight loss</li>
+        <li><b>Other symptoms:</b> tiredness, anemia, fever</li>
+        <li><b>Outside the gut:</b> joints, skin and eyes</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 4 · The result</span>
+      <h3>Complications</h3>
+      <svg viewBox="0 0 200 100" aria-hidden="true">
+        <path d="M40 14 V64" stroke="var(--blue)" stroke-width="22" stroke-linecap="round"/>
+        <path d="M150 14 V30 M150 48 V64" stroke="var(--warn)" stroke-width="22" stroke-linecap="round"/>
+        <path d="M150 30 V48" stroke="var(--warn)" stroke-width="6" stroke-linecap="round"/>
+        <text x="40" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">open bowel</text>
+        <text x="150" y="90" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--warn)">narrowed</text>
+      </svg>
+      <ul>
+        <li>Scarring can narrow or block the bowel, and fistulas and abscesses can form</li>
+        <li>30% to 55% of people need surgery within 10 years of diagnosis. Surgery helps but does not cure</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cause-note">
+    <div><b>Clue from genes (May 31, 2001):</b> two studies in Nature linked changes in the NOD2 gene, which helps the body sense bacteria, to a higher chance of Crohn's disease.</div>
+    <div><b>Clue from diet (Jan 13, 2026):</b> in a small randomized trial, adults with mild to moderate Crohn's who followed a fasting-mimicking diet 5 days a month had more symptom improvement and lower gut-inflammation markers than those on their usual diet.</div>
+    <div><b>Clue from a new target (Jul 16, 2026):</b> a Phase 2b trial showed that blocking TL1A, an immune signal in the gut, improved inflammation seen on colonoscopy. This opens a new route beyond today's drugs.</div>
+  </div>
+</section>
+
+<!-- ========== 2. TREATMENTS ========== -->
+<section id="treatments">
+  <div class="sec-head">
+    <h2>Treatments that are working</h2>
+    <p>Treatment aims to calm inflammation, prevent flares and keep people in remission. Biologic medicines, a daily pill, older immune-suppressing drugs, nutrition therapy and surgery all play a part.</p>
+  </div>
+
+  <div class="tx">
+    <article class="card">
+      <div class="top"><h3>IL-23 blockers</h3><span class="pill p-good">FDA approved</span></div>
+      <div class="who">Skyrizi Jun 16, 2022 · Omvoh Jan 15, 2025 · Tremfya Mar 20, 2025 · adults</div>
+      <p>Biologics that block the immune signal IL-23. Started by IV infusion or, for Tremfya, by injection under the skin, then continued as home injections. In the Omvoh trial, 53% were in remission at one year, compared with 36% on placebo.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Rinvoq (upadacitinib)</h3><span class="pill p-good">FDA approved</span></div>
+      <div class="who">Approved May 18, 2023 · adults · daily pill</div>
+      <p>A JAK-inhibitor tablet for adults whose Crohn's did not respond to, or who could not take, a TNF blocker. Since October 10, 2025 the label also allows it when TNF blockers are not advisable, after another approved treatment.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Stelara (ustekinumab)</h3><span class="pill p-good">Now for ages 2+</span></div>
+      <div class="who">Pediatric approval Apr 15, 2026 · UNITI-Jr trial</div>
+      <p>Blocks IL-12 and IL-23. Long used in adults, it was approved for children 2 and older in 2026, the first non-TNF biologic for that age group, according to its maker.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>TNF blockers</h3><span class="pill p-good">Standard</span></div>
+      <div class="who">Infliximab (first approved Aug 24, 1998) · adalimumab</div>
+      <p>The oldest biologics for Crohn's. A 2026 Cochrane review of 94 trials found that adalimumab, especially with a purine drug such as azathioprine, is among the medicines that bring on remission.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Long-term results</h3><span class="pill p-good">3 to 5 years</span></div>
+      <div class="who">VIVID-2 (Omvoh) · GALAXI 1 (Tremfya)</div>
+      <p>Among people who stayed on Tremfya to week 240 and had data, 97.7% were in clinical remission. Counting everyone who started, 46% were. Omvoh's extension also showed remission held through three years in those who responded in year one.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Surgery &amp; nutrition therapy</h3><span class="pill p-good">Standard</span></div>
+      <div class="who">Bowel resection · liquid-formula diet</div>
+      <p>Surgery treats blockages, fistulas and abscesses but does not cure the disease. For children, an all-liquid formula diet (exclusive enteral nutrition) can be used instead of steroids to bring on remission.</p>
+    </article>
+  </div>
+
+  <div class="subhead">Standard treatment today</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Treatment</th><th>For</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><b>Corticosteroids</b></td><td>Flares, short term only</td><td>Quickly calm inflammation. Not for long-term use.</td></tr>
+      <tr><td><b>Immunosuppressants</b> (e.g. azathioprine)</td><td>Keeping remission; often paired with biologics</td><td>Dampen the immune response.</td></tr>
+      <tr><td><b>TNF blockers</b> (infliximab, adalimumab)</td><td>Moderate to severe disease</td><td>Block TNF, a key inflammation signal.</td></tr>
+      <tr><td><b>IL-23 and IL-12/23 blockers</b> (risankizumab, mirikizumab, guselkumab, ustekinumab)</td><td>Moderate to severe disease</td><td>Block the IL-23 pathway that drives gut inflammation.</td></tr>
+      <tr><td><b>Upadacitinib</b> (pill)</td><td>Adults after a TNF blocker, or when one isn't advisable</td><td>Blocks JAK enzymes inside immune cells.</td></tr>
+      <tr><td><b>Surgery</b></td><td>Blockages, fistulas, abscesses, or when medicines fail</td><td>Removes damaged bowel. Does not cure Crohn's.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="subhead">Where people find expert care</div>
+  <ul class="centers">
+    <li><b>University Hospitals Leuven (UZ Leuven)</b> <span class="loc">Leuven, Belgium</span><p>A listed site in the registered Phase 3 mirikizumab trials VIVID-1 and VIVID-2 and in the Phase 3 tulisokibart trial for Crohn's disease.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT03926130" target="_blank" rel="noopener">VIVID-1 (NCT03926130)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT04232553" target="_blank" rel="noopener">VIVID-2 (NCT04232553)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT06430801" target="_blank" rel="noopener">Tulisokibart Phase 3 (NCT06430801)</a></div></li>
+    <li><b>Medical University of Vienna / AKH Wien</b> <span class="loc">Vienna, Austria</span><p>A listed site in the registered Phase 3 trials VIVID-1 (mirikizumab), GALAXI (guselkumab) and the tulisokibart Phase 3 for Crohn's disease.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT03926130" target="_blank" rel="noopener">VIVID-1 (NCT03926130)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03466411" target="_blank" rel="noopener">GALAXI (NCT03466411)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT06430801" target="_blank" rel="noopener">Tulisokibart Phase 3 (NCT06430801)</a></div></li>
+    <li><b>London Health Sciences Centre</b> <span class="loc">London, Ontario, Canada</span><p>A listed site in the registered Phase 3 trials VIVID-1, GALAXI and the tulisokibart Phase 3 for Crohn's disease.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT03926130" target="_blank" rel="noopener">VIVID-1 (NCT03926130)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03466411" target="_blank" rel="noopener">GALAXI (NCT03466411)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT06430801" target="_blank" rel="noopener">Tulisokibart Phase 3 (NCT06430801)</a></div></li>
+    <li><b>University of North Carolina at Chapel Hill</b> <span class="loc">Chapel Hill, North Carolina, USA</span><p>A listed site in the registered Phase 3 trials VIVID-1, GALAXI and the tulisokibart Phase 3 for Crohn's disease.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT03926130" target="_blank" rel="noopener">VIVID-1 (NCT03926130)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03466411" target="_blank" rel="noopener">GALAXI (NCT03466411)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT06430801" target="_blank" rel="noopener">Tulisokibart Phase 3 (NCT06430801)</a></div></li>
+    <li><b>CHRU de Nancy (Brabois hospitals)</b> <span class="loc">Vandœuvre-lès-Nancy, France</span><p>A listed site in the registered Phase 3 trials VIVID-1, GALAXI and the tulisokibart Phase 3 for Crohn's disease.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT03926130" target="_blank" rel="noopener">VIVID-1 (NCT03926130)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03466411" target="_blank" rel="noopener">GALAXI (NCT03466411)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT06430801" target="_blank" rel="noopener">Tulisokibart Phase 3 (NCT06430801)</a></div></li>
+    <li><b>IRCCS Humanitas IBD Center</b> <span class="loc">Rozzano (Milan), Italy</span><p>A listed site in the registered Phase 3 trials VIVID-1, GALAXI and the tulisokibart Phase 3 for Crohn's disease.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT03926130" target="_blank" rel="noopener">VIVID-1 (NCT03926130)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03466411" target="_blank" rel="noopener">GALAXI (NCT03466411)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT06430801" target="_blank" rel="noopener">Tulisokibart Phase 3 (NCT06430801)</a></div></li>
+  </ul>
+  <p class="fine centers-note">These are centers recognized for expertise in this condition, not a ranking, and Cure Checker does not endorse or rate any facility. Outcomes depend on the individual. Ask your doctor which center fits your situation.</p>
+</section>
+
+<!-- ========== 3. STUDIES ========== -->
+<section id="studies">
+  <div class="sec-head">
+    <h2>Latest studies &amp; what they concluded</h2>
+    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter studies">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
+    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
+    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
+  </div>
+  <!-- CURECHECKER:STUDIES (newest first) -->
+  <div class="studies" id="studies-list">
+    <div class="study" data-k="result"><time>Sep 1, 2026</time><div><h3>Guselkumab (Tremfya): five-year GALAXI 1 results</h3><p>In the long-term extension of the Phase 2 GALAXI 1 trial, 97.7% of people still on guselkumab with data at week 240 were in clinical remission and 51.7% had endoscopic remission. Counting everyone who started, 46% were in clinical remission at week 240. No new safety concerns were reported.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42065683/" target="_blank" rel="noopener">PubMed (Inflamm Bowel Dis)</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>Jul 16, 2026</time><div><h3>Duvakitug (anti-TL1A): RELIEVE UCCD Phase 2b in Crohn's</h3><p>In 139 adults, 48% on the 900 mg dose and 26% on 450 mg had an endoscopic response at week 14, compared with 13% on placebo. No safety concerns were found. In February, the companies reported that responses held through 44 more weeks of treatment (company press release). Phase 3 trials (STARSCAPE-1 and -2) are recruiting.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42462749/" target="_blank" rel="noopener">PubMed (Lancet Gastroenterol Hepatol)</a> · <a href="https://www.sanofi.com/en/media-room/press-releases/2026/2026-02-17-11-00-00-3239014" target="_blank" rel="noopener">Sanofi press release</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="science"><time>Jun 23, 2026</time><div><h3>Cochrane review: biologic drugs for Crohn's disease</h3><p>An updated network analysis of 94 randomized trials found high-certainty evidence that ustekinumab brings on remission, and moderate-certainty evidence for adalimumab (alone or with a purine drug) and guselkumab, among others. The authors call for more head-to-head trials and longer safety data.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42333672/" target="_blank" rel="noopener">PubMed (Cochrane Database Syst Rev)</a></div></div><span class="pill p-blue">Review</span></div>
+    <div class="study" data-k="underway"><time>Jun 9, 2026</time><div><h3>FDA reviewing Entyvio for children 2 and older</h3><p>Takeda said the FDA accepted its application for IV vedolizumab in children 2 and older with Crohn's disease or ulcerative colitis. A decision is expected in the first quarter of 2027.</p><div class="src"><a href="https://www.takeda.com/newsroom/newsreleases/2026/application-intravenous-entyvio-pediatric/" target="_blank" rel="noopener">Takeda press release</a></div></div><span class="pill p-sig">Under review</span></div>
+    <div class="study" data-k="underway"><time>Apr 27, 2026</time><div><h3>Skyrizi starter doses by injection: FDA application filed</h3><p>AbbVie asked the FDA to approve starting Skyrizi with injections under the skin instead of IV infusions. The Phase 3 AFFIRM trial (289 people) met both main goals at week 12, according to the company. AbbVie expects a decision in 2026.</p><div class="src"><a href="https://news.abbvie.com/2026-04-27-AbbVie-Submits-Regulatory-Application-to-FDA-for-SKYRIZI-R-risankizumab-rzaa-Subcutaneous-Induction-for-Adults-with-Moderately-to-Severely-Active-Crohns-Disease" target="_blank" rel="noopener">AbbVie press release</a></div></div><span class="pill p-sig">Under review</span></div>
+    <div class="study" data-k="result"><time>Apr 15, 2026</time><div><h3>FDA approves Stelara for children 2 and older</h3><p>The FDA added moderate to severe Crohn's disease in children 2 and older to Stelara's label, based on the UNITI-Jr Phase 3 study. Side effects were similar to those seen in adults.</p><div class="src"><a href="https://www.jnj.com/media-center/press-releases/stelara-pediatric-crohns-disease-fda-approval-j-j-statement" target="_blank" rel="noopener">Johnson &amp; Johnson statement</a> · <a href="https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761044Orig1s020,%20125261Orig1s172ltr.pdf" target="_blank" rel="noopener">FDA approval letter</a></div></div><span class="pill p-good">Approval</span></div>
+    <div class="study" data-k="result"><time>Mar 6, 2026</time><div><h3>Stem-cell treatment for fistulas: ADMIRE CD II Phase 3</h3><p>In 568 people with complex perianal fistulas, 48.8% on darvadstrocel and 46.3% on placebo reached combined remission at week 24, a difference too small to count. No new safety signals were seen.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41790076/" target="_blank" rel="noopener">PubMed (Gastroenterology)</a></div></div><span class="pill p-sig">No benefit</span></div>
+    <div class="study" data-k="result"><time>Mar 5, 2026</time><div><h3>Mirikizumab (Omvoh): VIVID-2 long-term results</h3><p>A peer-reviewed paper reported that 73.4% of people were in clinical remission after two years of mirikizumab. Three-year results shown at the ECCO congress in February found remission held for most people who had responded in year one.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41794217/" target="_blank" rel="noopener">PubMed (Clin Gastroenterol Hepatol)</a> · <a href="https://www.hcplive.com/view/3-year-efficacy-safety-of-mirikizumab-in-crohn-s-disease-insights-from-vivid-2-with-edward-barnes-md-mph" target="_blank" rel="noopener">HCPLive (3-year data)</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>Jan 13, 2026</time><div><h3>Fasting-mimicking diet in mild to moderate Crohn's</h3><p>In an open-label randomized trial, 69.2% of people on a 5-day monthly fasting-mimicking diet had a clinical response after three cycles, compared with 43.8% on their usual diet. Gut-inflammation markers also fell. The authors call for more study.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41530382/" target="_blank" rel="noopener">PubMed (Nature Medicine)</a></div></div><span class="pill p-good">Positive</span></div>
+  </div>
+</section>
+
+<!-- ========== 4. AROUND THE WORLD ========== -->
+<section id="world" data-condition="Crohn Disease">
+  <div class="sec-head">
+    <h2>How other countries treat Crohn's disease</h2>
+    <p>The newer biologics and the daily pill are approved in the U.S. and the EU, and recommended in England. Health Canada has approved several of them. We mark only approvals we could verify.</p>
+  </div>
+
+  <div class="subhead">What's available</div>
+  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 4, 2026) -->
+  <div class="scroll">
+  <table class="approved world">
+    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
+    <tbody>
+      <tr><td><b>Risankizumab (Skyrizi)</b><small>IL-23 blocker</small></td><td><span class="c c-yes">Approved 2022</span></td><td><span class="c c-yes">Approved</span></td><td><span class="c c-yes">NICE 2023</span></td><td><span class="c c-yes">Approved 2022</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Upadacitinib (Rinvoq)</b><small>JAK-inhibitor pill</small></td><td><span class="c c-yes">Approved 2023</span></td><td><span class="c c-yes">Approved</span></td><td><span class="c c-yes">NICE 2023</span></td><td><span class="c c-yes">Approved 2023</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Mirikizumab (Omvoh)</b><small>IL-23 blocker</small></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-yes">Approved</span></td><td><span class="c c-yes">NICE 2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Guselkumab (Tremfya)</b><small>IL-23 blocker</small></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-yes">Approved</span></td><td><span class="c c-yes">NICE 2025</span></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Ustekinumab (Stelara)</b><small>IL-12/23 blocker</small></td><td><span class="c c-yes">Ages 2+ in 2026</span></td><td><span class="c c-yes">Ages 2+</span></td><td><span class="c c-yes">NICE 2017</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="wkey">
+    <span><span class="c c-yes">Approved</span> approved for Crohn's disease (UK: recommended by NICE for use in England)</span>
+    <span><span class="c c-mid">Used</span> standard care or used off-label</span>
+    <span><span class="c c-no">—</span> not verified for this report</span>
+  </div>
+
+  <div class="subhead">What's being studied abroad</div>
+  <div class="abroad">
+    <article class="card">
+      <div class="top"><h3>Worldwide</h3><span class="pill p-sig">Phase 3</span></div>
+      <div class="who">Merck · tulisokibart (MK-7240), anti-TL1A</div>
+      <p>A Phase 3 trial that started June 5, 2024 is recruiting about 1,200 people with moderate to severe Crohn's at sites in North America, Europe and beyond. Main results are estimated for late 2028.</p>
+      <div class="src"><a href="https://clinicaltrials.gov/study/NCT06430801" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Worldwide</h3><span class="pill p-sig">STARSCAPE</span></div>
+      <div class="who">Sanofi &amp; Teva · duvakitug, anti-TL1A</div>
+      <p>Two Phase 3 trials are recruiting: STARSCAPE-1 for starting treatment (about 980 people) and STARSCAPE-2 for long-term treatment (about 751 people).</p>
+      <div class="src"><a href="https://clinicaltrials.gov/study/NCT07184931" target="_blank" rel="noopener">STARSCAPE-1</a> · <a href="https://clinicaltrials.gov/study/NCT07184944" target="_blank" rel="noopener">STARSCAPE-2</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>International</h3><span class="pill p-blue">ENHANCE-CD</span></div>
+      <div class="who">Abivax · obefazimod (pill)</div>
+      <p>A Phase 2b trial of a daily pill that works differently from current drugs is enrolling about 212 people. Main results are estimated for December 2026.</p>
+      <div class="src"><a href="https://clinicaltrials.gov/study/NCT06456593" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+    </article>
+  </div>
+
+  <div class="subhead">How it changed over time</div>
+  <ol class="timeline">
+    <li><time>1932</time><span>Drs. Crohn, Ginzburg and Oppenheimer at Mount Sinai in New York describe "regional ileitis," later called Crohn's disease.</span></li>
+    <li><time>1998</time><span>The <b>FDA</b> approves infliximab (Remicade) on August 24, with Crohn's disease as its first listed use.</span></li>
+    <li><time>2001</time><span>The NOD2 gene is linked to Crohn's disease.</span></li>
+    <li><time>2022</time><span>The <b>FDA</b> approves Skyrizi for Crohn's on June 16.</span></li>
+    <li><time>2023</time><span>The <b>FDA</b> approves Rinvoq, a daily pill, for Crohn's on May 18.</span></li>
+    <li><time>2025</time><span>The <b>FDA</b> approves Omvoh (January 15) and Tremfya (March 20) for Crohn's.</span></li>
+    <li><time>2026</time><span>Stelara approved for children 2 and older (April). Anti-TL1A drug duvakitug published in Phase 2b (July).</span></li>
+  </ol>
+
+  <div class="subhead">Where Crohn's trials are recruiting right now</div>
+  <div class="live-grid">
+    <div>
+      <p class="status-note" id="ct-status">Loading live data from ClinicalTrials.gov…</p>
+      <div class="cbars" id="ct-bars"></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:10px">Drug trials with no U.S. site</h3>
+      <div class="trials" id="ct-abroad"></div>
+      <button type="button" class="more" id="ct-more" hidden></button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== EVERY REGISTRY ========== -->
+<section id="registries">
+  <div class="sec-head">
+    <h2>Every registry, checked</h2>
+    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
+  </div>
+  <div class="reg-stats" id="reg-stats"></div>
+  <div class="reg-grid">
+    <div class="reg-panel"><h3>Newest published clinical trials</h3><span class="reg-src">PubMed · U.S. National Library of Medicine</span><div class="trials" id="reg-pubmed"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest Cochrane systematic reviews</h3><span class="reg-src">Cochrane Database of Systematic Reviews, via PubMed</span><div class="trials" id="reg-cochrane"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest trials in the EU registry</h3><span class="reg-src" id="reg-ctis-src">EU Clinical Trials Information System</span><div class="trials" id="reg-ctis"></div></div>
+    <div class="reg-panel"><h3>Newest UK &amp; international registrations</h3><span class="reg-src">ISRCTN registry</span><div class="trials" id="reg-isrctn"><p class="status-note">Loading…</p></div></div>
+  </div>
+  <div class="subhead">FDA records for the medicines in this report</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Medicine</th><th>Brand</th><th>FDA application</th><th>Original approval</th></tr></thead>
+    <tbody id="reg-fda"></tbody>
+  </table>
+  </div>
+  <p class="reg-note">From Drugs@FDA via FDA's openFDA service. Some older brands are missing from FDA's open data, and newly approved drugs can take a few weeks to appear. An approval may be for a different disease than this one.</p>
+  <div class="subhead">Search every registry yourself</div>
+  <div class="reg-links" id="reg-links"></div>
+  <p class="reg-note">The WHO's ICTRP gathers trials from registries worldwide, including China, Japan, India, Iran, Australia and Brazil. Cochrane CENTRAL and OpenMD don't allow automated access, so they're linked here for you to search directly.</p>
+</section>
+
+<!-- ========== 5. NATURAL ========== -->
+<section id="natural">
+  <div class="sec-head">
+    <h2>Natural remedies &amp; supplements</h2>
+    <p>No supplement has been shown to cure Crohn's or replace its medicines. Stopping smoking is the strongest step on this list. We rate each by the strength of evidence.</p>
+  </div>
+  <div class="gkey">
+    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Strong expert consensus</span>
+    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Limited / mixed evidence</span>
+    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>No evidence, or possible harm</span>
+  </div>
+  <div class="supp">
+    <div>
+      <h3>Helpful, with some evidence</h3>
+      <div class="row"><b>Stopping smoking</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>Smoking may double the chance of getting Crohn's, and Crohn's &amp; Colitis UK advises everyone with Crohn's to stop.</p></div>
+      <div class="row"><b>Liquid-formula diet for children</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>A Cochrane review found low-quality evidence that it may work better than steroids for bringing on remission in children. Done only with the care team.</p></div>
+      <div class="row"><b>Fasting-mimicking diet</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>One small, open-label 2026 trial in mild to moderate Crohn's was promising. It needs confirmation and should only be tried with medical supervision.</p></div>
+    </div>
+    <div>
+      <h3>Unproven</h3>
+      <div class="row"><b>Probiotics</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>A 2020 Cochrane review found the evidence very uncertain for bringing on remission in Crohn's.</p></div>
+      <div class="row"><b>Fish oil (omega-3)</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>Two large, high-quality trials suggest it probably does not help keep Crohn's in remission. It can cause diarrhea.</p></div>
+      <div class="row"><b>Cannabis</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>A Cochrane review found its effects on Crohn's uncertain, with no firm conclusions on benefit or safety.</p></div>
+    </div>
+  </div>
+  <p class="caution"><b>Be careful:</b> don't stop or swap prescribed medicines for supplements without talking to your care team. Severe belly pain, vomiting, fever or signs of a blocked bowel need urgent medical care.</p>
+</section>
+
+<!-- ========== SUPPORT GROUPS ========== -->
+<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 4, 2026; only add groups whose link you have verified) -->
+<section id="support-groups">
+  <div class="sec-head">
+    <h2>Support groups &amp; communities</h2>
+    <p>Crohn's can be isolating, and talking with others who live with it helps. Most of these are free.</p>
+  </div>
+  <div class="groups">
+    <article class="group">
+      <div class="top"><h3>Crohn's &amp; Colitis Foundation</h3><span class="pill p-good">Support groups</span></div>
+      <div class="who">U.S. · in-person and virtual</div>
+      <p>The U.S. foundation's support-group finder lists local and online groups for patients, families and caregivers.</p>
+      <a class="join" href="https://www.crohnscolitisfoundation.org/find-a-support-group" target="_blank" rel="noopener">Find a group ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Crohn's &amp; Colitis UK</h3><span class="pill p-good">Community</span></div>
+      <div class="who">UK · staff-moderated forum</div>
+      <p>Runs a helpline and a closed Facebook forum for anyone affected by IBD, moderated by staff on weekdays.</p>
+      <a class="join" href="https://www.crohnsandcolitis.org.uk/online-communities" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Crohn's and Colitis Canada</h3><span class="pill p-good">Peer support</span></div>
+      <div class="who">Canada · patients and caregivers</div>
+      <p>Offers peer support and caregiver groups, local chapters and education programs.</p>
+      <a class="join" href="https://crohnsandcolitis.ca/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>IFCCA</h3><span class="pill p-blue">International</span></div>
+      <div class="who">Formerly EFCCA</div>
+      <p>The International Federation of Crohn's &amp; Ulcerative Colitis Associations links 51 national patient groups. Use it to find one in your country.</p>
+      <a class="join" href="https://www.ifcca-ibd.org/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>r/CrohnsDisease</h3><span class="pill p-sig">Reddit</span></div>
+      <div class="who">Online community</div>
+      <p>A large Reddit community where people share experiences about symptoms, food and medicines. Posts are personal stories, not medical advice.</p>
+      <a class="join" href="https://www.reddit.com/r/CrohnsDisease/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Crohn's groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
+      <div class="who">Search results</div>
+      <p>Many private patient and caregiver groups exist. This link searches Facebook (a login is required).</p>
+      <a class="join" href="https://www.facebook.com/search/groups/?q=Crohn%27s%20disease%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
+    </article>
+  </div>
+  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about treatment with your doctor. Protect your privacy, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
+</section>
+
+<!-- ========== SOURCES ========== -->
+<!-- CURECHECKER:SOURCES (add a source here whenever a claim on this page uses it) -->
+<section id="sources">
+  <div class="sec-head">
+    <h2>Sources</h2>
+    <p>Everything this report is based on, grouped by section. Checked October 4, 2026.</p>
+  </div>
+  <div class="sources">
+    <div>
+      <div class="subhead">Cure outlook &amp; treatments</div>
+      <ol class="srclist">
+        <li><a href="https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease/definition-facts" target="_blank" rel="noopener">Definition &amp; facts for Crohn's disease</a>. NIDDK, National Institutes of Health</li>
+        <li><a href="https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease/symptoms-causes" target="_blank" rel="noopener">Symptoms &amp; causes of Crohn's disease</a>. NIDDK, last reviewed July 2024</li>
+        <li><a href="https://www.niddk.nih.gov/health-information/digestive-diseases/crohns-disease/treatment" target="_blank" rel="noopener">Treatment for Crohn's disease</a>. NIDDK</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/11385576/" target="_blank" rel="noopener">Association of NOD2 leucine-rich repeat variants with susceptibility to Crohn's disease</a>. Nature, May 31, 2001</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/11385577/" target="_blank" rel="noopener">A frameshift mutation in NOD2 associated with susceptibility to Crohn's disease</a>. Nature, May 31, 2001</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/761105Orig1s016ltr.pdf" target="_blank" rel="noopener">Skyrizi supplement approval letter (Crohn's disease)</a>. FDA, June 16, 2022</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2023/211675Orig1s015ltr.pdf" target="_blank" rel="noopener">Rinvoq supplement approval letter (Crohn's disease)</a>. FDA, May 18, 2023</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/211675Orig1s028,218347Orig1s005Correctedltr.pdf" target="_blank" rel="noopener">Rinvoq indication update letter</a>. FDA, October 10, 2025</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761279Orig1s002ltr.pdf" target="_blank" rel="noopener">Omvoh supplement approval letter (Crohn's disease)</a>. FDA, January 15, 2025</li>
+        <li><a href="https://www.prnewswire.com/news-releases/fda-approves-lillys-omvoh-mirikizumab-mrkz-for-crohns-disease-expanding-its-use-to-the-second-major-type-of-inflammatory-bowel-disease-302352349.html" target="_blank" rel="noopener">FDA approves Lilly's Omvoh for Crohn's disease</a>. Lilly press release (a company source), January 15, 2025</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2025/761061Orig1s024ltr.pdf" target="_blank" rel="noopener">Tremfya supplement approval letter (Crohn's disease)</a>. FDA, March 20, 2025</li>
+        <li><a href="https://www.jnj.com/media-center/press-releases/u-s-fda-approves-tremfya-guselkumab-the-first-and-only-il-23-inhibitor-offering-both-subcutaneous-and-intravenous-induction-options-for-adult-patients-with-moderately-to-severely-active-crohns-disease" target="_blank" rel="noopener">U.S. FDA approves Tremfya for Crohn's disease</a>. Johnson &amp; Johnson press release (a company source), March 20, 2025</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/label/1998/inflcen082498lb.pdf" target="_blank" rel="noopener">Remicade (infliximab) original label</a>. FDA, August 24, 1998</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/29607496/" target="_blank" rel="noopener">Enteral nutritional therapy for induction of remission in Crohn's disease</a>. Cochrane Database Syst Rev, 2018</li>
+        <li><a href="https://www.crohnsandcolitis.org.uk/info-support/information-about-crohns-and-colitis/all-information-about-crohns-and-colitis/living-with-crohns-or-colitis/smoking-or-vaping-with-crohns-or-colitis" target="_blank" rel="noopener">Smoking or vaping with Crohn's or Colitis</a>. Crohn's &amp; Colitis UK, reviewed April 2025</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/32678465/" target="_blank" rel="noopener">Probiotics for induction of remission in Crohn's disease</a>. Cochrane Database Syst Rev, 2020</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/24585498/" target="_blank" rel="noopener">Omega 3 fatty acids (fish oil) for maintenance of remission in Crohn's disease</a>. Cochrane Database Syst Rev, 2014</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/30407616/" target="_blank" rel="noopener">Cannabis for the treatment of Crohn's disease</a>. Cochrane Database Syst Rev, 2018</li>
+      </ol>
+      <div class="subhead">Latest studies</div>
+      <ol class="srclist">
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42065683/" target="_blank" rel="noopener">Five-year efficacy and safety of guselkumab for Crohn's disease: GALAXI 1</a>. Inflamm Bowel Dis, September 1, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42462749/" target="_blank" rel="noopener">Efficacy and safety of duvakitug in Crohn's disease (RELIEVE UCCD)</a>. Lancet Gastroenterol Hepatol, online July 16, 2026</li>
+        <li><a href="https://www.sanofi.com/en/media-room/press-releases/2026/2026-02-17-11-00-00-3239014" target="_blank" rel="noopener">Duvakitug phase 2b maintenance data in UC and Crohn's disease</a>. Sanofi press release (a company source), February 17, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42333672/" target="_blank" rel="noopener">Biologic drugs for induction and maintenance of remission in Crohn's disease: a network meta-analysis</a>. Cochrane Database Syst Rev, June 23, 2026</li>
+        <li><a href="https://www.takeda.com/newsroom/newsreleases/2026/application-intravenous-entyvio-pediatric/" target="_blank" rel="noopener">U.S. FDA accepts Takeda sBLA for review in pediatric UC and Crohn's disease</a>. Takeda press release (a company source), June 9, 2026</li>
+        <li><a href="https://news.abbvie.com/2026-04-27-AbbVie-Submits-Regulatory-Application-to-FDA-for-SKYRIZI-R-risankizumab-rzaa-Subcutaneous-Induction-for-Adults-with-Moderately-to-Severely-Active-Crohns-Disease" target="_blank" rel="noopener">AbbVie submits application for Skyrizi subcutaneous induction in Crohn's disease</a>. AbbVie press release (a company source), April 27, 2026</li>
+        <li><a href="https://www.jnj.com/media-center/press-releases/stelara-pediatric-crohns-disease-fda-approval-j-j-statement" target="_blank" rel="noopener">FDA approval of Stelara for pediatric Crohn's disease</a>. Johnson &amp; Johnson statement (a company source), May 1, 2026</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2026/761044Orig1s020,%20125261Orig1s172ltr.pdf" target="_blank" rel="noopener">Stelara supplement approval letter (pediatric Crohn's disease)</a>. FDA, April 15, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41790076/" target="_blank" rel="noopener">Darvadstrocel for complex perianal fistulas: ADMIRE CD II Phase 3</a>. Gastroenterology, online March 6, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41794217/" target="_blank" rel="noopener">Mirikizumab long-term efficacy and safety: VIVID-2 open-label extension</a>. Clin Gastroenterol Hepatol, online March 5, 2026</li>
+        <li><a href="https://www.hcplive.com/view/3-year-efficacy-safety-of-mirikizumab-in-crohn-s-disease-insights-from-vivid-2-with-edward-barnes-md-mph" target="_blank" rel="noopener">3-year efficacy and safety of mirikizumab in Crohn's disease (VIVID-2, ECCO 2026)</a>. HCPLive, February 19, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41530382/" target="_blank" rel="noopener">A fasting-mimicking diet in mild-to-moderate Crohn's disease: a randomized controlled trial</a>. Nature Medicine, online January 13, 2026</li>
+      </ol>
+      <div class="subhead">Expert care centers</div>
+      <ol class="srclist">
+        <li><a href="https://clinicaltrials.gov/study/NCT03926130" target="_blank" rel="noopener">VIVID-1: mirikizumab in Crohn's disease (NCT03926130)</a>. ClinicalTrials.gov, site list</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT04232553" target="_blank" rel="noopener">VIVID-2: long-term extension of mirikizumab (NCT04232553)</a>. ClinicalTrials.gov, site list</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT03466411" target="_blank" rel="noopener">GALAXI: guselkumab in Crohn's disease (NCT03466411)</a>. ClinicalTrials.gov, site list</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT06430801" target="_blank" rel="noopener">Tulisokibart (MK-7240) Phase 3 in Crohn's disease (NCT06430801)</a>. ClinicalTrials.gov, site list</li>
+      </ol>
+    </div>
+    <div>
+      <div class="subhead">Around the world</div>
+      <ol class="srclist">
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/skyrizi" target="_blank" rel="noopener">Skyrizi: EPAR</a>. European Medicines Agency</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/rinvoq" target="_blank" rel="noopener">Rinvoq: EPAR</a>. European Medicines Agency</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/omvoh" target="_blank" rel="noopener">Omvoh: EPAR</a>. European Medicines Agency</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/tremfya" target="_blank" rel="noopener">Tremfya: EPAR</a>. European Medicines Agency</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/EPAR/stelara" target="_blank" rel="noopener">Stelara: EPAR</a>. European Medicines Agency</li>
+        <li><a href="https://www.nice.org.uk/guidance/ta888" target="_blank" rel="noopener">Risankizumab for previously treated Crohn's disease (TA888)</a>. NICE, May 17, 2023</li>
+        <li><a href="https://www.nice.org.uk/guidance/ta905" target="_blank" rel="noopener">Upadacitinib for previously treated Crohn's disease (TA905)</a>. NICE, June 21, 2023</li>
+        <li><a href="https://www.nice.org.uk/guidance/ta1080" target="_blank" rel="noopener">Mirikizumab for previously treated Crohn's disease (TA1080)</a>. NICE, July 10, 2025</li>
+        <li><a href="https://www.nice.org.uk/guidance/ta1095" target="_blank" rel="noopener">Guselkumab for previously treated Crohn's disease (TA1095)</a>. NICE, August 28, 2025</li>
+        <li><a href="https://www.nice.org.uk/guidance/ta456" target="_blank" rel="noopener">Ustekinumab for Crohn's disease after previous treatment (TA456)</a>. NICE, July 12, 2017</li>
+        <li><a href="https://crohnsandcolitis.ca/News-Events/News-Releases/Health-Canada-has-approved-SKYRIZI%C2%AE-risankizumab-a" target="_blank" rel="noopener">Health Canada has approved Skyrizi for Crohn's disease</a>. Crohn's and Colitis Canada, October 20, 2022</li>
+        <li><a href="https://www.newswire.ca/news-releases/abbvie-s-rinvoq-r-upadacitinib-receives-health-canada-approval-as-the-first-and-only-oral-therapy-for-the-treatment-of-adults-with-moderately-to-severely-active-crohn-s-disease-852232549.html" target="_blank" rel="noopener">Rinvoq receives Health Canada approval for Crohn's disease</a>. AbbVie press release (a company source), October 17, 2023</li>
+        <li><a href="https://www.jnj.com/innovativemedicine/canada/canada-news-centre/health-canada-authorizes-tremfya-guselkumab" target="_blank" rel="noopener">Health Canada authorizes Tremfya for Crohn's disease</a>. Johnson &amp; Johnson press release (a company source), July 31, 2025</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT07184931" target="_blank" rel="noopener">STARSCAPE-1: duvakitug induction in Crohn's disease (NCT07184931)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT07184944" target="_blank" rel="noopener">STARSCAPE-2: duvakitug maintenance in Crohn's disease (NCT07184944)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT06456593" target="_blank" rel="noopener">ENHANCE-CD: obefazimod in Crohn's disease (NCT06456593)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://litfl.com/crohns-disease/" target="_blank" rel="noopener">Crohn's disease (eponym history, 1932 paper)</a>. LITFL Medical Eponym Library</li>
+        <li><a href="https://clinicaltrials.gov/data-api/api" target="_blank" rel="noopener">ClinicalTrials.gov API</a>. Live recruiting-trial data, loaded each time this page opens</li>
+      </ol>
+      <div class="subhead">Registries &amp; databases</div>
+      <ol class="srclist">
+        <li><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a>. U.S. National Library of Medicine</li>
+        <li><a href="https://trialsearch.who.int/" target="_blank" rel="noopener">International Clinical Trials Registry Platform (ICTRP)</a>. World Health Organization</li>
+        <li><a href="https://euclinicaltrials.eu/" target="_blank" rel="noopener">Clinical Trials Information System (CTIS)</a>. European Medicines Agency. Daily snapshot</li>
+        <li><a href="https://www.isrctn.com/" target="_blank" rel="noopener">ISRCTN registry</a>. Live via the ISRCTN API</li>
+        <li><a href="https://www.cochranelibrary.com/central" target="_blank" rel="noopener">Cochrane Central Register of Controlled Trials (CENTRAL)</a>. Cochrane Library</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a>. U.S. National Library of Medicine</li>
+        <li><a href="https://europepmc.org/" target="_blank" rel="noopener">Europe PMC</a>. Papers and preprints</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/" target="_blank" rel="noopener">Drugs@FDA</a>, live via <a href="https://open.fda.gov/" target="_blank" rel="noopener">openFDA</a></li>
+        <li><a href="https://www.ema.europa.eu/en/medicines" target="_blank" rel="noopener">Medicines database</a>. European Medicines Agency</li>
+        <li><a href="https://openmd.com/" target="_blank" rel="noopener">OpenMD</a>. Medical search engine</li>
+      </ol>
+    </div>
+  </div>
+  <p class="src-note">FDA approval dates are the Drugs@FDA (openFDA) dates of the relevant approval letters. Not individually cited: that corticosteroids, immunosuppressants such as azathioprine, and TNF blockers (adalimumab) are standard Crohn's care, the general description of how each drug class works, and the remark that a cure would need to reset the gut's immune response, which is Cure Checker's editorial view. The "first non-TNF biologic for ages 2+" claim for Stelara and the three-year VIVID-2 results come from company or conference sources and are not yet in a peer-reviewed paper we could read. The step 1 bar is illustrative only. All "—" cells in the approvals table are unverified, including Japan, South Korea, China, Australia and Switzerland, and Omvoh and Stelara in Canada. UK cells reflect NICE recommendations for England. EU cells are taken from current EMA EPAR pages, without dates. Expert care centers: no official national designation for Crohn's disease care could be verified for this report, so centers are listed because they are sites in several registered Phase 3 trials, confirmed on ClinicalTrials.gov. r/CrohnsDisease blocks automated checks, so its existence was confirmed through search results and a published study of the community rather than by opening the page. The Crohn's &amp; Colitis Foundation website also blocks automated checks; its support-group finder was confirmed through search results.</p>
+</section>
+
+<footer>
+  <div><b>About Cure Checker.</b> An independent, AI-assisted daily digest of medical research, rebuilt every morning at 9:00 AM Eastern from trial announcements, peer-reviewed papers and patient-organization updates. Every study entry links to its source.</div>
+  <div><b>Not medical advice.</b> No doctors review these pages. Summaries are simplified, and early-phase results often don't hold up. Talk with your doctor before changing treatment or starting supplements.</div>
+  <div class="foot-links"><a href="index.html">All diseases</a><a href="about.html">About us</a><a href="about.html#contact">Contact</a><a href="terms.html">Terms of Use</a><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+</footer>
+</div>
+
+<script src="assets/analytics.js"></script>
+<script src="assets/diseases.js"></script>
+<script src="assets/registry-snapshot.js"></script>
+<script src="assets/curechecker.js"></script>
+<script src="assets/donate.js"></script>
+<script src="assets/newsletter.js"></script>
+
+</body>
+</html>
