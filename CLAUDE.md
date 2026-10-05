@@ -55,6 +55,7 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 
 ## Daily refresh markers
 `<!-- CURECHECKER:DATE -->`, `HEADLINE`, `STUDIES` and `WORLD-APPROVALS` comments mark the blocks that get updated each morning, on every report page.
+- The masthead date and time (`#edition-date` and `#edition-time`) are part of that refresh: update both to the Eastern date and time of the commit.
 - Expert care centers list: leave it alone during the daily refresh except to fix a dead link, remove a facility whose designation ended, or add a newly designated center, always with a source read that day.
 
 ## Page layout (reports)
@@ -68,6 +69,6 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - Each entry in `assets/diseases.js` has `cadence`: `daily` (incurable diseases) or `weekly` (conditions).
 - Decide when adding a new report: an incurable disease is `daily`; a condition that is not an incurable disease (cosmetic, quality-of-life, or otherwise manageable/curable) is `weekly`. If unsure, ask the owner by noting it in the final message and default to `daily`.
 - The daily refresh updates every `daily` report every day. It updates `weekly` reports only on Mondays (Eastern time); on other days it must not touch them at all (leave their edition date, `updated` field and content alone).
-- Weekly pages show `Updated weekly · Mondays` in the masthead instead of `Updated daily`.
+- The masthead shows `Last updated`, the date in `#edition-date` (for example `Monday, October 5, 2026`) and the Eastern time in `#edition-time` (for example `7:41 AM ET`). Every refresh must update BOTH to the Eastern date and time at which it commits (run `TZ=America/New_York date` right before committing). Weekly reports keep ` · Updated weekly` after the time. 'Updated daily' no longer appears in any masthead.
 - index.html's edition date still updates every day.
 - This overrides any earlier line saying every report is updated every day.
