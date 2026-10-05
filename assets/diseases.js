@@ -359,5 +359,18 @@ window.CURECHECKER_DISEASES = [
     pubmed: "\"myalgic encephalomyelitis\"[ti] OR \"chronic fatigue syndrome\"[ti] OR \"ME/CFS\"[ti]",
     drugs: [],
     cancer: false
+  },
+  {
+    slug: "male-pattern-baldness",
+    name: "Male pattern baldness (androgenetic alopecia)",
+    page: "male-pattern-baldness.html",
+    palette: "sand",
+    category: "Hair · Genetic",
+    summary: "Its maker reports that clascoterone 5%, a hormone-blocking scalp solution, kept working at 12 months in Phase 3 trials and plans a U.S. filing in early 2027; finasteride and minoxidil remain the only FDA-approved medicines.",
+    updated: "Oct 5, 2026",
+    search: "androgenetic alopecia",
+    pubmed: "\"androgenetic alopecia\"[ti] OR \"male pattern hair loss\"[ti] OR \"pattern hair loss\"[ti]",
+    drugs: ["finasteride", "dutasteride", "minoxidil", "clascoterone"],
+    cancer: false
   }
 ];

@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Cure Checker: a daily digest of male pattern baldness (androgenetic alopecia) research, treatments, and studies.">
+<title>Cure Checker: Male pattern baldness</title>
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body data-disease="male-pattern-baldness" data-palette="sand">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/curechecker.css">
+
+<div class="wrap">
+
+<!-- Donation bar: links come from assets/donate.js -->
+<div class="donate-bar" aria-label="Support Cure Checker"></div>
+
+<nav class="crumbs" aria-label="Diseases">
+  <a href="index.html">← All diseases</a>
+  <label>Switch disease <select data-disease-picker data-placeholder="Choose a disease…"></select></label>
+</nav>
+
+<!-- ========== MASTHEAD ========== -->
+<header class="mast">
+  <div class="brand">
+    <div>
+      <a class="logo" href="index.html" aria-label="Cure Checker home">
+        <span class="lg-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="var(--paper)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="lg-text" aria-hidden="true"><span class="lg-1">Cure</span><span class="lg-2">Checker</span></span>
+      </a>
+      <div class="tag">Hair loss edition · Most recent male pattern baldness conclusions</div>
+    </div>
+  </div>
+  <div class="datebox">
+    <!-- CURECHECKER:DATE -->
+    <strong id="edition-date">Monday, October 5, 2026</strong>
+    Updated daily · 9:00 AM ET
+  </div>
+</header>
+<div class="strip">
+  <span class="live"><span class="dot" aria-hidden="true"></span>Today's headline</span>
+  <!-- CURECHECKER:HEADLINE -->
+  <span id="headline">Clascoterone 5%, a hormone-blocking scalp solution, kept working at 12 months in Phase 3 trials, according to its maker, which plans a U.S. filing in early 2027. Finasteride and minoxidil remain the only FDA-approved medicines, and neither is a cure.</span>
+</div>
+
+<!-- ========== LEAD ========== -->
+<div class="lead">
+  <h1>Male pattern baldness has no cure. Two approved medicines can <em>slow it or partly reverse it while you keep using them.</em></h1>
+</div>
+<nav class="toc" aria-label="Sections">
+  <a href="#verdict">Is there a cure?</a>
+  <a href="#studies">What's new</a>
+  <a href="#treatments">Treatments</a>
+  <a href="#care">Care &amp; support</a>
+  <a href="#world">Other countries</a>
+  <a href="#cause">What causes it</a>
+  <a href="#registries">Find a trial</a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<!-- ========== CURE INFORMATION (top) ========== -->
+<section id="verdict">
+  <div class="verdict">
+    <div>
+      <span class="eyebrow">Cure Checker's conclusion · Oct 2026</span>
+      <h2>Most recent cure information</h2>
+      <p class="big">There is no cure for male pattern baldness (androgenetic alopecia). It is a common, inherited kind of hair loss: by age 50, more than half of white men show visible signs, according to the American Academy of Dermatology. It is not dangerous to health, but it can matter a lot to the people who have it. In the U.S., two medicines are approved for it: finasteride 1 mg tablets (prescription, approved December 19, 1997) and minoxidil applied to the scalp (over the counter). Neither is a cure. They slow loss or regrow some hair only for as long as they are used. Our view: the newest candidates, such as a hormone-blocking scalp solution called clascoterone, may add options, but none has been approved for hair loss yet.</p>
+    </div>
+    <ol>
+      <li><b>A new scalp treatment is close to filing.</b><span>Cosmo Pharmaceuticals says two Phase 3 trials of clascoterone 5% solution (1,465 men) beat a dummy solution, and 12-month data released April 15, 2026 showed continued growth with safety similar to the dummy. It plans a U.S. filing in early 2027. These are company-reported results.</span></li>
+      <li><b>Finasteride warnings got stronger.</b><span>The FDA label lists depression, suicidal thoughts, and sexual problems that continued after stopping. In 2025 the EU confirmed suicidal thoughts as a side effect and added a patient card, and on May 11, 2026 the UK's MHRA strengthened its warnings again.</span></li>
+      <li><b>Oral minoxidil is being tested as a hair pill.</b><span>Minoxidil tablets are FDA-labeled only for hard-to-treat high blood pressure. Veradermics reported on April 27, 2026 that an extended-release version beat placebo in a Phase 2/3 trial of over 500 men (company release). A second pivotal trial is expected to report later in 2026.</span></li>
+      <li><b>Popular add-ons have weaker proof.</b><span>Laser devices are FDA-cleared, and reviews find modest gains. PRP injections and microneedling show promise, but studies are small and vary widely. Saw palmetto, rosemary oil and biotin lack good evidence.</span></li>
+    </ol>
+    <p class="fine">This is Cure Checker's editorial assessment of published evidence, not medical advice. Decisions about treatment belong with a doctor, ideally a dermatologist.</p>
+  </div>
+</section>
+
+<!-- ========== 3. STUDIES ========== -->
+<section id="studies">
+  <div class="sec-head">
+    <h2>Latest studies &amp; what they concluded</h2>
+    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter studies">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
+    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
+    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
+  </div>
+  <!-- CURECHECKER:STUDIES (newest first) -->
+  <div class="studies" id="studies-list">
+    <div class="study" data-k="underway"><time>Sep 21, 2026</time><div><h3>PP405 gel: Phase 2/3 trial begins</h3><p>Pelage Pharmaceuticals started a Phase 2/3 trial of PP405 0.05% scalp gel against a dummy gel in adult men, aiming for about 600 people at sites in the U.S. and Canada. In an earlier 78-person Phase 2a study, the company reported that 31% on PP405 had more than a 20% rise in hair density at week 8, vs 0% on placebo (company release, not peer reviewed).</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT07819435" target="_blank" rel="noopener">NCT07819435</a> · <a href="https://pelagepharma.com/press-releases/pelage-pharmaceuticals-announces-positive-phase-2a-clinical-trial-results-for-pp405-in-regenerative-hair-loss-therapy/" target="_blank" rel="noopener">Pelage release (2025)</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="result"><time>Jul 17, 2026</time><div><h3>Finasteride vs dutasteride pills: small randomized trial</h3><p>In 46 men in Iran treated for 24 weeks, both pills improved hair growth with no significant difference between them. Sexual side effects were the most common, and erectile problems were more frequent with finasteride. No serious side effects occurred. Small and single-blind.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42466626/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-sig">Mixed</span></div>
+    <div class="study" data-k="science"><time>Jul 3, 2026</time><div><h3>Off-label treatments compared (network meta-analysis)</h3><p>A review of 23 studies ranked topical minoxidil 5% as the most effective option for men. Several off-label topicals (including melatonin, saw palmetto and topical finasteride) showed possible benefit but need better trials. The authors work for a research company.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42512824/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-blue">Science</span></div>
+    <div class="study" data-k="science"><time>May 15, 2026</time><div><h3>Lasers and light devices: meta-analysis of 37 studies</h3><p>Across 3,298 patients, low-level laser therapy added about 18.6 hairs per cm² compared with sham devices, and more when combined with minoxidil. Side effects were mild and short-lived.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42339398/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-blue">Science</span></div>
+    <div class="study" data-k="science"><time>May 11, 2026</time><div><h3>UK strengthens finasteride and dutasteride warnings</h3><p>The MHRA updated product information to say sexual problems may contribute to mood disorders, and added a precautionary mood warning to dutasteride. UK patient alert cards for finasteride, introduced in 2024, stay in place.</p><div class="src"><a href="https://www.gov.uk/government/news/mhra-strengthens-safety-warnings-for-finasteride-and-dutasteride" target="_blank" rel="noopener">MHRA</a></div></div><span class="pill p-sig">Safety</span></div>
+    <div class="study" data-k="result"><time>Apr 27, 2026</time><div><h3>Extended-release oral minoxidil (VDPHL01): Phase 2/3 results</h3><p>In over 500 men, hair counts in the target area rose by 30.3 (once daily) and 33.0 (twice daily) hairs per cm² at 6 months, vs 7.3 on placebo. The company reported no treatment-related serious side effects and no heart-related side effects of special interest. A second pivotal trial is due to report in the second half of 2026. Company-reported.</p><div class="src"><a href="https://www.sec.gov/Archives/edgar/data/1827635/000162828026027354/exhibit991-8xk.htm" target="_blank" rel="noopener">Veradermics release (SEC filing)</a> · <a href="https://clinicaltrials.gov/study/NCT06972264" target="_blank" rel="noopener">NCT06972264</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>Apr 15, 2026</time><div><h3>Clascoterone 5% solution: 12-month Phase 3 data</h3><p>Men who stayed on clascoterone kept gaining hair compared with those switched to the dummy solution at month 6. Cosmo reported safety similar to the dummy with no significant whole-body hormonal side effects. It plans a U.S. application (NDA) in early 2027 and a European one. Company-reported, not yet peer reviewed.</p><div class="src"><a href="https://www.newsfilecorp.com/release/292660/Phase-III-12Month-Data-for-Clascoterone-5-Topical-Solution-Confirm-Positive-Safety-for-Chronic-Use-and-Continued-Hair-Growth-both-of-which-are-Statistically-Significant" target="_blank" rel="noopener">Cosmo release</a> · <a href="https://www.genengnews.com/topics/translational-medicine/cosmo-pharma-eyes-2027-nda-for-baldness-candidate-after-positive-phase-iii-12-month-data/" target="_blank" rel="noopener">GEN</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>Mar 18, 2026</time><div><h3>Pyrilutamide (KX-826) 1.0%: Phase 3 in China</h3><p>In 666 men at 26 centers in China, hair counts rose by 15.33 hairs per cm² on the 1.0% solution and 14.46 on 0.5%, vs 4.68 on placebo, over 24 weeks. Kintor reported no drug-related serious side effects and plans to file for approval in China. An earlier Phase 3 of the 0.5% dose (2023) did not reach statistical significance. Company-reported.</p><div class="src"><a href="https://en.kintor.com.cn/news_details/22.html" target="_blank" rel="noopener">Kintor release</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="science"><time>Jan 28, 2026</time><div><h3>What raises the risk? Meta-analysis of 31 studies</h3><p>Family history, smoking, insulin resistance and, in men, high blood pressure were linked to having pattern hair loss. Alcohol, poor sleep and overweight were linked to faster progression. These are associations, not proof of cause.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41606541/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-blue">Science</span></div>
+    <div class="study" data-k="result"><time>Dec 3, 2025</time><div><h3>Clascoterone 5%: Phase 3 SCALP 1 and SCALP 2 topline results</h3><p>In 1,465 men across two trials, clascoterone beat the dummy solution on hair count in the target area. Side effects were similar to the dummy. A patient-rated goal was met in one study and trended positive in the other. No sexual side effects were reported, according to Healio. Company-reported topline data.</p><div class="src"><a href="https://www.newsfilecorp.com/release/276765/Cosmo-Announces-Breakthrough-Phase-III-Topline-Results-from-Scalp-1-and-Scalp-2-for-Clascoterone-5-Solution-in-Male-Hair-Loss-Showing-up-to-539-Relative-Improvement-in-TargetArea-Hair-Count-vs-Placebo-US-and-EU-Submissions-are-Underway" target="_blank" rel="noopener">Cosmo release</a> · <a href="https://www.healio.com/news/dermatology/20251216/major-breakthrough-topical-male-pattern-hair-loss-drug-shows-meaningful-hair-regrowth" target="_blank" rel="noopener">Healio</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>Dec 2, 2025</time><div><h3>GT20029 scalp solution: Phase 2</h3><p>In 180 Chinese men, two of the four GT20029 dosing schedules beat their placebo groups on hair count at 12 weeks. Side effects were mostly mild. GT20029 is designed to break down the androgen receptor.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41328006/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="science"><time>Nov 11, 2025</time><div><h3>PRP injections vs topical minoxidil: meta-analysis</h3><p>Nine randomized trials (451 people) found no clear difference in hair density or terminal hair count between platelet-rich plasma and minoxidil, though patients were more satisfied with PRP. Studies varied widely.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41219547/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-blue">Science</span></div>
+    <div class="study" data-k="science"><time>Aug 22, 2025</time><div><h3>EU confirms suicidal thoughts as a finasteride side effect</h3><p>After a review that began with its safety committee (PRAC recommendation May 8, 2025), the European Commission's decision confirmed suicidal ideation as a side effect of finasteride tablets, frequency unknown. A patient card goes in 1 mg packs. Regulators said benefits still outweigh risks for approved uses.</p><div class="src"><a href="https://www.ema.europa.eu/en/medicines/human/referrals/finasteride-dutasteride-containing-medicinal-products" target="_blank" rel="noopener">EMA</a></div></div><span class="pill p-sig">Safety</span></div>
+    <div class="study" data-k="science"><time>Apr 22, 2025</time><div><h3>FDA warns about compounded topical finasteride</h3><p>The FDA said there is no FDA-approved topical finasteride and reported 32 adverse-event reports from 2019 to 2024 for compounded versions, many saying effects persisted after stopping.</p><div class="src"><a href="https://www.fda.gov/drugs/human-drug-compounding/fda-alerts-health-care-providers-compounders-and-consumers-potential-risks-associated-compounded" target="_blank" rel="noopener">FDA</a></div></div><span class="pill p-sig">Safety</span></div>
+    <div class="study" data-k="result"><time>Mar 17, 2025</time><div><h3>Topical finasteride spray: Phase 3 in China</h3><p>In 270 Chinese men, the spray increased hair count over placebo at 24 weeks and was generally well tolerated. The trial was funded by the drug's developer.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/40090937/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-good">Positive</span></div>
+  </div>
+</section>
+
+<!-- ========== 2. TREATMENTS ========== -->
+<section id="treatments">
+  <div class="sec-head">
+    <h2>Treatments that are working</h2>
+    <p>Two medicines are FDA-approved for male pattern hair loss. They work only while used. Hair transplant surgery moves hair rather than stopping the process.</p>
+  </div>
+
+  <div class="tx">
+    <article class="card">
+      <div class="top"><h3>Finasteride 1 mg (Propecia)</h3><span class="pill p-good">FDA approved</span></div>
+      <div class="who">Approved Dec 19, 1997 · prescription tablet · men only</div>
+      <p>Lowers DHT, the hormone that shrinks hair follicles. The AAD says it slowed further loss in about 80% to 90% of men. The label lists sexual side effects, including some that continued after stopping, and depression and suicidal thoughts.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Minoxidil on the scalp</h3><span class="pill p-good">FDA approved</span></div>
+      <div class="who">Approved Aug 17, 1988 · over the counter since 1996</div>
+      <p>A liquid or foam. The 5% liquid for men was approved in 1997 and the 5% foam in 2006. The AAD says results can take up to 6 to 12 months to show.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Dutasteride</h3><span class="pill p-sig">Approved abroad</span></div>
+      <div class="who">South Korea 2009 · Japan · U.S.: prostate only</div>
+      <p>A stronger DHT blocker. It is approved for male pattern hair loss in South Korea and Japan. In the U.S. it is approved only for an enlarged prostate, so hair use is off-label.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Oral minoxidil</h3><span class="pill p-sig">Off-label</span></div>
+      <div class="who">Tablets labeled only for severe high blood pressure</div>
+      <p>In a 2024 trial of 68 men, 5 mg pills were not better than 5% scalp minoxidil overall, and 49% grew unwanted body hair. A purpose-built extended-release version is in Phase 3.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Clascoterone 5% solution</h3><span class="pill p-blue">Phase 3 done</span></div>
+      <div class="who">Cosmo Pharmaceuticals · U.S. filing planned early 2027</div>
+      <p>A scalp solution that blocks androgen receptors in the skin. Two Phase 3 trials met their main goal (company-reported). Not approved for hair loss anywhere.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Hair transplant surgery</h3><span class="pill p-good">Established</span></div>
+      <div class="who">Moves hair follicles from the back of the scalp</div>
+      <p>In a 2025 survey of hair restoration surgeons, 85% of men's cases used the FUE method. The AAD calls results permanent and natural-looking, but surgery does not stop further loss.</p>
+    </article>
+  </div>
+
+  <div class="subhead">Standard treatment today</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Treatment</th><th>For</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><b>Finasteride 1 mg tablet</b></td><td>Men (prescription)</td><td>Lowers DHT to slow loss and regrow some hair. Benefits fade if stopped.</td></tr>
+      <tr><td><b>Minoxidil 5% liquid or foam</b></td><td>Men (over the counter)</td><td>Stimulates growth and slows loss. Benefits fade if stopped.</td></tr>
+      <tr><td><b>Low-level laser devices</b></td><td>FDA-cleared, not approved</td><td>Modest gains in density in reviews of trials. Needs many sessions.</td></tr>
+      <tr><td><b>Platelet-rich plasma (PRP)</b></td><td>In-office injections</td><td>May lessen hair loss. Studies vary in method and quality.</td></tr>
+      <tr><td><b>Hair transplant</b></td><td>Stable, suitable donor hair</td><td>Moves existing follicles to thinning areas.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+</section>
+
+<!-- ========== 5. NATURAL ========== -->
+<section id="natural">
+  <div class="sec-head">
+    <h2>Natural remedies &amp; supplements</h2>
+    <p>Hair loss products are heavily marketed. None of these is FDA-approved to regrow hair, and most of the studies are small. We rate each by the strength of evidence.</p>
+  </div>
+  <div class="gkey">
+    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Strong evidence</span>
+    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Limited / mixed evidence</span>
+    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>Weak or no evidence, or possible harm</span>
+  </div>
+  <div class="supp">
+    <div>
+      <h3>Some evidence, still limited</h3>
+      <div class="row"><b>Microneedling with minoxidil</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>A 2025 review of 12 trials (631 people) found more hair with microneedling plus minoxidil than minoxidil alone, but results varied a lot and side effects were more frequent. The British Association of Dermatologists says little research supports it.</p></div>
+      <div class="row"><b>Ketoconazole shampoo</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>A 2020 review found 5 small human studies (318 people) and called it promising as an add-on, but said randomized trials are needed.</p></div>
+      <div class="row"><b>Pumpkin seed oil capsules</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>One 2014 trial in 76 men found more hair than placebo after 24 weeks. One trial is not enough to be sure.</p></div>
+    </div>
+    <div>
+      <h3>Weak or no evidence</h3>
+      <div class="row"><b>Saw palmetto</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>The NIH's NCCIH says a few small studies exist and the evidence is too limited to draw conclusions.</p></div>
+      <div class="row"><b>Rosemary oil</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>One 2015 trial (100 people) found it similar to 2% minoxidil, the weaker strength, with no placebo group. Not enough to recommend it.</p></div>
+      <div class="row"><b>Biotin</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>A 2017 review found benefit only in people with an underlying cause of poor hair growth, not in healthy people. High doses can throw off lab tests.</p></div>
+      <div class="row"><b>Caffeine shampoos and liquids</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>One open-label 2017 trial compared a caffeine liquid with 5% minoxidil on a lab measure of growing hairs, not hair counts. Not enough to rely on.</p></div>
+      <div class="row"><b>Scalp massage</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>A 2016 study of 9 healthy men with no comparison group found slightly thicker hairs. It did not study men with pattern baldness.</p></div>
+    </div>
+  </div>
+  <p class="caution"><b>Be careful:</b> biotin in many hair supplements can cause falsely high or low lab results, including heart tests, so tell your doctor if you take it. The FDA says there is no FDA-approved topical finasteride and has warned about compounded versions. Be wary of "cure" or "regrowth guaranteed" claims: for over-the-counter scalp products, the FDA has ruled that hair-growth claims are unsupported unless the product has gone through approval, as minoxidil has.</p>
+</section>
+
+<section id="care">
+  <div class="sec-head">
+    <h2>Where to get care and support</h2>
+    <p>Places with verifiable expertise in hair loss, and communities of people living with it.</p>
+  </div>
+  <div class="subhead">Where people find expert care</div>
+  <ul class="centers">
+    <li><b>University of Minnesota Hair Disease Specialty Clinic</b> <span class="loc">Minneapolis, Minnesota, USA</span><p>An academic dermatology clinic for hair disorders, including male pattern baldness. The University of Minnesota was a site in the SCALP 1 Phase 3 trial of clascoterone.</p><div class="src"><a href="https://med.umn.edu/dermatology/patient-care/specialty-clinics" target="_blank" rel="noopener">Specialty clinics</a> &middot; <a href="https://clinicaltrials.gov/study/NCT05910450" target="_blank" rel="noopener">SCALP 1 (NCT05910450)</a></div></li>
+    <li><b>Mayo Clinic</b> <span class="loc">Jacksonville, Florida, USA</span><p>Mayo Clinic's Department of Dermatology in Jacksonville was a site in the SCALP 1 Phase 3 trial of clascoterone. Mayo also describes hair-loss care at its campuses.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT05910450" target="_blank" rel="noopener">SCALP 1 (NCT05910450)</a> &middot; <a href="https://www.mayoclinic.org/diseases-conditions/hair-loss/care-at-mayo-clinic/mac-20372938" target="_blank" rel="noopener">Hair loss care at Mayo Clinic</a></div></li>
+    <li><b>Charité Clinical Research Center for Hair and Skin Science</b> <span class="loc">Berlin, Germany</span><p>A university research center whose stated focus includes hereditary hair loss in men and women. It was a site in the SCALP 2 Phase 3 trial of clascoterone.</p><div class="src"><a href="https://crc.charite.de/en/research/clinical_research_unit" target="_blank" rel="noopener">Clinical Research Unit</a> &middot; <a href="https://clinicaltrials.gov/study/NCT05914805" target="_blank" rel="noopener">SCALP 2 (NCT05914805)</a></div></li>
+    <li><b>Seoul National University Hospital, Dermatology</b> <span class="loc">Seoul, South Korea</span><p>The site of a recruiting Phase 3 trial of CKD-843 in men with pattern hair loss, which compares it with dutasteride.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT06916793" target="_blank" rel="noopener">CKD-843 Phase 3 (NCT06916793)</a></div></li>
+  </ul>
+  <p class="fine centers-note">These are centers recognized for expertise in this condition, not a ranking, and Cure Checker does not endorse or rate any facility. Outcomes depend on the individual. Ask your doctor which center fits your situation.</p>
+</section>
+
+<!-- ========== SUPPORT GROUPS ========== -->
+<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 5, 2026; only add groups whose link you have verified) -->
+<section id="support-groups">
+  <div class="sec-head">
+    <h2>Support groups &amp; communities</h2>
+    <p>Hair loss can affect confidence and mood. Talking with others can help. Many hair-loss sites also sell products, so we note that where we saw it.</p>
+  </div>
+  <div class="groups">
+    <article class="group">
+      <div class="top"><h3>Alopecia UK</h3><span class="pill p-good">Charity</span></div>
+      <div class="who">UK charity · groups and online community</div>
+      <p>Runs support groups, events and private online groups. Its focus is mainly alopecia areata, but the British Association of Dermatologists lists it for male pattern hair loss.</p>
+      <a class="join" href="https://www.alopecia.org.uk/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>HairLossTalk forums</h3><span class="pill p-sig">Forum</span></div>
+      <div class="who">Men's hair loss discussions</div>
+      <p>A large, active forum focused on male hair loss. It is run by a private company that also sells hair-loss products.</p>
+      <a class="join" href="https://www.hairlosstalk.com/interact/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>r/tressless on Reddit</h3><span class="pill p-sig">Reddit</span></div>
+      <div class="who">Peer community · not organization-run</div>
+      <p>A large Reddit community where people discuss hair-loss treatments. Posts are personal experience, not medical advice.</p>
+      <a class="join" href="https://www.reddit.com/r/tressless/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Hair loss groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
+      <div class="who">Search results</div>
+      <p>Many private groups exist. This link searches Facebook (a login is required).</p>
+      <a class="join" href="https://www.facebook.com/search/groups/?q=male%20pattern%20hair%20loss%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
+    </article>
+  </div>
+  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about treatment with your doctor. Hair-loss communities often include product promotion and strong opinions about medicines, so look for sources. Protect your privacy, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
+</section>
+
+<!-- ========== 4. AROUND THE WORLD ========== -->
+<section id="world" data-condition="androgenetic alopecia">
+  <div class="sec-head">
+    <h2>How other countries treat male pattern baldness</h2>
+    <p>Finasteride and minoxidil are available in many countries. Dutasteride is approved for hair loss in South Korea and Japan, and a finasteride scalp spray is authorized in Europe.</p>
+  </div>
+
+  <div class="subhead">What's available</div>
+  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 5, 2026) -->
+  <div class="scroll">
+  <table class="approved world">
+    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
+    <tbody>
+      <tr><td><b>Finasteride 1 mg tablets</b><small>Prescription</small></td><td><span class="c c-yes">Approved 1997</span></td><td><span class="c c-yes">Approved</span></td><td><span class="c c-yes">Approved</span></td><td><span class="c c-yes">Approved</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Approved</span></td></tr>
+      <tr><td><b>Minoxidil on the scalp</b><small>Liquid or foam</small></td><td><span class="c c-yes">Approved 1988</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Approved</span></td><td><span class="c c-yes">Approved</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Approved</span></td></tr>
+      <tr><td><b>Dutasteride</b><small>Oral, for hair loss</small></td><td><span class="c c-no">Prostate only</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Approved</span></td><td><span class="c c-yes">Approved 2009</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Finasteride scalp spray</b><small>Topical</small></td><td><span class="c c-no">Not approved</span></td><td><span class="c c-yes">Some countries</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-mid">Phase 3 done</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Clascoterone 5% solution</b><small>New, topical</small></td><td><span class="c c-mid">Filing 2027</span></td><td><span class="c c-mid">Filing planned</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Pyrilutamide (KX-826)</b><small>New, topical</small></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-mid">Phase 3 done</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="wkey">
+    <span><span class="c c-yes">Approved</span> approved for male pattern hair loss</span>
+    <span><span class="c c-mid">Phase 3</span> in late trials or awaiting a filing</span>
+    <span><span class="c c-no">—</span> not verified for this report, or not approved for hair loss</span>
+  </div>
+
+  <div class="subhead">What's being studied abroad</div>
+  <div class="abroad">
+    <article class="card">
+      <div class="top"><h3>China</h3><span class="pill p-blue">Phase 3</span></div>
+      <div class="who">Kintor · pyrilutamide (KX-826) 1.0%</div>
+      <p>A 666-man Phase 3 trial met its main goal, according to the company, which plans to file for approval in China. Not approved anywhere yet.</p>
+      <div class="src"><a href="https://en.kintor.com.cn/news_details/22.html" target="_blank" rel="noopener">Kintor</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Europe</h3><span class="pill p-good">Authorized</span></div>
+      <div class="who">Finasteride scalp spray</div>
+      <p>Since 2020, finasteride has been authorized in some EU countries as a spray applied to the scalp. The EU found the evidence insufficient to link the spray to suicidal thoughts.</p>
+      <div class="src"><a href="https://www.ema.europa.eu/en/documents/referral/finasteride-dutasteride-containing-medicinal-products-article-31-referral-annex-ii_en.pdf" target="_blank" rel="noopener">EMA</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>South Korea &amp; Japan</h3><span class="pill p-good">Dutasteride</span></div>
+      <div class="who">Approved for hair loss · new Phase 3 in Seoul</div>
+      <p>Dutasteride is approved for male pattern hair loss in South Korea (2009) and Japan. In Seoul, a Phase 3 trial is comparing a new drug, CKD-843, with dutasteride.</p>
+      <div class="src"><a href="https://www.pmda.go.jp/files/000245812.pdf" target="_blank" rel="noopener">PMDA</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9561294/" target="_blank" rel="noopener">Ann Dermatol</a> · <a href="https://clinicaltrials.gov/study/NCT06916793" target="_blank" rel="noopener">NCT06916793</a></div>
+    </article>
+  </div>
+
+  <div class="subhead">How it changed over time</div>
+  <ol class="timeline">
+    <li><time>1988</time><span>The <b>FDA</b> approves minoxidil solution (Rogaine) on August 17. It goes over the counter in 1996.</span></li>
+    <li><time>1997</time><span>The <b>FDA</b> approves finasteride 1 mg (Propecia) on December 19.</span></li>
+    <li><time>2007</time><span>The FDA clears the HairMax LaserComb, a home laser device, for men with pattern hair loss (January 18).</span></li>
+    <li><time>2009</time><span>South Korea approves dutasteride for male pattern hair loss. Japan follows after a 2015 review.</span></li>
+    <li><time>2022</time><span>The FDA updates the finasteride label on suicidal thoughts and sexual side effects (August 1).</span></li>
+    <li><time>2025</time><span>The FDA warns about compounded topical finasteride (April). The EU confirms suicidal thoughts as a side effect (August). Clascoterone Phase 3 results (December).</span></li>
+    <li><time>2026</time><span>Positive Phase 3 data for pyrilutamide in China (March), 12-month clascoterone data (April), and oral minoxidil trial results (April). The UK strengthens warnings (May).</span></li>
+  </ol>
+
+</section>
+
+<!-- ========== 1. CAUSE ========== -->
+<section id="cause">
+  <div class="sec-head">
+    <h2>What causes male pattern baldness</h2>
+    <p>It comes from inherited genes plus the hormone DHT. In men with the genetic tendency, DHT gradually shrinks hair follicles on the top and front of the scalp, so the hairs they make get thinner and shorter.</p>
+  </div>
+
+  <div class="path" role="img" aria-label="Pathway: inherited genes make some scalp follicles sensitive to hormones; an enzyme turns testosterone into DHT; DHT shrinks the follicles; hair thins in a pattern on the crown and temples.">
+    <div class="stage">
+      <span class="eyebrow">Step 1 · The genes</span>
+      <h3>An inherited tendency</h3>
+      <div class="bar" aria-hidden="true"><i style="width:55%;background:var(--signal)"></i><i style="width:45%;background:var(--blue-soft)"></i></div>
+      <div class="legend"><span>More than half</span><span>of white men by 50</span></div>
+      <ul>
+        <li><b>Many genes:</b> a 2018 study of 205,327 men found 624 gene regions linked to it</li>
+        <li><b>Mother's side counts:</b> a key gene, for the androgen receptor, sits on the X chromosome, which men get from their mother</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage key">
+      <span class="eyebrow">Step 2 · The tipping point</span>
+      <h3>Testosterone becomes DHT</h3>
+      <svg viewBox="0 0 200 100" aria-hidden="true">
+        <circle cx="44" cy="40" r="18" fill="none" stroke="var(--blue)" stroke-width="3"/>
+        <path d="M72 40 H122 M114 32 L122 40 L114 48" fill="none" stroke="var(--muted)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="152" cy="40" r="18" fill="var(--warn-soft)" stroke="var(--warn)" stroke-width="3"/>
+        <text x="44" y="88" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">testosterone</text>
+        <text x="152" y="88" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--warn)">DHT</text>
+      </svg>
+      <ul>
+        <li>An enzyme, type II 5-alpha reductase, is found in hair follicles and makes DHT</li>
+        <li>Finasteride and dutasteride block this enzyme</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 3 · The change</span>
+      <h3>Follicles shrink</h3>
+      <ul>
+        <li><b>Miniaturization:</b> balding scalp has smaller follicles and more DHT than hairy scalp</li>
+        <li><b>Thinner hairs:</b> thick hairs are slowly replaced by fine, short ones</li>
+      </ul>
+    </div>
+    <div class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="stage">
+      <span class="eyebrow">Step 4 · The result</span>
+      <h3>A typical pattern</h3>
+      <svg viewBox="0 0 200 100" aria-hidden="true">
+        <path d="M40 14 V60" stroke="var(--blue)" stroke-width="12" stroke-linecap="round"/>
+        <path d="M150 30 V60" stroke="var(--warn)" stroke-width="3" stroke-linecap="round"/>
+        <text x="40" y="88" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--muted)">normal hair</text>
+        <text x="150" y="88" text-anchor="middle" font-size="10" font-family="IBM Plex Mono, monospace" fill="var(--warn)">miniaturized</text>
+      </svg>
+      <ul>
+        <li>Loss is most visible at the temples and the crown</li>
+        <li>Doctors often grade it on the Hamilton-Norwood scale</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cause-note">
+    <div><b>Genetics (2018):</b> a study of 205,327 men found 624 gene regions linked to male pattern baldness and estimated it is strongly inherited. No single gene decides it.</div>
+    <div><b>DHT (FDA label):</b> the enzyme that makes DHT is found in hair follicles. This is why blocking it with finasteride slows hair loss in many men.</div>
+    <div><b>Follicle miniaturization (FDA label):</b> balding scalp has shrunken follicles and more DHT than scalp with hair. Treatments aim to stop or partly reverse this shrinking while they are used.</div>
+  </div>
+</section>
+<!-- ========== EVERY REGISTRY ========== -->
+<section id="registries">
+  <div class="sec-head">
+    <h2>Find a clinical trial</h2>
+    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
+  </div>
+  <div class="subhead">Where hair-loss trials are recruiting right now</div>
+  <div class="live-grid">
+    <div>
+      <p class="status-note" id="ct-status">Loading live data from ClinicalTrials.gov…</p>
+      <div class="cbars" id="ct-bars"></div>
+    </div>
+    <div>
+      <h3 style="margin-bottom:10px">Drug trials with no U.S. site</h3>
+      <div class="trials" id="ct-abroad"></div>
+      <button type="button" class="more" id="ct-more" hidden></button>
+    </div>
+  </div>
+  <div class="reg-stats" id="reg-stats"></div>
+  <div class="reg-grid">
+    <div class="reg-panel"><h3>Newest published clinical trials</h3><span class="reg-src">PubMed · U.S. National Library of Medicine</span><div class="trials" id="reg-pubmed"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest Cochrane systematic reviews</h3><span class="reg-src">Cochrane Database of Systematic Reviews, via PubMed</span><div class="trials" id="reg-cochrane"><p class="status-note">Loading…</p></div></div>
+    <div class="reg-panel"><h3>Newest trials in the EU registry</h3><span class="reg-src" id="reg-ctis-src">EU Clinical Trials Information System</span><div class="trials" id="reg-ctis"></div></div>
+    <div class="reg-panel"><h3>Newest UK &amp; international registrations</h3><span class="reg-src">ISRCTN registry</span><div class="trials" id="reg-isrctn"><p class="status-note">Loading…</p></div></div>
+  </div>
+  <div class="subhead">FDA records for the medicines in this report</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Medicine</th><th>Brand</th><th>FDA application</th><th>Original approval</th></tr></thead>
+    <tbody id="reg-fda"></tbody>
+  </table>
+  </div>
+  <p class="reg-note">From Drugs@FDA via FDA's openFDA service. Some older brands are missing from FDA's open data, and newly approved drugs can take a few weeks to appear. An approval may be for a different disease than this one.</p>
+  <div class="subhead">Search every registry yourself</div>
+  <div class="reg-links" id="reg-links"></div>
+  <p class="reg-note">The WHO's ICTRP gathers trials from registries worldwide, including China, Japan, India, Iran, Australia and Brazil. Cochrane CENTRAL and OpenMD don't allow automated access, so they're linked here for you to search directly.</p>
+</section>
+
+<!-- ========== SOURCES ========== -->
+<!-- CURECHECKER:SOURCES (add a source here whenever a claim on this page uses it) -->
+<section id="sources">
+  <div class="sec-head">
+    <h2>Sources</h2>
+    <p>Everything this report is based on, grouped by section. Checked October 5, 2026.</p>
+  </div>
+  <div class="sources">
+    <div>
+      <div class="subhead">Cure outlook &amp; treatments</div>
+      <ol class="srclist">
+        <li><a href="https://www.aad.org/public/diseases/hair-loss/treatment/male-pattern-hair-loss-treatment" target="_blank" rel="noopener">What is male pattern hair loss, and can it be treated?</a>. American Academy of Dermatology, updated December 13, 2022</li>
+        <li><a href="https://www.aad.org/public/diseases/hair-loss/treatment/diagnosis-treat" target="_blank" rel="noopener">Hair loss: diagnosis and treatment</a>. American Academy of Dermatology, updated December 13, 2022</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=020788" target="_blank" rel="noopener">Propecia (finasteride), NDA 020788</a>. Drugs@FDA (original approval December 19, 1997)</li>
+        <li><a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=6f904709-65aa-44ce-b144-b4c8a0416e36" target="_blank" rel="noopener">Propecia prescribing information</a>. DailyMed, U.S. National Library of Medicine (label version of October 2024)</li>
+        <li><a href="https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2022/020788Orig1s030ltr.pdf" target="_blank" rel="noopener">Propecia supplement approval letter (S-030)</a>. FDA, August 1, 2022</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=019501" target="_blank" rel="noopener">Rogaine (minoxidil) 2% solution, NDA 019501</a>. Drugs@FDA (original approval August 17, 1988)</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=020834" target="_blank" rel="noopener">Rogaine Extra Strength 5% solution, NDA 020834</a>. Drugs@FDA (approved November 14, 1997)</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=021812" target="_blank" rel="noopener">Men's Rogaine 5% foam, NDA 021812</a>. Drugs@FDA (approved January 20, 2006)</li>
+        <li><a href="https://scholar.lib.vt.edu/VA-news/VA-Pilot/issues/1996/vp960213/02130251.htm" target="_blank" rel="noopener">Hair-growth drug Rogaine to be sold over the counter</a>. The Virginian-Pilot, February 13, 1996</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=021319" target="_blank" rel="noopener">Avodart (dutasteride), NDA 021319</a>. Drugs@FDA (approved for an enlarged prostate)</li>
+        <li><a href="https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=02d7399f-94cc-f718-f214-587301edd138" target="_blank" rel="noopener">Minoxidil tablets prescribing information</a>. DailyMed (labeled only for severe high blood pressure)</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/38598226/" target="_blank" rel="noopener">Oral minoxidil vs topical minoxidil for male androgenetic alopecia: a randomized clinical trial</a>. JAMA Dermatology, June 1, 2024</li>
+        <li><a href="https://www.accessdata.fda.gov/cdrh_docs/pdf6/k060305.pdf" target="_blank" rel="noopener">HairMax LaserComb 510(k) summary (K060305)</a>. FDA, cleared January 18, 2007</li>
+        <li><a href="https://ishrs.org/2025-practice-census-results/" target="_blank" rel="noopener">New survey finds younger adults, more women seeking treatment for hair loss (2025 Practice Census)</a>. International Society of Hair Restoration Surgery, May 13, 2025</li>
+        <li><a href="https://www.bad.org.uk/pils/hair-loss-male-pattern-androgenetic-alopecia" target="_blank" rel="noopener">Hair loss, male pattern (androgenetic alopecia)</a>. British Association of Dermatologists, updated June 2024</li>
+      </ol>
+      <div class="subhead">Latest studies</div>
+      <ol class="srclist">
+        <li><a href="https://clinicaltrials.gov/study/NCT07819435" target="_blank" rel="noopener">Phase 2/3 study of PP405 in adult males with androgenetic alopecia (NCT07819435)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://pelagepharma.com/press-releases/pelage-pharmaceuticals-announces-positive-phase-2a-clinical-trial-results-for-pp405-in-regenerative-hair-loss-therapy/" target="_blank" rel="noopener">Pelage announces positive Phase 2a results for PP405</a>. Pelage Pharmaceuticals press release (a company source), June 17, 2025</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42466626/" target="_blank" rel="noopener">Oral finasteride versus dutasteride in moderate-to-severe androgenetic alopecia in males</a>. J Dermatolog Treat, July 17, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42512824/" target="_blank" rel="noopener">Beyond minoxidil: off-label therapies for male androgenetic alopecia (network meta-analysis)</a>. Medicina, July 3, 2026</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/42339398/" target="_blank" rel="noopener">Lasers and energy-based devices in the treatment of androgenetic alopecia</a>. Skin Appendage Disorders, May 15, 2026</li>
+        <li><a href="https://www.gov.uk/government/news/mhra-strengthens-safety-warnings-for-finasteride-and-dutasteride" target="_blank" rel="noopener">MHRA strengthens safety warnings for finasteride and dutasteride</a>. MHRA, May 11, 2026</li>
+        <li><a href="https://www.gov.uk/drug-safety-update/finasteride-reminder-of-the-risk-psychiatric-side-effects-and-of-sexual-side-effects-which-may-persist-after-discontinuation-of-treatment" target="_blank" rel="noopener">Finasteride: reminder of the risk of psychiatric and sexual side effects</a>. MHRA Drug Safety Update, April 29, 2024</li>
+        <li><a href="https://www.sec.gov/Archives/edgar/data/1827635/000162828026027354/exhibit991-8xk.htm" target="_blank" rel="noopener">Veradermics VDPHL01 Phase 2/3 results</a>. Company press release filed with the SEC (a company source), April 27, 2026</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT06972264" target="_blank" rel="noopener">VDPHL01 in males with androgenetic alopecia (NCT06972264)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://www.newsfilecorp.com/release/292660/Phase-III-12Month-Data-for-Clascoterone-5-Topical-Solution-Confirm-Positive-Safety-for-Chronic-Use-and-Continued-Hair-Growth-both-of-which-are-Statistically-Significant" target="_blank" rel="noopener">Phase III 12-month data for clascoterone 5% topical solution</a>. Cosmo Pharmaceuticals press release (a company source), April 15, 2026</li>
+        <li><a href="https://www.genengnews.com/topics/translational-medicine/cosmo-pharma-eyes-2027-nda-for-baldness-candidate-after-positive-phase-iii-12-month-data/" target="_blank" rel="noopener">Cosmo Pharma eyes 2027 NDA for baldness candidate</a>. GEN, April 21, 2026</li>
+        <li><a href="https://en.kintor.com.cn/news_details/22.html" target="_blank" rel="noopener">Phase III KX-826 tincture 1.0% for AGA reached primary endpoint</a>. Kintor Pharmaceutical press release (a company source), March 18, 2026</li>
+        <li><a href="https://www.marketscreener.com/quote/stock/KINTOR-PHARMACEUTICAL-LIM-111325374/news/Kintor-Pharmaceutical-Limited-Announces-Results-of-Phase-III-Clinical-Trial-of-KX-826-Topline-Treatm-45442274/" target="_blank" rel="noopener">Kintor announces results of Phase III trial of KX-826 (0.5%)</a>. Company announcement via MarketScreener, November 26, 2023</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41606541/" target="_blank" rel="noopener">Risk factors for androgenetic alopecia: a systematic review and meta-analysis</a>. BMC Public Health, January 28, 2026</li>
+        <li><a href="https://www.newsfilecorp.com/release/276765/Cosmo-Announces-Breakthrough-Phase-III-Topline-Results-from-Scalp-1-and-Scalp-2-for-Clascoterone-5-Solution-in-Male-Hair-Loss-Showing-up-to-539-Relative-Improvement-in-TargetArea-Hair-Count-vs-Placebo-US-and-EU-Submissions-are-Underway" target="_blank" rel="noopener">Cosmo announces Phase III topline results from SCALP 1 and SCALP 2</a>. Cosmo Pharmaceuticals press release (a company source), December 3, 2025</li>
+        <li><a href="https://www.healio.com/news/dermatology/20251216/major-breakthrough-topical-male-pattern-hair-loss-drug-shows-meaningful-hair-regrowth" target="_blank" rel="noopener">Topical male pattern hair loss drug shows meaningful hair regrowth</a>. Healio, December 16, 2025</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41328006/" target="_blank" rel="noopener">Topical GT20029 in male patients with androgenetic alopecia: Phase 2</a>. J Dermatolog Treat, December 2, 2025</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/41219547/" target="_blank" rel="noopener">PRP versus topical minoxidil for androgenetic alopecia: systematic review and meta-analysis</a>. Aesthetic Plastic Surgery, November 11, 2025</li>
+        <li><a href="https://www.ema.europa.eu/en/medicines/human/referrals/finasteride-dutasteride-containing-medicinal-products" target="_blank" rel="noopener">Finasteride- and dutasteride-containing medicinal products (referral)</a>. European Medicines Agency, 2025</li>
+        <li><a href="https://www.fda.gov/drugs/human-drug-compounding/fda-alerts-health-care-providers-compounders-and-consumers-potential-risks-associated-compounded" target="_blank" rel="noopener">FDA alerts of potential risks associated with compounded topical finasteride products</a>. FDA, April 22, 2025</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/40090937/" target="_blank" rel="noopener">Topical finasteride spray in Chinese men with androgenetic alopecia: Phase III</a>. Chinese Medical Journal, March 17, 2025 (online)</li>
+      </ol>
+      <div class="subhead">Natural remedies &amp; supplements</div>
+      <ol class="srclist">
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/40056230/" target="_blank" rel="noopener">Combined microneedling versus topical minoxidil in androgenetic alopecia: meta-analysis</a>. Arch Dermatol Res, March 8, 2025</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/31858672/" target="_blank" rel="noopener">Topical ketoconazole for the treatment of androgenetic alopecia: a systematic review</a>. Dermatologic Therapy, 2020</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/24864154/" target="_blank" rel="noopener">Effect of pumpkin seed oil on hair growth in men with androgenetic alopecia</a>. Evid Based Complement Alternat Med, 2014</li>
+        <li><a href="https://www.nccih.nih.gov/health/saw-palmetto" target="_blank" rel="noopener">Saw palmetto</a>. National Center for Complementary and Integrative Health (NIH)</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/25842469/" target="_blank" rel="noopener">Rosemary oil vs minoxidil 2% for the treatment of androgenetic alopecia</a>. Skinmed, 2015</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/28879195/" target="_blank" rel="noopener">A review of the use of biotin for hair loss</a>. Skin Appendage Disorders, 2017</li>
+        <li><a href="https://www.asahq.org/advocacy-and-asapac/fda-and-washington-alerts/fda-alerts/2017/12/biotin-vitamin-b7-safety-communication-may-interfere-with-lab-tests" target="_blank" rel="noopener">Biotin (vitamin B7): FDA safety communication, may interfere with lab tests</a>. American Society of Anesthesiologists repost of the FDA notice, December 13, 2017</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/29055953/" target="_blank" rel="noopener">Caffeine-based topical liquid 0.2% versus minoxidil 5% in male androgenetic alopecia</a>. Skin Pharmacol Physiol, 2017</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/26904154/" target="_blank" rel="noopener">Standardized scalp massage results in increased hair thickness</a>. Eplasty, January 25, 2016</li>
+        <li><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-310/subpart-E/section-310.527" target="_blank" rel="noopener">21 CFR 310.527: OTC hair grower and hair loss prevention drug products</a>. Electronic Code of Federal Regulations</li>
+      </ol>
+      <div class="subhead">Expert care centers</div>
+      <ol class="srclist">
+        <li><a href="https://med.umn.edu/dermatology/patient-care/specialty-clinics" target="_blank" rel="noopener">Dermatology specialty clinics (Hair Disease Specialty Clinic)</a>. University of Minnesota Medical School</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT05910450" target="_blank" rel="noopener">Clascoterone solution in males with androgenetic alopecia, SCALP 1 (NCT05910450)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://www.mayoclinic.org/diseases-conditions/hair-loss/care-at-mayo-clinic/mac-20372938" target="_blank" rel="noopener">Hair loss care at Mayo Clinic</a>. Mayo Clinic</li>
+        <li><a href="https://crc.charite.de/en/research/clinical_research_unit" target="_blank" rel="noopener">Clinical Research Unit of the Clinical Research Center for Hair and Skin Science</a>. Charité – Universitätsmedizin Berlin</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT05914805" target="_blank" rel="noopener">Clascoterone solution in males with androgenetic alopecia, SCALP 2 (NCT05914805)</a>. ClinicalTrials.gov</li>
+        <li><a href="https://clinicaltrials.gov/study/NCT06916793" target="_blank" rel="noopener">Phase 3 study of CKD-843 in male patients with androgenetic alopecia (NCT06916793)</a>. ClinicalTrials.gov</li>
+      </ol>
+    </div>
+    <div>
+      <div class="subhead">Support groups</div>
+      <ol class="srclist">
+        <li><a href="https://www.alopecia.org.uk/" target="_blank" rel="noopener">Alopecia UK</a>. Registered charity</li>
+        <li><a href="https://www.hairlosstalk.com/interact/" target="_blank" rel="noopener">HairLossTalk forums</a>. Online Health Networks, Inc.</li>
+        <li><a href="https://www.reddit.com/r/tressless/" target="_blank" rel="noopener">r/tressless</a>. Reddit (existence confirmed through third-party subreddit statistics, as Reddit blocks automated checks)</li>
+      </ol>
+      <div class="subhead">Around the world</div>
+      <ol class="srclist">
+        <li><a href="https://www.ema.europa.eu/en/documents/referral/finasteride-dutasteride-containing-medicinal-products-article-31-referral-annex-ii_en.pdf" target="_blank" rel="noopener">Finasteride and dutasteride Article 31 referral, Annex II (scientific conclusions)</a>. European Medicines Agency, 2025</li>
+        <li><a href="https://www.medicines.org.uk/emc/product/7068/smpc" target="_blank" rel="noopener">Finasteride 1 mg tablets, summary of product characteristics</a>. electronic medicines compendium (UK)</li>
+        <li><a href="https://www.medicines.org.uk/emc/product/5781/smpc" target="_blank" rel="noopener">Regaine for Men Extra Strength 5% foam, summary of product characteristics</a>. electronic medicines compendium (UK)</li>
+        <li><a href="https://health-products.canada.ca/api/drug/drugproduct/?lang=en&amp;type=json&amp;brandname=propecia" target="_blank" rel="noopener">Propecia in the Drug Product Database</a>. Health Canada</li>
+        <li><a href="https://health-products.canada.ca/api/drug/drugproduct/?lang=en&amp;type=json&amp;brandname=rogaine" target="_blank" rel="noopener">Rogaine products in the Drug Product Database</a>. Health Canada</li>
+        <li><a href="https://compendium.ch/product/66299-propecia-filmtabl-1-mg/mpro" target="_blank" rel="noopener">Propecia 1 mg</a>. Compendium (Switzerland)</li>
+        <li><a href="https://compendium.ch/product/3154-regaine-topische-losung-5" target="_blank" rel="noopener">Regaine 5% topical solution</a>. Compendium (Switzerland)</li>
+        <li><a href="https://www.pmda.go.jp/files/000245812.pdf" target="_blank" rel="noopener">Report on the deliberation results: Zagallo (dutasteride)</a>. Pharmaceuticals and Medical Devices Agency (Japan), September 4, 2015</li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9561294/" target="_blank" rel="noopener">Long-term effectiveness and safety of dutasteride versus finasteride in male androgenic alopecia in South Korea</a>. Annals of Dermatology, October 2022</li>
+        <li><a href="https://clinicaltrials.gov/data-api/api" target="_blank" rel="noopener">ClinicalTrials.gov API</a>. Live recruiting-trial data, loaded each time this page opens</li>
+      </ol>
+      <div class="subhead">What causes it</div>
+      <ol class="srclist">
+        <li><a href="https://www.nature.com/articles/s41467-018-07862-y" target="_blank" rel="noopener">Dissection of genetic variation and evidence for pleiotropy in male pattern baldness</a>. Nature Communications, December 20, 2018</li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1226186/" target="_blank" rel="noopener">Genetic variation in the human androgen receptor gene is the major determinant of common early-onset androgenetic alopecia</a>. American Journal of Human Genetics, 2005</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/28613674/" target="_blank" rel="noopener">Androgenetic alopecia</a>. StatPearls, via PubMed</li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2938573/" target="_blank" rel="noopener">Reliability of Hamilton-Norwood classification</a>. International Journal of Trichology, 2009</li>
+      </ol>
+      <div class="subhead">Registries &amp; databases</div>
+      <ol class="srclist">
+        <li><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a>. U.S. National Library of Medicine</li>
+        <li><a href="https://trialsearch.who.int/" target="_blank" rel="noopener">International Clinical Trials Registry Platform (ICTRP)</a>. World Health Organization</li>
+        <li><a href="https://euclinicaltrials.eu/" target="_blank" rel="noopener">Clinical Trials Information System (CTIS)</a>. European Medicines Agency. Daily snapshot</li>
+        <li><a href="https://www.isrctn.com/" target="_blank" rel="noopener">ISRCTN registry</a>. Live via the ISRCTN API</li>
+        <li><a href="https://www.cochranelibrary.com/central" target="_blank" rel="noopener">Cochrane Central Register of Controlled Trials (CENTRAL)</a>. Cochrane Library</li>
+        <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a>. U.S. National Library of Medicine</li>
+        <li><a href="https://europepmc.org/" target="_blank" rel="noopener">Europe PMC</a>. Papers and preprints</li>
+        <li><a href="https://www.accessdata.fda.gov/scripts/cder/daf/" target="_blank" rel="noopener">Drugs@FDA</a>, live via <a href="https://open.fda.gov/" target="_blank" rel="noopener">openFDA</a></li>
+        <li><a href="https://www.ema.europa.eu/en/medicines" target="_blank" rel="noopener">Medicines database</a>. European Medicines Agency</li>
+        <li><a href="https://openmd.com/" target="_blank" rel="noopener">OpenMD</a>. Medical search engine</li>
+      </ol>
+    </div>
+  </div>
+  <p class="src-note">Not individually cited: that thick hairs are gradually replaced by finer, shorter ones (a standard description of miniaturization). The "EU: Approved" cell for finasteride 1 mg rests on the EMA referral covering 1 mg packs in EU countries, not on a single EU-wide authorization. Japan's approval of dutasteride is based on the PMDA review report dated September 4, 2015; the exact approval day was not verified. Unverified and shown as "—": finasteride and minoxidil status in Japan, South Korea, China and Australia (Australia's registry could not be opened), and minoxidil in the EU. The approval status of the finasteride spray in China and any filing for pyrilutamide in China are not confirmed. Clascoterone, pyrilutamide, VDPHL01 and PP405 results come from company releases, not peer-reviewed papers. We found no FDA or AAD page stating outright that PRP is unapproved for hair loss, so this page does not claim it. The Mayo Clinic page blocks automated checks; it was confirmed through search results. The r/tressless community was confirmed only through third-party statistics sites. Expert care centers: no official center-of-excellence designation for hair loss could be verified, so the four centers listed are included for a registered Phase 3 trial role, plus a published hair-disorder program where one exists. Seoul National University Hospital is listed for its trial role only.</p>
+</section>
+<footer>
+  <div><b>About Cure Checker.</b> An independent, AI-assisted daily digest of medical research, rebuilt every morning at 9:00 AM Eastern from trial announcements, peer-reviewed papers and patient-organization updates. Every study entry links to its source.</div>
+  <div><b>Not medical advice.</b> No doctors review these pages. Summaries are simplified, and early-phase results often don't hold up. Talk with your doctor before changing treatment or starting supplements.</div>
+  <div class="foot-links"><a href="index.html">All diseases</a><a href="about.html">About us</a><a href="about.html#contact">Contact</a><a href="terms.html">Terms of Use</a><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+</footer>
+</div>
+
+<script src="assets/analytics.js"></script>
+<script src="assets/diseases.js"></script>
+<script src="assets/registry-snapshot.js"></script>
+<script src="assets/curechecker.js"></script>
+<script src="assets/donate.js"></script>
+<script src="assets/newsletter.js"></script>
+<script src="assets/layout.js"></script>
+
+</body>
+</html>
