@@ -477,3 +477,14 @@ select[data-disease-picker]:focus-visible{outline:3px solid var(--signal);outlin
 [data-palette="taupe"]{--paper:#F5F3F1; --panel:#FFFFFF; --ink:#2A2421; --muted:#665C56; --line:#DFD9D4; --signal:#665850; --signal-soft:#EAE5E1; --sky:#D0C7C0; --blue:#544841; --blue-soft:#EEEAE6}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="taupe"]{--paper:#161311; --panel:#201C19; --ink:#F2EDE9; --muted:#B5ABA3; --line:#3A332E; --signal:#CDBFB4; --signal-soft:#2E2824; --sky:#564B43; --blue:#DCD0C6; --blue-soft:#27221F}}
 :root[data-theme="dark"] [data-palette="taupe"]{--paper:#161311; --panel:#201C19; --ink:#F2EDE9; --muted:#B5ABA3; --line:#3A332E; --signal:#CDBFB4; --signal-soft:#2E2824; --sky:#564B43; --blue:#DCD0C6; --blue-soft:#27221F}
+
+/* Report layout (assets/layout.js and the section menu) */
+html{scroll-padding-top:64px}
+.toc{position:sticky;top:0;z-index:40;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;background:var(--paper);padding-block:10px;border-bottom:1px solid var(--line);scrollbar-width:none}
+.toc::-webkit-scrollbar{display:none}
+.toc a{flex:0 0 auto}
+details.more-studies>summary,details.reg-details>summary,details.src-details>summary{cursor:pointer;font-family:var(--f-mono);font-size:13px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--panel);margin:12px 0;list-style:none}
+details.more-studies>summary::-webkit-details-marker,details.reg-details>summary::-webkit-details-marker,details.src-details>summary::-webkit-details-marker{display:none}
+details.more-studies>summary::before,details.reg-details>summary::before,details.src-details>summary::before{content:"+ ";font-weight:700}
+details[open].more-studies>summary::before,details[open].reg-details>summary::before,details[open].src-details>summary::before{content:"\2212  "}
+details[open]>summary{margin-bottom:14px}

@@ -49,17 +49,15 @@
 <!-- ========== LEAD ========== -->
 <div class="lead">
   <h1>Type 1 diabetes has no cure yet. Lab-grown insulin cells have freed some trial patients from injections, <em>but they still need immune-suppressing drugs.</em></h1>
-  <p>Cure Checker tracks the cause, the treatments that are working, and the trials underway, and rewrites this page every morning from the latest published results. Plain language, with sources for every claim.</p>
 </div>
 <nav class="toc" aria-label="Sections">
-  <a href="#verdict">Most recent cure information</a>
-  <a href="#cause">What causes T1D</a>
-  <a href="#treatments">Treatments that are working</a>
-  <a href="#studies">Latest studies</a>
-  <a href="#world">Around the world</a>
-  <a href="#registries">Every registry</a>
-  <a href="#natural">Natural remedies &amp; daily care</a>
-  <a href="#support-groups">Support groups</a>
+  <a href="#verdict">Is there a cure?</a>
+  <a href="#studies">What's new</a>
+  <a href="#treatments">Treatments</a>
+  <a href="#care">Care &amp; support</a>
+  <a href="#world">Other countries</a>
+  <a href="#cause">What causes it</a>
+  <a href="#registries">Find a trial</a>
   <a href="#sources">Sources</a>
 </nav>
 
@@ -79,6 +77,246 @@
     </ol>
     <p class="fine">This is Cure Checker's editorial assessment of published evidence, not medical advice. Care decisions belong with a diabetes care team.</p>
   </div>
+</section>
+
+<!-- ========== 3. STUDIES ========== -->
+<section id="studies">
+  <div class="sec-head">
+    <h2>Latest studies &amp; what they concluded</h2>
+    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter studies">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
+    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
+    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
+  </div>
+  <!-- CURECHECKER:STUDIES (newest first) -->
+  <div class="studies" id="studies-list">
+    <div class="study" data-k="science"><time>Oct 1, 2026</time><div><h3>Rare severe reaction after teplizumab: case report</h3><p>A 44-year-old man with Down syndrome developed a severe immune reaction (HLH) linked to Epstein-Barr virus reactivation after a teplizumab course. He recovered with treatment. The authors say cause and effect can't be proven.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42520060/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-sig">Safety</span></div>
+    <div class="study" data-k="result"><time>Sep 30, 2026</time><div><h3>Gum-tissue stem cells: small Phase 1 trial</h3><p>In 18 people in a Chinese trial, four infusions of gingiva-derived stem cells were safe and linked to better C-peptide (a sign of the body's own insulin) at 12 weeks, plus lower insulin doses. Very small and early.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42816465/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-blue">Early</span></div>
+    <div class="study" data-k="result"><time>Sep 17, 2026</time><div><h3>FDA approves finerenone (Kerendia) for kidney disease linked to type 1 diabetes</h3><p>The daily pill is the first new treatment approved in more than 30 years for kidney disease in adults with type 1 diabetes. In the FINE-ONE trial, a kidney-damage marker (UACR) fell 34% on finerenone vs 12% on placebo at 6 months. Side effects were similar to placebo. It treats kidney disease, not diabetes itself.</p><div class="src"><a href="https://www.healio.com/news/endocrinology/20260917/fda-approves-kerendia-for-adults-with-ckd-associated-with-type-1-diabetes" target="_blank" rel="noopener">Healio</a> · <a href="https://www.breakthrought1d.org/news-and-updates/finerenone-approved-ckd-t1d/" target="_blank" rel="noopener">Breakthrough T1D</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>Sep 10, 2026</time><div><h3>PROTECT: teplizumab per-protocol analysis</h3><p>Among 275 children and teens who took treatment as planned, teplizumab kept more C-peptide at 78 weeks, lowered insulin doses and slightly raised time in range compared with placebo.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42720752/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="underway"><time>Aug 3, 2026</time><div><h3>Zimislecel Phase 1/2/3 continues dosing</h3><p>Vertex said the trial "continues to enroll and dose patients" and that updated timelines for zimislecel and VX-017, a next cell therapy cleared for a Phase 1/2 trial, will come later in 2026. Dosing had been paused for a manufacturing review and resumed by May 2026.</p><div class="src"><a href="https://www.sec.gov/Archives/edgar/data/875320/000087532026000256/ex-991_q22026.htm" target="_blank" rel="noopener">Company release (Q2 2026)</a> · <a href="https://crisprmedicinenews.com/press-release-service/card/vertex-reports-first-quarter-2026-financial-results/" target="_blank" rel="noopener">Company release (Q1 2026)</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="result"><time>Jul 10, 2026</time><div><h3>Hypoimmune islets survive 14 months without immune drugs</h3><p>A follow-up letter in NEJM reports that gene-edited donor islet cells in one person in Sweden kept working for 14 months with no immune-suppressing drugs.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42430558/" target="_blank" rel="noopener">PubMed</a> · <a href="https://www.biospace.com/press-releases/sana-biotechnology-announces-follow-on-publication-in-the-new-england-journal-of-medicine-nejm-highlighting-groundbreaking-long-term-data-and-durability-of-hypoimmune-modified-islet-cell-transplantation-without-immunosuppression-in-type-1-diabetes" target="_blank" rel="noopener">Company release</a></div></div><span class="pill p-blue">Early</span></div>
+    <div class="study" data-k="science"><time>Jul 9, 2026</time><div><h3>NICE recommends teplizumab for NHS England</h3><p>Final guidance recommends teplizumab for people 8 and older with stage 2 T1D. NICE says England is the first country in Europe to recommend it through a health technology appraisal.</p><div class="src"><a href="https://www.nice.org.uk/guidance/ta1176" target="_blank" rel="noopener">NICE TA1176</a> · <a href="https://www.nice.org.uk/news/articles/teplizumab-to-delay-the-onset-of-type-1-diabetes-recommended" target="_blank" rel="noopener">NICE news</a></div></div><span class="pill p-blue">Policy</span></div>
+    <div class="study" data-k="result"><time>Jul 6, 2026</time><div><h3>HumAn-1: glargine vs. human insulin in low-resource settings</h3><p>In 400 children and young adults in Bangladesh and Tanzania, switching to glargine did not change time in very low blood sugar or time in range at 6 months.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42409045/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-sig">No difference</span></div>
+    <div class="study" data-k="result"><time>Jun 12, 2026</time><div><h3>FDA: teplizumab for recently diagnosed children</h3><p>Accelerated approval to delay the decline of insulin production in ages 8 to 17 recently diagnosed with stage 3 T1D, based on C-peptide. A confirmatory study is needed.</p><div class="src"><a href="https://www.fda.gov/news-events/press-announcements/fda-approves-new-indication-tzield-teplizumab-certain-pediatric-patients-recently-diagnosed-stage-3" target="_blank" rel="noopener">FDA</a> · <a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=761183" target="_blank" rel="noopener">Drugs@FDA</a></div></div><span class="pill p-good">Approval</span></div>
+    <div class="study" data-k="result"><time>May 1, 2026</time><div><h3>Fr1da: oral insulin does not slow early T1D</h3><p>In 220 children with stage 1 T1D, a year of high-dose oral insulin did not change progression (40% in each group at 5 years) or immune response to insulin.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41563349/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-sig">No benefit</span></div>
+    <div class="study" data-k="result"><time>Apr 20, 2026</time><div><h3>FDA extends teplizumab to children from age 1</h3><p>The stage 2 approval was widened from age 8 and older to age 1 and older, supported by the PETITE-T1D safety study.</p><div class="src"><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=761183" target="_blank" rel="noopener">Drugs@FDA</a> · <a href="https://www.drugtopics.com/view/fda-approves-tzield-for-patients-1-year-of-age-to-delay-stage-3-type-1-diabetes" target="_blank" rel="noopener">Drug Topics</a></div></div><span class="pill p-good">Approval</span></div>
+    <div class="study" data-k="result"><time>Feb 23, 2026</time><div><h3>RADIANT: tubeless automated insulin delivery vs. injections</h3><p>In 188 children and adults with high HbA1c, the automated system lowered HbA1c by 0.8 points more than injections at 13 weeks, with no severe lows or DKA in either group.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41747751/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>Jan 12, 2026</time><div><h3>EU approves teplizumab (Teizeild)</h3><p>The European Commission approved it to delay stage 3 T1D in people 8 and older with stage 2 T1D, the first disease-modifying T1D drug in the EU.</p><div class="src"><a href="https://www.sanofi.com/en/media-room/press-releases/2026/2026-01-12-06-00-00-3216525" target="_blank" rel="noopener">Company release</a></div></div><span class="pill p-good">Approval</span></div>
+  </div>
+</section>
+
+<!-- ========== 2. TREATMENTS ========== -->
+<section id="treatments">
+  <div class="sec-head">
+    <h2>Treatments that are working</h2>
+    <p>Insulin keeps people alive. Devices, an immune drug and islet cell therapies are changing what treatment looks like.</p>
+  </div>
+
+  <div class="tx">
+    <article class="card">
+      <div class="top"><h3>Insulin</h3><span class="pill p-good">Standard</span></div>
+      <div class="who">Everyone with stage 3 T1D · injections or pump</div>
+      <p>Replaces the hormone the body no longer makes. Most people with T1D need it every day to stay alive. Missing doses can lead to diabetic ketoacidosis, a life-threatening emergency.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Automated insulin delivery</h3><span class="pill p-good">Proven</span></div>
+      <div class="who">Pump + glucose sensor + software · RADIANT trial</div>
+      <p>The system adjusts insulin based on sensor readings. In the RADIANT trial (188 people aged 4 to 70), a tubeless system lowered average blood sugar (HbA1c) from 8.1% to 7.2% in 13 weeks, compared with 8.1% to 8.0% on injections. The trial was funded by the device maker.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Tzield (teplizumab)</h3><span class="pill p-good">FDA approved</span></div>
+      <div class="who">First approved Nov 17, 2022 · stage 2 from age 1 · recent stage 3, ages 8–17</div>
+      <p>An antibody given by IV for 12 to 14 days. It delays the onset of stage 3 T1D and slows the loss of the body's own insulin. It carries a boxed warning for serious viral reactivation (Epstein-Barr virus and cytomegalovirus).</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Lantidra (donislecel)</h3><span class="pill p-good">FDA approved</span></div>
+      <div class="who">Approved Jun 28, 2023 · adults with repeated severe low blood sugar</div>
+      <p>Islet cells from deceased donors, infused into a liver vein. In two small studies, 21 of 30 people stopped insulin for at least a year. Patients must take immune-suppressing drugs, and some stopped because of serious side effects.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Zimislecel (VX-880)</h3><span class="pill p-sig">In Phase 3</span></div>
+      <div class="who">Vertex · lab-grown islet cells · FORWARD trial</div>
+      <p>Islet cells grown from stem cells. In NEJM, 10 of 12 full-dose patients were off insulin at one year. Lifelong immune suppression is required, and two patients died during the study. Not approved.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Hypoimmune islet cells</h3><span class="pill p-blue">First patient</span></div>
+      <div class="who">Sana Biotechnology · Uppsala University Hospital, Sweden</div>
+      <p>Donor islet cells gene-edited to hide from the immune system. In one person, they kept making insulin for 14 months with no immune-suppressing drugs. This is a single patient, and much larger trials are needed.</p>
+    </article>
+  </div>
+
+  <div class="subhead">Standard treatment today</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Treatment</th><th>For</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><b>Insulin (injections or pump)</b></td><td>Everyone with stage 3 T1D</td><td>Replaces missing insulin. Needed every day.</td></tr>
+      <tr><td><b>Automated insulin delivery</b></td><td>Many children and adults</td><td>Adjusts insulin automatically from glucose-sensor readings.</td></tr>
+      <tr><td><b>Teplizumab (Tzield)</b></td><td>Stage 2 (age 1+); recent stage 3 (ages 8–17, U.S.)</td><td>Delays diagnosis or slows the loss of the body's own insulin. Does not replace insulin after diagnosis.</td></tr>
+      <tr><td><b>Pramlintide (Symlin)</b></td><td>People on mealtime insulin who are not at goal</td><td>Add-on that helps control blood sugar after meals. Boxed warning for severe low blood sugar.</td></tr>
+      <tr><td><b>Donislecel (Lantidra)</b></td><td>Adults with repeated severe low blood sugar</td><td>Donor islet transplant. Requires immune-suppressing drugs.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+</section>
+
+<!-- ========== 5. NATURAL ========== -->
+<section id="natural">
+  <div class="sec-head">
+    <h2>Natural remedies &amp; daily care</h2>
+    <p>No supplement or diet replaces insulin in type 1 diabetes. Daily habits help manage blood sugar alongside insulin. We rate each by the strength of evidence.</p>
+  </div>
+  <div class="gkey">
+    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Strong expert consensus</span>
+    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Limited / mixed evidence</span>
+    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>No evidence, or possible harm</span>
+  </div>
+  <div class="supp">
+    <div>
+      <h3>Helpful daily care</h3>
+      <div class="row"><b>Regular physical activity</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>Can help lower blood sugar, blood pressure and cholesterol. Ask your care team how to adjust insulin and food around exercise.</p></div>
+      <div class="row"><b>Healthy eating plan</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>A plan built with a dietitian or diabetes educator helps match food and insulin.</p></div>
+      <div class="row"><b>Sleep and stress care</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Part of diabetes self-care, though trial evidence for better blood sugar is limited.</p></div>
+    </div>
+    <div>
+      <h3>Promoted without evidence, or risky</h3>
+      <div class="row"><b>Cinnamon, chromium, berberine</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>Studies are small and inconsistent, with no clear conclusions. None replaces insulin.</p></div>
+      <div class="row"><b>"Natural diabetes cure" products</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>The FDA warns these are marketed illegally. Some are harmful, and all are harmful if used in place of real treatment.</p></div>
+      <div class="row"><b>Stopping insulin for any remedy</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>Missing insulin can cause diabetic ketoacidosis (DKA), which is life-threatening.</p></div>
+    </div>
+  </div>
+  <p class="caution"><b>Be careful:</b> never stop or cut insulin to try a supplement, diet or "cure." In type 1 diabetes, going without insulin can cause diabetic ketoacidosis, a life-threatening emergency. Some supplements can also cause side effects, such as kidney damage. Tell your care team about anything you take.</p>
+</section>
+
+<section id="care">
+  <div class="sec-head">
+    <h2>Where to get care and support</h2>
+    <p>Centers recognized for expertise in this condition, and communities of people living with it.</p>
+  </div>
+  <div class="subhead">Where people find expert care</div>
+  <ul class="centers">
+    <li><b>Barbara Davis Center for Diabetes, University of Colorado</b> <span class="loc">Aurora, Colorado, USA</span><p>Cares for children and adults with T1D and runs an Early T1D Clinic. It was a site in the TN-10 teplizumab prevention trial and the PROTECT trial in newly diagnosed children.</p><div class="src"><a href="https://medschool.cuanschutz.edu/barbara-davis-center-for-diabetes" target="_blank" rel="noopener">Barbara Davis Center</a> &middot; <a href="https://clinicaltrials.gov/study/NCT01030861" target="_blank" rel="noopener">TN-10 (NCT01030861)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03875729" target="_blank" rel="noopener">PROTECT (NCT03875729)</a></div></li>
+    <li><b>Diabetes Research Institute, University of Miami</b> <span class="loc">Miami, Florida, USA</span><p>A listed site in Vertex's zimislecel cell-therapy trial. The University of Miami was also a site in the TN-10 and PROTECT teplizumab trials.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT04786262" target="_blank" rel="noopener">Zimislecel trial (NCT04786262)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03875729" target="_blank" rel="noopener">PROTECT (NCT03875729)</a></div></li>
+    <li><b>Yale School of Medicine</b> <span class="loc">New Haven, Connecticut, USA</span><p>A site in both the TN-10 and PROTECT teplizumab trials.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT01030861" target="_blank" rel="noopener">TN-10 (NCT01030861)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03875729" target="_blank" rel="noopener">PROTECT (NCT03875729)</a></div></li>
+    <li><b>University of Chicago</b> <span class="loc">Chicago, Illinois, USA</span><p>A listed site in the zimislecel cell-therapy trial and a site in the PROTECT teplizumab trial.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT04786262" target="_blank" rel="noopener">Zimislecel trial (NCT04786262)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03875729" target="_blank" rel="noopener">PROTECT (NCT03875729)</a></div></li>
+    <li><b>Toronto General Hospital</b> <span class="loc">Toronto, Ontario, Canada</span><p>A listed site in the zimislecel cell-therapy trial.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT04786262" target="_blank" rel="noopener">Zimislecel trial (NCT04786262)</a></div></li>
+    <li><b>Churchill Hospital, Oxford</b> <span class="loc">Oxford, United Kingdom</span><p>A listed UK site in the zimislecel cell-therapy trial.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT04786262" target="_blank" rel="noopener">Zimislecel trial (NCT04786262)</a></div></li>
+  </ul>
+  <p class="fine centers-note">These are centers recognized for expertise in this condition, not a ranking, and Cure Checker does not endorse or rate any facility. Outcomes depend on the individual. Ask your doctor which center fits your situation.</p>
+</section>
+
+<!-- ========== SUPPORT GROUPS ========== -->
+<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 3, 2026; only add groups whose link you have verified) -->
+<section id="support-groups">
+  <div class="sec-head">
+    <h2>Support groups &amp; communities</h2>
+    <p>Living with T1D means decisions every day, and other people with T1D understand. Most of these are free.</p>
+  </div>
+  <div class="groups">
+    <article class="group">
+      <div class="top"><h3>Breakthrough T1D</h3><span class="pill p-good">Research &amp; support</span></div>
+      <div class="who">Formerly JDRF · local chapters</div>
+      <p>Funds T1D research and offers local chapters, community events, a resource library and a clinical-trial finder.</p>
+      <a class="join" href="https://www.breakthrought1d.org/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Beyond Type 1</h3><span class="pill p-good">Community</span></div>
+      <div class="who">People with T1D · caregivers</div>
+      <p>A nonprofit with a community app, a program for newly diagnosed people and guides on daily life with T1D.</p>
+      <a class="join" href="https://beyondtype1.org/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>The Diabetes Link</h3><span class="pill p-good">Young adults</span></div>
+      <div class="who">Formerly College Diabetes Network</div>
+      <p>A community for young adults with diabetes, with an online chat, local meetups and college chapters.</p>
+      <a class="join" href="https://www.thediabeteslink.org/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Diabetes UK Forum</h3><span class="pill p-blue">Forum</span></div>
+      <div class="who">Online community · UK-based</div>
+      <p>An active discussion forum run by Diabetes UK where members share their own experiences.</p>
+      <a class="join" href="https://forum.diabetes.org.uk/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>T1D groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
+      <div class="who">Search results</div>
+      <p>Many private parent, teen and adult groups exist. This link searches Facebook (a login is required).</p>
+      <a class="join" href="https://www.facebook.com/search/groups/?q=type%201%20diabetes%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
+    </article>
+  </div>
+  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about treatment, especially insulin doses, with your doctor. Protect your privacy, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
+</section>
+
+<!-- ========== 4. AROUND THE WORLD ========== -->
+<section id="world" data-condition="Type 1 Diabetes">
+  <div class="sec-head">
+    <h2>How other countries treat type 1 diabetes</h2>
+    <p>Insulin is the base of care everywhere. Teplizumab is now approved in the U.S., EU, UK, Canada and China for stage 2. We verified islet cell therapy approval only in the U.S., for a small group.</p>
+  </div>
+
+  <div class="subhead">What's available</div>
+  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 3, 2026) -->
+  <div class="scroll">
+  <table class="approved world">
+    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
+    <tbody>
+      <tr><td><b>Insulin</b><small>All stage 3 T1D</small></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td></tr>
+      <tr><td><b>Teplizumab (Tzield / Teizeild)</b><small>Delay stage 3 in stage 2</small></td><td><span class="c c-yes">Approved 2022</span></td><td><span class="c c-yes">Approved 2026</span></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Teplizumab</b><small>Recent stage 3, ages 8–17</small></td><td><span class="c c-yes">Approved 2026</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Donislecel (Lantidra)</b><small>Donor islet cells</small></td><td><span class="c c-yes">Approved 2023</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Pramlintide (Symlin)</b><small>Add-on to mealtime insulin</small></td><td><span class="c c-yes">Approved 2005</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="wkey">
+    <span><span class="c c-yes">Approved</span> approved for T1D</span>
+    <span><span class="c c-mid">Used</span> standard care or used off-label</span>
+    <span><span class="c c-no">—</span> not verified for this report</span>
+  </div>
+
+  <div class="subhead">What's being studied abroad</div>
+  <div class="abroad">
+    <article class="card">
+      <div class="top"><h3>Canada, Europe &amp; Saudi Arabia</h3><span class="pill p-sig">Phase 1/2/3</span></div>
+      <div class="who">Vertex · zimislecel (VX-880)</div>
+      <p>The zimislecel trial lists recruiting sites in Canada, France, Germany, Italy, the Netherlands, Norway, Saudi Arabia and the UK, as well as the U.S.</p>
+      <div class="src"><a href="https://clinicaltrials.gov/study/NCT04786262" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Sweden</h3><span class="pill p-blue">First in human</span></div>
+      <div class="who">Uppsala University Hospital · hypoimmune islets</div>
+      <p>The first transplant of gene-edited islet cells without immune-suppressing drugs, with 14-month results published in NEJM in 2026.</p>
+      <div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42430558/" target="_blank" rel="noopener">NEJM letter (PubMed)</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Japan</h3><span class="pill p-blue">KIBOU-T1D</span></div>
+      <div class="who">Sanofi · teplizumab · ages 1–34</div>
+      <p>A Phase 2 randomized study of teplizumab in Japanese people with stage 2 T1D. It is recruiting, with completion estimated for 2028.</p>
+      <div class="src"><a href="https://clinicaltrials.gov/study/NCT06791291" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+    </article>
+  </div>
+
+  <div class="subhead">How it changed over time</div>
+  <ol class="timeline">
+    <li><time>1922</time><span>Insulin is first used to treat a person with diabetes, in Toronto.</span></li>
+    <li><time>2015</time><span>Experts define stages 1 to 3 of T1D, starting before symptoms.</span></li>
+    <li><time>2022</time><span>The <b>FDA</b> approves teplizumab (Nov 17), the first drug to delay T1D.</span></li>
+    <li><time>2023</time><span>The <b>FDA</b> approves Lantidra (Jun 28), the first islet cell therapy.</span></li>
+    <li><time>2025</time><span>Zimislecel results in NEJM (June). Teplizumab approved in Canada, the UK and China.</span></li>
+    <li><time>2026</time><span>EU approval (Jan). FDA widens teplizumab to age 1 (Apr) and to newly diagnosed children (Jun). NICE recommends it (Jul).</span></li>
+  </ol>
+
 </section>
 
 <!-- ========== 1. CAUSE ========== -->
@@ -150,160 +388,12 @@
   </div>
 </section>
 
-<!-- ========== 2. TREATMENTS ========== -->
-<section id="treatments">
+<!-- ========== EVERY REGISTRY ========== -->
+<section id="registries">
   <div class="sec-head">
-    <h2>Treatments that are working</h2>
-    <p>Insulin keeps people alive. Devices, an immune drug and islet cell therapies are changing what treatment looks like.</p>
+    <h2>Find a clinical trial</h2>
+    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
   </div>
-
-  <div class="tx">
-    <article class="card">
-      <div class="top"><h3>Insulin</h3><span class="pill p-good">Standard</span></div>
-      <div class="who">Everyone with stage 3 T1D · injections or pump</div>
-      <p>Replaces the hormone the body no longer makes. Most people with T1D need it every day to stay alive. Missing doses can lead to diabetic ketoacidosis, a life-threatening emergency.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Automated insulin delivery</h3><span class="pill p-good">Proven</span></div>
-      <div class="who">Pump + glucose sensor + software · RADIANT trial</div>
-      <p>The system adjusts insulin based on sensor readings. In the RADIANT trial (188 people aged 4 to 70), a tubeless system lowered average blood sugar (HbA1c) from 8.1% to 7.2% in 13 weeks, compared with 8.1% to 8.0% on injections. The trial was funded by the device maker.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Tzield (teplizumab)</h3><span class="pill p-good">FDA approved</span></div>
-      <div class="who">First approved Nov 17, 2022 · stage 2 from age 1 · recent stage 3, ages 8–17</div>
-      <p>An antibody given by IV for 12 to 14 days. It delays the onset of stage 3 T1D and slows the loss of the body's own insulin. It carries a boxed warning for serious viral reactivation (Epstein-Barr virus and cytomegalovirus).</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Lantidra (donislecel)</h3><span class="pill p-good">FDA approved</span></div>
-      <div class="who">Approved Jun 28, 2023 · adults with repeated severe low blood sugar</div>
-      <p>Islet cells from deceased donors, infused into a liver vein. In two small studies, 21 of 30 people stopped insulin for at least a year. Patients must take immune-suppressing drugs, and some stopped because of serious side effects.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Zimislecel (VX-880)</h3><span class="pill p-sig">In Phase 3</span></div>
-      <div class="who">Vertex · lab-grown islet cells · FORWARD trial</div>
-      <p>Islet cells grown from stem cells. In NEJM, 10 of 12 full-dose patients were off insulin at one year. Lifelong immune suppression is required, and two patients died during the study. Not approved.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Hypoimmune islet cells</h3><span class="pill p-blue">First patient</span></div>
-      <div class="who">Sana Biotechnology · Uppsala University Hospital, Sweden</div>
-      <p>Donor islet cells gene-edited to hide from the immune system. In one person, they kept making insulin for 14 months with no immune-suppressing drugs. This is a single patient, and much larger trials are needed.</p>
-    </article>
-  </div>
-
-  <div class="subhead">Standard treatment today</div>
-  <div class="scroll">
-  <table class="approved">
-    <thead><tr><th>Treatment</th><th>For</th><th>What it does</th></tr></thead>
-    <tbody>
-      <tr><td><b>Insulin (injections or pump)</b></td><td>Everyone with stage 3 T1D</td><td>Replaces missing insulin. Needed every day.</td></tr>
-      <tr><td><b>Automated insulin delivery</b></td><td>Many children and adults</td><td>Adjusts insulin automatically from glucose-sensor readings.</td></tr>
-      <tr><td><b>Teplizumab (Tzield)</b></td><td>Stage 2 (age 1+); recent stage 3 (ages 8–17, U.S.)</td><td>Delays diagnosis or slows the loss of the body's own insulin. Does not replace insulin after diagnosis.</td></tr>
-      <tr><td><b>Pramlintide (Symlin)</b></td><td>People on mealtime insulin who are not at goal</td><td>Add-on that helps control blood sugar after meals. Boxed warning for severe low blood sugar.</td></tr>
-      <tr><td><b>Donislecel (Lantidra)</b></td><td>Adults with repeated severe low blood sugar</td><td>Donor islet transplant. Requires immune-suppressing drugs.</td></tr>
-    </tbody>
-  </table>
-  </div>
-  <div class="subhead">Where people find expert care</div>
-  <ul class="centers">
-    <li><b>Barbara Davis Center for Diabetes, University of Colorado</b> <span class="loc">Aurora, Colorado, USA</span><p>Cares for children and adults with T1D and runs an Early T1D Clinic. It was a site in the TN-10 teplizumab prevention trial and the PROTECT trial in newly diagnosed children.</p><div class="src"><a href="https://medschool.cuanschutz.edu/barbara-davis-center-for-diabetes" target="_blank" rel="noopener">Barbara Davis Center</a> &middot; <a href="https://clinicaltrials.gov/study/NCT01030861" target="_blank" rel="noopener">TN-10 (NCT01030861)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03875729" target="_blank" rel="noopener">PROTECT (NCT03875729)</a></div></li>
-    <li><b>Diabetes Research Institute, University of Miami</b> <span class="loc">Miami, Florida, USA</span><p>A listed site in Vertex's zimislecel cell-therapy trial. The University of Miami was also a site in the TN-10 and PROTECT teplizumab trials.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT04786262" target="_blank" rel="noopener">Zimislecel trial (NCT04786262)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03875729" target="_blank" rel="noopener">PROTECT (NCT03875729)</a></div></li>
-    <li><b>Yale School of Medicine</b> <span class="loc">New Haven, Connecticut, USA</span><p>A site in both the TN-10 and PROTECT teplizumab trials.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT01030861" target="_blank" rel="noopener">TN-10 (NCT01030861)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03875729" target="_blank" rel="noopener">PROTECT (NCT03875729)</a></div></li>
-    <li><b>University of Chicago</b> <span class="loc">Chicago, Illinois, USA</span><p>A listed site in the zimislecel cell-therapy trial and a site in the PROTECT teplizumab trial.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT04786262" target="_blank" rel="noopener">Zimislecel trial (NCT04786262)</a> &middot; <a href="https://clinicaltrials.gov/study/NCT03875729" target="_blank" rel="noopener">PROTECT (NCT03875729)</a></div></li>
-    <li><b>Toronto General Hospital</b> <span class="loc">Toronto, Ontario, Canada</span><p>A listed site in the zimislecel cell-therapy trial.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT04786262" target="_blank" rel="noopener">Zimislecel trial (NCT04786262)</a></div></li>
-    <li><b>Churchill Hospital, Oxford</b> <span class="loc">Oxford, United Kingdom</span><p>A listed UK site in the zimislecel cell-therapy trial.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT04786262" target="_blank" rel="noopener">Zimislecel trial (NCT04786262)</a></div></li>
-  </ul>
-  <p class="fine centers-note">These are centers recognized for expertise in this condition, not a ranking, and Cure Checker does not endorse or rate any facility. Outcomes depend on the individual. Ask your doctor which center fits your situation.</p>
-</section>
-
-<!-- ========== 3. STUDIES ========== -->
-<section id="studies">
-  <div class="sec-head">
-    <h2>Latest studies &amp; what they concluded</h2>
-    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
-  </div>
-  <div class="filters" role="group" aria-label="Filter studies">
-    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
-    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
-    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
-    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
-  </div>
-  <!-- CURECHECKER:STUDIES (newest first) -->
-  <div class="studies" id="studies-list">
-    <div class="study" data-k="science"><time>Oct 1, 2026</time><div><h3>Rare severe reaction after teplizumab: case report</h3><p>A 44-year-old man with Down syndrome developed a severe immune reaction (HLH) linked to Epstein-Barr virus reactivation after a teplizumab course. He recovered with treatment. The authors say cause and effect can't be proven.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42520060/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-sig">Safety</span></div>
-    <div class="study" data-k="result"><time>Sep 30, 2026</time><div><h3>Gum-tissue stem cells: small Phase 1 trial</h3><p>In 18 people in a Chinese trial, four infusions of gingiva-derived stem cells were safe and linked to better C-peptide (a sign of the body's own insulin) at 12 weeks, plus lower insulin doses. Very small and early.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42816465/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-blue">Early</span></div>
-    <div class="study" data-k="result"><time>Sep 17, 2026</time><div><h3>FDA approves finerenone (Kerendia) for kidney disease linked to type 1 diabetes</h3><p>The daily pill is the first new treatment approved in more than 30 years for kidney disease in adults with type 1 diabetes. In the FINE-ONE trial, a kidney-damage marker (UACR) fell 34% on finerenone vs 12% on placebo at 6 months. Side effects were similar to placebo. It treats kidney disease, not diabetes itself.</p><div class="src"><a href="https://www.healio.com/news/endocrinology/20260917/fda-approves-kerendia-for-adults-with-ckd-associated-with-type-1-diabetes" target="_blank" rel="noopener">Healio</a> · <a href="https://www.breakthrought1d.org/news-and-updates/finerenone-approved-ckd-t1d/" target="_blank" rel="noopener">Breakthrough T1D</a></div></div><span class="pill p-good">Positive</span></div>
-    <div class="study" data-k="result"><time>Sep 10, 2026</time><div><h3>PROTECT: teplizumab per-protocol analysis</h3><p>Among 275 children and teens who took treatment as planned, teplizumab kept more C-peptide at 78 weeks, lowered insulin doses and slightly raised time in range compared with placebo.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42720752/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-good">Positive</span></div>
-    <div class="study" data-k="underway"><time>Aug 3, 2026</time><div><h3>Zimislecel Phase 1/2/3 continues dosing</h3><p>Vertex said the trial "continues to enroll and dose patients" and that updated timelines for zimislecel and VX-017, a next cell therapy cleared for a Phase 1/2 trial, will come later in 2026. Dosing had been paused for a manufacturing review and resumed by May 2026.</p><div class="src"><a href="https://www.sec.gov/Archives/edgar/data/875320/000087532026000256/ex-991_q22026.htm" target="_blank" rel="noopener">Company release (Q2 2026)</a> · <a href="https://crisprmedicinenews.com/press-release-service/card/vertex-reports-first-quarter-2026-financial-results/" target="_blank" rel="noopener">Company release (Q1 2026)</a></div></div><span class="pill p-blue">Underway</span></div>
-    <div class="study" data-k="result"><time>Jul 10, 2026</time><div><h3>Hypoimmune islets survive 14 months without immune drugs</h3><p>A follow-up letter in NEJM reports that gene-edited donor islet cells in one person in Sweden kept working for 14 months with no immune-suppressing drugs.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42430558/" target="_blank" rel="noopener">PubMed</a> · <a href="https://www.biospace.com/press-releases/sana-biotechnology-announces-follow-on-publication-in-the-new-england-journal-of-medicine-nejm-highlighting-groundbreaking-long-term-data-and-durability-of-hypoimmune-modified-islet-cell-transplantation-without-immunosuppression-in-type-1-diabetes" target="_blank" rel="noopener">Company release</a></div></div><span class="pill p-blue">Early</span></div>
-    <div class="study" data-k="science"><time>Jul 9, 2026</time><div><h3>NICE recommends teplizumab for NHS England</h3><p>Final guidance recommends teplizumab for people 8 and older with stage 2 T1D. NICE says England is the first country in Europe to recommend it through a health technology appraisal.</p><div class="src"><a href="https://www.nice.org.uk/guidance/ta1176" target="_blank" rel="noopener">NICE TA1176</a> · <a href="https://www.nice.org.uk/news/articles/teplizumab-to-delay-the-onset-of-type-1-diabetes-recommended" target="_blank" rel="noopener">NICE news</a></div></div><span class="pill p-blue">Policy</span></div>
-    <div class="study" data-k="result"><time>Jul 6, 2026</time><div><h3>HumAn-1: glargine vs. human insulin in low-resource settings</h3><p>In 400 children and young adults in Bangladesh and Tanzania, switching to glargine did not change time in very low blood sugar or time in range at 6 months.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42409045/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-sig">No difference</span></div>
-    <div class="study" data-k="result"><time>Jun 12, 2026</time><div><h3>FDA: teplizumab for recently diagnosed children</h3><p>Accelerated approval to delay the decline of insulin production in ages 8 to 17 recently diagnosed with stage 3 T1D, based on C-peptide. A confirmatory study is needed.</p><div class="src"><a href="https://www.fda.gov/news-events/press-announcements/fda-approves-new-indication-tzield-teplizumab-certain-pediatric-patients-recently-diagnosed-stage-3" target="_blank" rel="noopener">FDA</a> · <a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=761183" target="_blank" rel="noopener">Drugs@FDA</a></div></div><span class="pill p-good">Approval</span></div>
-    <div class="study" data-k="result"><time>May 1, 2026</time><div><h3>Fr1da: oral insulin does not slow early T1D</h3><p>In 220 children with stage 1 T1D, a year of high-dose oral insulin did not change progression (40% in each group at 5 years) or immune response to insulin.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41563349/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-sig">No benefit</span></div>
-    <div class="study" data-k="result"><time>Apr 20, 2026</time><div><h3>FDA extends teplizumab to children from age 1</h3><p>The stage 2 approval was widened from age 8 and older to age 1 and older, supported by the PETITE-T1D safety study.</p><div class="src"><a href="https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&amp;ApplNo=761183" target="_blank" rel="noopener">Drugs@FDA</a> · <a href="https://www.drugtopics.com/view/fda-approves-tzield-for-patients-1-year-of-age-to-delay-stage-3-type-1-diabetes" target="_blank" rel="noopener">Drug Topics</a></div></div><span class="pill p-good">Approval</span></div>
-    <div class="study" data-k="result"><time>Feb 23, 2026</time><div><h3>RADIANT: tubeless automated insulin delivery vs. injections</h3><p>In 188 children and adults with high HbA1c, the automated system lowered HbA1c by 0.8 points more than injections at 13 weeks, with no severe lows or DKA in either group.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/41747751/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-good">Positive</span></div>
-    <div class="study" data-k="result"><time>Jan 12, 2026</time><div><h3>EU approves teplizumab (Teizeild)</h3><p>The European Commission approved it to delay stage 3 T1D in people 8 and older with stage 2 T1D, the first disease-modifying T1D drug in the EU.</p><div class="src"><a href="https://www.sanofi.com/en/media-room/press-releases/2026/2026-01-12-06-00-00-3216525" target="_blank" rel="noopener">Company release</a></div></div><span class="pill p-good">Approval</span></div>
-  </div>
-</section>
-
-<!-- ========== 4. AROUND THE WORLD ========== -->
-<section id="world" data-condition="Type 1 Diabetes">
-  <div class="sec-head">
-    <h2>How other countries treat type 1 diabetes</h2>
-    <p>Insulin is the base of care everywhere. Teplizumab is now approved in the U.S., EU, UK, Canada and China for stage 2. We verified islet cell therapy approval only in the U.S., for a small group.</p>
-  </div>
-
-  <div class="subhead">What's available</div>
-  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 3, 2026) -->
-  <div class="scroll">
-  <table class="approved world">
-    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
-    <tbody>
-      <tr><td><b>Insulin</b><small>All stage 3 T1D</small></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td><td><span class="c c-mid">Used</span></td></tr>
-      <tr><td><b>Teplizumab (Tzield / Teizeild)</b><small>Delay stage 3 in stage 2</small></td><td><span class="c c-yes">Approved 2022</span></td><td><span class="c c-yes">Approved 2026</span></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Approved 2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
-      <tr><td><b>Teplizumab</b><small>Recent stage 3, ages 8–17</small></td><td><span class="c c-yes">Approved 2026</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
-      <tr><td><b>Donislecel (Lantidra)</b><small>Donor islet cells</small></td><td><span class="c c-yes">Approved 2023</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
-      <tr><td><b>Pramlintide (Symlin)</b><small>Add-on to mealtime insulin</small></td><td><span class="c c-yes">Approved 2005</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
-    </tbody>
-  </table>
-  </div>
-  <div class="wkey">
-    <span><span class="c c-yes">Approved</span> approved for T1D</span>
-    <span><span class="c c-mid">Used</span> standard care or used off-label</span>
-    <span><span class="c c-no">—</span> not verified for this report</span>
-  </div>
-
-  <div class="subhead">What's being studied abroad</div>
-  <div class="abroad">
-    <article class="card">
-      <div class="top"><h3>Canada, Europe &amp; Saudi Arabia</h3><span class="pill p-sig">Phase 1/2/3</span></div>
-      <div class="who">Vertex · zimislecel (VX-880)</div>
-      <p>The zimislecel trial lists recruiting sites in Canada, France, Germany, Italy, the Netherlands, Norway, Saudi Arabia and the UK, as well as the U.S.</p>
-      <div class="src"><a href="https://clinicaltrials.gov/study/NCT04786262" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Sweden</h3><span class="pill p-blue">First in human</span></div>
-      <div class="who">Uppsala University Hospital · hypoimmune islets</div>
-      <p>The first transplant of gene-edited islet cells without immune-suppressing drugs, with 14-month results published in NEJM in 2026.</p>
-      <div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42430558/" target="_blank" rel="noopener">NEJM letter (PubMed)</a></div>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Japan</h3><span class="pill p-blue">KIBOU-T1D</span></div>
-      <div class="who">Sanofi · teplizumab · ages 1–34</div>
-      <p>A Phase 2 randomized study of teplizumab in Japanese people with stage 2 T1D. It is recruiting, with completion estimated for 2028.</p>
-      <div class="src"><a href="https://clinicaltrials.gov/study/NCT06791291" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
-    </article>
-  </div>
-
-  <div class="subhead">How it changed over time</div>
-  <ol class="timeline">
-    <li><time>1922</time><span>Insulin is first used to treat a person with diabetes, in Toronto.</span></li>
-    <li><time>2015</time><span>Experts define stages 1 to 3 of T1D, starting before symptoms.</span></li>
-    <li><time>2022</time><span>The <b>FDA</b> approves teplizumab (Nov 17), the first drug to delay T1D.</span></li>
-    <li><time>2023</time><span>The <b>FDA</b> approves Lantidra (Jun 28), the first islet cell therapy.</span></li>
-    <li><time>2025</time><span>Zimislecel results in NEJM (June). Teplizumab approved in Canada, the UK and China.</span></li>
-    <li><time>2026</time><span>EU approval (Jan). FDA widens teplizumab to age 1 (Apr) and to newly diagnosed children (Jun). NICE recommends it (Jul).</span></li>
-  </ol>
-
   <div class="subhead">Where T1D trials are recruiting right now</div>
   <div class="live-grid">
     <div>
@@ -315,14 +405,6 @@
       <div class="trials" id="ct-abroad"></div>
       <button type="button" class="more" id="ct-more" hidden></button>
     </div>
-  </div>
-</section>
-
-<!-- ========== EVERY REGISTRY ========== -->
-<section id="registries">
-  <div class="sec-head">
-    <h2>Every registry, checked</h2>
-    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
   </div>
   <div class="reg-stats" id="reg-stats"></div>
   <div class="reg-grid">
@@ -342,82 +424,6 @@
   <div class="subhead">Search every registry yourself</div>
   <div class="reg-links" id="reg-links"></div>
   <p class="reg-note">The WHO's ICTRP gathers trials from registries worldwide, including China, Japan, India, Iran, Australia and Brazil. Cochrane CENTRAL and OpenMD don't allow automated access, so they're linked here for you to search directly.</p>
-</section>
-
-<!-- ========== 5. NATURAL ========== -->
-<section id="natural">
-  <div class="sec-head">
-    <h2>Natural remedies &amp; daily care</h2>
-    <p>No supplement or diet replaces insulin in type 1 diabetes. Daily habits help manage blood sugar alongside insulin. We rate each by the strength of evidence.</p>
-  </div>
-  <div class="gkey">
-    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Strong expert consensus</span>
-    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Limited / mixed evidence</span>
-    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>No evidence, or possible harm</span>
-  </div>
-  <div class="supp">
-    <div>
-      <h3>Helpful daily care</h3>
-      <div class="row"><b>Regular physical activity</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
-        <p>Can help lower blood sugar, blood pressure and cholesterol. Ask your care team how to adjust insulin and food around exercise.</p></div>
-      <div class="row"><b>Healthy eating plan</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
-        <p>A plan built with a dietitian or diabetes educator helps match food and insulin.</p></div>
-      <div class="row"><b>Sleep and stress care</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>Part of diabetes self-care, though trial evidence for better blood sugar is limited.</p></div>
-    </div>
-    <div>
-      <h3>Promoted without evidence, or risky</h3>
-      <div class="row"><b>Cinnamon, chromium, berberine</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
-        <p>Studies are small and inconsistent, with no clear conclusions. None replaces insulin.</p></div>
-      <div class="row"><b>"Natural diabetes cure" products</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
-        <p>The FDA warns these are marketed illegally. Some are harmful, and all are harmful if used in place of real treatment.</p></div>
-      <div class="row"><b>Stopping insulin for any remedy</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
-        <p>Missing insulin can cause diabetic ketoacidosis (DKA), which is life-threatening.</p></div>
-    </div>
-  </div>
-  <p class="caution"><b>Be careful:</b> never stop or cut insulin to try a supplement, diet or "cure." In type 1 diabetes, going without insulin can cause diabetic ketoacidosis, a life-threatening emergency. Some supplements can also cause side effects, such as kidney damage. Tell your care team about anything you take.</p>
-</section>
-
-<!-- ========== SUPPORT GROUPS ========== -->
-<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 3, 2026; only add groups whose link you have verified) -->
-<section id="support-groups">
-  <div class="sec-head">
-    <h2>Support groups &amp; communities</h2>
-    <p>Living with T1D means decisions every day, and other people with T1D understand. Most of these are free.</p>
-  </div>
-  <div class="groups">
-    <article class="group">
-      <div class="top"><h3>Breakthrough T1D</h3><span class="pill p-good">Research &amp; support</span></div>
-      <div class="who">Formerly JDRF · local chapters</div>
-      <p>Funds T1D research and offers local chapters, community events, a resource library and a clinical-trial finder.</p>
-      <a class="join" href="https://www.breakthrought1d.org/" target="_blank" rel="noopener">Visit ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>Beyond Type 1</h3><span class="pill p-good">Community</span></div>
-      <div class="who">People with T1D · caregivers</div>
-      <p>A nonprofit with a community app, a program for newly diagnosed people and guides on daily life with T1D.</p>
-      <a class="join" href="https://beyondtype1.org/" target="_blank" rel="noopener">Visit ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>The Diabetes Link</h3><span class="pill p-good">Young adults</span></div>
-      <div class="who">Formerly College Diabetes Network</div>
-      <p>A community for young adults with diabetes, with an online chat, local meetups and college chapters.</p>
-      <a class="join" href="https://www.thediabeteslink.org/" target="_blank" rel="noopener">Visit ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>Diabetes UK Forum</h3><span class="pill p-blue">Forum</span></div>
-      <div class="who">Online community · UK-based</div>
-      <p>An active discussion forum run by Diabetes UK where members share their own experiences.</p>
-      <a class="join" href="https://forum.diabetes.org.uk/" target="_blank" rel="noopener">Visit ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>T1D groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
-      <div class="who">Search results</div>
-      <p>Many private parent, teen and adult groups exist. This link searches Facebook (a login is required).</p>
-      <a class="join" href="https://www.facebook.com/search/groups/?q=type%201%20diabetes%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
-    </article>
-  </div>
-  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about treatment, especially insulin doses, with your doctor. Protect your privacy, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
 </section>
 
 <!-- ========== SOURCES ========== -->
@@ -524,6 +530,7 @@
 <script src="assets/curechecker.js"></script>
 <script src="assets/donate.js"></script>
 <script src="assets/newsletter.js"></script>
+<script src="assets/layout.js"></script>
 
 </body>
 </html>

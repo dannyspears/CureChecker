@@ -49,17 +49,15 @@
 <!-- ========== LEAD ========== -->
 <div class="lead">
   <h1>Glioblastoma has no cure yet. The search is focused on <em>getting treatments past the brain's defenses.</em></h1>
-  <p>Cure Checker tracks the cause, the treatments that are working, and the trials underway, and rewrites this page every morning from the latest published results. Plain language, with sources for every claim.</p>
 </div>
 <nav class="toc" aria-label="Sections">
-  <a href="#verdict">Most recent cure information</a>
-  <a href="#cause">What causes GBM</a>
-  <a href="#treatments">Treatments that are working</a>
-  <a href="#studies">Latest studies</a>
-  <a href="#world">Around the world</a>
-  <a href="#registries">Every registry</a>
-  <a href="#natural">Natural remedies &amp; supplements</a>
-  <a href="#support-groups">Support groups</a>
+  <a href="#verdict">Is there a cure?</a>
+  <a href="#studies">What's new</a>
+  <a href="#treatments">Treatments</a>
+  <a href="#care">Care &amp; support</a>
+  <a href="#world">Other countries</a>
+  <a href="#cause">What causes it</a>
+  <a href="#registries">Find a trial</a>
   <a href="#sources">Sources</a>
 </nav>
 
@@ -79,6 +77,254 @@
     </ol>
     <p class="fine">This is Cure Checker's editorial assessment of published evidence, not medical advice. Treatment decisions belong with a neuro-oncology team, ideally at a center that treats many brain tumors.</p>
   </div>
+</section>
+
+<!-- ========== 3. STUDIES ========== -->
+<section id="studies">
+  <div class="sec-head">
+    <h2>Latest studies &amp; what they concluded</h2>
+    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter studies">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
+    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
+    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
+  </div>
+  <!-- CURECHECKER:STUDIES (newest first) -->
+  <div class="studies" id="studies-list">
+    <div class="study" data-k="science"><time>Sep 14, 2026</time><div><h3>FDA approves Pixclara (FET-PET imaging)</h3><p>The first FDA-approved FET-PET imaging drug for glioma. It helps tell recurrent tumor from treatment-related changes. It's for diagnosis, not treatment.</p><div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/14/3360898/0/en/fda-approves-telix-s-brain-cancer-imaging-drug-pixclara.html" target="_blank" rel="noopener">Telix / GlobeNewswire</a></div></div><span class="pill p-good">Approved</span></div>
+    <div class="study" data-k="result"><time>Sep 2026</time><div><h3>Two-target CAR-T, long-term follow-up (Phase 1)</h3><p>No delayed toxicity. Median survival 12.0 months, 28% alive beyond 18 months, one ongoing response at 33 months.</p><div class="src"><a href="https://ascopost.com/news/september-2026/bivalent-car-t-cell-therapy-shows-no-delayed-toxicity-and-promising-survival-in-recurrent-glioblastoma" target="_blank" rel="noopener">The ASCO Post</a></div></div><span class="pill p-sig">Promising</span></div>
+    <div class="study" data-k="underway"><time>Aug 20, 2026</time><div><h3>APTN-101, an EGFRvIII T-cell engager (Phase 1)</h3><p>First-in-human trial opening at Duke for EGFRvIII-positive grade 4 glioma.</p><div class="src"><a href="https://www.glioblastomamultiforme.it/en/research-news-for-the-fourth-two-months-of-2026/" target="_blank" rel="noopener">Glioblastoma Multiforme research digest</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="result"><time>2026</time><div><h3>Ultra-hypofractionated radiotherapy (Phase 3, Netherlands)</h3><p>Not shown to be as good as standard radiation. Median survival was about 13 months versus about 21, with more radiation damage.</p><div class="src"><a href="https://www.glioblastomamultiforme.it/en/research-news-for-the-fourth-two-months-of-2026/" target="_blank" rel="noopener">Glioblastoma Multiforme research digest</a></div></div><span class="pill p-warn">Missed goal</span></div>
+    <div class="study" data-k="result"><time>Jun 2026</time><div><h3>BPM31510 (Phase 2, ASCO 2026)</h3><p>An IV mitochondrial therapy plus standard care. Median survival 19.3 months, and 29.3 months in the MGMT-unmethylated subgroup (39 evaluable patients).</p><div class="src"><a href="https://www.glioblastomamultiforme.it/en/research-news-for-the-fourth-two-months-of-2026/" target="_blank" rel="noopener">Glioblastoma Multiforme research digest</a></div></div><span class="pill p-sig">Promising</span></div>
+    <div class="study" data-k="underway"><time>2026</time><div><h3>IGV-001 heads to Phase 3</h3><p>Imvax plans a roughly 375-patient trial in MGMT-unmethylated newly diagnosed GBM after a Phase 2b subgroup signal.</p><div class="src"><a href="https://mychesco.com/a/news/regional/imvax-glioblastoma-data-backs-move-toward-phase-3-trial" target="_blank" rel="noopener">MyChesCo</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="underway"><time>2026</time><div><h3>Optune + pembrolizumab (EF-41/KEYNOTE D58, Phase 3)</h3><p>Tests adding immunotherapy to Tumor Treating Fields and temozolomide in newly diagnosed GBM.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT06556563" target="_blank" rel="noopener">ClinicalTrials.gov</a></div></div><span class="pill p-blue">Underway</span></div>
+    <div class="study" data-k="result"><time>2025</time><div><h3>Focused ultrasound + temozolomide (BT008NA, Phase 1/2)</h3><p>Median survival 31.3 months and progression-free survival 13.5 months, versus about 19 and 8 months in matched controls.</p><div class="src"><a href="https://www.thelancet.com/article/S1470-2045(25)00492-9/fulltext" target="_blank" rel="noopener">The Lancet Oncology</a></div></div><span class="pill p-sig">Promising</span></div>
+  </div>
+</section>
+
+<!-- ========== 2. TREATMENTS ========== -->
+<section id="treatments">
+  <div class="sec-head">
+    <h2>Treatments that are working</h2>
+    <p>Standard care has changed little since 2005. The most encouraging new results come from opening the blood-brain barrier and from immune therapies placed directly into the brain. Most are still small, early trials.</p>
+  </div>
+
+  <div class="tx">
+    <article class="card">
+      <div class="top"><h3>Focused ultrasound + temozolomide</h3><span class="pill p-sig">Promising · Phase 1/2</span></div>
+      <div class="who">Insightec · BT008NA trial · The Lancet Oncology</div>
+      <p>Microbubbles plus focused ultrasound open the blood-brain barrier before each chemo dose. Median survival was 31.3 months, versus about 19 in 185 matched patients. It wasn't randomized, so a larger trial is needed.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Two-target CAR-T (EGFR + IL13Rα2)</h3><span class="pill p-sig">Early signal · Phase 1</span></div>
+      <div class="who">Penn Medicine · recurrent GBM · ASCO Post Sept 2026</div>
+      <p>Given into the brain's fluid. With longer follow-up there was no delayed toxicity, median survival was 12 months, 5 of 18 patients lived beyond 18 months, and one still had a response at 33 months.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Tumor Treating Fields (Optune)</h3><span class="pill p-good">Approved</span></div>
+      <div class="who">Novocure · newly diagnosed and recurrent GBM</div>
+      <p>A wearable device sends electric fields through the scalp to disrupt dividing cancer cells. Added to temozolomide, it extended survival in a Phase 3 trial. It's approved in the U.S., EU, Japan and China, but not routinely funded on the UK's NHS.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>DCVax-L</h3><span class="pill p-blue">Under UK review</span></div>
+      <div class="who">Northwest Bio · personalized dendritic-cell vaccine</div>
+      <p>Made from the patient's own immune cells and tumor. The company reports longer survival compared with outside controls, a method that's been debated. The UK MHRA application has been under review since December 2023.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Delytact (teserpaturev)</h3><span class="pill p-good">Approved · Japan</span></div>
+      <div class="who">Daiichi Sankyo · cancer-killing virus · 2021</div>
+      <p>A modified herpes virus injected into the tumor. Japan gave it conditional, time-limited approval for malignant glioma. It was the world's first virus therapy approved for brain cancer.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Ultra-short radiation schedule</h3><span class="pill p-warn">Missed goal</span></div>
+      <div class="who">Netherlands · randomized Phase 3 · 2026</div>
+      <p>Six radiation sessions instead of 30 didn't prove as good as standard care. Median survival was about 13 months, versus about 21. Standard-length radiation remains the norm.</p>
+    </article>
+  </div>
+
+  <div class="subhead">Standard treatment today</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Treatment</th><th>For</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><b>Maximal safe surgery</b></td><td>Nearly everyone</td><td>Removes as much tumor as possible without harming key functions.</td></tr>
+      <tr><td><b>Radiation + temozolomide</b> ("Stupp protocol," 2005)</td><td>Newly diagnosed</td><td>Six weeks of radiation with chemo, then six or more months of temozolomide.</td></tr>
+      <tr><td><b>Tumor Treating Fields</b></td><td>Newly diagnosed and recurrent</td><td>Worn on the head for most of the day, alongside chemo.</td></tr>
+      <tr><td><b>Lomustine, bevacizumab, re-operation</b></td><td>Recurrence</td><td>Second-line options. Bevacizumab mainly reduces swelling.</td></tr>
+      <tr><td><b>Steroids, seizure medicines</b></td><td>Symptoms</td><td>Reduce brain swelling and prevent seizures.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+</section>
+
+<!-- ========== 5. NATURAL ========== -->
+<section id="natural">
+  <div class="sec-head">
+    <h2>Natural remedies &amp; supplements</h2>
+    <p>No supplement or diet cures glioblastoma. A few are being studied alongside standard care, and some can interfere with chemo or surgery. We rate each by the strength of human evidence.</p>
+  </div>
+  <div class="gkey">
+    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Good human evidence</span>
+    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Observational / mixed</span>
+    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>Lab only, or possible harm</span>
+  </div>
+  <div class="supp">
+    <div>
+      <h3>Claims you'll see online</h3>
+      <div class="row"><b>Ketogenic diet</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Small trials show it's feasible alongside treatment, but there's no proof it extends survival. Only try it with a dietitian, because weight loss is risky.</p></div>
+      <div class="row"><b>Cannabis / cannabinoids</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Lab studies are interesting, and small early trials have been run. It's not shown to control the tumor, but it may help appetite, nausea and sleep.</p></div>
+      <div class="row"><b>Boswellia (frankincense)</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>A small trial found less brain swelling after radiation. It isn't a tumor treatment. Ask before combining it with steroids.</p></div>
+    </div>
+    <div>
+      <h3>Use with caution</h3>
+      <div class="row"><b>High-dose antioxidants</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>Might blunt how radiation and chemo kill tumor cells. Skip large doses during treatment unless your team agrees.</p></div>
+      <div class="row"><b>St. John's wort and other herbs</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
+        <p>Can change how seizure medicines and chemo are processed. Always check with your pharmacist.</p></div>
+      <div class="row"><b>Exercise &amp; rehab</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>Helps fatigue, strength and mood during and after treatment. Ask about seizure-safe activities.</p></div>
+    </div>
+  </div>
+  <p class="caution"><b>Be careful:</b> clinics abroad selling unproven "cures" for glioblastoma can be very costly and may delay treatment that works. Bring anything you're considering to your neuro-oncology team, and use the registries above to find real trials.</p>
+</section>
+
+<section id="care">
+  <div class="sec-head">
+    <h2>Where to get care and support</h2>
+    <p>Centers recognized for expertise in this condition, and communities of people living with it.</p>
+  </div>
+  <div class="subhead">Where people find expert care</div>
+  <ul class="centers">
+    <li><b>Duke Cancer Institute, Preston Robert Tisch Brain Tumor Center</b> <span class="loc">Durham, North Carolina, USA</span><p>An NCI-designated Comprehensive Cancer Center whose Tisch Brain Tumor Center cares for people with glioblastoma and offers clinical trials.</p><div class="src"><a href="https://www.cancer.gov/research/infrastructure/cancer-centers/find/dukeci" target="_blank" rel="noopener">Duke Cancer Institute</a> &middot; <a href="https://www.dukecancerinstitute.org/center/preston-robert-tisch-brain-tumor-center" target="_blank" rel="noopener">Preston Robert Tisch Brain Tumor Center</a></div></li>
+    <li><b>MD Anderson Cancer Center, Brain and Spine Center</b> <span class="loc">Houston, Texas, USA</span><p>An NCI-designated Comprehensive Cancer Center whose Brain and Spine Center treats glioblastoma.</p><div class="src"><a href="https://www.mdanderson.org/research/research-resources/nci-designated-cancer-center.html" target="_blank" rel="noopener">NCI-designated cancer center</a> &middot; <a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/brain-and-spine-center.html" target="_blank" rel="noopener">Brain and Spine Center</a></div></li>
+    <li><b>Dana-Farber Brigham Cancer Center, Center for Neuro-Oncology</b> <span class="loc">Boston, Massachusetts, USA</span><p>An NCI-designated Comprehensive Cancer Center with a Center for Neuro-Oncology that offers brain tumor clinical trials.</p><div class="src"><a href="https://www.dana-farber.org/brain-tumors/" target="_blank" rel="noopener">Brain tumor treatment and clinical trials</a></div></li>
+    <li><b>UCSF Helen Diller Family Comprehensive Cancer Center</b> <span class="loc">San Francisco, California, USA</span><p>An NCI-designated Comprehensive Cancer Center that lists many glioblastoma trials, including the GBM AGILE platform trial.</p><div class="src"><a href="https://clinicaltrials.ucsf.edu/glioblastoma" target="_blank" rel="noopener">Glioblastoma clinical trials</a> &middot; <a href="https://www.cancer.gov/research/infrastructure/cancer-centers/find" target="_blank" rel="noopener">NCI-designated cancer centers</a></div></li>
+    <li><b>NCT Heidelberg</b> <span class="loc">Heidelberg, Germany</span><p>Supported by German Cancer Aid as a Comprehensive Cancer Center, with a brain tumor program that includes the N2M2 glioblastoma trial.</p><div class="src"><a href="https://nct.dkfz.de/en/sites/nct-heidelberg.html" target="_blank" rel="noopener">NCT Heidelberg</a> &middot; <a href="https://www.nct-heidelberg.de/en/research/clinical-cancer-research-programs-cps/brain-cns.html" target="_blank" rel="noopener">Brain and CNS research program</a></div></li>
+  </ul>
+  <p class="fine centers-note">These are centers recognized for expertise in this condition, not a ranking, and Cure Checker does not endorse or rate any facility. Outcomes depend on the individual. Ask your doctor which center fits your situation.</p>
+</section>
+
+<!-- ========== SUPPORT GROUPS ========== -->
+<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 2, 2026; only add groups whose link you have verified) -->
+<section id="support-groups">
+  <div class="sec-head">
+    <h2>Support groups &amp; communities</h2>
+    <p>You don't have to face glioblastoma alone. These groups connect patients, families and caregivers with people who understand. Most are free.</p>
+  </div>
+  <div class="groups">
+    <article class="group">
+      <div class="top"><h3>National Brain Tumor Society</h3><span class="pill p-good">Support groups</span></div>
+      <div class="who">Patients · caregivers · bereaved</div>
+      <p>Free virtual support conversations for patients, caregivers and grieving families, plus a peer mentor program.</p>
+      <a class="join" href="https://braintumor.org/support-services/support-groups/" target="_blank" rel="noopener">Join a group ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>American Brain Tumor Association</h3><span class="pill p-good">Support</span></div>
+      <div class="who">Patients · caregivers · all ages</div>
+      <p>Support community, a CareLine, and glioblastoma education for every stage.</p>
+      <a class="join" href="https://www.abta.org/glioblastoma/" target="_blank" rel="noopener">Get support ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>CancerCare</h3><span class="pill p-blue">Counseling</span></div>
+      <div class="who">Patients · caregivers</div>
+      <p>Free professional counseling and online support groups for people affected by glioblastoma.</p>
+      <a class="join" href="https://www.cancercare.org/diagnosis/glioblastoma" target="_blank" rel="noopener">Get help ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>The Brain Tumour Charity (UK)</h3><span class="pill p-blue">Support</span></div>
+      <div class="who">Patients · families · UK</div>
+      <p>Support line, online support groups and information for everyone affected by a brain tumour.</p>
+      <a class="join" href="https://www.thebraintumourcharity.org/" target="_blank" rel="noopener">Get support ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Musella Foundation</h3><span class="pill p-blue">Online groups</span></div>
+      <div class="who">Patients · caregivers</div>
+      <p>Long-running brain tumor support groups, a trial finder and treatment information (virtualtrials.org).</p>
+      <a class="join" href="https://virtualtrials.org/" target="_blank" rel="noopener">Visit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>r/cancer on Reddit</h3><span class="pill p-sig">Reddit</span></div>
+      <div class="who">Anyone affected by cancer</div>
+      <p>A large, general cancer support community on Reddit.</p>
+      <a class="join" href="https://www.reddit.com/r/cancer/" target="_blank" rel="noopener">Open on Reddit ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>Glioblastoma groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
+      <div class="who">Search results</div>
+      <p>Many patient and caregiver groups. This link searches Facebook (a login is required).</p>
+      <a class="join" href="https://www.facebook.com/search/groups/?q=glioblastoma%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
+    </article>
+  </div>
+  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about treatment with your doctor. Think about your privacy, because Reddit and many forums are public, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
+</section>
+
+<!-- ========== 4. AROUND THE WORLD ========== -->
+<section id="world" data-condition="glioblastoma">
+  <div class="sec-head">
+    <h2>How other countries treat glioblastoma</h2>
+    <p>Surgery, radiation and temozolomide are standard everywhere. The differences are in the extras. Japan approved a cancer-killing virus. The UK is reviewing a personalized vaccine. Tumor Treating Fields are routine in some countries and hard to get in others.</p>
+  </div>
+
+  <div class="subhead">Who has approved what</div>
+  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 2, 2026) -->
+  <div class="scroll">
+  <table class="approved world">
+    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
+    <tbody>
+      <tr><td><b>Temozolomide</b><small>Standard chemo</small></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td></tr>
+      <tr><td><b>Tumor Treating Fields</b><small>Optune device</small></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-mid">Not on NHS</span></td><td><span class="c c-yes">2022</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Yes</span></td></tr>
+      <tr><td><b>Delytact</b><small>Oncolytic virus</small></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-mid">2021, conditional</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>DCVax-L</b><small>Dendritic-cell vaccine</small></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-mid">Under review</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Pixclara (FET-PET)</b><small>Imaging, not treatment</small></td><td><span class="c c-yes">2026</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="wkey">
+    <span><span class="c c-yes">2022</span> approved (year)</span>
+    <span><span class="c c-mid">Review</span> conditional, under review, or limited funding</span>
+    <span><span class="c c-off">Rejected</span> refused or withdrawn</span>
+    <span><span class="c c-no">—</span> not approved, or no approval on record</span>
+  </div>
+
+  <div class="subhead">Available abroad, not in the U.S.</div>
+  <div class="abroad">
+    <article class="card">
+      <div class="top"><h3>Delytact</h3><span class="pill p-good">Japan</span></div>
+      <div class="who">Daiichi Sankyo · June 2021</div>
+      <p>The world's first approved virus therapy for brain cancer. Approval was conditional and time-limited, based on a single-arm Phase 2 that met its one-year survival goal.</p>
+      <div class="src"><a href="https://www.onclive.com/view/oncolytic-virus-teserpaturev-approved-in-japan-for-malignant-glioma" target="_blank" rel="noopener">OncLive</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>DCVax-L</h3><span class="pill p-sig">UK review</span></div>
+      <div class="who">MHRA application · Dec 2023</div>
+      <p>Still under review in 2026 and not refused. The UK's NICE won't assess it until a license is granted.</p>
+      <div class="src"><a href="https://questions-statements.parliament.uk/written-questions/detail/2026-03-09/118682" target="_blank" rel="noopener">UK Parliament</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Tumor Treating Fields</h3><span class="pill p-blue">Varies</span></div>
+      <div class="who">Germany, France, Japan, Israel fund it</div>
+      <p>Available through public health systems in several countries, but not routinely on the UK's NHS. Access depends heavily on where you live.</p>
+      <div class="src"><a href="https://www.thebraintumourcharity.org/brain-tumour-diagnosis-treatment/treating-brain-tumours/emerging-treatments/ttf-tumour-treating-fields/" target="_blank" rel="noopener">The Brain Tumour Charity</a></div>
+    </article>
+  </div>
+
+  <div class="subhead">How it changed over time</div>
+  <ol class="timeline">
+    <li><time>2005</time><span>Radiation plus temozolomide (the "Stupp protocol") becomes the worldwide standard.</span></li>
+    <li><time>2015</time><span><b>U.S.</b> approves Tumor Treating Fields for newly diagnosed GBM.</span></li>
+    <li><time>2021</time><span><b>Japan</b> conditionally approves Delytact. The <b>WHO</b> redefines glioblastoma as IDH-wildtype only.</span></li>
+    <li><time>2022</time><span><b>Canada</b> approves Tumor Treating Fields.</span></li>
+    <li><time>2023</time><span><b>UK:</b> DCVax-L is filed with the MHRA.</span></li>
+    <li><time>2025</time><span>Focused ultrasound plus chemo shows a large survival signal (Lancet Oncology).</span></li>
+    <li><time>2026</time><span><b>U.S.</b> approves Pixclara imaging. CAR-T and new immune drugs advance. A short radiation schedule fails in the <b>Netherlands</b>.</span></li>
+  </ol>
+
 </section>
 
 <!-- ========== 1. CAUSE ========== -->
@@ -149,156 +395,12 @@
   </div>
 </section>
 
-<!-- ========== 2. TREATMENTS ========== -->
-<section id="treatments">
+<!-- ========== EVERY REGISTRY ========== -->
+<section id="registries">
   <div class="sec-head">
-    <h2>Treatments that are working</h2>
-    <p>Standard care has changed little since 2005. The most encouraging new results come from opening the blood-brain barrier and from immune therapies placed directly into the brain. Most are still small, early trials.</p>
+    <h2>Find a clinical trial</h2>
+    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
   </div>
-
-  <div class="tx">
-    <article class="card">
-      <div class="top"><h3>Focused ultrasound + temozolomide</h3><span class="pill p-sig">Promising · Phase 1/2</span></div>
-      <div class="who">Insightec · BT008NA trial · The Lancet Oncology</div>
-      <p>Microbubbles plus focused ultrasound open the blood-brain barrier before each chemo dose. Median survival was 31.3 months, versus about 19 in 185 matched patients. It wasn't randomized, so a larger trial is needed.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Two-target CAR-T (EGFR + IL13Rα2)</h3><span class="pill p-sig">Early signal · Phase 1</span></div>
-      <div class="who">Penn Medicine · recurrent GBM · ASCO Post Sept 2026</div>
-      <p>Given into the brain's fluid. With longer follow-up there was no delayed toxicity, median survival was 12 months, 5 of 18 patients lived beyond 18 months, and one still had a response at 33 months.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Tumor Treating Fields (Optune)</h3><span class="pill p-good">Approved</span></div>
-      <div class="who">Novocure · newly diagnosed and recurrent GBM</div>
-      <p>A wearable device sends electric fields through the scalp to disrupt dividing cancer cells. Added to temozolomide, it extended survival in a Phase 3 trial. It's approved in the U.S., EU, Japan and China, but not routinely funded on the UK's NHS.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>DCVax-L</h3><span class="pill p-blue">Under UK review</span></div>
-      <div class="who">Northwest Bio · personalized dendritic-cell vaccine</div>
-      <p>Made from the patient's own immune cells and tumor. The company reports longer survival compared with outside controls, a method that's been debated. The UK MHRA application has been under review since December 2023.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Delytact (teserpaturev)</h3><span class="pill p-good">Approved · Japan</span></div>
-      <div class="who">Daiichi Sankyo · cancer-killing virus · 2021</div>
-      <p>A modified herpes virus injected into the tumor. Japan gave it conditional, time-limited approval for malignant glioma. It was the world's first virus therapy approved for brain cancer.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Ultra-short radiation schedule</h3><span class="pill p-warn">Missed goal</span></div>
-      <div class="who">Netherlands · randomized Phase 3 · 2026</div>
-      <p>Six radiation sessions instead of 30 didn't prove as good as standard care. Median survival was about 13 months, versus about 21. Standard-length radiation remains the norm.</p>
-    </article>
-  </div>
-
-  <div class="subhead">Standard treatment today</div>
-  <div class="scroll">
-  <table class="approved">
-    <thead><tr><th>Treatment</th><th>For</th><th>What it does</th></tr></thead>
-    <tbody>
-      <tr><td><b>Maximal safe surgery</b></td><td>Nearly everyone</td><td>Removes as much tumor as possible without harming key functions.</td></tr>
-      <tr><td><b>Radiation + temozolomide</b> ("Stupp protocol," 2005)</td><td>Newly diagnosed</td><td>Six weeks of radiation with chemo, then six or more months of temozolomide.</td></tr>
-      <tr><td><b>Tumor Treating Fields</b></td><td>Newly diagnosed and recurrent</td><td>Worn on the head for most of the day, alongside chemo.</td></tr>
-      <tr><td><b>Lomustine, bevacizumab, re-operation</b></td><td>Recurrence</td><td>Second-line options. Bevacizumab mainly reduces swelling.</td></tr>
-      <tr><td><b>Steroids, seizure medicines</b></td><td>Symptoms</td><td>Reduce brain swelling and prevent seizures.</td></tr>
-    </tbody>
-  </table>
-  </div>
-  <div class="subhead">Where people find expert care</div>
-  <ul class="centers">
-    <li><b>Duke Cancer Institute, Preston Robert Tisch Brain Tumor Center</b> <span class="loc">Durham, North Carolina, USA</span><p>An NCI-designated Comprehensive Cancer Center whose Tisch Brain Tumor Center cares for people with glioblastoma and offers clinical trials.</p><div class="src"><a href="https://www.cancer.gov/research/infrastructure/cancer-centers/find/dukeci" target="_blank" rel="noopener">Duke Cancer Institute</a> &middot; <a href="https://www.dukecancerinstitute.org/center/preston-robert-tisch-brain-tumor-center" target="_blank" rel="noopener">Preston Robert Tisch Brain Tumor Center</a></div></li>
-    <li><b>MD Anderson Cancer Center, Brain and Spine Center</b> <span class="loc">Houston, Texas, USA</span><p>An NCI-designated Comprehensive Cancer Center whose Brain and Spine Center treats glioblastoma.</p><div class="src"><a href="https://www.mdanderson.org/research/research-resources/nci-designated-cancer-center.html" target="_blank" rel="noopener">NCI-designated cancer center</a> &middot; <a href="https://www.mdanderson.org/patients-family/diagnosis-treatment/care-centers-clinics/brain-and-spine-center.html" target="_blank" rel="noopener">Brain and Spine Center</a></div></li>
-    <li><b>Dana-Farber Brigham Cancer Center, Center for Neuro-Oncology</b> <span class="loc">Boston, Massachusetts, USA</span><p>An NCI-designated Comprehensive Cancer Center with a Center for Neuro-Oncology that offers brain tumor clinical trials.</p><div class="src"><a href="https://www.dana-farber.org/brain-tumors/" target="_blank" rel="noopener">Brain tumor treatment and clinical trials</a></div></li>
-    <li><b>UCSF Helen Diller Family Comprehensive Cancer Center</b> <span class="loc">San Francisco, California, USA</span><p>An NCI-designated Comprehensive Cancer Center that lists many glioblastoma trials, including the GBM AGILE platform trial.</p><div class="src"><a href="https://clinicaltrials.ucsf.edu/glioblastoma" target="_blank" rel="noopener">Glioblastoma clinical trials</a> &middot; <a href="https://www.cancer.gov/research/infrastructure/cancer-centers/find" target="_blank" rel="noopener">NCI-designated cancer centers</a></div></li>
-    <li><b>NCT Heidelberg</b> <span class="loc">Heidelberg, Germany</span><p>Supported by German Cancer Aid as a Comprehensive Cancer Center, with a brain tumor program that includes the N2M2 glioblastoma trial.</p><div class="src"><a href="https://nct.dkfz.de/en/sites/nct-heidelberg.html" target="_blank" rel="noopener">NCT Heidelberg</a> &middot; <a href="https://www.nct-heidelberg.de/en/research/clinical-cancer-research-programs-cps/brain-cns.html" target="_blank" rel="noopener">Brain and CNS research program</a></div></li>
-  </ul>
-  <p class="fine centers-note">These are centers recognized for expertise in this condition, not a ranking, and Cure Checker does not endorse or rate any facility. Outcomes depend on the individual. Ask your doctor which center fits your situation.</p>
-</section>
-
-<!-- ========== 3. STUDIES ========== -->
-<section id="studies">
-  <div class="sec-head">
-    <h2>Latest studies &amp; what they concluded</h2>
-    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
-  </div>
-  <div class="filters" role="group" aria-label="Filter studies">
-    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
-    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
-    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
-    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
-  </div>
-  <!-- CURECHECKER:STUDIES (newest first) -->
-  <div class="studies" id="studies-list">
-    <div class="study" data-k="science"><time>Sep 14, 2026</time><div><h3>FDA approves Pixclara (FET-PET imaging)</h3><p>The first FDA-approved FET-PET imaging drug for glioma. It helps tell recurrent tumor from treatment-related changes. It's for diagnosis, not treatment.</p><div class="src"><a href="https://www.globenewswire.com/news-release/2026/09/14/3360898/0/en/fda-approves-telix-s-brain-cancer-imaging-drug-pixclara.html" target="_blank" rel="noopener">Telix / GlobeNewswire</a></div></div><span class="pill p-good">Approved</span></div>
-    <div class="study" data-k="result"><time>Sep 2026</time><div><h3>Two-target CAR-T, long-term follow-up (Phase 1)</h3><p>No delayed toxicity. Median survival 12.0 months, 28% alive beyond 18 months, one ongoing response at 33 months.</p><div class="src"><a href="https://ascopost.com/news/september-2026/bivalent-car-t-cell-therapy-shows-no-delayed-toxicity-and-promising-survival-in-recurrent-glioblastoma" target="_blank" rel="noopener">The ASCO Post</a></div></div><span class="pill p-sig">Promising</span></div>
-    <div class="study" data-k="underway"><time>Aug 20, 2026</time><div><h3>APTN-101, an EGFRvIII T-cell engager (Phase 1)</h3><p>First-in-human trial opening at Duke for EGFRvIII-positive grade 4 glioma.</p><div class="src"><a href="https://www.glioblastomamultiforme.it/en/research-news-for-the-fourth-two-months-of-2026/" target="_blank" rel="noopener">Glioblastoma Multiforme research digest</a></div></div><span class="pill p-blue">Underway</span></div>
-    <div class="study" data-k="result"><time>2026</time><div><h3>Ultra-hypofractionated radiotherapy (Phase 3, Netherlands)</h3><p>Not shown to be as good as standard radiation. Median survival was about 13 months versus about 21, with more radiation damage.</p><div class="src"><a href="https://www.glioblastomamultiforme.it/en/research-news-for-the-fourth-two-months-of-2026/" target="_blank" rel="noopener">Glioblastoma Multiforme research digest</a></div></div><span class="pill p-warn">Missed goal</span></div>
-    <div class="study" data-k="result"><time>Jun 2026</time><div><h3>BPM31510 (Phase 2, ASCO 2026)</h3><p>An IV mitochondrial therapy plus standard care. Median survival 19.3 months, and 29.3 months in the MGMT-unmethylated subgroup (39 evaluable patients).</p><div class="src"><a href="https://www.glioblastomamultiforme.it/en/research-news-for-the-fourth-two-months-of-2026/" target="_blank" rel="noopener">Glioblastoma Multiforme research digest</a></div></div><span class="pill p-sig">Promising</span></div>
-    <div class="study" data-k="underway"><time>2026</time><div><h3>IGV-001 heads to Phase 3</h3><p>Imvax plans a roughly 375-patient trial in MGMT-unmethylated newly diagnosed GBM after a Phase 2b subgroup signal.</p><div class="src"><a href="https://mychesco.com/a/news/regional/imvax-glioblastoma-data-backs-move-toward-phase-3-trial" target="_blank" rel="noopener">MyChesCo</a></div></div><span class="pill p-blue">Underway</span></div>
-    <div class="study" data-k="underway"><time>2026</time><div><h3>Optune + pembrolizumab (EF-41/KEYNOTE D58, Phase 3)</h3><p>Tests adding immunotherapy to Tumor Treating Fields and temozolomide in newly diagnosed GBM.</p><div class="src"><a href="https://clinicaltrials.gov/study/NCT06556563" target="_blank" rel="noopener">ClinicalTrials.gov</a></div></div><span class="pill p-blue">Underway</span></div>
-    <div class="study" data-k="result"><time>2025</time><div><h3>Focused ultrasound + temozolomide (BT008NA, Phase 1/2)</h3><p>Median survival 31.3 months and progression-free survival 13.5 months, versus about 19 and 8 months in matched controls.</p><div class="src"><a href="https://www.thelancet.com/article/S1470-2045(25)00492-9/fulltext" target="_blank" rel="noopener">The Lancet Oncology</a></div></div><span class="pill p-sig">Promising</span></div>
-  </div>
-</section>
-
-<!-- ========== 4. AROUND THE WORLD ========== -->
-<section id="world" data-condition="glioblastoma">
-  <div class="sec-head">
-    <h2>How other countries treat glioblastoma</h2>
-    <p>Surgery, radiation and temozolomide are standard everywhere. The differences are in the extras. Japan approved a cancer-killing virus. The UK is reviewing a personalized vaccine. Tumor Treating Fields are routine in some countries and hard to get in others.</p>
-  </div>
-
-  <div class="subhead">Who has approved what</div>
-  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 2, 2026) -->
-  <div class="scroll">
-  <table class="approved world">
-    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
-    <tbody>
-      <tr><td><b>Temozolomide</b><small>Standard chemo</small></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td></tr>
-      <tr><td><b>Tumor Treating Fields</b><small>Optune device</small></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-mid">Not on NHS</span></td><td><span class="c c-yes">2022</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Yes</span></td></tr>
-      <tr><td><b>Delytact</b><small>Oncolytic virus</small></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-mid">2021, conditional</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
-      <tr><td><b>DCVax-L</b><small>Dendritic-cell vaccine</small></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-mid">Under review</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
-      <tr><td><b>Pixclara (FET-PET)</b><small>Imaging, not treatment</small></td><td><span class="c c-yes">2026</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
-    </tbody>
-  </table>
-  </div>
-  <div class="wkey">
-    <span><span class="c c-yes">2022</span> approved (year)</span>
-    <span><span class="c c-mid">Review</span> conditional, under review, or limited funding</span>
-    <span><span class="c c-off">Rejected</span> refused or withdrawn</span>
-    <span><span class="c c-no">—</span> not approved, or no approval on record</span>
-  </div>
-
-  <div class="subhead">Available abroad, not in the U.S.</div>
-  <div class="abroad">
-    <article class="card">
-      <div class="top"><h3>Delytact</h3><span class="pill p-good">Japan</span></div>
-      <div class="who">Daiichi Sankyo · June 2021</div>
-      <p>The world's first approved virus therapy for brain cancer. Approval was conditional and time-limited, based on a single-arm Phase 2 that met its one-year survival goal.</p>
-      <div class="src"><a href="https://www.onclive.com/view/oncolytic-virus-teserpaturev-approved-in-japan-for-malignant-glioma" target="_blank" rel="noopener">OncLive</a></div>
-    </article>
-    <article class="card">
-      <div class="top"><h3>DCVax-L</h3><span class="pill p-sig">UK review</span></div>
-      <div class="who">MHRA application · Dec 2023</div>
-      <p>Still under review in 2026 and not refused. The UK's NICE won't assess it until a license is granted.</p>
-      <div class="src"><a href="https://questions-statements.parliament.uk/written-questions/detail/2026-03-09/118682" target="_blank" rel="noopener">UK Parliament</a></div>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Tumor Treating Fields</h3><span class="pill p-blue">Varies</span></div>
-      <div class="who">Germany, France, Japan, Israel fund it</div>
-      <p>Available through public health systems in several countries, but not routinely on the UK's NHS. Access depends heavily on where you live.</p>
-      <div class="src"><a href="https://www.thebraintumourcharity.org/brain-tumour-diagnosis-treatment/treating-brain-tumours/emerging-treatments/ttf-tumour-treating-fields/" target="_blank" rel="noopener">The Brain Tumour Charity</a></div>
-    </article>
-  </div>
-
-  <div class="subhead">How it changed over time</div>
-  <ol class="timeline">
-    <li><time>2005</time><span>Radiation plus temozolomide (the "Stupp protocol") becomes the worldwide standard.</span></li>
-    <li><time>2015</time><span><b>U.S.</b> approves Tumor Treating Fields for newly diagnosed GBM.</span></li>
-    <li><time>2021</time><span><b>Japan</b> conditionally approves Delytact. The <b>WHO</b> redefines glioblastoma as IDH-wildtype only.</span></li>
-    <li><time>2022</time><span><b>Canada</b> approves Tumor Treating Fields.</span></li>
-    <li><time>2023</time><span><b>UK:</b> DCVax-L is filed with the MHRA.</span></li>
-    <li><time>2025</time><span>Focused ultrasound plus chemo shows a large survival signal (Lancet Oncology).</span></li>
-    <li><time>2026</time><span><b>U.S.</b> approves Pixclara imaging. CAR-T and new immune drugs advance. A short radiation schedule fails in the <b>Netherlands</b>.</span></li>
-  </ol>
-
   <div class="subhead">Where GBM trials are recruiting right now</div>
   <div class="live-grid">
     <div>
@@ -310,14 +412,6 @@
       <div class="trials" id="ct-abroad"></div>
       <button type="button" class="more" id="ct-more" hidden></button>
     </div>
-  </div>
-</section>
-
-<!-- ========== EVERY REGISTRY ========== -->
-<section id="registries">
-  <div class="sec-head">
-    <h2>Every registry, checked</h2>
-    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
   </div>
   <div class="reg-stats" id="reg-stats"></div>
   <div class="reg-grid">
@@ -337,94 +431,6 @@
   <div class="subhead">Search every registry yourself</div>
   <div class="reg-links" id="reg-links"></div>
   <p class="reg-note">The WHO's ICTRP gathers trials from registries worldwide, including China, Japan, India, Iran, Australia and Brazil. Cochrane CENTRAL and OpenMD don't allow automated access, so they're linked here for you to search directly.</p>
-</section>
-
-<!-- ========== 5. NATURAL ========== -->
-<section id="natural">
-  <div class="sec-head">
-    <h2>Natural remedies &amp; supplements</h2>
-    <p>No supplement or diet cures glioblastoma. A few are being studied alongside standard care, and some can interfere with chemo or surgery. We rate each by the strength of human evidence.</p>
-  </div>
-  <div class="gkey">
-    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Good human evidence</span>
-    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Observational / mixed</span>
-    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>Lab only, or possible harm</span>
-  </div>
-  <div class="supp">
-    <div>
-      <h3>Claims you'll see online</h3>
-      <div class="row"><b>Ketogenic diet</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>Small trials show it's feasible alongside treatment, but there's no proof it extends survival. Only try it with a dietitian, because weight loss is risky.</p></div>
-      <div class="row"><b>Cannabis / cannabinoids</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>Lab studies are interesting, and small early trials have been run. It's not shown to control the tumor, but it may help appetite, nausea and sleep.</p></div>
-      <div class="row"><b>Boswellia (frankincense)</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>A small trial found less brain swelling after radiation. It isn't a tumor treatment. Ask before combining it with steroids.</p></div>
-    </div>
-    <div>
-      <h3>Use with caution</h3>
-      <div class="row"><b>High-dose antioxidants</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
-        <p>Might blunt how radiation and chemo kill tumor cells. Skip large doses during treatment unless your team agrees.</p></div>
-      <div class="row"><b>St. John's wort and other herbs</b><span class="grade none"><i class="on"></i><i></i><i></i></span>
-        <p>Can change how seizure medicines and chemo are processed. Always check with your pharmacist.</p></div>
-      <div class="row"><b>Exercise &amp; rehab</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>Helps fatigue, strength and mood during and after treatment. Ask about seizure-safe activities.</p></div>
-    </div>
-  </div>
-  <p class="caution"><b>Be careful:</b> clinics abroad selling unproven "cures" for glioblastoma can be very costly and may delay treatment that works. Bring anything you're considering to your neuro-oncology team, and use the registries above to find real trials.</p>
-</section>
-
-<!-- ========== SUPPORT GROUPS ========== -->
-<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 2, 2026; only add groups whose link you have verified) -->
-<section id="support-groups">
-  <div class="sec-head">
-    <h2>Support groups &amp; communities</h2>
-    <p>You don't have to face glioblastoma alone. These groups connect patients, families and caregivers with people who understand. Most are free.</p>
-  </div>
-  <div class="groups">
-    <article class="group">
-      <div class="top"><h3>National Brain Tumor Society</h3><span class="pill p-good">Support groups</span></div>
-      <div class="who">Patients · caregivers · bereaved</div>
-      <p>Free virtual support conversations for patients, caregivers and grieving families, plus a peer mentor program.</p>
-      <a class="join" href="https://braintumor.org/support-services/support-groups/" target="_blank" rel="noopener">Join a group ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>American Brain Tumor Association</h3><span class="pill p-good">Support</span></div>
-      <div class="who">Patients · caregivers · all ages</div>
-      <p>Support community, a CareLine, and glioblastoma education for every stage.</p>
-      <a class="join" href="https://www.abta.org/glioblastoma/" target="_blank" rel="noopener">Get support ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>CancerCare</h3><span class="pill p-blue">Counseling</span></div>
-      <div class="who">Patients · caregivers</div>
-      <p>Free professional counseling and online support groups for people affected by glioblastoma.</p>
-      <a class="join" href="https://www.cancercare.org/diagnosis/glioblastoma" target="_blank" rel="noopener">Get help ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>The Brain Tumour Charity (UK)</h3><span class="pill p-blue">Support</span></div>
-      <div class="who">Patients · families · UK</div>
-      <p>Support line, online support groups and information for everyone affected by a brain tumour.</p>
-      <a class="join" href="https://www.thebraintumourcharity.org/" target="_blank" rel="noopener">Get support ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>Musella Foundation</h3><span class="pill p-blue">Online groups</span></div>
-      <div class="who">Patients · caregivers</div>
-      <p>Long-running brain tumor support groups, a trial finder and treatment information (virtualtrials.org).</p>
-      <a class="join" href="https://virtualtrials.org/" target="_blank" rel="noopener">Visit ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>r/cancer on Reddit</h3><span class="pill p-sig">Reddit</span></div>
-      <div class="who">Anyone affected by cancer</div>
-      <p>A large, general cancer support community on Reddit.</p>
-      <a class="join" href="https://www.reddit.com/r/cancer/" target="_blank" rel="noopener">Open on Reddit ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>Glioblastoma groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
-      <div class="who">Search results</div>
-      <p>Many patient and caregiver groups. This link searches Facebook (a login is required).</p>
-      <a class="join" href="https://www.facebook.com/search/groups/?q=glioblastoma%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
-    </article>
-  </div>
-  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about treatment with your doctor. Think about your privacy, because Reddit and many forums are public, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
 </section>
 
 <!-- ========== SOURCES ========== -->
@@ -511,6 +517,7 @@
 <script src="assets/curechecker.js"></script>
 <script src="assets/donate.js"></script>
 <script src="assets/newsletter.js"></script>
+<script src="assets/layout.js"></script>
 
 </body>
 </html>

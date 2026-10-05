@@ -49,17 +49,15 @@
 <!-- ========== LEAD ========== -->
 <div class="lead">
   <h1>PKU has no cure yet. It is <em>no longer a diet-only disease.</em></h1>
-  <p>Cure Checker tracks the cause, the treatments that are working, and the trials underway, and rewrites this page every morning from the latest published results. Plain language, with sources for every claim.</p>
 </div>
 <nav class="toc" aria-label="Sections">
-  <a href="#verdict">Most recent cure information</a>
-  <a href="#cause">What causes PKU</a>
-  <a href="#treatments">Treatments that are working</a>
-  <a href="#studies">Latest studies</a>
-  <a href="#world">Around the world</a>
-  <a href="#registries">Every registry</a>
-  <a href="#natural">Natural remedies &amp; daily care</a>
-  <a href="#support-groups">Support groups</a>
+  <a href="#verdict">Is there a cure?</a>
+  <a href="#studies">What's new</a>
+  <a href="#treatments">Treatments</a>
+  <a href="#care">Care &amp; support</a>
+  <a href="#world">Other countries</a>
+  <a href="#cause">What causes it</a>
+  <a href="#registries">Find a trial</a>
   <a href="#sources">Sources</a>
 </nav>
 
@@ -79,6 +77,232 @@
     </ol>
     <p class="fine">This is Cure Checker's editorial assessment of published evidence, not medical advice. Treatment decisions belong with a metabolic specialist and a dietitian.</p>
   </div>
+</section>
+
+<!-- ========== 3. STUDIES ========== -->
+<section id="studies">
+  <div class="sec-head">
+    <h2>Latest studies &amp; what they concluded</h2>
+    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
+  </div>
+  <div class="filters" role="group" aria-label="Filter studies">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
+    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
+    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
+  </div>
+  <!-- CURECHECKER:STUDIES (newest first) -->
+  <div class="studies" id="studies-list">
+    <div class="study" data-k="result"><time>Oct 1, 2026</time><div><h3>Blood Phe control worsens with age in Beijing children (JAMA Network Open)</h3><p>In 325 children with early-treated PKU followed to age 18, average phenylalanine rose above 360 µmol/L from age 6, and only 17 of 78 children (21.8%) with data were in good control by age 12. Children born more recently did better. A single-city, retrospective study.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42821260/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-warn">Caution</span></div>
+    <div class="study" data-k="science"><time>Feb 2026</time><div><h3>FDA approves Palynziq for adolescents (12+)</h3><p>Based on the Phase 3 PEGASUS trial, in which Phe dropped with pegvaliase compared with diet alone.</p><div class="src"><a href="https://investors.biomarin.com/news/news-details/2026/U-S--Food-and-Drug-Administration-Approves-BioMarins-PALYNZIQ-pegvaliase-pqpz-for-Adolescents-12-Years-of-Age-and-Older-with-Phenylketonuria-PKU/default.aspx" target="_blank" rel="noopener">BioMarin</a></div></div><span class="pill p-good">Approved</span></div>
+    <div class="study" data-k="science"><time>Jan 2026</time><div><h3>Another generic sapropterin approved in the U.S.</h3><p>Micro Labs joins Aurobindo and Hikma (June 2025) with FDA-approved generic versions of Kuvan, which can lower costs.</p><div class="src"><a href="https://www.drugs.com/availability/generic-kuvan.html" target="_blank" rel="noopener">Drugs.com</a></div></div><span class="pill p-blue">Policy</span></div>
+    <div class="study" data-k="result"><time>2026</time><div><h3>Sepiapterin vs sapropterin (AMPLIPHY, Phase 3)</h3><p>A head-to-head crossover trial published in Metabolism, comparing the two BH4-pathway drugs.</p><div class="src"><a href="https://www.metabolismjournal.com/article/S0026-0495(26)00022-3/fulltext" target="_blank" rel="noopener">Metabolism</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="result"><time>2026</time><div><h3>Sepiapterin and diet liberalization (APHENITY extension)</h3><p>Interim results show long-term sepiapterin let most people safely increase the natural protein they eat.</p><div class="src"><a href="https://www.sciencedirect.com/science/article/pii/S1098360026000018" target="_blank" rel="noopener">Genetics in Medicine</a></div></div><span class="pill p-good">Positive</span></div>
+    <div class="study" data-k="science"><time>Dec 22, 2025</time><div><h3>Japan approves Sephience</h3><p>Approved for children and adults of all ages and the full range of PKU severity.</p><div class="src"><a href="https://ir.ptcbio.com/news-releases/news-release-details/ptc-therapeutics-announces-approval-sephiencetm-sepiapterin" target="_blank" rel="noopener">PTC Therapeutics</a></div></div><span class="pill p-good">Approved</span></div>
+    <div class="study" data-k="science"><time>Jul 28, 2025</time><div><h3>FDA approves sepiapterin (Sephience)</h3><p>Approved for adults and children with PKU, with a broad label. Europe had approved it on June 19, 2025.</p><div class="src"><a href="https://ir.ptcbio.com/news-releases/news-release-details/ptc-therapeutics-announces-fda-approval-sephiencetm-sepiapterin" target="_blank" rel="noopener">PTC Therapeutics</a></div></div><span class="pill p-good">Approved</span></div>
+    <div class="study" data-k="science"><time>Sep 2021</time><div><h3>FDA places BMN 307 gene therapy on clinical hold</h3><p>After tumors were found in mice at the highest dose, with evidence of vector integration into the genome.</p><div class="src"><a href="https://www.biomarin.com/news/press-releases/u-s-fda-placed-a-clinical-hold-on-bmn-307-phearless-phase-1-2-gene-therapy-study-in-adults-with-pku-based-on-interim-pre-clinical-study-findings/" target="_blank" rel="noopener">BioMarin</a></div></div><span class="pill p-warn">Hold</span></div>
+  </div>
+</section>
+
+<!-- ========== 2. TREATMENTS ========== -->
+<section id="treatments">
+  <div class="sec-head">
+    <h2>Treatments that are working</h2>
+    <p>For more than 60 years the only option was diet. Since 2007, three medicines have been approved, each suited to different people. A cure with gene therapy is still in the lab.</p>
+  </div>
+
+  <div class="tx">
+    <article class="card">
+      <div class="top"><h3>Sepiapterin (Sephience)</h3><span class="pill p-good">Approved</span></div>
+      <div class="who">PTC Therapeutics · EU Jun 19, 2025 · FDA Jul 28, 2025 · Japan Dec 22, 2025</div>
+      <p>A daily BH4 precursor taken by mouth, approved for children and adults across the full range of PKU severity. Blood Phe fell by about 63–64% in the Phase 3 trial, and many people could eat more protein.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Pegvaliase (Palynziq)</h3><span class="pill p-good">Approved</span></div>
+      <div class="who">BioMarin · FDA May 24, 2018 · EU 2019 · ages 12+ in the U.S. Feb 2026</div>
+      <p>A daily injection of an enzyme that breaks down Phe. In the PEGASUS trial in adolescents, Phe fell compared with diet alone. Allergic reactions are a known risk, so it's started under supervision.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Sapropterin (Kuvan)</h3><span class="pill p-good">Approved</span></div>
+      <div class="who">BioMarin · FDA Dec 13, 2007 · EU 2008 · Japan 2008</div>
+      <p>The first PKU medicine. It helps people whose enzyme has some activity, a "BH4-responsive" group. Generic versions have been approved in the U.S., most recently in January 2026.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Diet &amp; medical formula</h3><span class="pill p-blue">Foundation</span></div>
+      <div class="who">Since the 1960s · all patients</div>
+      <p>A low-protein diet plus a Phe-free amino-acid formula, started in the first days of life. Still the backbone of care, and essential for people who can't use the medicines.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>BMN 307 gene therapy</h3><span class="pill p-warn">Clinical hold</span></div>
+      <div class="who">BioMarin · AAV gene therapy · hold Sept 2021</div>
+      <p>The FDA paused the trial after liver tumors were found in 6 of 7 mice given the highest dose, with signs the vector had integrated into DNA. The trial isn't recruiting.</p>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Gene editing</h3><span class="pill p-sig">Early research</span></div>
+      <div class="who">Base editing with fat-particle delivery</div>
+      <p>Labs are testing ways to correct the PAH gene directly in liver cells, using adenine base editors and lipid nanoparticles. It's still a research approach.</p>
+    </article>
+  </div>
+
+  <div class="subhead">Standard treatment today</div>
+  <div class="scroll">
+  <table class="approved">
+    <thead><tr><th>Treatment</th><th>For</th><th>What it does</th></tr></thead>
+    <tbody>
+      <tr><td><b>Newborn screening</b> (heel-prick test)</td><td>Every baby</td><td>Finds PKU in the first days of life so treatment starts before harm.</td></tr>
+      <tr><td><b>Low-protein diet + medical formula</b></td><td>Nearly everyone</td><td>Keeps Phe in the target range. Needs regular blood tests and a metabolic dietitian.</td></tr>
+      <tr><td><b>Sapropterin, sepiapterin</b></td><td>People who respond</td><td>Lower Phe and often allow a more liberal diet.</td></tr>
+      <tr><td><b>Pegvaliase</b></td><td>Ages 12+ with uncontrolled Phe</td><td>Can bring Phe into range even on a normal diet in many patients.</td></tr>
+      <tr><td><b>Pregnancy planning</b></td><td>Women with PKU</td><td>Tight Phe control before and during pregnancy protects the baby.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+</section>
+
+<!-- ========== 5. NATURAL ========== -->
+<section id="natural">
+  <div class="sec-head">
+    <h2>Natural remedies &amp; daily care</h2>
+    <p>In PKU, what you eat is the main treatment, so "natural" choices matter a lot. Some popular health foods are dangerous in PKU. We rate each by the strength of evidence.</p>
+  </div>
+  <div class="gkey">
+    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Strong evidence or consensus</span>
+    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Observational / mixed</span>
+    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>No evidence, or harmful in PKU</span>
+  </div>
+  <div class="supp">
+    <div>
+      <h3>What works</h3>
+      <div class="row"><b>Low-protein diet with a Phe-free formula</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>The proven foundation of PKU care. Needs regular blood tests and a metabolic dietitian.</p></div>
+      <div class="row"><b>Fruits, vegetables &amp; low-protein specialty foods</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>Most fruits and vegetables are low in Phe and count little toward the daily limit. Ask your dietitian for specifics.</p></div>
+      <div class="row"><b>Checking labels for aspartame</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        <p>This common sweetener contains phenylalanine, and diet drinks carry a PKU warning.</p></div>
+    </div>
+    <div>
+      <h3>Be careful with</h3>
+      <div class="row"><b>High-protein supplements and "keto" foods</b><span class="grade none" title="Harmful in PKU"><i class="on"></i><i></i><i></i></span>
+        <p>Whey, collagen and many protein powders are rich in Phe and can push levels dangerously high.</p></div>
+      <div class="row"><b>Large neutral amino acids (LNAA)</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>A prescription-style option for some adults, with mixed evidence. Only use it under a metabolic team's guidance.</p></div>
+      <div class="row"><b>Glycomacropeptide (GMP) foods</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
+        <p>A low-Phe protein source used in some medical foods. Ask your dietitian whether it suits you.</p></div>
+    </div>
+  </div>
+  <p class="caution"><b>Be careful:</b> changing your diet or stopping formula without your metabolic team can raise Phe quickly. Don't start any supplement without checking its phenylalanine content first.</p>
+</section>
+
+<section id="care">
+  <div class="sec-head">
+    <h2>Where to get care and support</h2>
+    <p>Centers recognized for expertise in this condition, and communities of people living with it.</p>
+  </div>
+  <div class="subhead">Where people find expert care</div>
+  <ul class="centers">
+    <li><b>Children's Hospital of Orange County (CHOC) PKU Program</b> <span class="loc">Orange, California, USA</span><p>Recognized as a NORD Rare Disease Center of Excellence and runs a dedicated PKU program.</p><div class="src"><a href="https://choc.org/programs-services/metabolic-disorders/phenylketonuria-pku-program/" target="_blank" rel="noopener">Phenylketonuria (PKU) program</a></div></li>
+    <li><b>UTHealth Houston PKU Clinic</b> <span class="loc">Houston, Texas, USA</span><p>Its PKU clinic is part of the NORD Center of Excellence program.</p><div class="src"><a href="https://med.uth.edu/pediatrics/medical-genetics/medical-genetics-clinics/phenylketonuria-pku-clinic/" target="_blank" rel="noopener">Phenylketonuria (PKU) clinic</a></div></li>
+    <li><b>Boston Children's Hospital</b> <span class="loc">Boston, Massachusetts, USA</span><p>Says its PKU program grew out of the first PKU clinic in the country and now treats children and adults.</p><div class="src"><a href="https://www.childrenshospital.org/conditions-treatments/phenylketonuria-pku" target="_blank" rel="noopener">Phenylketonuria (PKU)</a></div></li>
+    <li><b>University of Washington PKU Clinical Program</b> <span class="loc">Seattle, Washington, USA</span><p>Says its team-based program sees over 100 children and 200 adults with PKU each year.</p><div class="src"><a href="https://ihdd.org/2023/08/16/pku-clinical-program/" target="_blank" rel="noopener">PKU clinical program</a></div></li>
+  </ul>
+  <p class="fine centers-note">These are centers recognized for expertise in this condition, not a ranking, and Cure Checker does not endorse or rate any facility. Outcomes depend on the individual. Ask your doctor which center fits your situation.</p>
+</section>
+
+<!-- ========== SUPPORT GROUPS ========== -->
+<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 2, 2026; only add groups whose link you have verified) -->
+<section id="support-groups">
+  <div class="sec-head">
+    <h2>Support groups &amp; communities</h2>
+    <p>Living with PKU means planning every meal. These groups connect patients, parents and adults with people who understand.</p>
+  </div>
+  <div class="groups">
+    <article class="group">
+      <div class="top"><h3>National PKU Alliance</h3><span class="pill p-good">Peer support</span></div>
+      <div class="who">Adults with PKU · caregivers · U.S.</div>
+      <p>Monthly "Community Call" peer groups for caregivers of children (ages 0–3, 3–12 and teens), adults 18+, and adults 40+.</p>
+      <a class="join" href="https://www.npkua.org/Community" target="_blank" rel="noopener">Join a call ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>NPKUA support</h3><span class="pill p-good">Support</span></div>
+      <div class="who">Patients · families</div>
+      <p>The National PKU Alliance's support hub, with education, advocacy and ways to connect locally.</p>
+      <a class="join" href="https://www.npkua.org/support/" target="_blank" rel="noopener">Get support ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>NSPKU (UK)</h3><span class="pill p-blue">Support</span></div>
+      <div class="who">Patients · families · UK</div>
+      <p>The National Society for Phenylketonuria, the UK charity supporting people and families living with PKU.</p>
+      <a class="join" href="https://nspku.org/" target="_blank" rel="noopener">Get support ↗</a>
+    </article>
+    <article class="group">
+      <div class="top"><h3>PKU groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
+      <div class="who">Search results</div>
+      <p>Many parent, adult and recipe-sharing groups. This link searches Facebook (a login is required).</p>
+      <a class="join" href="https://www.facebook.com/search/groups/?q=PKU%20phenylketonuria%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
+    </article>
+  </div>
+  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about diet or treatment with your metabolic team. Think about your privacy, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
+</section>
+
+<!-- ========== 4. AROUND THE WORLD ========== -->
+<section id="world" data-condition="phenylketonuria">
+  <div class="sec-head">
+    <h2>How other countries treat PKU</h2>
+    <p>Diet is universal. The newest medicine, sepiapterin, reached Europe, the U.S., Japan, Canada, Australia, Switzerland and Brazil within months. Access depends on funding, and many countries have no access to the medicines at all.</p>
+  </div>
+
+  <div class="subhead">Who has approved what</div>
+  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 2, 2026) -->
+  <div class="scroll">
+  <table class="approved world">
+    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
+    <tbody>
+      <tr><td><b>Sapropterin</b> (Kuvan)<small>BH4-responsive PKU</small></td><td><span class="c c-yes">2007</span></td><td><span class="c c-yes">2008</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">2008</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Pegvaliase</b> (Palynziq)<small>Adults, adolescents</small></td><td><span class="c c-yes">2018</span></td><td><span class="c c-yes">2019</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Yes (15+)</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+      <tr><td><b>Sepiapterin</b> (Sephience)<small>All ages</small></td><td><span class="c c-yes">2025</span></td><td><span class="c c-yes">2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td></tr>
+      <tr><td><b>BMN 307 gene therapy</b><small>Adults</small></td><td><span class="c c-off">Clinical hold</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="wkey">
+    <span><span class="c c-yes">2007</span> approved (year)</span>
+    <span><span class="c c-off">Hold</span> trial paused</span>
+    <span><span class="c c-no">—</span> not approved, or no approval on record</span>
+  </div>
+
+  <div class="subhead">Where other countries got there first</div>
+  <div class="abroad">
+    <article class="card">
+      <div class="top"><h3>European Union</h3><span class="pill p-good">First</span></div>
+      <div class="who">Sepiapterin · June 19, 2025</div>
+      <p>The EU approved sepiapterin about five weeks before the U.S., and it also approved sapropterin (2008) and pegvaliase (2019 for ages 16+) before the U.S. extended pegvaliase to younger patients.</p>
+      <div class="src"><a href="https://www.prnewswire.com/news-releases/sephience-sepiapterin-granted-marketing-authorization-by-the-european-commission-for-the-treatment-of-children-and-adults-living-with-phenylketonuria-pku-302487940.html" target="_blank" rel="noopener">PTC Therapeutics</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Japan</h3><span class="pill p-sig">Broad label</span></div>
+      <div class="who">Sepiapterin · Dec 22, 2025</div>
+      <p>Japan approved sepiapterin for all ages and all severities. Sapropterin was approved there in 2008, and pegvaliase for people 15 and older with uncontrolled Phe.</p>
+      <div class="src"><a href="https://ir.ptcbio.com/news-releases/news-release-details/ptc-therapeutics-announces-approval-sephiencetm-sepiapterin" target="_blank" rel="noopener">PTC Therapeutics</a></div>
+    </article>
+    <article class="card">
+      <div class="top"><h3>Canada, Australia, Switzerland &amp; Brazil</h3><span class="pill p-blue">Approved</span></div>
+      <div class="who">Sepiapterin</div>
+      <p>All four have approved sepiapterin. Health Canada approved it from age one month, and Brazil approved it for all ages.</p>
+      <div class="src"><a href="https://link.springer.com/article/10.1007/s40265-025-02247-0" target="_blank" rel="noopener">Drugs: First Approval</a></div>
+    </article>
+  </div>
+
+  <div class="subhead">How it changed over time</div>
+  <ol class="timeline">
+    <li><time>1960s</time><span>Newborn screening and the low-protein diet make PKU a preventable cause of intellectual disability in many countries.</span></li>
+    <li><time>2007</time><span><b>U.S.</b> approves sapropterin, the first PKU medicine (December). <b>EU</b> (2008) and <b>Japan</b> (2008) follow.</span></li>
+    <li><time>2018</time><span><b>U.S.</b> approves pegvaliase. The <b>EU</b> follows in 2019.</span></li>
+    <li><time>2021</time><span>BMN 307 gene therapy is put on <b>FDA</b> clinical hold.</span></li>
+    <li><time>2025</time><span>Sepiapterin: <b>EU</b> (June), <b>U.S.</b> (July), <b>Japan</b> (December). Generic sapropterin is approved in the U.S.</span></li>
+    <li><time>2026</time><span><b>U.S.</b> extends pegvaliase to ages 12+ (February).</span></li>
+  </ol>
+
 </section>
 
 <!-- ========== 1. CAUSE ========== -->
@@ -154,152 +378,12 @@
   </div>
 </section>
 
-<!-- ========== 2. TREATMENTS ========== -->
-<section id="treatments">
+<!-- ========== EVERY REGISTRY ========== -->
+<section id="registries">
   <div class="sec-head">
-    <h2>Treatments that are working</h2>
-    <p>For more than 60 years the only option was diet. Since 2007, three medicines have been approved, each suited to different people. A cure with gene therapy is still in the lab.</p>
+    <h2>Find a clinical trial</h2>
+    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
   </div>
-
-  <div class="tx">
-    <article class="card">
-      <div class="top"><h3>Sepiapterin (Sephience)</h3><span class="pill p-good">Approved</span></div>
-      <div class="who">PTC Therapeutics · EU Jun 19, 2025 · FDA Jul 28, 2025 · Japan Dec 22, 2025</div>
-      <p>A daily BH4 precursor taken by mouth, approved for children and adults across the full range of PKU severity. Blood Phe fell by about 63–64% in the Phase 3 trial, and many people could eat more protein.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Pegvaliase (Palynziq)</h3><span class="pill p-good">Approved</span></div>
-      <div class="who">BioMarin · FDA May 24, 2018 · EU 2019 · ages 12+ in the U.S. Feb 2026</div>
-      <p>A daily injection of an enzyme that breaks down Phe. In the PEGASUS trial in adolescents, Phe fell compared with diet alone. Allergic reactions are a known risk, so it's started under supervision.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Sapropterin (Kuvan)</h3><span class="pill p-good">Approved</span></div>
-      <div class="who">BioMarin · FDA Dec 13, 2007 · EU 2008 · Japan 2008</div>
-      <p>The first PKU medicine. It helps people whose enzyme has some activity, a "BH4-responsive" group. Generic versions have been approved in the U.S., most recently in January 2026.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Diet &amp; medical formula</h3><span class="pill p-blue">Foundation</span></div>
-      <div class="who">Since the 1960s · all patients</div>
-      <p>A low-protein diet plus a Phe-free amino-acid formula, started in the first days of life. Still the backbone of care, and essential for people who can't use the medicines.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>BMN 307 gene therapy</h3><span class="pill p-warn">Clinical hold</span></div>
-      <div class="who">BioMarin · AAV gene therapy · hold Sept 2021</div>
-      <p>The FDA paused the trial after liver tumors were found in 6 of 7 mice given the highest dose, with signs the vector had integrated into DNA. The trial isn't recruiting.</p>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Gene editing</h3><span class="pill p-sig">Early research</span></div>
-      <div class="who">Base editing with fat-particle delivery</div>
-      <p>Labs are testing ways to correct the PAH gene directly in liver cells, using adenine base editors and lipid nanoparticles. It's still a research approach.</p>
-    </article>
-  </div>
-
-  <div class="subhead">Standard treatment today</div>
-  <div class="scroll">
-  <table class="approved">
-    <thead><tr><th>Treatment</th><th>For</th><th>What it does</th></tr></thead>
-    <tbody>
-      <tr><td><b>Newborn screening</b> (heel-prick test)</td><td>Every baby</td><td>Finds PKU in the first days of life so treatment starts before harm.</td></tr>
-      <tr><td><b>Low-protein diet + medical formula</b></td><td>Nearly everyone</td><td>Keeps Phe in the target range. Needs regular blood tests and a metabolic dietitian.</td></tr>
-      <tr><td><b>Sapropterin, sepiapterin</b></td><td>People who respond</td><td>Lower Phe and often allow a more liberal diet.</td></tr>
-      <tr><td><b>Pegvaliase</b></td><td>Ages 12+ with uncontrolled Phe</td><td>Can bring Phe into range even on a normal diet in many patients.</td></tr>
-      <tr><td><b>Pregnancy planning</b></td><td>Women with PKU</td><td>Tight Phe control before and during pregnancy protects the baby.</td></tr>
-    </tbody>
-  </table>
-  </div>
-  <div class="subhead">Where people find expert care</div>
-  <ul class="centers">
-    <li><b>Children's Hospital of Orange County (CHOC) PKU Program</b> <span class="loc">Orange, California, USA</span><p>Recognized as a NORD Rare Disease Center of Excellence and runs a dedicated PKU program.</p><div class="src"><a href="https://choc.org/programs-services/metabolic-disorders/phenylketonuria-pku-program/" target="_blank" rel="noopener">Phenylketonuria (PKU) program</a></div></li>
-    <li><b>UTHealth Houston PKU Clinic</b> <span class="loc">Houston, Texas, USA</span><p>Its PKU clinic is part of the NORD Center of Excellence program.</p><div class="src"><a href="https://med.uth.edu/pediatrics/medical-genetics/medical-genetics-clinics/phenylketonuria-pku-clinic/" target="_blank" rel="noopener">Phenylketonuria (PKU) clinic</a></div></li>
-    <li><b>Boston Children's Hospital</b> <span class="loc">Boston, Massachusetts, USA</span><p>Says its PKU program grew out of the first PKU clinic in the country and now treats children and adults.</p><div class="src"><a href="https://www.childrenshospital.org/conditions-treatments/phenylketonuria-pku" target="_blank" rel="noopener">Phenylketonuria (PKU)</a></div></li>
-    <li><b>University of Washington PKU Clinical Program</b> <span class="loc">Seattle, Washington, USA</span><p>Says its team-based program sees over 100 children and 200 adults with PKU each year.</p><div class="src"><a href="https://ihdd.org/2023/08/16/pku-clinical-program/" target="_blank" rel="noopener">PKU clinical program</a></div></li>
-  </ul>
-  <p class="fine centers-note">These are centers recognized for expertise in this condition, not a ranking, and Cure Checker does not endorse or rate any facility. Outcomes depend on the individual. Ask your doctor which center fits your situation.</p>
-</section>
-
-<!-- ========== 3. STUDIES ========== -->
-<section id="studies">
-  <div class="sec-head">
-    <h2>Latest studies &amp; what they concluded</h2>
-    <p>Newest first. Updated each morning as results, trial launches and papers are published.</p>
-  </div>
-  <div class="filters" role="group" aria-label="Filter studies">
-    <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
-    <button type="button" id="f-result" data-f="result" aria-pressed="false">Results</button>
-    <button type="button" id="f-underway" data-f="underway" aria-pressed="false">Underway</button>
-    <button type="button" id="f-science" data-f="science" aria-pressed="false">Science &amp; policy</button>
-  </div>
-  <!-- CURECHECKER:STUDIES (newest first) -->
-  <div class="studies" id="studies-list">
-    <div class="study" data-k="result"><time>Oct 1, 2026</time><div><h3>Blood Phe control worsens with age in Beijing children (JAMA Network Open)</h3><p>In 325 children with early-treated PKU followed to age 18, average phenylalanine rose above 360 µmol/L from age 6, and only 17 of 78 children (21.8%) with data were in good control by age 12. Children born more recently did better. A single-city, retrospective study.</p><div class="src"><a href="https://pubmed.ncbi.nlm.nih.gov/42821260/" target="_blank" rel="noopener">PubMed</a></div></div><span class="pill p-warn">Caution</span></div>
-    <div class="study" data-k="science"><time>Feb 2026</time><div><h3>FDA approves Palynziq for adolescents (12+)</h3><p>Based on the Phase 3 PEGASUS trial, in which Phe dropped with pegvaliase compared with diet alone.</p><div class="src"><a href="https://investors.biomarin.com/news/news-details/2026/U-S--Food-and-Drug-Administration-Approves-BioMarins-PALYNZIQ-pegvaliase-pqpz-for-Adolescents-12-Years-of-Age-and-Older-with-Phenylketonuria-PKU/default.aspx" target="_blank" rel="noopener">BioMarin</a></div></div><span class="pill p-good">Approved</span></div>
-    <div class="study" data-k="science"><time>Jan 2026</time><div><h3>Another generic sapropterin approved in the U.S.</h3><p>Micro Labs joins Aurobindo and Hikma (June 2025) with FDA-approved generic versions of Kuvan, which can lower costs.</p><div class="src"><a href="https://www.drugs.com/availability/generic-kuvan.html" target="_blank" rel="noopener">Drugs.com</a></div></div><span class="pill p-blue">Policy</span></div>
-    <div class="study" data-k="result"><time>2026</time><div><h3>Sepiapterin vs sapropterin (AMPLIPHY, Phase 3)</h3><p>A head-to-head crossover trial published in Metabolism, comparing the two BH4-pathway drugs.</p><div class="src"><a href="https://www.metabolismjournal.com/article/S0026-0495(26)00022-3/fulltext" target="_blank" rel="noopener">Metabolism</a></div></div><span class="pill p-good">Positive</span></div>
-    <div class="study" data-k="result"><time>2026</time><div><h3>Sepiapterin and diet liberalization (APHENITY extension)</h3><p>Interim results show long-term sepiapterin let most people safely increase the natural protein they eat.</p><div class="src"><a href="https://www.sciencedirect.com/science/article/pii/S1098360026000018" target="_blank" rel="noopener">Genetics in Medicine</a></div></div><span class="pill p-good">Positive</span></div>
-    <div class="study" data-k="science"><time>Dec 22, 2025</time><div><h3>Japan approves Sephience</h3><p>Approved for children and adults of all ages and the full range of PKU severity.</p><div class="src"><a href="https://ir.ptcbio.com/news-releases/news-release-details/ptc-therapeutics-announces-approval-sephiencetm-sepiapterin" target="_blank" rel="noopener">PTC Therapeutics</a></div></div><span class="pill p-good">Approved</span></div>
-    <div class="study" data-k="science"><time>Jul 28, 2025</time><div><h3>FDA approves sepiapterin (Sephience)</h3><p>Approved for adults and children with PKU, with a broad label. Europe had approved it on June 19, 2025.</p><div class="src"><a href="https://ir.ptcbio.com/news-releases/news-release-details/ptc-therapeutics-announces-fda-approval-sephiencetm-sepiapterin" target="_blank" rel="noopener">PTC Therapeutics</a></div></div><span class="pill p-good">Approved</span></div>
-    <div class="study" data-k="science"><time>Sep 2021</time><div><h3>FDA places BMN 307 gene therapy on clinical hold</h3><p>After tumors were found in mice at the highest dose, with evidence of vector integration into the genome.</p><div class="src"><a href="https://www.biomarin.com/news/press-releases/u-s-fda-placed-a-clinical-hold-on-bmn-307-phearless-phase-1-2-gene-therapy-study-in-adults-with-pku-based-on-interim-pre-clinical-study-findings/" target="_blank" rel="noopener">BioMarin</a></div></div><span class="pill p-warn">Hold</span></div>
-  </div>
-</section>
-
-<!-- ========== 4. AROUND THE WORLD ========== -->
-<section id="world" data-condition="phenylketonuria">
-  <div class="sec-head">
-    <h2>How other countries treat PKU</h2>
-    <p>Diet is universal. The newest medicine, sepiapterin, reached Europe, the U.S., Japan, Canada, Australia, Switzerland and Brazil within months. Access depends on funding, and many countries have no access to the medicines at all.</p>
-  </div>
-
-  <div class="subhead">Who has approved what</div>
-  <!-- CURECHECKER:WORLD-APPROVALS (checked Oct 2, 2026) -->
-  <div class="scroll">
-  <table class="approved world">
-    <thead><tr><th>Treatment</th><th>U.S.</th><th>EU</th><th>UK</th><th>Canada</th><th>Japan</th><th>S. Korea</th><th>China</th><th>Australia</th><th>Switz.</th></tr></thead>
-    <tbody>
-      <tr><td><b>Sapropterin</b> (Kuvan)<small>BH4-responsive PKU</small></td><td><span class="c c-yes">2007</span></td><td><span class="c c-yes">2008</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">2008</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
-      <tr><td><b>Pegvaliase</b> (Palynziq)<small>Adults, adolescents</small></td><td><span class="c c-yes">2018</span></td><td><span class="c c-yes">2019</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Yes (15+)</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
-      <tr><td><b>Sepiapterin</b> (Sephience)<small>All ages</small></td><td><span class="c c-yes">2025</span></td><td><span class="c c-yes">2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">2025</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-yes">Yes</span></td><td><span class="c c-yes">Yes</span></td></tr>
-      <tr><td><b>BMN 307 gene therapy</b><small>Adults</small></td><td><span class="c c-off">Clinical hold</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td><td><span class="c c-no">—</span></td></tr>
-    </tbody>
-  </table>
-  </div>
-  <div class="wkey">
-    <span><span class="c c-yes">2007</span> approved (year)</span>
-    <span><span class="c c-off">Hold</span> trial paused</span>
-    <span><span class="c c-no">—</span> not approved, or no approval on record</span>
-  </div>
-
-  <div class="subhead">Where other countries got there first</div>
-  <div class="abroad">
-    <article class="card">
-      <div class="top"><h3>European Union</h3><span class="pill p-good">First</span></div>
-      <div class="who">Sepiapterin · June 19, 2025</div>
-      <p>The EU approved sepiapterin about five weeks before the U.S., and it also approved sapropterin (2008) and pegvaliase (2019 for ages 16+) before the U.S. extended pegvaliase to younger patients.</p>
-      <div class="src"><a href="https://www.prnewswire.com/news-releases/sephience-sepiapterin-granted-marketing-authorization-by-the-european-commission-for-the-treatment-of-children-and-adults-living-with-phenylketonuria-pku-302487940.html" target="_blank" rel="noopener">PTC Therapeutics</a></div>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Japan</h3><span class="pill p-sig">Broad label</span></div>
-      <div class="who">Sepiapterin · Dec 22, 2025</div>
-      <p>Japan approved sepiapterin for all ages and all severities. Sapropterin was approved there in 2008, and pegvaliase for people 15 and older with uncontrolled Phe.</p>
-      <div class="src"><a href="https://ir.ptcbio.com/news-releases/news-release-details/ptc-therapeutics-announces-approval-sephiencetm-sepiapterin" target="_blank" rel="noopener">PTC Therapeutics</a></div>
-    </article>
-    <article class="card">
-      <div class="top"><h3>Canada, Australia, Switzerland &amp; Brazil</h3><span class="pill p-blue">Approved</span></div>
-      <div class="who">Sepiapterin</div>
-      <p>All four have approved sepiapterin. Health Canada approved it from age one month, and Brazil approved it for all ages.</p>
-      <div class="src"><a href="https://link.springer.com/article/10.1007/s40265-025-02247-0" target="_blank" rel="noopener">Drugs: First Approval</a></div>
-    </article>
-  </div>
-
-  <div class="subhead">How it changed over time</div>
-  <ol class="timeline">
-    <li><time>1960s</time><span>Newborn screening and the low-protein diet make PKU a preventable cause of intellectual disability in many countries.</span></li>
-    <li><time>2007</time><span><b>U.S.</b> approves sapropterin, the first PKU medicine (December). <b>EU</b> (2008) and <b>Japan</b> (2008) follow.</span></li>
-    <li><time>2018</time><span><b>U.S.</b> approves pegvaliase. The <b>EU</b> follows in 2019.</span></li>
-    <li><time>2021</time><span>BMN 307 gene therapy is put on <b>FDA</b> clinical hold.</span></li>
-    <li><time>2025</time><span>Sepiapterin: <b>EU</b> (June), <b>U.S.</b> (July), <b>Japan</b> (December). Generic sapropterin is approved in the U.S.</span></li>
-    <li><time>2026</time><span><b>U.S.</b> extends pegvaliase to ages 12+ (February).</span></li>
-  </ol>
-
   <div class="subhead">Where PKU trials are recruiting right now</div>
   <div class="live-grid">
     <div>
@@ -311,14 +395,6 @@
       <div class="trials" id="ct-abroad"></div>
       <button type="button" class="more" id="ct-more" hidden></button>
     </div>
-  </div>
-</section>
-
-<!-- ========== EVERY REGISTRY ========== -->
-<section id="registries">
-  <div class="sec-head">
-    <h2>Every registry, checked</h2>
-    <p>Live numbers and the newest entries from the world's main trial registries and medical databases. Most of this loads fresh each time you open the page.</p>
   </div>
   <div class="reg-stats" id="reg-stats"></div>
   <div class="reg-grid">
@@ -338,76 +414,6 @@
   <div class="subhead">Search every registry yourself</div>
   <div class="reg-links" id="reg-links"></div>
   <p class="reg-note">The WHO's ICTRP gathers trials from registries worldwide, including China, Japan, India, Iran, Australia and Brazil. Cochrane CENTRAL and OpenMD don't allow automated access, so they're linked here for you to search directly.</p>
-</section>
-
-<!-- ========== 5. NATURAL ========== -->
-<section id="natural">
-  <div class="sec-head">
-    <h2>Natural remedies &amp; daily care</h2>
-    <p>In PKU, what you eat is the main treatment, so "natural" choices matter a lot. Some popular health foods are dangerous in PKU. We rate each by the strength of evidence.</p>
-  </div>
-  <div class="gkey">
-    <span><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>Strong evidence or consensus</span>
-    <span><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>Observational / mixed</span>
-    <span><span class="grade none"><i class="on"></i><i></i><i></i></span>No evidence, or harmful in PKU</span>
-  </div>
-  <div class="supp">
-    <div>
-      <h3>What works</h3>
-      <div class="row"><b>Low-protein diet with a Phe-free formula</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
-        <p>The proven foundation of PKU care. Needs regular blood tests and a metabolic dietitian.</p></div>
-      <div class="row"><b>Fruits, vegetables &amp; low-protein specialty foods</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
-        <p>Most fruits and vegetables are low in Phe and count little toward the daily limit. Ask your dietitian for specifics.</p></div>
-      <div class="row"><b>Checking labels for aspartame</b><span class="grade"><i class="on"></i><i class="on"></i><i class="on"></i></span>
-        <p>This common sweetener contains phenylalanine, and diet drinks carry a PKU warning.</p></div>
-    </div>
-    <div>
-      <h3>Be careful with</h3>
-      <div class="row"><b>High-protein supplements and "keto" foods</b><span class="grade none" title="Harmful in PKU"><i class="on"></i><i></i><i></i></span>
-        <p>Whey, collagen and many protein powders are rich in Phe and can push levels dangerously high.</p></div>
-      <div class="row"><b>Large neutral amino acids (LNAA)</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>A prescription-style option for some adults, with mixed evidence. Only use it under a metabolic team's guidance.</p></div>
-      <div class="row"><b>Glycomacropeptide (GMP) foods</b><span class="grade low"><i class="on"></i><i class="on"></i><i></i></span>
-        <p>A low-Phe protein source used in some medical foods. Ask your dietitian whether it suits you.</p></div>
-    </div>
-  </div>
-  <p class="caution"><b>Be careful:</b> changing your diet or stopping formula without your metabolic team can raise Phe quickly. Don't start any supplement without checking its phenylalanine content first.</p>
-</section>
-
-<!-- ========== SUPPORT GROUPS ========== -->
-<!-- CURECHECKER:SUPPORT-GROUPS (links checked Oct 2, 2026; only add groups whose link you have verified) -->
-<section id="support-groups">
-  <div class="sec-head">
-    <h2>Support groups &amp; communities</h2>
-    <p>Living with PKU means planning every meal. These groups connect patients, parents and adults with people who understand.</p>
-  </div>
-  <div class="groups">
-    <article class="group">
-      <div class="top"><h3>National PKU Alliance</h3><span class="pill p-good">Peer support</span></div>
-      <div class="who">Adults with PKU · caregivers · U.S.</div>
-      <p>Monthly "Community Call" peer groups for caregivers of children (ages 0–3, 3–12 and teens), adults 18+, and adults 40+.</p>
-      <a class="join" href="https://www.npkua.org/Community" target="_blank" rel="noopener">Join a call ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>NPKUA support</h3><span class="pill p-good">Support</span></div>
-      <div class="who">Patients · families</div>
-      <p>The National PKU Alliance's support hub, with education, advocacy and ways to connect locally.</p>
-      <a class="join" href="https://www.npkua.org/support/" target="_blank" rel="noopener">Get support ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>NSPKU (UK)</h3><span class="pill p-blue">Support</span></div>
-      <div class="who">Patients · families · UK</div>
-      <p>The National Society for Phenylketonuria, the UK charity supporting people and families living with PKU.</p>
-      <a class="join" href="https://nspku.org/" target="_blank" rel="noopener">Get support ↗</a>
-    </article>
-    <article class="group">
-      <div class="top"><h3>PKU groups on Facebook</h3><span class="pill p-sig">Facebook</span></div>
-      <div class="who">Search results</div>
-      <p>Many parent, adult and recipe-sharing groups. This link searches Facebook (a login is required).</p>
-      <a class="join" href="https://www.facebook.com/search/groups/?q=PKU%20phenylketonuria%20support" target="_blank" rel="noopener">Search Facebook ↗</a>
-    </article>
-  </div>
-  <p class="caution"><b>Before you join:</b> support groups share experiences, not medical advice. Check anything about diet or treatment with your metabolic team. Think about your privacy, and never share passwords or financial details. Cure Checker isn't affiliated with these groups.</p>
 </section>
 
 <!-- ========== SOURCES ========== -->
@@ -492,6 +498,7 @@
 <script src="assets/curechecker.js"></script>
 <script src="assets/donate.js"></script>
 <script src="assets/newsletter.js"></script>
+<script src="assets/layout.js"></script>
 
 </body>
 </html>

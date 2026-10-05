@@ -56,3 +56,10 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 ## Daily refresh markers
 `<!-- CURECHECKER:DATE -->`, `HEADLINE`, `STUDIES` and `WORLD-APPROVALS` comments mark the blocks that get updated each morning, on every report page.
 - Expert care centers list: leave it alone during the daily refresh except to fix a dead link, remove a facility whose designation ended, or add a newly designated center, always with a source read that day.
+
+## Page layout (reports)
+- Section order on every report is: today strip, lead h1, sticky section menu, #verdict, #studies (the email signup box is moved to sit right after it by assets/layout.js), #treatments, #natural, #care (the expert-care `.centers` list), #support-groups, #world (approvals, abroad, timeline; keeps data-condition), #cause, #registries (titled 'Find a clinical trial'; the live recruiting-trials box with ids ct-status, ct-bars, ct-abroad, ct-more comes first), #sources.
+- assets/layout.js folds long lists in the browser: the newest 5 studies stay visible and older ones sit behind 'Show N older studies'; registry panels and sources are folded away. Keep editing plain flat lists in the HTML (one `.study` per entry, newest first; sources inside `.sources`); never hand-wrap anything in <details>.
+- The expert-care list now lives in #care, not at the end of #treatments, so the daily refresh edits it there.
+- For a new disease, copy a current report such as prader-willi.html, which already has this order and the layout.js script tag; the section order in the 'Adding a disease' list above is superseded by this section.
+- tools/relayout.js converts an old-order page and can be ignored otherwise.
