@@ -4,7 +4,7 @@
 window.CURECHECKER_DONATE = {
   venmo: "CureChecker",    // your Venmo username, without the @     e.g. "Cure-Checker"
   cashapp: "CureChecker",  // your Cash App $Cashtag, without the $  e.g. "CureChecker"
-  paypal: ""    // your PayPal.Me name                     e.g. "CureChecker"  (from paypal.me/CureChecker)
+  paypal: "https://www.paypal.com/donate/?hosted_button_id=77R7GZRNQ9LJY"    // your PayPal.Me name (e.g. "CureChecker"), or a full PayPal donate link
 };
 // ─────────────────────────────────────────────────────────────────────────
 
@@ -19,10 +19,13 @@ window.CURECHECKER_DONATE = {
   var c=window.CURECHECKER_DONATE||{};
   function clean(v,strip){return String(v||'').trim().replace(strip,'')}
   var venmo=clean(c.venmo,/^@/), cash=clean(c.cashapp,/^\$/), paypal=clean(c.paypal,/^(https?:\/\/)?(www\.)?paypal\.me\//i);
+  var paypalFull=/^https:\/\/www\.paypal\.com\/donate\//i.test(String(c.paypal||'').trim());
   var services=[
     {key:'venmo',  name:'Venmo',    handle:venmo?'@'+venmo:'', url:venmo?'https://venmo.com/u/'+encodeURIComponent(venmo):''},
     {key:'cashapp',name:'Cash App', handle:cash?'$'+cash:'',   url:cash?'https://cash.app/$'+encodeURIComponent(cash):''},
-    {key:'paypal', name:'PayPal',   handle:paypal?'paypal.me/'+paypal:'', url:paypal?'https://www.paypal.me/'+encodeURIComponent(paypal):''}
+    paypalFull
+      ? {key:'paypal', name:'PayPal', handle:'Donate', url:String(c.paypal).trim()}
+      : {key:'paypal', name:'PayPal', handle:paypal?'paypal.me/'+paypal:'', url:paypal?'https://www.paypal.me/'+encodeURIComponent(paypal):''}
   ];
   function esc(s){return String(s).replace(/[&<>"]/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]})}
   if(box){
