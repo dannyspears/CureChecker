@@ -6,7 +6,7 @@
   // Disease pickers: any <select data-disease-picker> lists every disease and jumps to it
   document.querySelectorAll('select[data-disease-picker]').forEach(function(sel){
     var current=document.body.getAttribute('data-disease')||'';
-    sel.innerHTML='<option value="">'+esc(sel.getAttribute('data-placeholder')||'Choose a disease…')+'</option>'+
+    sel.innerHTML='<option value="">'+esc(sel.getAttribute('data-placeholder')||'Choose a condition/disease…')+'</option>'+
       DISEASES.slice().sort(function(a,b){return a.name.localeCompare(b.name)}).map(function(d){
         return '<option value="'+esc(d.page)+'"'+(d.slug===current?' selected':'')+'>'+esc(d.name)+'</option>';
       }).join('');
@@ -33,7 +33,7 @@
       if(more){more.hidden=ranked.length<=TOP;more.textContent=showAll?'Show top '+TOP+' only':'Show all '+ranked.length+' reports';}
       if(note)note.textContent=haveCounts?'Ranked by visits to each report.':(ranked.length>TOP?'Showing '+TOP+' of '+ranked.length+'.':'');
     }
-    if(count)count.textContent=DISEASES.length+(DISEASES.length===1?' disease':' diseases');
+    if(count)count.textContent=DISEASES.length+(DISEASES.length===1?' condition/disease':' conditions/diseases');
     if(more)more.addEventListener('click',function(){showAll=!showAll;renderTiles()});
     renderTiles();
     // Visit counts from GoatCounter's public counter (needs "Allow adding visitor counts" enabled in GoatCounter settings)

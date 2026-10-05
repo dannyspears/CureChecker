@@ -1,6 +1,6 @@
-// The list of disease reports on Cure Checker.
-// To add a disease: create its page (copy an existing report), then add one entry here.
-// The landing page tiles and every "Switch disease" drop-down are built from this list.
+// The list of condition/disease reports on Cure Checker.
+// To add a condition/disease: create its page (copy an existing report), then add one entry here.
+// The landing page tiles and every "Switch condition/disease" drop-down are built from this list.
 //
 // Fields used by the "Every registry, checked" section on each report:
 //   search  - plain search term for registries (EU CTIS, ISRCTN, WHO ICTRP, Europe PMC, OpenMD).
@@ -20,7 +20,8 @@ window.CURECHECKER_DISEASES = [
     search: "amyotrophic lateral sclerosis",
     pubmed: "\"amyotrophic lateral sclerosis\"[ti] OR \"motor neuron disease\"[ti]",
     drugs: ["riluzole", "edaravone", "tofersen"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "osteosarcoma",
@@ -33,7 +34,8 @@ window.CURECHECKER_DISEASES = [
     search: "osteosarcoma",
     pubmed: "osteosarcoma[ti]",
     drugs: ["methotrexate", "doxorubicin", "cisplatin", "regorafenib", "cabozantinib", "mifamurtide"],
-    cancer: true
+    cancer: true,
+    cadence: "daily"
   },
   {
     slug: "parkinsons",
@@ -46,7 +48,8 @@ window.CURECHECKER_DISEASES = [
     search: "parkinson",
     pubmed: "parkinson*[ti]",
     drugs: ["levodopa", "foslevodopa", "istradefylline", "tavapadon", "apomorphine"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "alzheimers",
@@ -59,7 +62,8 @@ window.CURECHECKER_DISEASES = [
     search: "alzheimer",
     pubmed: "alzheimer*[ti]",
     drugs: ["donepezil", "memantine", "lecanemab", "donanemab", "brexpiprazole"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "multiple-sclerosis",
@@ -72,7 +76,8 @@ window.CURECHECKER_DISEASES = [
     search: "multiple sclerosis",
     pubmed: "\"multiple sclerosis\"[ti]",
     drugs: ["interferon beta", "ocrelizumab", "fingolimod", "cladribine", "tolebrutinib", "fenebrutinib"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "cystic-fibrosis",
@@ -85,7 +90,8 @@ window.CURECHECKER_DISEASES = [
     search: "cystic fibrosis",
     pubmed: "\"cystic fibrosis\"[ti]",
     drugs: ["ivacaftor", "elexacaftor", "vanzacaftor", "dornase", "tobramycin"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "huntingtons",
@@ -98,7 +104,8 @@ window.CURECHECKER_DISEASES = [
     search: "huntington",
     pubmed: "huntington*[ti]",
     drugs: ["tetrabenazine", "deutetrabenazine", "valbenazine"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "glioblastoma",
@@ -111,7 +118,8 @@ window.CURECHECKER_DISEASES = [
     search: "glioblastoma",
     pubmed: "glioblastoma[ti]",
     drugs: ["temozolomide", "lomustine", "bevacizumab"],
-    cancer: true
+    cancer: true,
+    cadence: "daily"
   },
   {
     slug: "cjd",
@@ -124,7 +132,8 @@ window.CURECHECKER_DISEASES = [
     search: "creutzfeldt",
     pubmed: "creutzfeldt*[ti] OR \"prion disease\"[ti]",
     drugs: ["quinacrine", "doxycycline"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "fop",
@@ -137,7 +146,8 @@ window.CURECHECKER_DISEASES = [
     search: "fibrodysplasia ossificans progressiva",
     pubmed: "\"fibrodysplasia ossificans progressiva\"[ti]",
     drugs: ["palovarotene", "garetosmab", "zilurgisertib"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "copd",
@@ -150,7 +160,8 @@ window.CURECHECKER_DISEASES = [
     search: "chronic obstructive pulmonary disease",
     pubmed: "\"chronic obstructive pulmonary disease\"[ti] OR COPD[ti]",
     drugs: ["dupilumab", "mepolizumab", "ensifentrine", "tiotropium", "roflumilast"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "batten",
@@ -163,7 +174,8 @@ window.CURECHECKER_DISEASES = [
     search: "neuronal ceroid lipofuscinosis",
     pubmed: "CLN2[ti] OR \"Batten disease\"[ti] OR \"neuronal ceroid lipofuscinos*\"[ti]",
     drugs: ["cerliponase alfa", "miglustat"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "tay-sachs",
@@ -176,7 +188,8 @@ window.CURECHECKER_DISEASES = [
     search: "tay-sachs",
     pubmed: "tay-sachs[ti] OR \"GM2 gangliosidosis\"[ti] OR sandhoff[ti]",
     drugs: ["miglustat"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "pku",
@@ -189,7 +202,8 @@ window.CURECHECKER_DISEASES = [
     search: "phenylketonuria",
     pubmed: "phenylketonuria[ti] OR PKU[ti]",
     drugs: ["sapropterin", "sepiapterin", "pegvaliase"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "marfan",
@@ -202,7 +216,8 @@ window.CURECHECKER_DISEASES = [
     search: "marfan",
     pubmed: "marfan[ti]",
     drugs: ["losartan", "irbesartan", "atenolol"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "eds",
@@ -215,7 +230,8 @@ window.CURECHECKER_DISEASES = [
     search: "ehlers-danlos",
     pubmed: "\"Ehlers-Danlos\"[ti]",
     drugs: ["celiprolol"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "prader-willi",
@@ -228,7 +244,8 @@ window.CURECHECKER_DISEASES = [
     search: "prader-willi",
     pubmed: "\"Prader-Willi\"[ti]",
     drugs: ["diazoxide choline", "somatropin"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "duchenne",
@@ -241,7 +258,8 @@ window.CURECHECKER_DISEASES = [
     search: "duchenne",
     pubmed: "duchenne[ti]",
     drugs: ["deflazacort", "vamorolone", "givinostat", "delandistrogene moxeparvovec", "eteplirsen"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "type-1-diabetes",
@@ -254,7 +272,8 @@ window.CURECHECKER_DISEASES = [
     search: "type 1 diabetes",
     pubmed: "\"type 1 diabetes\"[ti]",
     drugs: ["teplizumab", "insulin", "pramlintide"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "pancreatic-cancer",
@@ -267,7 +286,8 @@ window.CURECHECKER_DISEASES = [
     search: "pancreatic cancer",
     pubmed: "\"pancreatic cancer\"[ti] OR \"pancreatic ductal adenocarcinoma\"[ti]",
     drugs: ["daraxonrasib", "gemcitabine", "olaparib", "irinotecan liposome"],
-    cancer: true
+    cancer: true,
+    cadence: "daily"
   },
   {
     slug: "ftd",
@@ -280,7 +300,8 @@ window.CURECHECKER_DISEASES = [
     search: "frontotemporal",
     pubmed: "frontotemporal[ti]",
     drugs: ["latozinemab"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "lupus",
@@ -293,7 +314,8 @@ window.CURECHECKER_DISEASES = [
     search: "lupus",
     pubmed: "lupus[ti]",
     drugs: ["belimumab", "anifrolumab", "voclosporin", "hydroxychloroquine"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "ipf",
@@ -306,7 +328,8 @@ window.CURECHECKER_DISEASES = [
     search: "pulmonary fibrosis",
     pubmed: "\"idiopathic pulmonary fibrosis\"[ti] OR \"pulmonary fibrosis\"[ti]",
     drugs: ["nintedanib", "pirfenidone", "nerandomilast"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "hiv",
@@ -319,7 +342,8 @@ window.CURECHECKER_DISEASES = [
     search: "HIV-1",
     pubmed: "\"HIV\"[ti] OR \"HIV-1\"[ti]",
     drugs: ["lenacapavir", "cabotegravir", "dolutegravir"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "sma",
@@ -332,7 +356,8 @@ window.CURECHECKER_DISEASES = [
     search: "spinal muscular atrophy",
     pubmed: "\"spinal muscular atrophy\"[ti]",
     drugs: ["nusinersen", "risdiplam", "onasemnogene abeparvovec"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "crohns",
@@ -345,7 +370,8 @@ window.CURECHECKER_DISEASES = [
     search: "crohn",
     pubmed: "crohn*[ti]",
     drugs: ["mirikizumab", "guselkumab", "risankizumab", "ustekinumab", "infliximab", "adalimumab"],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "me-cfs",
@@ -358,7 +384,8 @@ window.CURECHECKER_DISEASES = [
     search: "chronic fatigue syndrome",
     pubmed: "\"myalgic encephalomyelitis\"[ti] OR \"chronic fatigue syndrome\"[ti] OR \"ME/CFS\"[ti]",
     drugs: [],
-    cancer: false
+    cancer: false,
+    cadence: "daily"
   },
   {
     slug: "male-pattern-baldness",
@@ -371,6 +398,7 @@ window.CURECHECKER_DISEASES = [
     search: "androgenetic alopecia",
     pubmed: "\"androgenetic alopecia\"[ti] OR \"male pattern hair loss\"[ti] OR \"pattern hair loss\"[ti]",
     drugs: ["finasteride", "dutasteride", "minoxidil", "clascoterone"],
-    cancer: false
+    cancer: false,
+    cadence: "weekly"
   }
 ];

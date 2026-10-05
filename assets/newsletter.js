@@ -19,7 +19,7 @@ window.CURECHECKER_NEWSLETTER = {
   if(!footer||document.getElementById('newsletter'))return;
   function esc(s){return String(s).replace(/[&<>"]/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]})}
   var current=document.body.getAttribute('data-disease')||'';
-  var opts='<option value="all">All diseases</option>'+list.map(function(d){
+  var opts='<option value="all">All conditions/diseases</option>'+list.map(function(d){
     return '<option value="'+esc(d.slug)+'"'+(d.slug===current?' selected':'')+'>'+esc(d.name)+'</option>';
   }).join('');
   var on=!!user;
@@ -29,10 +29,10 @@ window.CURECHECKER_NEWSLETTER = {
   sec.setAttribute('aria-label','Email updates');
   sec.innerHTML=
     '<div><h2>Get updates by email</h2>'+
-    '<p>Pick a disease and we\'ll email you when its report has important news. Free, and you can unsubscribe at any time.</p></div>'+
+    '<p>Pick a condition/disease and we\'ll email you when its report has important news. Free, and you can unsubscribe at any time.</p></div>'+
     '<form class="nl-form" method="post" target="popupwindow"'+
       (on?' action="https://buttondown.com/api/emails/embed-subscribe/'+user+'"':'')+'>'+
-      '<label for="nl-disease">Disease</label>'+
+      '<label for="nl-disease">Condition/disease</label>'+
       '<select id="nl-disease" name="tag" '+(on?'':'disabled')+'>'+opts+'</select>'+
       '<label for="nl-email">Email</label>'+
       '<input id="nl-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required '+(on?'':'disabled')+'>'+

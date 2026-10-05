@@ -17,9 +17,9 @@ window.CURECHECKER_CONTACT = {
   box.innerHTML=
     '<form class="contact-form" novalidate>'+
     '<label for="ct-topic">What is this about?</label>'+
-    '<select id="ct-topic" name="topic"><option>Report an error or out-of-date information</option><option>Suggest a disease to add</option><option>Share a study or source</option><option>Something else</option></select>'+
-    '<label for="ct-disease">Which disease? (optional)</label>'+
-    '<select id="ct-disease" name="disease"><option value="">Not about one disease</option>'+diseases+'</select>'+
+    '<select id="ct-topic" name="topic"><option>Report an error or out-of-date information</option><option>Suggest a condition/disease to add</option><option>Share a study or source</option><option>Something else</option></select>'+
+    '<label for="ct-disease">Which condition/disease? (optional)</label>'+
+    '<select id="ct-disease" name="disease"><option value="">Not about one condition/disease</option>'+diseases+'</select>'+
     '<label for="ct-msg">Your message</label>'+
     '<textarea id="ct-msg" name="message" rows="5" required placeholder="Tell us what to fix or add. A link to your source helps."></textarea>'+
     '<label for="ct-email">Your email (optional, only if you want a reply)</label>'+

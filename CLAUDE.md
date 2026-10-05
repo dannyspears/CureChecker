@@ -1,19 +1,19 @@
 # Cure Checker
 
-Static site: a landing page (`index.html`) plus one report page per disease (`als.html`, `osteosarcoma.html`, ...).
+Static site: a landing page (`index.html`) plus one report page per condition/disease (`als.html`, `osteosarcoma.html`, ...).
 No build step. Preview locally with the `site` config in `.claude/launch.json` (serves on http://localhost:5500).
 
 ## Files
 - `about.html`: the About us page (purpose and mission; static, edit by hand).
 - `assets/contact.js`: the Contact us form on about.html. The owner pastes a Formspree-style form address into the `endpoint` line at the top; empty means the form shows 'Opening soon'. Never edit or invent that address.
 - `index.html`: landing page. Tiles and the drop-down are generated from `assets/diseases.js`. Don't hand-edit tiles.
-- `assets/diseases.js`: the one list of diseases (slug, name, page, category, summary, updated).
+- `assets/diseases.js`: the one list of conditions/diseases (slug, name, page, category, summary, updated, cadence).
 - `assets/curechecker.css`: shared styles for every page.
-- `assets/curechecker.js`: shared behavior: disease drop-downs, landing tiles, study filters, live ClinicalTrials.gov panel.
-- `<slug>.html`: one report per disease.
+- `assets/curechecker.js`: shared behavior: condition/disease drop-downs, landing tiles, study filters, live ClinicalTrials.gov panel.
+- `<slug>.html`: one report per condition/disease.
 
-## Adding a disease (weekly)
-1. Research the disease to the same depth as the existing reports. Every claim needs a source link, and dates must be exact where the format shows them. Mark anything unverified as "—" or leave it out. Never guess.
+## Adding a condition/disease (weekly)
+1. Research the condition/disease to the same depth as the existing reports. Every claim needs a source link, and dates must be exact where the format shows them. Mark anything unverified as "—" or leave it out. Never guess.
 2. Copy `osteosarcoma.html` to `<slug>.html` and keep the exact section order and markup:
    - Most recent cure information (`#verdict`): verdict paragraph + 4 numbered points
    - What causes it (`#cause`): 4-step pathway + 3 dated "clues"
@@ -25,13 +25,13 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
    - Support groups & communities (`#support-groups`, marked `CURECHECKER:SUPPORT-GROUPS`): cards for organization-run groups, forums/online communities, the disease's Reddit community and a Facebook group search link, plus the "Before you join" caution. Only add a group after opening its link and confirming it's real and current; remove groups whose link has died. Note disease-specific safety rules (e.g. CF cross-infection: online only).
    - Sources (`#sources`): every source the report relies on, grouped by section (title, publisher, date where known). Any claim added later gets its source added here too. If a claim has no source, say so in the `.src-note` line rather than inventing one.
 3. Set `<body data-disease="<slug>" data-palette="<palette>">`, the `<title>` ("Cure Checker: <Name>"), the masthead tag, and the headline strip.
-4. Give every disease its own color palette, different from the landing page's light blue and from every other disease. Palettes are the `[data-palette="..."]` blocks at the end of `assets/curechecker.css` (light + dark variants; small text on `--signal` needs at least 4.5:1 contrast). Add a new block when none is free. Prefer the disease's awareness-ribbon color when it fits. In use: violet = ALS, gold = osteosarcoma (sarcoma's ribbon is yellow), teal = Parkinson's, plum = Alzheimer's (purple ribbon), orange = multiple sclerosis (orange ribbon), rose = cystic fibrosis ("65 Roses"), indigo = Huntington's (blue/purple), slate = glioblastoma (grey brain-cancer ribbon), forest = CJD, olive = FOP, cyan = COPD (its orange ribbon was already taken by MS), coral = Batten disease, sage = Tay-Sachs, lime = PKU, crimson = Marfan, umber = Ehlers-Danlos (zebra-brown), navy = Prader-Willi, brick = Duchenne, mint = type 1 diabetes, lavender = pancreatic cancer (purple ribbon; violet and plum were taken), bronze = FTD, magenta = lupus (purple ribbon), graphite = IPF, wine = HIV (red ribbon taken by crimson/brick), taupe = SMA, mauve = Crohn's (purple ribbon taken), heather = ME/CFS (blue ribbon; navy taken), sand = male pattern baldness (no ribbon color; a khaki tone unused elsewhere).
+4. Give every condition/disease its own color palette, different from the landing page's light blue and from every other condition/disease. Palettes are the `[data-palette="..."]` blocks at the end of `assets/curechecker.css` (light + dark variants; small text on `--signal` needs at least 4.5:1 contrast). Add a new block when none is free. Prefer the disease's awareness-ribbon color when it fits. In use: violet = ALS, gold = osteosarcoma (sarcoma's ribbon is yellow), teal = Parkinson's, plum = Alzheimer's (purple ribbon), orange = multiple sclerosis (orange ribbon), rose = cystic fibrosis ("65 Roses"), indigo = Huntington's (blue/purple), slate = glioblastoma (grey brain-cancer ribbon), forest = CJD, olive = FOP, cyan = COPD (its orange ribbon was already taken by MS), coral = Batten disease, sage = Tay-Sachs, lime = PKU, crimson = Marfan, umber = Ehlers-Danlos (zebra-brown), navy = Prader-Willi, brick = Duchenne, mint = type 1 diabetes, lavender = pancreatic cancer (purple ribbon; violet and plum were taken), bronze = FTD, magenta = lupus (purple ribbon), graphite = IPF, wine = HIV (red ribbon taken by crimson/brick), taupe = SMA, mauve = Crohn's (purple ribbon taken), heather = ME/CFS (blue ribbon; navy taken), sand = male pattern baldness (no ribbon color; a khaki tone unused elsewhere).
 - When a news source and Drugs@FDA disagree on an FDA approval date, use the Drugs@FDA date.
-5. Add one entry to `assets/diseases.js`, including `palette`. The landing tile takes the same color.
+5. Add one entry to `assets/diseases.js`, including `palette` and `cadence` (see Update cadence). The landing tile takes the same color.
 6. Preview the landing page, the drop-down, and the new report (including the live trial panel) before committing.
 
 ## Registries & databases ("Every registry, checked" section, `#registries`)
-- The section's markup is identical on every report. `assets/curechecker.js` fills it using the disease's `search`, `pubmed`, `drugs` and `cancer` fields in `assets/diseases.js`. Set these for every new disease.
+- The section's markup is identical on every report. `assets/curechecker.js` fills it using the condition/disease's `search`, `pubmed`, `drugs` and `cancer` fields in `assets/diseases.js`. Set these for every new disease.
 - Live in the browser: ClinicalTrials.gov, PubMed (NCBI E-utilities, ~3 requests/sec limit, so calls are sequential), Europe PMC (preprints), ISRCTN (XML API), Drugs@FDA via openFDA (search generic name + active ingredient).
 - Snapshot: EU CTIS blocks browser requests, so `tools/update-registries.ps1` writes `assets/registry-snapshot.js`. Run it at least daily (part of the morning refresh) and after adding a disease.
 - Links only (no usable API or bot-blocked): WHO ICTRP, Cochrane CENTRAL, EMA, OpenMD, NCI (cancers).
@@ -42,7 +42,7 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - The landing page's "Most popular reports" shows the 6 most-visited reports (from GoatCounter's public counter), with a "Show all" button for the rest.
 
 ## Donations (landing page)
-- Every disease page starts with a slim `<div class="donate-bar">` (first thing inside `.wrap`) and loads `assets/donate.js` after `curechecker.js`. Copy both into new disease pages.
+- Every condition/disease page starts with a slim `<div class="donate-bar">` (first thing inside `.wrap`) and loads `assets/donate.js` after `curechecker.js`. Copy both into new disease pages.
 - The owner sets their Venmo / Cash App / PayPal handles at the top of `assets/donate.js`. Never edit, add or change donation handles or links unless the owner explicitly asks in a direct request.
 
 ## Pathway diagrams (the small SVGs in "What causes")
@@ -61,5 +61,13 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - Section order on every report is: today strip, lead h1, sticky section menu, #verdict, #studies (the email signup box is moved to sit right after it by assets/layout.js), #treatments, #natural, #care (the expert-care `.centers` list), #support-groups, #world (approvals, abroad, timeline; keeps data-condition), #cause, #registries (titled 'Find a clinical trial'; the live recruiting-trials box with ids ct-status, ct-bars, ct-abroad, ct-more comes first), #sources.
 - assets/layout.js folds long lists in the browser: the newest 5 studies stay visible and older ones sit behind 'Show N older studies'; registry panels and sources are folded away. Keep editing plain flat lists in the HTML (one `.study` per entry, newest first; sources inside `.sources`); never hand-wrap anything in <details>.
 - The expert-care list now lives in #care, not at the end of #treatments, so the daily refresh edits it there.
-- For a new disease, copy a current report such as prader-willi.html, which already has this order and the layout.js script tag; the section order in the 'Adding a disease' list above is superseded by this section.
+- For a new condition/disease, copy a current report such as prader-willi.html, which already has this order and the layout.js script tag; the section order in the 'Adding a condition/disease' list above is superseded by this section.
 - tools/relayout.js converts an old-order page and can be ignored otherwise.
+
+## Update cadence
+- Each entry in `assets/diseases.js` has `cadence`: `daily` (incurable diseases) or `weekly` (conditions).
+- Decide when adding a new report: an incurable disease is `daily`; a condition that is not an incurable disease (cosmetic, quality-of-life, or otherwise manageable/curable) is `weekly`. If unsure, ask the owner by noting it in the final message and default to `daily`.
+- The daily refresh updates every `daily` report every day. It updates `weekly` reports only on Mondays (Eastern time); on other days it must not touch them at all (leave their edition date, `updated` field and content alone).
+- Weekly pages show `Updated weekly · Mondays` in the masthead instead of `Updated daily`.
+- index.html's edition date still updates every day.
+- This overrides any earlier line saying every report is updated every day.
