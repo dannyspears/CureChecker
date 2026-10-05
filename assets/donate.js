@@ -3,7 +3,7 @@
 // Leave a value empty ("") and its button shows "Coming soon" instead of a link.
 window.CURECHECKER_DONATE = {
   venmo: "CureChecker",    // your Venmo username, without the @     e.g. "Cure-Checker"
-  cashapp: "",  // your Cash App $Cashtag, without the $  e.g. "CureChecker"
+  cashapp: "CureChecker",  // your Cash App $Cashtag, without the $  e.g. "CureChecker"
   paypal: ""    // your PayPal.Me name                     e.g. "CureChecker"  (from paypal.me/CureChecker)
 };
 // ─────────────────────────────────────────────────────────────────────────
