@@ -66,6 +66,8 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - The expert-care list now lives in #care, not at the end of #treatments, so the daily refresh edits it there.
 - For a new condition/disease, copy a current report such as prader-willi.html, which already has this order and the layout.js script tag; the section order in the 'Adding a condition/disease' list above is superseded by this section.
 - tools/relayout.js converts an old-order page and can be ignored otherwise.
+- The section order and the collapsed drop-downs are driven by `data-order` on the `<body>` tag. It has the same value on every report page and lists section ids in display order, with `newsletter` for the email box. All sections start collapsed, and assets/layout.js shows their titles with each word capitalized. Every new disease page must copy the `data-order` attribute from als.html. The order is: Most Recent Cure Information (verdict), What Causes (cause), Treatments (treatments), Latest Studies (studies), Where To Get Care (care), How Other Countries Treat It (world), Natural Remedies (natural), Find A Clinical Trial (registries), Financial Help (financial-help), Support Groups (support-groups), Email signup (newsletter), Sources (sources). This supersedes the section order listed above.
+- The daily refresh must keep editing the plain sections in the HTML. Never hand-wrap sections in details; layout.js does that in the browser.
 
 ## Update cadence
 - Each entry in `assets/diseases.js` has `cadence`: `daily` (incurable diseases) or `weekly` (conditions).
