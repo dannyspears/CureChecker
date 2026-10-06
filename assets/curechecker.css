@@ -522,7 +522,10 @@ details.fold>.sec-head{border-top:0;padding-top:0}
 details[open].fold>summary{margin-bottom:6px}
 
 /* AI missing-link hypothesis (after the verdict box): dashed, amber-tinted panel so it reads as speculation, not the conclusion */
-.missing-link{margin-top:32px;border:2px dashed var(--amber);border-radius:14px;background:color-mix(in srgb,var(--amber-soft) 55%,var(--panel));color:var(--ink);padding:clamp(18px,3.5vw,32px);max-width:100%;overflow-wrap:anywhere}
+.missing-link{margin-top:32px;border:3px dashed #22C55E;border-radius:14px;background:color-mix(in srgb,var(--amber-soft) 55%,var(--panel));color:var(--ink);padding:clamp(18px,3.5vw,32px);max-width:100%;overflow-wrap:anywhere}
+.missing-link>h3{text-transform:uppercase}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .missing-link{border-color:#4ADE80}}
+:root[data-theme="dark"] .missing-link{border-color:#4ADE80}
 .missing-link .ml-badge{margin-bottom:12px}
 .missing-link .ml-badge span{display:inline-block;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:var(--panel);border:1px solid var(--amber);border-radius:999px;padding:3px 10px}
 .missing-link .ml-notice{margin-top:14px;border:1px solid var(--warn)}
