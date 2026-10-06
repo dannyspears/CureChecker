@@ -502,8 +502,8 @@ details[open]>summary{margin-bottom:14px}
 .blog-card h2{margin:6px 0 8px;font-size:23px}
 .blog-card p{margin:0}
 
-/* Newsroom button in the landing masthead */
-.news-btn{display:inline-flex;flex-direction:column;align-items:center;gap:2px;padding:10px 22px;border-radius:999px;background:var(--signal);color:var(--paper);font-family:var(--f-display);font-stretch:90%;font-size:20px;font-weight:800;text-decoration:none;transition:transform .15s,filter .15s}
-.news-btn small{font-family:var(--f-mono);font-size:11px;font-weight:500;opacity:.92}
-.news-btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
-.news-btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+/* Newsroom link in the landing masthead: small outlined tag with a live dot */
+.news-btn{display:inline-flex;align-items:center;gap:7px;padding:5px 12px;border:1.5px solid var(--ink);border-radius:6px;background:transparent;color:var(--ink);font-family:var(--f-mono);font-size:12.5px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;transition:background .15s,color .15s}
+.news-btn i{width:8px;height:8px;border-radius:50%;background:var(--signal)}
+.news-btn:hover{background:var(--ink);color:var(--paper)}
+.news-btn:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
