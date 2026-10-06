@@ -4,7 +4,7 @@
 // Create a free account at buttondown.com, then put your Buttondown username here.
 // Leave it empty ("") and the box shows "Opening soon" instead of a working form.
 window.CURECHECKER_NEWSLETTER = {
-  buttondown: ""   // your Buttondown username   e.g. "curechecker"
+  buttondown: "CureChecker"   // your Buttondown username   e.g. "curechecker"
 };
 // ─────────────────────────────────────────────────────────────────────────
 
