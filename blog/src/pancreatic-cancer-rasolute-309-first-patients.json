@@ -1,0 +1,59 @@
+{
+  "slug": "pancreatic-cancer-rasolute-309-first-patients",
+  "title": "Pancreatic Cancer: First Patients Treated in RASolute 309 Phase 3",
+  "description": "Revolution Medicines began treating patients in RASolute 309, a Phase 3 trial of daraxonrasib plus zoldonrasib as first treatment for RAS G12D pancreatic cancer",
+  "date": "2026-10-06",
+  "disease": "pancreatic-cancer",
+  "keywords": [
+    "pancreatic cancer",
+    "daraxonrasib",
+    "zoldonrasib",
+    "RASolute 309",
+    "RAS G12D",
+    "Phase 3 trial"
+  ],
+  "summary": "Revolution Medicines announced on October 5, 2026 that it has begun treating patients in RASolute 309, a global Phase 3 trial comparing daraxonrasib plus zoldonrasib with standard chemotherapy as first treatment for metastatic pancreatic cancer with a RAS G12D change. No results exist yet, and the combination is not approved. This is a trial start, not a treatment result.",
+  "sections": [
+    {
+      "h": "What was announced",
+      "p": [
+        "Revolution Medicines said it has begun treating patients in RASolute 309 (NCT07805954), a global, randomized, open-label Phase 3 trial. It enrolls adults with metastatic pancreatic adenocarcinoma that carries the RAS G12D change and who have not been treated before."
+      ]
+    },
+    {
+      "h": "How the trial is set up",
+      "p": [
+        "One group gets daraxonrasib (brand name Rasonque) plus zoldonrasib. The other gets gemcitabine plus nab-paclitaxel, a standard chemotherapy pairing. The main goals are progression-free survival (time without the cancer growing) and overall survival."
+      ]
+    },
+    {
+      "h": "Approval status",
+      "p": [
+        "According to the company, daraxonrasib is FDA-approved for previously treated metastatic pancreatic cancer. Zoldonrasib is still investigational, and the combination as a first treatment is only under study. The company calls RASolute 309 the first Phase 3 study of a RAS(ON) inhibitor doublet."
+      ]
+    },
+    {
+      "h": "Why it matters",
+      "p": [
+        "The company says RAS G12D occurs in about 40% of pancreatic cancers and that five-year survival for metastatic disease is about 3%. A trial start is a step toward an answer, not an answer: no efficacy results from RASolute 309 have been reported, and the announcement is a company release."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a new pancreatic cancer treatment available from this trial?",
+      "a": "Not from this trial. The combination is under study and has no results yet. People interested in trials can ask their care team about eligibility."
+    },
+    {
+      "q": "What is RAS G12D pancreatic cancer?",
+      "a": "It is pancreatic cancer whose tumor cells carry a specific change in the RAS gene. Revolution Medicines says about 40% of pancreatic cancers have it."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Revolution Medicines begins treating patients in Phase 3 RASolute 309 trial",
+      "publisher": "Revolution Medicines via GlobeNewswire, October 5, 2026",
+      "url": "https://www.globenewswire.com/news-release/2026/10/05/3374500/0/en/revolution-medicines-begins-treating-patients-in-phase-3-rasolute-309-trial-evaluating-rasonque-daraxonrasib-plus-zoldonrasib-as-first-line-treatment-for-metastatic-ras-g12d-pancre.html"
+    }
+  ]
+}

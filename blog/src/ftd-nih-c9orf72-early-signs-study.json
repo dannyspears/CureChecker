@@ -1,0 +1,60 @@
+{
+  "slug": "ftd-nih-c9orf72-early-signs-study",
+  "title": "FTD and ALS: $26 Million NIH Study of C9orf72 Carriers Planned",
+  "description": "A $26M NIH-funded Penn-led study will follow 330 C9orf72 carriers to find early signs of FTD and ALS. Enrollment starts in December. Not a treatment trial.",
+  "date": "2026-10-06",
+  "disease": "ftd",
+  "keywords": [
+    "frontotemporal dementia",
+    "C9orf72",
+    "ALS",
+    "NIH study",
+    "biomarkers",
+    "prevention trials"
+  ],
+  "summary": "A $26 million NIH-funded study led by the University of Pennsylvania, with the University of Miami, will follow 330 people over 45 who carry a C9orf72 gene change. The aim is to find early warning signs of frontotemporal dementia and ALS. Enrollment starts in December 2026. It is not a treatment trial.",
+  "sections": [
+    {
+      "h": "What was announced",
+      "p": [
+        "The Philadelphia Inquirer reports that a $26 million project funded by the National Institutes of Health, led by the University of Pennsylvania with the University of Miami, will study people who carry the C9orf72 gene change."
+      ]
+    },
+    {
+      "h": "Who will take part",
+      "p": [
+        "The study will follow 330 genetic carriers over age 45 at 14 sites across the United States for five years. Enrollment begins in December 2026. Travel help is available for people who live far from a site, and the contact listed is C9Prevent@miami.edu."
+      ]
+    },
+    {
+      "h": "What will be measured",
+      "p": [
+        "Researchers will use cognitive and movement tests, MRI brain scans and body-fluid tests. They are looking at five candidate biomarkers, including changes in the volume of the thalamus, a brain region."
+      ]
+    },
+    {
+      "h": "Why it matters",
+      "p": [
+        "C9orf72 is the most common inherited cause of both ALS and FTD. Study co-lead Corey McMillan says the goal is reliable markers that show disease starting before symptoms, so future prevention trials can intervene early.",
+        "This is a natural-history study. It tests no drug, and no results exist yet."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is this a treatment trial for FTD or ALS?",
+      "a": "No. It follows carriers over time to find early signs and does not test a medicine."
+    },
+    {
+      "q": "Who can join the C9orf72 study?",
+      "a": "The study plans 330 carriers of the C9orf72 change who are over 45. Enrollment begins in December 2026; the listed contact is C9Prevent@miami.edu."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Penn-led $26 million NIH study of ALS and frontotemporal dementia gene carriers",
+      "publisher": "The Philadelphia Inquirer, October 5, 2026",
+      "url": "https://www.inquirer.com/health/als-frontotemporal-dementia-university-pennsylvania-new-research-20261005.html"
+    }
+  ]
+}
