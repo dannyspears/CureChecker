@@ -84,3 +84,8 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - Write the post only from the report and its linked sources. Open the source link and confirm every number and date before using it; company-reported results are said to be company-reported; early or one-patient results are never presented as proof. Never say a cure exists unless the report does. No treatment advice. Every post needs `sources`, a 160-character-or-less `description`, a `summary` ("In short"), 4 to 6 sections, 2 to 3 FAQ items phrased the way people search, and a plain title that names the disease and the news.
 - SEO is built in: canonical URL, Open Graph and Twitter tags, Article, FAQ and Breadcrumb JSON-LD, sitemap and a link to the disease report. Keep titles unique and under about 70 characters.
 - The post date is the Eastern date it is published. Posts are AI-written and not doctor-reviewed; the footer and post text say so, consistent with `terms.html`.
+
+## ALS financial help
+- als.html has an ALS-only `#financial-help` section, placed right before `#sources`, that lists only organizations dedicated to giving financial assistance (grants, direct aid, or paying specific costs) to people with ALS and their families. Its sources are under "Financial help" in #sources.
+- Never list crowdfunding sites or individual fundraisers, government programs, drug-manufacturer programs, or lenders.
+- The daily refresh leaves this section alone except to fix a dead link, remove an organization that closed or stopped giving aid, or add a newly verified qualifying organization, each with a source read that day.
