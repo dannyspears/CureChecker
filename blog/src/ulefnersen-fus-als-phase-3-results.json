@@ -1,0 +1,60 @@
+{
+  "slug": "ulefnersen-fus-als-phase-3-results",
+  "title": "Ulefnersen Wins a Phase 3 Trial in FUS-ALS: What the Results Mean",
+  "description": "Ulefnersen met its main goal in the Phase 3 FUSION trial for FUS-ALS (p = 0.0005). What was tested, what was reported, and what happens next.",
+  "date": "2026-10-05",
+  "disease": "als",
+  "keywords": ["ulefnersen", "FUS-ALS", "ALS clinical trial", "FUSION trial", "ALS gene therapy", "antisense ALS"],
+  "summary": "On September 22, 2026, Otsuka and Ionis announced that ulefnersen met the main goal of its Phase 3 FUSION trial in FUS-ALS, an inherited form of ALS. It is the first successful trial in this form of the disease. ALS still has no cure, and the results have not yet been published in a journal.",
+  "sections": [
+    {
+      "h": "What was announced",
+      "p": [
+        "Otsuka Pharmaceutical and Ionis Pharmaceuticals reported that ulefnersen showed a statistically significant benefit over placebo in the Phase 3 FUSION trial (P = .0005). The main measure combined three things: time to death or permanent ventilation, time to rescue treatment, and change on the ALSFRS-R scale, a standard questionnaire that tracks everyday function.",
+        "The randomized, double-blind part of the trial lasted 72 weeks and was followed by an open-label extension, in which everyone can receive the drug."
+      ]
+    },
+    {
+      "h": "What FUS-ALS is",
+      "p": [
+        "FUS-ALS is a genetic form of amyotrophic lateral sclerosis (ALS) caused by changes in the FUS gene. Ulefnersen belongs to a class of drugs called antisense medicines, which are designed to lower the production of a harmful protein. Tofersen (Qalsody), which is FDA approved for SOD1-ALS, uses the same general approach for a different gene."
+      ]
+    },
+    {
+      "h": "What else was reported",
+      "ul": [
+        "Secondary results were favorable, including lower blood levels of neurofilament light chain, a marker of nerve-cell damage, and better combined time-to-event outcomes.",
+        "Most adverse events were mild or moderate, and the companies describe the safety profile as favorable."
+      ]
+    },
+    {
+      "h": "What happens next",
+      "p": [
+        "The companies say they will review the results with the FDA and discuss faster regulatory routes with health authorities. They also plan to present detailed results at a medical meeting and submit them for peer-reviewed publication. Until that happens, the numbers come from a company announcement and have not been independently reviewed."
+      ]
+    },
+    {
+      "h": "Why it matters for people with ALS",
+      "p": [
+        "Only a small share of people with ALS have a known inherited cause, so this result applies to a limited group. It is still significant for the field: it is the first successful trial in FUS-ALS, and it adds support for the idea that treating the genetic cause of a form of ALS can work. Researchers are testing similar approaches for other ALS genes. Treatments for the most common, non-inherited forms of ALS remain a separate and unsolved challenge."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cure for ALS?",
+      "a": "No. ALS has no cure today. Ulefnersen is an investigational treatment for one genetic form, FUS-ALS, and has not been approved by the FDA."
+    },
+    {
+      "q": "Can people with FUS-ALS get ulefnersen now?",
+      "a": "It is not approved. The companies say they are discussing next steps with regulators and the trial's open-label extension continues. People with FUS-ALS should ask their neurologist about genetic testing and about trials or access programs."
+    },
+    {
+      "q": "What does p = 0.0005 mean?",
+      "a": "It means that a difference this large would be very unlikely to appear by chance if the drug had no effect. It does not say how large the benefit is for an individual person."
+    }
+  ],
+  "sources": [
+    { "title": "Ulefnersen meets primary end point in Phase 3 FUSION trial in FUS-ALS", "publisher": "NeurologyLive, September 2026", "url": "https://www.neurologylive.com/view/ulefnersen-meets-primary-end-point-phase-3-fusion-trial-fus-als" }
+  ]
+}
