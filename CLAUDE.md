@@ -62,7 +62,7 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - Expert care centers list: leave it alone during the daily refresh except to fix a dead link, remove a facility whose designation ended, or add a newly designated center, always with a source read that day.
 
 ## Page layout (reports)
-- Section order on every report is: today strip, lead h1, sticky section menu, #verdict, #studies (the email signup box is moved to sit right after it by assets/layout.js), #treatments, #natural, #care (the expert-care `.centers` list), #support-groups, #world (approvals, abroad, timeline; keeps data-condition), #cause, #registries (titled 'Find a clinical trial'; the live recruiting-trials box with ids ct-status, ct-bars, ct-abroad, ct-more comes first), #sources.
+- Section order on every report is: today strip, lead h1, sticky section menu, #verdict, #studies (the email signup box is moved to sit right after it by assets/layout.js), #treatments, #natural, #care (the expert-care `.centers` list), #support-groups, #world (approvals, abroad, timeline; keeps data-condition), #cause, #registries (titled 'Find a clinical trial'; the live recruiting-trials box with ids ct-status, ct-bars, ct-abroad, ct-more comes first), #financial-help (right before #sources), #sources.
 - assets/layout.js folds long lists in the browser: the newest 5 studies stay visible and older ones sit behind 'Show N older studies'; registry panels and sources are folded away. Keep editing plain flat lists in the HTML (one `.study` per entry, newest first; sources inside `.sources`); never hand-wrap anything in <details>.
 - The expert-care list now lives in #care, not at the end of #treatments, so the daily refresh edits it there.
 - For a new condition/disease, copy a current report such as prader-willi.html, which already has this order and the layout.js script tag; the section order in the 'Adding a condition/disease' list above is superseded by this section.
@@ -88,10 +88,13 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - SEO is built in: canonical URL, Open Graph and Twitter tags, Article, FAQ and Breadcrumb JSON-LD, sitemap and a link to the disease report. Keep titles unique and under about 70 characters.
 - The post date is the Eastern date it is published. Posts are AI-written and not doctor-reviewed; the footer and post text say so, consistent with `terms.html`.
 
-## ALS financial help
-- als.html has an ALS-only `#financial-help` section, placed right before `#sources`, that lists only organizations dedicated to giving financial assistance (grants, direct aid, or paying specific costs) to people with ALS and their families. Its sources are under "Financial help" in #sources.
-- Never list crowdfunding sites or individual fundraisers, government programs, drug-manufacturer programs, or lenders.
-- The daily refresh leaves this section alone except to fix a dead link, remove an organization that closed or stopped giving aid, or add a newly verified qualifying organization, each with a source read that day.
+## Financial help (every report)
+- Every report has a `<section id="financial-help">` placed right before `<section id="sources">`, copied from the markup on als.html: a TOC link `<a href="#financial-help">Financial help</a>` before the Sources link, `.groups` cards, a 'Before you apply' caution box, the same links also listed in #sources under a 'Financial help' group, and a `.src-note` sentence with the check date and any weaknesses.
+- Scope (set by the owner): list ONLY nonprofit/charitable organizations (or a company's charity foundation) dedicated to giving direct financial assistance (grants, direct aid, or paying specific costs such as bills, equipment, home changes, caregiving, treatment travel/lodging, copays) to people living with that condition and their families. List disease-specific groups and chapters first, then medical-cost charities (HealthWell, PAN Foundation, Patient Advocate Foundation, CancerCare, etc.) only if they currently list a fund for that exact condition.
+- NEVER link crowdfunding sites or fundraisers (GoFundMe etc.), government programs, insurers, drug-company assistance programs, loans, research-funding charities or generic hospital funds.
+- Accuracy over volume: open and read each entry's own page; describe only what it says; never promise help (say 'funds are limited, contact each organization'); include only real organizations (even 1-2); skip the section if none qualify (the male-pattern-baldness page may have none).
+- When adding a new disease, build this section as part of step 2 of 'Adding a condition/disease'.
+- Daily/weekly refresh: on each update of a report that has the section, re-open each listed link. Remove or fix an organization whose page is gone, whose program ended, or whose fund closed; update stated open/closed status; add genuinely new qualifying organizations found; update the check date in the `.src-note`. Never add crowdfunding links. Mark sites that block automated checks as unverified rather than guessing.
 
 ## Social sharing images
 - Shared links get their picture from Open Graph / Twitter tags. BASE is `https://www.curechecker.com` (the apex redirects to www).
