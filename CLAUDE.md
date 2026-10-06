@@ -91,3 +91,8 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - als.html has an ALS-only `#financial-help` section, placed right before `#sources`, that lists only organizations dedicated to giving financial assistance (grants, direct aid, or paying specific costs) to people with ALS and their families. Its sources are under "Financial help" in #sources.
 - Never list crowdfunding sites or individual fundraisers, government programs, drug-manufacturer programs, or lenders.
 - The daily refresh leaves this section alone except to fix a dead link, remove an organization that closed or stopped giving aid, or add a newly verified qualifying organization, each with a source read that day.
+
+## Social sharing images
+- Shared links get their picture from Open Graph / Twitter tags. BASE is `https://www.curechecker.com` (the apex redirects to www).
+- Every new disease page needs `share/<slug>.png` (1200x630, under 300 KB) and the og/twitter tags in its `<head>`, right after the meta description (copy them from an existing report and change title, description, url, image and alt). Generate the image with playwright the same way as the others: dark card (the palette's dark-mode `--paper` as background), `logo/cure-checker-logo-dark-bg.png`, the `name` from `assets/diseases.js`, the tagline 'Daily plain-language research on cures', 'curechecker.com', and the palette's dark-mode `--signal` as accent.
+- Every new blog post needs og/twitter tags (including og:image:width/height/alt) with a 1200x630 share image: `share/<disease slug>.png`, or `share/default.png` when no disease fits. `tools/build-blog.js` still writes the old image URLs, so re-check the tags after a rebuild.
