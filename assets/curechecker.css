@@ -507,3 +507,4 @@ details[open]>summary{margin-bottom:14px}
 .news-btn i{width:8px;height:8px;border-radius:50%;background:var(--signal)}
 .news-btn:hover{background:var(--ink);color:var(--paper)}
 .news-btn:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.tag.one-line{white-space:nowrap}
