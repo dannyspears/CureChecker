@@ -49,6 +49,7 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - Put text labels outside/below shapes (not on outlines), keep every label inside the viewBox, and use font-size 10–11. On phones the diagrams render up to 150px tall, so check new ones at phone width (375px) for overlaps or clipped labels.
 
 ## Every page
+- Every page, including about, terms, the Newsroom index and every Newsroom post, starts with the slim `<div class="donate-bar">` (first thing inside `.wrap`) and loads `assets/donate.js`. `tools/build-blog.js` adds both to Newsroom pages.
 - The footer link row also includes a Newsroom link (`blog.html`), right after "All conditions/diseases".
 - The footer link row also includes a Contact link (`about.html#contact`), right after About us.
 - The footer must include the `.foot-links` row with BOTH the About us link (`about.html`) and the Terms of Use link (`terms.html`). Copy the footer from an existing report.
