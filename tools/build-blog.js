@@ -10,7 +10,7 @@
 //     faq: [{ q, a }], sources: [{ title, publisher, url }] }
 const fs = require('fs'), path = require('path'), vm = require('vm');
 const root = path.join(__dirname, '..');
-const SITE = 'https://curechecker.com';
+const SITE = 'https://www.curechecker.com';
 const ctx = { window: {} };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'assets/diseases.js'), 'utf8'), ctx);
 const diseases = ctx.window.CURECHECKER_DISEASES;
@@ -48,11 +48,14 @@ const head = (o) => `<!doctype html>
 <meta property="og:title" content="${esc(o.title)}">
 <meta property="og:description" content="${esc(o.description)}">
 <meta property="og:url" content="${o.url}">
-<meta property="og:image" content="${o.image}">
+<meta property="og:image" content="${o.share}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="${esc(o.alt)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(o.title)}">
 <meta name="twitter:description" content="${esc(o.description)}">
-<meta name="twitter:image" content="${o.image}">
+<meta name="twitter:image" content="${o.share}">
 <link rel="icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 ${o.ld.map(j => '<script type="application/ld+json">' + JSON.stringify(j) + '</script>').join('\n')}
@@ -126,7 +129,7 @@ function postHtml(p) {
   const more = posts.filter(o => o.slug !== p.slug).slice(0, 3);
   const moreHtml = more.length ? '  <h2>More from the newsroom</h2>\n  <ul>\n' + more.map(o =>
     `    <li><a href="/blog/${o.slug}.html">${esc(o.title)}</a> (${human(o.date)})</li>\n`).join('') + '  </ul>\n' : '';
-  return head({ title, description: p.description, url, image, type: 'article', ld, palette: d.palette }) + `
+  return head({ title, description: p.description, url, image, share: `${SITE}/share/${d ? d.slug : 'default'}.png`, alt: `Cure Checker: ${p.title}`, type: 'article', ld, palette: d.palette }) + `
 <main class="legal blog-post">
   <article>
   <p class="meta"><a href="/blog.html">Newsroom</a> · ${esc(d.name)} · <time datetime="${p.date}">${human(p.date)}</time></p>
@@ -154,7 +157,7 @@ function indexHtml() {
       <p>${esc(p.description)}</p>
     </article>
 `; }).join('') : '    <p>The first post is coming soon.</p>\n';
-  return head({ title: 'Cure Checker Newsroom: latest cure and treatment research news', description: desc, url, image: SITE + '/apple-touch-icon.png', type: 'website', ld }) + `
+  return head({ title: 'Cure Checker Newsroom: latest cure and treatment research news', description: desc, url, share: SITE + '/share/default.png', alt: 'Cure Checker Newsroom', type: 'website', ld }) + `
 <main class="legal blog-index">
   <h1>Cure Checker Newsroom</h1>
   <p class="meta">One new post a day on the biggest update in the research we track</p>
