@@ -1,4 +1,4 @@
-// Builds the blog from blog/src/*.json:
+// Builds the newsroom (blog) from blog/src/*.json:
 //   blog/<slug>.html   one static, crawlable post (SEO tags, JSON-LD Article + FAQ + breadcrumbs)
 //   blog/img/<slug>.png  1200x630 share image (needs Playwright; skipped if missing)
 //   blog.html          the blog index, newest first
@@ -67,7 +67,7 @@ ${o.ld.map(j => '<script type="application/ld+json">' + JSON.stringify(j) + '</s
 
 <nav class="crumbs" aria-label="Breadcrumb">
   <a href="/index.html">← All conditions/diseases</a>
-  <a href="/blog.html">Blog</a>
+  <a href="/blog.html">Newsroom</a>
 </nav>
 
 <header class="mast">
@@ -77,7 +77,7 @@ ${o.ld.map(j => '<script type="application/ld+json">' + JSON.stringify(j) + '</s
         <span class="lg-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="var(--paper)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         <span class="lg-text" aria-hidden="true"><span class="lg-1">Cure</span><span class="lg-2">Checker</span></span>
       </a>
-      <div class="tag">Blog</div>
+      <div class="tag">Newsroom</div>
     </div>
   </div>
 </header>
@@ -86,7 +86,7 @@ const foot = `
 <footer>
   <div><b>About Cure Checker.</b> An independent, AI-assisted daily digest of medical research, rebuilt every morning (weekly for non-incurable conditions) from trial announcements, peer-reviewed papers and patient-organization updates.</div>
   <div><b>Not medical advice.</b> No doctors review these pages. Talk with your doctor before changing treatment or starting supplements.</div>
-  <div class="foot-links"><a href="/index.html">All conditions/diseases</a><a href="/blog.html">Blog</a><a href="/about.html">About us</a><a href="/about.html#contact">Contact</a><a href="/terms.html">Terms of Use</a><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+  <div class="foot-links"><a href="/index.html">All conditions/diseases</a><a href="/blog.html">Newsroom</a><a href="/about.html">About us</a><a href="/about.html#contact">Contact</a><a href="/terms.html">Terms of Use</a><a href="https://clinicaltrials.gov" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
 </footer>
 </div>
 
@@ -107,7 +107,7 @@ function postHtml(p) {
   }, {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Cure Checker', item: SITE + '/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: SITE + '/blog.html' },
+      { '@type': 'ListItem', position: 2, name: 'Newsroom', item: SITE + '/blog.html' },
       { '@type': 'ListItem', position: 3, name: p.title, item: url }]
   }];
   if (p.faq && p.faq.length) ld.push({
@@ -122,12 +122,12 @@ function postHtml(p) {
   const src = '  <h2>Sources</h2>\n  <ul>\n' + p.sources.map(s =>
     `    <li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>${s.publisher ? '. ' + esc(s.publisher) : ''}</li>\n`).join('') + '  </ul>\n';
   const more = posts.filter(o => o.slug !== p.slug).slice(0, 3);
-  const moreHtml = more.length ? '  <h2>More from the blog</h2>\n  <ul>\n' + more.map(o =>
+  const moreHtml = more.length ? '  <h2>More from the newsroom</h2>\n  <ul>\n' + more.map(o =>
     `    <li><a href="/blog/${o.slug}.html">${esc(o.title)}</a> (${human(o.date)})</li>\n`).join('') + '  </ul>\n' : '';
   return head({ title, description: p.description, url, image, type: 'article', ld, palette: d.palette }) + `
 <main class="legal blog-post">
   <article>
-  <p class="meta"><a href="/blog.html">Blog</a> · ${esc(d.name)} · <time datetime="${p.date}">${human(p.date)}</time></p>
+  <p class="meta"><a href="/blog.html">Newsroom</a> · ${esc(d.name)} · <time datetime="${p.date}">${human(p.date)}</time></p>
   <h1>${esc(p.title)}</h1>
 
   <p class="summary"><b>In short:</b> ${esc(p.summary)}</p>
@@ -144,7 +144,7 @@ ${src}${moreHtml}  <p class="meta">This post was written with AI from the source
 function indexHtml() {
   const url = SITE + '/blog.html';
   const desc = 'Plain-language news on the latest cure and treatment research for serious conditions and diseases, written daily from trial announcements and peer-reviewed papers.';
-  const ld = [{ '@context': 'https://schema.org', '@type': 'Blog', name: 'Cure Checker Blog', url, description: desc,
+  const ld = [{ '@context': 'https://schema.org', '@type': 'Blog', name: 'Cure Checker Newsroom', url, description: desc,
     blogPost: posts.map(p => ({ '@type': 'BlogPosting', headline: p.title, url: `${SITE}/blog/${p.slug}.html`, datePublished: p.date })) }];
   const list = posts.length ? posts.map(p => { const d = dis(p.disease); return `    <article class="blog-card" data-palette="${d.palette}">
       <p class="meta">${esc(d.name)} · <time datetime="${p.date}">${human(p.date)}</time></p>
@@ -152,9 +152,9 @@ function indexHtml() {
       <p>${esc(p.description)}</p>
     </article>
 `; }).join('') : '    <p>The first post is coming soon.</p>\n';
-  return head({ title: 'Cure Checker Blog: latest cure and treatment research news', description: desc, url, image: SITE + '/apple-touch-icon.png', type: 'website', ld }) + `
+  return head({ title: 'Cure Checker Newsroom: latest cure and treatment research news', description: desc, url, image: SITE + '/apple-touch-icon.png', type: 'website', ld }) + `
 <main class="legal blog-index">
-  <h1>Cure Checker Blog</h1>
+  <h1>Cure Checker Newsroom</h1>
   <p class="meta">One new post a day on the biggest update in the research we track</p>
   <p class="summary"><b>In short:</b> Every day we look through all the conditions and diseases on Cure Checker for new studies, approvals and trial news, then write up the most important update in plain language, with sources.</p>
   <!-- CURECHECKER:BLOG-LIST -->

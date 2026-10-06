@@ -49,7 +49,7 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - Put text labels outside/below shapes (not on outlines), keep every label inside the viewBox, and use font-size 10–11. On phones the diagrams render up to 150px tall, so check new ones at phone width (375px) for overlaps or clipped labels.
 
 ## Every page
-- The footer link row also includes a Blog link (`blog.html`), right after "All conditions/diseases".
+- The footer link row also includes a Newsroom link (`blog.html`), right after "All conditions/diseases".
 - The footer link row also includes a Contact link (`about.html#contact`), right after About us.
 - The footer must include the `.foot-links` row with BOTH the About us link (`about.html`) and the Terms of Use link (`terms.html`). Copy the footer from an existing report.
 - `terms.html` states that content is AI-gathered daily, isn't medical advice, and isn't reviewed by doctors. Keep the site's wording consistent with it. The Terms and About wording must stay consistent with each other.
@@ -77,7 +77,7 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 ## Social posts
 - `node tools/social-posts.js [YYYY-MM-DD]` writes `social/<date>/posts.md` (Facebook, Instagram and X text for four reports) and four square image cards. It rotates through the reports and uses only text already on the pages (headline strip, newest study). Weekly reports are included on Mondays only. The owner reviews and posts by hand; never post for them.
 
-## Blog (one post a day)
+## Newsroom (the blog; one post a day)
 - `blog.html` (index) and `blog/<slug>.html` (posts) are generated static pages. Never hand-edit them. Each post is a spec in `blog/src/<slug>.json` (fields are listed at the top of `tools/build-blog.js`). `node tools/build-blog.js` rebuilds the posts, the index, share images (`blog/img/`), `sitemap.xml` and `robots.txt`. Commit all of them.
 - Daily, after the reports are refreshed: run `node tools/blog-candidates.js` to list the freshest studies across all reports. Pick the single best update: a real result, approval or major trial news beats an announcement, and anything marked "already blogged" is skipped. Spread posts across diseases when two are close. If nothing new and meaningful turned up, publish no post that day.
 - Write the post only from the report and its linked sources. Open the source link and confirm every number and date before using it; company-reported results are said to be company-reported; early or one-patient results are never presented as proof. Never say a cure exists unless the report does. No treatment advice. Every post needs `sources`, a 160-character-or-less `description`, a `summary` ("In short"), 4 to 6 sections, 2 to 3 FAQ items phrased the way people search, and a plain title that names the disease and the news.
