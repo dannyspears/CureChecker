@@ -501,3 +501,9 @@ details[open]>summary{margin-bottom:14px}
 .blog-card{background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--signal);border-radius:12px;padding:18px 20px}
 .blog-card h2{margin:6px 0 8px;font-size:23px}
 .blog-card p{margin:0}
+
+/* Newsroom button in the landing masthead */
+.news-btn{display:inline-flex;flex-direction:column;align-items:center;gap:2px;padding:10px 22px;border-radius:999px;background:var(--signal);color:var(--paper);font-family:var(--f-display);font-stretch:90%;font-size:20px;font-weight:800;text-decoration:none;transition:transform .15s,filter .15s}
+.news-btn small{font-family:var(--f-mono);font-size:11px;font-weight:500;opacity:.92}
+.news-btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.news-btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
