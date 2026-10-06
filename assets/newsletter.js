@@ -19,7 +19,7 @@ window.CURECHECKER_NEWSLETTER = {
   if(!footer||document.getElementById('newsletter'))return;
   function esc(s){return String(s).replace(/[&<>"]/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]})}
   var current=document.body.getAttribute('data-disease')||'';
-  var opts='<option value="all">All conditions/diseases</option>'+list.map(function(d){
+  var opts='<option value="all">All conditions/diseases</option>'+list.slice().sort(function(x,y){return x.name.localeCompare(y.name,'en',{sensitivity:'base'})}).map(function(d){
     return '<option value="'+esc(d.slug)+'"'+(d.slug===current?' selected':'')+'>'+esc(d.name)+'</option>';
   }).join('');
   var on=!!user;
