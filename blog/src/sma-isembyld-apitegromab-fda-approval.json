@@ -1,0 +1,85 @@
+{
+  "slug": "sma-isembyld-apitegromab-fda-approval",
+  "title": "SMA: FDA Approves Isembyld, a Muscle-Targeted Medicine",
+  "description": "The FDA approved Isembyld (apitegromab) on Sept 11, 2026 for SMA in people 2 and older already on SMN2 treatment. Trial results and the fracture warning.",
+  "date": "2026-10-05",
+  "disease": "sma",
+  "keywords": [
+    "Isembyld",
+    "apitegromab",
+    "spinal muscular atrophy",
+    "SMA treatment",
+    "FDA approval SMA",
+    "SAPPHIRE trial",
+    "Scholar Rock"
+  ],
+  "summary": "On September 11, 2026 the FDA approved Isembyld (apitegromab), made by Scholar Rock, for spinal muscular atrophy (SMA) in people 2 and older who already take an SMN2-targeted treatment. It is described as the first SMA medicine aimed at muscle. It is an add-on, not a cure, and the label warns of fractures.",
+  "sections": [
+    {
+      "h": "What was approved",
+      "p": [
+        "The FDA approved Isembyld (apitegromab) on September 11, 2026. The FDA label says it is for SMA in adults and children 2 years of age and older who are currently receiving a survival motor neuron 2 (SMN2)-targeted treatment, such as nusinersen or risdiplam.",
+        "Scholar Rock is the company that makes it. The recommended dose is 10 mg per kilogram of body weight, given as an intravenous infusion over about 60 minutes once every 4 weeks. This post draws on the FDA label, with the approval details also reported by NeurologyLive and the Muscular Dystrophy Association (MDA)."
+      ]
+    },
+    {
+      "h": "How it works",
+      "p": [
+        "Isembyld is a lab-made antibody that targets the precursor forms of myostatin, a protein that limits muscle growth. Existing SMN2 treatments act on the nerve-cell side of SMA. Isembyld is meant to be used alongside them, to support muscle."
+      ]
+    },
+    {
+      "h": "What the SAPPHIRE trial showed",
+      "p": [
+        "The approval rests on SAPPHIRE, a Phase 3 placebo-controlled trial of 188 people with SMA, as reported by NeurologyLive. The main comparison was in children aged 2 to 12. After one year, those on the recommended dose improved by 2.2 points more than placebo on the HFMSE, a 66-point scale of motor function. The FDA label calls this a nominally statistically significant effect.",
+        "NeurologyLive also reports that 34.2% of treated children gained 3 or more points, compared with 13.5% on placebo. A gain of a few points on this scale is a modest change, and the trial does not show that people recover lost function."
+      ]
+    },
+    {
+      "h": "Safety and the fracture warning",
+      "ul": [
+        "The label warns that Isembyld may increase the risk of fractures, including serious ones.",
+        "In the trial, 5 of 53 people (9%) on the recommended dose had a fracture, compared with 1 person (2%) on placebo. Femur fractures occurred in three people on the drug.",
+        "Most people who had fractures already had low bone density, earlier fractures or joint contractures. Some fractures had no clear cause such as a fall.",
+        "The most common side effects included upper respiratory infections, vomiting, cough, other viral infections, headache, gastroenteritis, sore throat and hypersensitivity."
+      ]
+    },
+    {
+      "h": "What it means for people with SMA",
+      "p": [
+        "Isembyld is a new option on top of existing SMN2 treatments, aimed at the muscle weakness that can remain. Whether it suits a given person depends on age, bone health and other factors, and that is a question for the SMA care team. It does not replace nusinersen or risdiplam, and it does not fix the underlying genetic cause."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cure for SMA?",
+      "a": "No. Isembyld is an add-on for people already taking an SMN2-targeted treatment. It is not described as a cure, and it does not replace those treatments."
+    },
+    {
+      "q": "Who can take Isembyld?",
+      "a": "The FDA label covers adults and children 2 years and older with SMA who are currently receiving an SMN2-targeted treatment. The main trial result was in children aged 2 to 12, so how much benefit older people get is less clear from the sources read for this post."
+    },
+    {
+      "q": "What are the risks of Isembyld?",
+      "a": "The label warns of fractures, including serious ones such as femur fractures. In the trial, 9% on the recommended dose had a fracture versus 2% on placebo. Anyone considering it should talk with their neurologist about bone health."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Isembyld (apitegromab-mstn) prescribing information",
+      "publisher": "U.S. FDA (Drugs@FDA), September 2026",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/761463Orig1s000lbl.pdf"
+    },
+    {
+      "title": "FDA approves apitegromab for spinal muscular atrophy",
+      "publisher": "NeurologyLive, September 2026",
+      "url": "https://www.neurologylive.com/view/fda-approves-apitegromab-spinal-muscular-atrophy"
+    },
+    {
+      "title": "FDA approves Isembyld, the first and only muscle-targeted therapy for SMA",
+      "publisher": "Muscular Dystrophy Association, September 11, 2026",
+      "url": "https://www.mda.org/press-releases/fda-approves-isembyld-the-first-and-only-muscle-targeted-therapy-for-spinal-muscular-atrophy"
+    }
+  ]
+}

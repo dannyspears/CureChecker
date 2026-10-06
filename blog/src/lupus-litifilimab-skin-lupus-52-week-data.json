@@ -1,0 +1,83 @@
+{
+  "slug": "lupus-litifilimab-skin-lupus-52-week-data",
+  "title": "Litifilimab for Skin Lupus: 52-Week Phase 2 Data Reported",
+  "description": "Biogen reported 52-week Phase 2 data for litifilimab in cutaneous (skin) lupus: 27.2% reached clear or almost clear skin. Company-reported, not a cure.",
+  "date": "2026-10-05",
+  "disease": "lupus",
+  "keywords": [
+    "litifilimab",
+    "cutaneous lupus",
+    "skin lupus",
+    "AMETHYST trial",
+    "Biogen lupus",
+    "lupus clinical trial"
+  ],
+  "summary": "On October 2, 2026, Biogen reported 52-week Phase 2 results for litifilimab in cutaneous lupus erythematosus, the form of lupus that affects the skin. The data come from the company and a conference presentation, not a peer-reviewed paper. Lupus has no cure, and litifilimab is not approved.",
+  "sections": [
+    {
+      "h": "What was announced",
+      "p": [
+        "Biogen presented 52-week Phase 2 data from AMETHYST, an ongoing Phase 2/3 study of litifilimab in adults with cutaneous lupus erythematosus (CLE). The data were shown at the European Academy of Dermatology and Venereology (EADV) Congress in Vienna, and the Lupus Research Alliance also covered the news on October 2, 2026.",
+        "This concerns skin lupus only. It does not report results for systemic lupus (SLE), the form that can affect organs such as the kidneys, joints and brain."
+      ]
+    },
+    {
+      "h": "What litifilimab is",
+      "p": [
+        "Litifilimab is an investigational antibody that targets a protein called BDCA2, which sits on certain immune cells. It is given as an injection under the skin. In the Phase 2 part, Biogen's release describes doses every four weeks for 20 weeks, plus an extra dose at Week 2.",
+        "The FDA granted litifilimab Breakthrough Therapy Designation for cutaneous lupus in January 2026, based on earlier Phase 2 results. This designation is meant to speed up development and review. It is not an approval."
+      ]
+    },
+    {
+      "h": "What the numbers show",
+      "p": [
+        "The Phase 2 part enrolled 93 adults with active CLE. According to Biogen, at Week 52 the following was seen:"
+      ],
+      "ul": [
+        "27.2% of people on litifilimab from the start had clear or almost clear skin on a physician rating scale.",
+        "28.8% had at least a 70% drop in a standard skin disease activity score (CLASI-70).",
+        "33.7% of people who switched from placebo to litifilimab reached clear or almost clear skin by Week 52.",
+        "Serious adverse events occurred in 3.4% (3 of 88) during extended treatment. The most common side effects were nasopharyngitis, influenza and joint pain, and the company reported no new safety signals."
+      ]
+    },
+    {
+      "h": "How to read these results",
+      "p": [
+        "These figures were reported by Biogen, the company that makes the drug, and presented at a medical meeting. They have not been published in a peer-reviewed journal, and the sources we reviewed do not give full detail on the study design for this follow-up. The study is small, and a Phase 2 result cannot prove that a drug works or is safe over the long term.",
+        "The reports say some people improved as early as four weeks after switching from placebo. Because most people did not reach clear or almost clear skin in these figures, the results are best seen as promising but early."
+      ]
+    },
+    {
+      "h": "What happens next",
+      "p": [
+        "The Phase 3 part of AMETHYST is ongoing. Biogen says Phase 3 results are expected in the first half of 2027. Until then, litifilimab remains an experimental treatment that people can only receive through clinical trials."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cure for lupus?",
+      "a": "No. Lupus has no cure today. Treatments aim to control symptoms and reduce flares. Litifilimab is an investigational drug for skin lupus and is not approved by the FDA."
+    },
+    {
+      "q": "Does litifilimab work for skin lupus?",
+      "a": "Early company-reported Phase 2 data suggest some people improved, with 27.2% reaching clear or almost clear skin at Week 52. This is not proof. The larger Phase 3 results are expected in the first half of 2027, and these results do not apply to systemic lupus."
+    },
+    {
+      "q": "Can I get litifilimab now?",
+      "a": "It is not approved. People with cutaneous lupus who are interested can ask their dermatologist or rheumatologist about clinical trials and check ClinicalTrials.gov."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Late-breaking data at EADV shows investigational drug litifilimab for cutaneous lupus show durable symptom control",
+      "publisher": "Lupus Research Alliance, October 2, 2026",
+      "url": "https://www.lupusresearch.org/late-breaking-data-at-eadv-shows-investigational-drug-litifilimab-for-cutaneous-lupus-show-durable-symptom-control/"
+    },
+    {
+      "title": "Biogen's litifilimab demonstrates rapid and durable efficacy in new 52-week Phase 2 data from ongoing Phase 2/3 AMETHYST study",
+      "publisher": "Biogen press release via GlobeNewswire and The Manila Times, October 2, 2026",
+      "url": "https://www.manilatimes.net/2026/10/02/tmt-newswire/globenewswire/biogens-litifilimab-demonstrates-rapid-and-durable-efficacy-in-new-52-week-phase-2-data-from-ongoing-phase-23-amethyst-study-reinforcing-its-potential-as-a-first-in-class-therapy-for-cutaneous-lupus-erythematosus/2438144/amp"
+    }
+  ]
+}

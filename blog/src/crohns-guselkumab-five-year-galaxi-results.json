@@ -1,0 +1,63 @@
+{
+  "slug": "crohns-guselkumab-five-year-galaxi-results",
+  "title": "Crohn's Disease: Guselkumab Five-Year GALAXI 1 Results",
+  "description": "Five-year GALAXI 1 data on guselkumab (Tremfya) in Crohn's disease: 97.7% of those still on it were in remission, but 46.0% of all who started.",
+  "date": "2026-10-05",
+  "disease": "crohns",
+  "keywords": ["guselkumab", "Tremfya", "Crohn's disease", "GALAXI 1", "Crohn's remission", "IL-23 inhibitor"],
+  "summary": "A peer-reviewed paper published September 1, 2026 in Inflammatory Bowel Diseases reports five-year results of guselkumab (Tremfya) in the Phase 2 GALAXI 1 trial in Crohn's disease. Among people still on the drug with data at week 240, 97.7% were in clinical remission. Counting everyone who started, the figure was 46.0%. Crohn's disease has no cure.",
+  "sections": [
+    {
+      "h": "What was published",
+      "p": [
+        "Researchers reported the long-term extension of GALAXI 1, a randomized Phase 2 trial of guselkumab in adults with moderately to severely active Crohn's disease. Guselkumab is a drug that blocks IL-23, an immune signal involved in gut inflammation. The paper appeared in the journal Inflammatory Bowel Diseases on September 1, 2026, so it is peer reviewed rather than a company announcement.",
+        "After the 48-week main study, participants could enter an extension and keep the maintenance injections they had been assigned. This paper reports results through week 240, which is about five years."
+      ]
+    },
+    {
+      "h": "The figure for people still on the drug",
+      "p": [
+        "Of 185 people randomized to guselkumab, 151 took part in the extension. Among those who were still on treatment and had data at week 240, 97.7% (85 of 87) were in clinical remission. Also in that group, 71.3% (62 of 87) had an endoscopic response and 51.7% (45 of 87) had endoscopic remission, meaning healing seen on a scope.",
+        "This is called an as-observed analysis. It counts only people who stayed in the study and were measured at that point."
+      ]
+    },
+    {
+      "h": "The figure for everyone who started",
+      "p": [
+        "The authors also ran analyses that count people who dropped out, or were missing data, as not in remission. This is called nonresponder imputation. In the extension group, 59.2% (84 of 142) were in clinical remission at week 240. Among everyone in the primary analysis set, the figure was 46.0% (81 of 176).",
+        "Why the numbers differ: people who do well on a drug tend to stay on it, and people who do poorly tend to leave. A look at survivors will therefore look better than a look at everyone who began. Neither figure is wrong. They answer different questions. One asks how well the drug works for people who stay on it. The other asks what share of all starters were in remission after five years."
+      ]
+    },
+    {
+      "h": "Safety and limits",
+      "ul": [
+        "The authors report low event rates of serious adverse events, stopping because of side effects, and serious infections. They describe the long-term safety data as consistent with those seen in approved uses of guselkumab.",
+        "The study was not designed for statistical comparisons between groups, and it was a Phase 2 trial.",
+        "Results were similar in people who had never taken a biologic drug and in people who had not responded to, or could not tolerate, a biologic."
+      ]
+    },
+    {
+      "h": "What it means for people with Crohn's disease",
+      "p": [
+        "Guselkumab (Tremfya) was approved by the FDA for Crohn's disease on March 20, 2025. These data add information about how people do over many years. They do not show that the drug works for everyone, and they are not a cure. People with Crohn's should talk with their gastroenterologist about which options fit their situation."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cure for Crohn's disease?",
+      "a": "No. Crohn's disease has no cure today. Treatments such as guselkumab aim to control inflammation and bring on remission, and this study did not test whether the disease can be cured."
+    },
+    {
+      "q": "Does guselkumab work for 97.7% of people with Crohn's disease?",
+      "a": "No. The 97.7% figure is for people who were still on guselkumab and had data at week 240. Counting everyone who started, 46.0% were in clinical remission at week 240 under the authors' stricter analysis."
+    },
+    {
+      "q": "Is long-term guselkumab safe?",
+      "a": "The authors report low rates of serious adverse events, serious infections and stopping because of side effects, consistent with earlier data in approved uses. This was a Phase 2 trial that was not designed for group comparisons, so it cannot rule out rarer risks. A doctor can weigh the risks for an individual."
+    }
+  ],
+  "sources": [
+    { "title": "Five-year efficacy and safety of guselkumab for moderately to severely active Crohn's disease: Results from the phase 2 GALAXI 1 trial", "publisher": "Inflammatory Bowel Diseases, September 1, 2026 (PubMed 42065683)", "url": "https://pubmed.ncbi.nlm.nih.gov/42065683/" }
+  ]
+}

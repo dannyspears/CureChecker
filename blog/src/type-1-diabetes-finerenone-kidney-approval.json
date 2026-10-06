@@ -1,0 +1,65 @@
+{
+  "slug": "type-1-diabetes-finerenone-kidney-approval",
+  "title": "FDA Approves Finerenone for Kidney Disease in Type 1 Diabetes",
+  "description": "On Sept 17, 2026 the FDA approved finerenone (Kerendia) for kidney disease in adults with type 1 diabetes. It does not treat diabetes itself.",
+  "date": "2026-10-05",
+  "disease": "type-1-diabetes",
+  "keywords": ["finerenone", "Kerendia", "type 1 diabetes kidney disease", "FINE-ONE trial", "diabetic kidney disease", "FDA approval type 1 diabetes"],
+  "summary": "On September 17, 2026, the FDA approved finerenone (Kerendia), made by Bayer, for adults with chronic kidney disease associated with type 1 diabetes. It treats the kidney disease, not diabetes itself. Type 1 diabetes still has no cure.",
+  "sections": [
+    {
+      "h": "What was approved",
+      "p": [
+        "The FDA approved finerenone (brand name Kerendia) on September 17, 2026, for adults with chronic kidney disease (CKD) associated with type 1 diabetes. Bayer, the maker, and Breakthrough T1D both describe it as the first new treatment in about 30 years for people with type 1 diabetes and kidney disease.",
+        "This approval is for a complication of diabetes. Finerenone does not replace insulin and does not change the immune attack on insulin-making cells that causes type 1 diabetes."
+      ]
+    },
+    {
+      "h": "What the trial tested",
+      "p": [
+        "The approval rests on FINE-ONE, a Phase 3 trial. It was randomized, double-blind and placebo-controlled, and it enrolled 242 adults with CKD associated with type 1 diabetes. Everyone kept their standard care, and finerenone (10 mg or 20 mg once daily) or a placebo was added on top.",
+        "The main measure was the urine albumin-to-creatinine ratio (UACR) over six months. UACR is a urine test that tracks kidney damage."
+      ]
+    },
+    {
+      "h": "What was reported",
+      "ul": [
+        "UACR was 22% lower than with placebo at month 3 and 28% lower at month 6 (p = 0.0001 over six months).",
+        "Overall adverse events were similar: 47.1% with finerenone and 49.2% with placebo. Serious adverse events were 11.8% and 11.5%.",
+        "High blood potassium (hyperkalemia) was more common with finerenone: 10.1% versus 3.3%. Stopping the drug because of it happened in 1.7% versus 0%."
+      ]
+    },
+    {
+      "h": "What the approval says, and what is not yet shown",
+      "p": [
+        "The approved wording is to reduce UACR, which is expected to reduce the risk of sustained decline in kidney function and end-stage kidney disease. The trial measured the urine marker over six months. It did not report whether people kept their kidneys longer.",
+        "The figures above come from Bayer's announcement. The company says the results were published in the New England Journal of Medicine in 2026, but this post relies on the company's description of them."
+      ]
+    },
+    {
+      "h": "Why it matters for people with type 1 diabetes",
+      "p": [
+        "Breakthrough T1D notes that nearly one in three people with type 1 diabetes develops kidney disease, which raises the risk of kidney failure and heart disease. Having an approved drug aimed at this complication gives patients and doctors one more option to discuss.",
+        "Whether finerenone suits a particular person is a question for their care team. The potassium finding is one reason it needs medical supervision."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does finerenone cure type 1 diabetes?",
+      "a": "No. Type 1 diabetes has no cure today. Finerenone is approved to treat chronic kidney disease associated with type 1 diabetes. It does not treat the diabetes itself, and people still need insulin."
+    },
+    {
+      "q": "Who is the new finerenone approval for?",
+      "a": "Adults with chronic kidney disease associated with type 1 diabetes. The trial enrolled 242 adults. Children and people without kidney disease were not part of this approval."
+    },
+    {
+      "q": "What do we know and not know about finerenone in type 1 diabetes?",
+      "a": "In a six-month Phase 3 trial, finerenone lowered a urine marker of kidney damage by 28% compared with placebo at month 6, and high potassium was more common. The trial did not report long-term outcomes such as kidney failure, which the approval says are expected to be reduced."
+    }
+  ],
+  "sources": [
+    { "title": "Bayer's KERENDIA (finerenone) Receives FDA Approval as the First New Treatment in 30 Years for Adults with CKD and Type 1 Diabetes", "publisher": "Bayer press release via BioSpace, September 17, 2026", "url": "https://www.biospace.com/press-releases/bayers-kerendia-finerenone-receives-fda-approval-as-the-first-new-treatment-in-30-years-for-adults-with-chronic-kidney-disease-ckd-and-type-1-diabetes" },
+    { "title": "Finerenone Approved for Chronic Kidney Disease and T1D", "publisher": "Breakthrough T1D, September 2026", "url": "https://www.breakthrought1d.org/news-and-updates/finerenone-approved-ckd-t1d/" }
+  ]
+}

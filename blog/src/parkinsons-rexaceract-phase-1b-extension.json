@@ -1,0 +1,56 @@
+{
+  "slug": "parkinsons-rexaceract-phase-1b-extension",
+  "title": "Rexaceract in Parkinson's: Small Phase 1b Extension Shows Promise",
+  "description": "Gain Therapeutics reports stable motor scores over 12 months in a small, open-label Phase 1b extension of rexaceract for Parkinson's disease.",
+  "date": "2026-10-05",
+  "disease": "parkinsons",
+  "keywords": ["rexaceract", "Parkinson's disease", "Gain Therapeutics", "GCase", "GBA1", "Phase 1b", "Parkinson's clinical trial"],
+  "summary": "On October 1, 2026, Gain Therapeutics reported that motor scores stayed stable over 12 months in a small, open-label Phase 1b extension of rexaceract in Parkinson's disease. The study had no placebo group and the results come from the company, so they show promise only. Parkinson's disease has no cure.",
+  "sections": [
+    {
+      "h": "What was announced",
+      "p": [
+        "Gain Therapeutics announced results from the open-label extension of its Phase 1b study of rexaceract, a small-molecule drug that targets problems with an enzyme called glucocerebrosidase (GCase). The company says the drug could apply to people with or without GBA1 gene changes.",
+        "Thirteen people took part at 7 sites in Australia, and 12 could be evaluated. They were dosed for 12 months. The company reported that scores on the Movement Disorder Society Unified Parkinson's Disease Rating Scale (a standard measure of symptoms) stayed stable, with no clinically meaningful progression in motor symptom scores."
+      ]
+    },
+    {
+      "h": "What else was reported",
+      "ul": [
+        "People with both high and low starting levels of glucosylsphingosine in spinal fluid had stable motor scores.",
+        "In people who started with high levels of that marker, the company reported a marked reduction toward healthy levels after 90 days.",
+        "The company describes safety and tolerability as favorable over 12 months, with fewer treatment-related adverse events in the nine-month extension than in the first three months."
+      ]
+    },
+    {
+      "h": "Why this is only a hint, not proof",
+      "p": [
+        "The study was small and open-label, meaning everyone knew they were receiving the drug and there was no placebo group for comparison. Without a comparison group, it is hard to tell how much of the stability is due to the drug. Parkinson's symptoms can also change over time for other reasons.",
+        "The numbers come from a company press release. We did not find a peer-reviewed publication of these results in the source we read."
+      ]
+    },
+    {
+      "h": "What happens next",
+      "p": [
+        "The company says it plans to submit a Phase 2 protocol to the FDA and expects to start a Phase 2 trial in the first quarter of 2027. Larger, placebo-controlled trials are the step that can show whether a drug truly helps."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cure for Parkinson's disease?",
+      "a": "No. Parkinson's disease has no cure today. Rexaceract is an investigational drug that has not been approved by the FDA, and this early study does not show that it slows or stops the disease."
+    },
+    {
+      "q": "Does rexaceract slow Parkinson's disease?",
+      "a": "That is not known yet. In a small open-label study with 12 evaluable people, the company reported stable motor scores over 12 months. Without a placebo group, this cannot show that the drug caused the stability. A larger Phase 2 trial is planned for 2027."
+    },
+    {
+      "q": "Can I get rexaceract now?",
+      "a": "It is not approved. People interested in new treatments can ask their neurologist about clinical trials they may qualify for."
+    }
+  ],
+  "sources": [
+    { "title": "Gain Therapeutics highlights promising Parkinson's Phase 1b data (rexaceract)", "publisher": "Gain Therapeutics via The Globe and Mail, October 1, 2026", "url": "https://theglobeandmail.com/investing/markets/stocks/GANX/pressreleases/4929387/gain-therapeutics-highlights-promising-parkinsons-phase-1b-data" }
+  ]
+}

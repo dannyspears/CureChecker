@@ -1,0 +1,66 @@
+{
+  "slug": "copd-tozorakimab-phase-3-flare-ups",
+  "title": "COPD: Tozorakimab Cut Flare-Ups in Two Phase 3 Trials",
+  "description": "Tozorakimab cut COPD flare-ups by 29% and 34% in former smokers in two Phase 3 trials of 2,306 adults. What was reported and what comes next.",
+  "date": "2026-10-05",
+  "disease": "copd",
+  "keywords": ["tozorakimab", "COPD flare-ups", "COPD exacerbations", "OBERON TITANIA", "IL-33 COPD", "COPD clinical trial"],
+  "summary": "On September 8, 2026, AstraZeneca presented results from two Phase 3 trials, OBERON and TITANIA, showing that tozorakimab reduced COPD flare-ups when added to usual inhaled treatment. The drug is not yet approved, and COPD has no cure. The reported results were presented at the European Respiratory Society Congress and published in the New England Journal of Medicine.",
+  "sections": [
+    {
+      "h": "What was reported",
+      "p": [
+        "AstraZeneca presented the results of two Phase 3 trials, OBERON and TITANIA, at the European Respiratory Society Congress in Barcelona on September 8, 2026. The trials were identically designed, double-blind and placebo-controlled, and together enrolled 2,306 adults with symptomatic COPD. Reports say the results were published in the New England Journal of Medicine at the same time.",
+        "Tozorakimab is an antibody that blocks interleukin-33 (IL-33), a signal released by damaged lung cells that is thought to drive inflammation in COPD. People in the trials received 300 mg or placebo as an injection under the skin every 4 weeks for 52 weeks, on top of their usual inhaled treatment."
+      ]
+    },
+    {
+      "h": "How much it reduced flare-ups",
+      "p": [
+        "A flare-up, also called an exacerbation, is a period when COPD symptoms suddenly get worse. Among former smokers, the main group analyzed, flare-ups were reduced by 29% in OBERON and 34% in TITANIA compared with placebo. In the overall population the reductions were reported as 30% and 29%."
+      ]
+    },
+    {
+      "h": "Results by eosinophil level",
+      "p": [
+        "Eosinophils are a type of white blood cell. Existing COPD biologics are approved for people with higher levels. In these trials, the reported reduction in flare-ups was:"
+      ],
+      "ul": [
+        "23% in people with fewer than 150 eosinophils per microliter of blood",
+        "34% in people with 150 or more",
+        "43% in people with 300 or more"
+      ]
+    },
+    {
+      "h": "Safety and what happens next",
+      "p": [
+        "Reports describe overall and serious side effects as similar between the drug and placebo groups. Injection-site reactions were more frequent with tozorakimab. Serious cardiovascular events and deaths were rare, with a small numerical imbalance favoring placebo.",
+        "AstraZeneca has filed the drug for approval. The FDA has accepted the application under priority review, and a decision is expected in the first quarter of 2027. Until a regulator decides, tozorakimab is an investigational drug and cannot be prescribed for COPD."
+      ]
+    },
+    {
+      "h": "How to read these results",
+      "p": [
+        "The trials were sponsored by AstraZeneca, and the figures here come from the company's announcement and news reports on it. The journal publication means the full data are open to expert review, but we have not read the paper itself. A 29% to 34% reduction means fewer flare-ups on average across a group. It does not mean flare-ups stop, and it does not repair damaged lungs."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cure for COPD?",
+      "a": "No. COPD has no cure. Current treatments, including inhalers and a small number of biologic drugs, aim to ease symptoms and reduce flare-ups. Tozorakimab is being studied for the same goal and is not a cure."
+    },
+    {
+      "q": "Is tozorakimab approved for COPD?",
+      "a": "Not yet. AstraZeneca has filed for approval, and the FDA is reviewing it with priority status. A decision is expected in the first quarter of 2027."
+    },
+    {
+      "q": "Does tozorakimab work for people with low eosinophils?",
+      "a": "The trials reported a smaller benefit (23% fewer flare-ups) in people with fewer than 150 eosinophils per microliter, compared with 34% at 150 or more and 43% at 300 or more. Whether it will be approved for all of these groups is for regulators to decide."
+    }
+  ],
+  "sources": [
+    { "title": "Tozorakimab cuts COPD exacerbations up to 34% in Phase 3 trials", "publisher": "AJMC, September 2026", "url": "https://www.ajmc.com/view/tozorakimab-cuts-copd-exacerbations-up-to-34-in-phase-3-trials" },
+    { "title": "ERS 2026: Tozorakimab exacerbation reduction in COPD", "publisher": "Clinical Trials Arena, September 2026", "url": "https://www.clinicaltrialsarena.com/analyst-comment/ers-2026-tozorakimab-exacerbation-reduction-copd/" }
+  ]
+}

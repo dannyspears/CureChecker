@@ -1,0 +1,64 @@
+{
+  "slug": "pancreatic-cancer-vcn-01-virage-results",
+  "title": "Pancreatic Cancer: VCN-01 Virus Therapy Phase 2b Results",
+  "description": "VIRAGE, a Phase 2b trial in 112 people with metastatic pancreatic cancer, reported better survival when VCN-01 was added to chemo. What it shows.",
+  "date": "2026-10-05",
+  "disease": "pancreatic-cancer",
+  "keywords": ["VCN-01", "VIRAGE trial", "pancreatic cancer clinical trial", "oncolytic virus", "metastatic pancreatic cancer", "Theriva Biologics", "Nature Medicine"],
+  "summary": "On September 30, 2026, Theriva Biologics announced that the Phase 2b VIRAGE trial of VCN-01, an engineered virus, was published in Nature Medicine. In 112 people with newly diagnosed metastatic pancreatic cancer, adding VCN-01 to standard chemotherapy was reported to improve overall survival, progression-free survival and duration of response. Pancreatic cancer still has no cure, and VCN-01 is not an approved treatment.",
+  "sections": [
+    {
+      "h": "What was announced",
+      "p": [
+        "Theriva Biologics announced that results of the VIRAGE trial were published in Nature Medicine on September 30, 2026. The paper is titled \"Intravenous hyaluronidase-expressing oncolytic adenovirus with chemotherapy in metastatic pancreatic cancer.\"",
+        "The company says that overall survival, progression-free survival (time before the cancer grows again) and duration of response were all improved in people who received VCN-01 with chemotherapy compared with chemotherapy alone. The improvements were greater in the group that received two doses of VCN-01 given about three months apart."
+      ]
+    },
+    {
+      "h": "How the trial was run",
+      "p": [
+        "VIRAGE is a Phase 2b, randomized, controlled, open-label trial. Open-label means patients and doctors knew who received which treatment. It enrolled 112 people with newly diagnosed metastatic pancreatic ductal adenocarcinoma at 14 sites: 5 in the United States and 9 in Spain."
+      ],
+      "ul": [
+        "Comparison group: standard chemotherapy with gemcitabine and nab-paclitaxel, given in 28-day cycles.",
+        "VCN-01 group: the same chemotherapy plus intravenous VCN-01, given 7 days before cycle 1 and again 7 days before cycle 4 in the two-dose schedule."
+      ]
+    },
+    {
+      "h": "What VCN-01 is",
+      "p": [
+        "VCN-01 is an engineered adenovirus, a type of virus, designed to infect and attack tumor cells. As the paper title notes, it is built to produce an enzyme called hyaluronidase."
+      ]
+    },
+    {
+      "h": "Who reported this, and what is missing",
+      "p": [
+        "The results were published in a peer-reviewed journal, but the source we read is a press release from Theriva Biologics, the company developing VCN-01. That release does not give the actual survival numbers, hazard ratios or p-values, and it gives no specific side-effect figures. It says only that VCN-01 was well tolerated. Readers who want the numbers should read the Nature Medicine paper itself.",
+        "This is a mid-stage trial with 112 people, so it cannot settle whether the treatment works. Larger trials would be needed."
+      ]
+    },
+    {
+      "h": "What happens next",
+      "p": [
+        "The company says a follow-up Phase 2a trial, VIRAGE2, is testing more frequent dosing of VCN-01 (three or more doses, two months apart). It says the first patient was treated in August 2026 and that data are expected in the third quarter of 2027. VCN-01 is not approved for pancreatic cancer."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cure for pancreatic cancer?",
+      "a": "No. Pancreatic cancer has no cure today. VCN-01 is an investigational therapy that has not been approved by the FDA or other regulators, and the VIRAGE results are from a mid-stage trial."
+    },
+    {
+      "q": "Does VCN-01 improve survival in pancreatic cancer?",
+      "a": "The company reports that adding VCN-01 to chemotherapy improved overall survival, progression-free survival and duration of response in the 112-person VIRAGE trial, most clearly with two doses. The trial was open-label and mid-stage, and the press release did not give the numbers, so it is not proof that the treatment works."
+    },
+    {
+      "q": "Can patients get VCN-01 now?",
+      "a": "It is not an approved treatment. People with pancreatic cancer who are interested in trials can ask their oncology team, or search a registry such as ClinicalTrials.gov for recruiting studies."
+    }
+  ],
+  "sources": [
+    { "title": "Theriva Biologics announces publication of the results from the VIRAGE Phase 2b clinical trial of VCN-01 in metastatic pancreatic cancer published in Nature Medicine", "publisher": "Theriva Biologics via GlobeNewswire, republished by The Manila Times, September 30, 2026", "url": "https://www.manilatimes.net/2026/09/30/tmt-newswire/globenewswire/theriva-biologics-announces-publication-of-the-results-from-the-virage-phase-2b-clinical-trial-of-vcn-01-in-metastatic-pancreatic-cancer-published-in-nature-medicine/2436046" }
+  ]
+}

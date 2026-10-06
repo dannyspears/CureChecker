@@ -1,0 +1,61 @@
+{
+  "slug": "osteosarcoma-ost-her2-survival-results",
+  "title": "Osteosarcoma: OST-HER2 Reports 71.2% Three-Year Survival",
+  "description": "OS Therapies reports 71.2% three-year survival with OST-HER2 in lung-spread osteosarcoma, versus 45.8% in historical controls. Early, not randomized.",
+  "date": "2026-10-05",
+  "disease": "osteosarcoma",
+  "keywords": ["OST-HER2", "osteosarcoma", "lung metastases", "OS Therapies", "Listeria immunotherapy", "osteosarcoma clinical trial"],
+  "summary": "On September 8, 2026, Targeted Oncology reported company results for OST-HER2 in osteosarcoma that had spread to the lungs and been fully removed by surgery. In a Phase 2b trial, 71.2% of patients were alive at three years, compared with 45.8% in historical controls. The comparison was not randomized, the figures come from the company, and osteosarcoma has no cure.",
+  "sections": [
+    {
+      "h": "What was reported",
+      "p": [
+        "OS Therapies reported that in its Phase 2b trial (NCT04974008), 71.2% of patients who received OST-HER2 were alive three years later. The comparison group was historical controls, where 45.8% were alive at three years (P = .002).",
+        "The trial enrolled 41 patients whose osteosarcoma had spread to the lungs and been completely removed by surgery. In the interim analysis, 2 patients had not yet reached three years of follow-up and 6 were lost to follow-up."
+      ]
+    },
+    {
+      "h": "What OST-HER2 is",
+      "p": [
+        "OST-HER2 is an immunotherapy built from a gene-edited Listeria bacterium. It is designed to train the immune system to recognize HER2, a protein found on some osteosarcoma cells. The article describes it as targeting two mutated outside-the-cell and one mutated inside-the-cell HER2 piece.",
+        "In the trial, patients received 1 x 10^9 colony-forming units every 3 weeks for 48 weeks."
+      ]
+    },
+    {
+      "h": "Why the comparison matters",
+      "p": [
+        "The historical controls were pooled from five earlier clinical trials. Three-year survival in those trials ranged from 36.0% to 54.7%. Comparing a new trial with past patients can be misleading, because patients, surgery and care change over time. A randomized trial, where similar patients are assigned by chance to the new drug or a control, is a stronger test.",
+        "This was not a randomized trial, so the result is encouraging but is not proof that the drug works."
+      ]
+    },
+    {
+      "h": "Who reported it, and what is missing",
+      "p": [
+        "The numbers come from company news releases as relayed by Targeted Oncology. They are not from a peer-reviewed journal article. The article reported no safety data, so side effects cannot be judged from it."
+      ]
+    },
+    {
+      "h": "What happens next with the FDA",
+      "p": [
+        "According to the article, the company had a Type C statistical methods meeting with the FDA's Center for Biologics Evaluation and Research scheduled for mid-September 2026. It has asked for a rolling review of a biologics license application and says it is seeking accelerated approval in the fourth quarter of 2026. These are company plans, and the FDA has not approved OST-HER2."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cure for osteosarcoma?",
+      "a": "No. Osteosarcoma has no cure that works for everyone. Standard care combines surgery and chemotherapy. OST-HER2 is an investigational treatment and has not been approved by the FDA."
+    },
+    {
+      "q": "Does OST-HER2 improve survival in osteosarcoma?",
+      "a": "The company reports 71.2% three-year survival versus 45.8% in historical controls, in 41 patients with fully removed lung metastases. Because there was no randomized control group and the results are not yet peer reviewed, it is not known whether the drug itself caused the difference."
+    },
+    {
+      "q": "Can patients get OST-HER2 now?",
+      "a": "It is not approved. The company says it is seeking accelerated approval, but the FDA has not decided. People with osteosarcoma can ask their oncology team whether any clinical trial fits their situation."
+    }
+  ],
+  "sources": [
+    { "title": "OST-HER2 shows 71.2% 3-year OS in lung-metastatic osteosarcoma", "publisher": "Targeted Oncology, September 8, 2026", "url": "https://www.targetedonc.com/view/ost-her2-shows-71-2-3-year-os-in-lung-metastatic-osteosarcoma" }
+  ]
+}

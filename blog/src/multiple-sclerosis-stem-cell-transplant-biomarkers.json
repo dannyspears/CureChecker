@@ -1,0 +1,75 @@
+{
+  "slug": "multiple-sclerosis-stem-cell-transplant-biomarkers",
+  "title": "MS Stem-Cell Transplant: Blood Markers Stay Low for Years",
+  "description": "In 24 people with severe MS, inflammation markers stayed low for up to 5 years after a stem-cell transplant (aHSCT). What it shows and what it does not.",
+  "date": "2026-10-05",
+  "disease": "multiple-sclerosis",
+  "keywords": [
+    "multiple sclerosis",
+    "aHSCT",
+    "stem-cell transplant MS",
+    "HALT-MS",
+    "neurofilament light",
+    "MS biomarkers"
+  ],
+  "summary": "A peer-reviewed study published online on September 28, 2026 followed 24 people with severe multiple sclerosis after an autologous stem-cell transplant (aHSCT) in the HALT-MS trial. Markers of inflammation and nerve damage in blood and spinal fluid stayed lower for years. The study is small, and MS still has no cure.",
+  "sections": [
+    {
+      "h": "What the study looked at",
+      "p": [
+        "Researchers analyzed samples from 24 people with severe multiple sclerosis who took part in HALT-MS, a Phase II clinical trial of autologous hematopoietic stem-cell transplantation (aHSCT). In this treatment, chemotherapy removes much of the immune system, which then regrows from the person's own stem cells.",
+        "The team measured about 50 soluble biomarkers, including inflammatory proteins called cytokines and chemokines, neurofilament light chain (a marker of nerve-fiber damage) and glial fibrillary acidic protein. Blood samples were taken at 9 timepoints over 60 months. Spinal fluid was collected at 3 timepoints: before treatment, at month 24 and at month 48."
+      ]
+    },
+    {
+      "h": "What they found",
+      "ul": [
+        "Inflammatory markers dropped and stayed lower for several years after the transplant, in both blood and spinal fluid.",
+        "The authors describe the pattern as long-lasting reductions in inflammatory proteins and markers of damage to nerve fibers and their support cells, consistent with persistent disease quiescence.",
+        "Levels of one protein, IL-7, rose in spinal fluid after treatment.",
+        "Changes in blood and in spinal fluid were mostly different from each other. They correlated poorly, except for neurofilament light chain."
+      ]
+    },
+    {
+      "h": "Who reported it and how reliable it is",
+      "p": [
+        "This is a peer-reviewed paper in Neurology Neuroimmunology and Neuroinflammation, not a company announcement. We read the PubMed record and abstract, not the full text."
+      ]
+    },
+    {
+      "h": "Limits of the findings",
+      "p": [
+        "Only 24 people were studied, and all had severe MS. The authors note that repeated lumbar punctures are invasive, which limited how often spinal fluid could be collected.",
+        "Biomarkers are signals in the body, not a direct measure of how a person feels or functions. Low markers fit with a quiet disease, but this study does not show that the transplant cures MS."
+      ]
+    },
+    {
+      "h": "How this fits with other aHSCT evidence",
+      "p": [
+        "Autologous stem-cell transplant is an aggressive treatment that carries real risks, and in the United States it is still mostly given through clinical trials. This analysis offers a biological explanation for why disease activity may stay quiet after the procedure, but it does not change the risk picture.",
+        "Cure Checker's multiple sclerosis report covers how aHSCT compares with other treatments."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cure for multiple sclerosis?",
+      "a": "No. MS has no cure today. Stem-cell transplant can stop new disease activity for years in many people treated, but it is a high-risk treatment reserved for aggressive MS, and this study does not show a cure."
+    },
+    {
+      "q": "Does a stem-cell transplant stop MS for good?",
+      "a": "This study cannot say. It followed blood markers for 5 years in 24 people and found inflammation markers stayed lower. That fits with lasting quiet disease, but it is a small group and a limited follow-up."
+    },
+    {
+      "q": "What is neurofilament light chain in MS?",
+      "a": "It is a protein released when nerve fibers are damaged. Doctors and researchers measure it in blood or spinal fluid as a sign of nerve damage. In this study it was one of the markers that stayed lower after the transplant."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Autologous Hematopoietic Transplantation Reduces Brain Inflammatory and Axoglial Damage Biomarkers in Multiple Sclerosis",
+      "publisher": "Neurology Neuroimmunology and Neuroinflammation, via PubMed, published online September 28, 2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42809446/"
+    }
+  ]
+}
