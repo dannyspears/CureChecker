@@ -72,3 +72,6 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - The masthead shows `Last updated`, the date in `#edition-date` (for example `Monday, October 5, 2026`) and the Eastern time in `#edition-time` (for example `7:41 AM ET`). Every refresh must update BOTH to the Eastern date and time at which it commits (run `TZ=America/New_York date` right before committing). Weekly reports keep ` · Updated weekly` after the time. 'Updated daily' no longer appears in any masthead.
 - index.html's edition date still updates every day.
 - This overrides any earlier line saying every report is updated every day.
+
+## Social posts
+- `node tools/social-posts.js [YYYY-MM-DD]` writes `social/<date>/posts.md` (Facebook, Instagram and X text for four reports) and four square image cards. It rotates through the reports and uses only text already on the pages (headline strip, newest study). Weekly reports are included on Mondays only. The owner reviews and posts by hand; never post for them.
