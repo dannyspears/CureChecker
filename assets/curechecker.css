@@ -508,3 +508,15 @@ details[open]>summary{margin-bottom:14px}
 .news-btn:hover{background:var(--ink);color:var(--paper)}
 .news-btn:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
 .tag.one-line{white-space:nowrap}
+
+/* Collapsible sections (pages with <body data-order="...">) */
+.fold-h[hidden],h2[hidden]{display:none!important}
+details.fold{border-top:1px solid var(--line)}
+details.fold>summary.fold-sum{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:18px 2px}
+details.fold>summary.fold-sum::-webkit-details-marker{display:none}
+details.fold>summary.fold-sum::after{content:"+";font-family:var(--f-mono);font-size:22px;line-height:1;flex:0 0 auto;color:var(--muted)}
+details.fold[open]>summary.fold-sum::after{content:"\2212"}
+details.fold>summary.fold-sum:hover .fold-h{text-decoration:underline}
+details.fold>summary.fold-sum .fold-h{margin:0}
+details.fold>.sec-head{border-top:0;padding-top:0}
+details[open].fold>summary{margin-bottom:6px}
