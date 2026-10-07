@@ -400,5 +400,19 @@ window.CURECHECKER_DISEASES = [
     drugs: ["finasteride", "dutasteride", "minoxidil", "clascoterone"],
     cancer: false,
     cadence: "weekly"
+  },
+  {
+    slug: "autism",
+    name: "Autism",
+    page: "autism.html",
+    palette: "kelly",
+    category: "Neurodevelopmental",
+    summary: "There is no cure, and many autistic people do not want one. Research focuses on early support, communication and co-occurring conditions; a 200-child brain-stimulation trial reported short-term gains in 2026.",
+    updated: "Oct 6, 2026",
+    search: "autism spectrum disorder",
+    pubmed: "autism[ti] OR autistic[ti] OR \"autism spectrum disorder\"[ti]",
+    drugs: ["risperidone", "aripiprazole", "leucovorin"],
+    cancer: false,
+    cadence: "weekly"
   }
 ];
