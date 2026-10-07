@@ -400,5 +400,19 @@ window.CURECHECKER_DISEASES = [
     drugs: ["finasteride", "dutasteride", "minoxidil", "clascoterone"],
     cancer: false,
     cadence: "weekly"
+  },
+  {
+    slug: "autism",
+    name: "Autism",
+    page: "autism.html",
+    palette: "fuchsia",
+    category: "Neurodevelopmental",
+    summary: "Autism is a lifelong difference with no cure, and many autistic people don't want one. Research focuses on early support, communication and co-occurring conditions; two medicines are FDA-approved for irritability.",
+    updated: "Oct 6, 2026",
+    search: "autism spectrum disorder",
+    pubmed: "autism[ti] OR autistic[ti]",
+    drugs: ["risperidone", "aripiprazole", "leucovorin calcium"],
+    cancer: false,
+    cadence: "weekly"
   }
 ];
