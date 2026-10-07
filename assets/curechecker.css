@@ -480,10 +480,17 @@ select[data-disease-picker]:focus-visible{outline:3px solid var(--signal);outlin
 [data-palette="sand"]{--paper:#F7F4EA; --panel:#FFFFFF; --ink:#29251A; --muted:#675F4A; --line:#E2DCC8; --signal:#6B5E32; --signal-soft:#EDE7D3; --sky:#D3C9A6; --blue:#554A24; --blue-soft:#F0EBDC}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="sand"]{--paper:#15130D; --panel:#1F1C14; --ink:#F3EFE2; --muted:#B5AC90; --line:#3A3527; --signal:#D4C48E; --signal-soft:#2D291C; --sky:#5A5236; --blue:#E0D3A6; --blue-soft:#25221A}}
 :root[data-theme="dark"] [data-palette="sand"]{--paper:#15130D; --panel:#1F1C14; --ink:#F3EFE2; --muted:#B5AC90; --line:#3A3527; --signal:#D4C48E; --signal-soft:#2D291C; --sky:#5A5236; --blue:#E0D3A6; --blue-soft:#25221A}
+<<<<<<< Updated upstream
 /* fuchsia: autism (its blue is the landing page and magenta is lupus; a violet-pink unused elsewhere) */
 [data-palette="fuchsia"]{--paper:#FCF0FB; --panel:#FFFFFF; --ink:#330A30; --muted:#7A4E76; --line:#F0D0EC; --signal:#B800AD; --signal-soft:#FBE3F9; --sky:#EFB0E8; --blue:#96008B; --blue-soft:#FAE6F8}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="fuchsia"]{--paper:#1E0A1D; --panel:#2B1029; --ink:#FBE8F9; --muted:#D49ECF; --line:#4E2049; --signal:#F25CFF; --signal-soft:#3F1240; --sky:#86307F; --blue:#F79BFF; --blue-soft:#33102F}}
 :root[data-theme="dark"] [data-palette="fuchsia"]{--paper:#1E0A1D; --panel:#2B1029; --ink:#FBE8F9; --muted:#D49ECF; --line:#4E2049; --signal:#F25CFF; --signal-soft:#3F1240; --sky:#86307F; --blue:#F79BFF; --blue-soft:#33102F}
+=======
+/* Kelly (autism): its blue and gold/red symbols were taken (landing blue, gold, crimson/brick), so a vivid kelly green unused elsewhere */
+[data-palette="kelly"]{--paper:#F1F8EE; --panel:#FFFFFF; --ink:#14300F; --muted:#506B4A; --line:#D0E5CA; --signal:#2A7A1F; --signal-soft:#DDF0D7; --sky:#B5DDAA; --blue:#22641A; --blue-soft:#E3F2DE}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="kelly"]{--paper:#0B1A08; --panel:#12270E; --ink:#E6F6E1; --muted:#9BC090; --line:#22421C; --signal:#7DDB68; --signal-soft:#173A12; --sky:#2C6322; --blue:#9BE88A; --blue-soft:#14300F}}
+:root[data-theme="dark"] [data-palette="kelly"]{--paper:#0B1A08; --panel:#12270E; --ink:#E6F6E1; --muted:#9BC090; --line:#22421C; --signal:#7DDB68; --signal-soft:#173A12; --sky:#2C6322; --blue:#9BE88A; --blue-soft:#14300F}
+>>>>>>> Stashed changes
 
 /* Report layout (assets/layout.js and the section menu) */
 html{scroll-padding-top:64px}
