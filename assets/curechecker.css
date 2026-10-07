@@ -484,6 +484,10 @@ select[data-disease-picker]:focus-visible{outline:3px solid var(--signal);outlin
 [data-palette="fuchsia"]{--paper:#FCF0FB; --panel:#FFFFFF; --ink:#330A30; --muted:#7A4E76; --line:#F0D0EC; --signal:#B800AD; --signal-soft:#FBE3F9; --sky:#EFB0E8; --blue:#96008B; --blue-soft:#FAE6F8}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="fuchsia"]{--paper:#1E0A1D; --panel:#2B1029; --ink:#FBE8F9; --muted:#D49ECF; --line:#4E2049; --signal:#F25CFF; --signal-soft:#3F1240; --sky:#86307F; --blue:#F79BFF; --blue-soft:#33102F}}
 :root[data-theme="dark"] [data-palette="fuchsia"]{--paper:#1E0A1D; --panel:#2B1029; --ink:#FBE8F9; --muted:#D49ECF; --line:#4E2049; --signal:#F25CFF; --signal-soft:#3F1240; --sky:#86307F; --blue:#F79BFF; --blue-soft:#33102F}
+/* ultramarine: neuroblastoma (childhood-cancer gold is taken by osteosarcoma; a vivid ultramarine blue unused elsewhere, far from the landing sky blue) */
+[data-palette="ultramarine"]{--paper:#F1F1FD; --panel:#FFFFFF; --ink:#15164A; --muted:#55578A; --line:#D5D6F5; --signal:#2B2FE0; --signal-soft:#E3E4FC; --sky:#C2C4F7; --blue:#2023B0; --blue-soft:#E7E8FB}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="ultramarine"]{--paper:#0D0E2A; --panel:#15173A; --ink:#EAEAFE; --muted:#A5A6D6; --line:#2A2C62; --signal:#8784FF; --signal-soft:#1E2050; --sky:#3A3D8F; --blue:#A3A1FF; --blue-soft:#1C1E4C}}
+:root[data-theme="dark"] [data-palette="ultramarine"]{--paper:#0D0E2A; --panel:#15173A; --ink:#EAEAFE; --muted:#A5A6D6; --line:#2A2C62; --signal:#8784FF; --signal-soft:#1E2050; --sky:#3A3D8F; --blue:#A3A1FF; --blue-soft:#1C1E4C}
 
 /* Report layout (assets/layout.js and the section menu) */
 html{scroll-padding-top:64px}

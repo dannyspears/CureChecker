@@ -414,5 +414,19 @@ window.CURECHECKER_DISEASES = [
     drugs: ["risperidone", "aripiprazole", "leucovorin calcium"],
     cancer: false,
     cadence: "weekly"
+  },
+  {
+    slug: "neuroblastoma",
+    name: "Neuroblastoma",
+    page: "neuroblastoma.html",
+    palette: "ultramarine",
+    category: "Cancer · Childhood",
+    summary: "Most children with low- or intermediate-risk disease do well. For high-risk disease, anti-GD2 immunotherapy and new maintenance treatments aim to stop it coming back.",
+    updated: "Oct 7, 2026",
+    search: "neuroblastoma",
+    pubmed: "neuroblastoma[ti] NOT olfactory[ti] NOT esthesioneuroblastoma[ti]",
+    drugs: ["dinutuximab", "naxitamab", "eflornithine", "isotretinoin", "cyclophosphamide"],
+    cancer: true,
+    cadence: "daily"
   }
 ];
