@@ -405,7 +405,6 @@ window.CURECHECKER_DISEASES = [
     slug: "autism",
     name: "Autism",
     page: "autism.html",
-<<<<<<< Updated upstream
     palette: "fuchsia",
     category: "Neurodevelopmental",
     summary: "Autism is a lifelong difference with no cure, and many autistic people don't want one. Research focuses on early support, communication and co-occurring conditions; two medicines are FDA-approved for irritability.",
@@ -413,15 +412,6 @@ window.CURECHECKER_DISEASES = [
     search: "autism spectrum disorder",
     pubmed: "autism[ti] OR autistic[ti]",
     drugs: ["risperidone", "aripiprazole", "leucovorin calcium"],
-=======
-    palette: "kelly",
-    category: "Neurodevelopmental",
-    summary: "There is no cure, and many autistic people do not want one. Research focuses on early support, communication and co-occurring conditions; a 200-child brain-stimulation trial reported short-term gains in 2026.",
-    updated: "Oct 6, 2026",
-    search: "autism spectrum disorder",
-    pubmed: "autism[ti] OR autistic[ti] OR \"autism spectrum disorder\"[ti]",
-    drugs: ["risperidone", "aripiprazole", "leucovorin"],
->>>>>>> Stashed changes
     cancer: false,
     cadence: "weekly"
   }
