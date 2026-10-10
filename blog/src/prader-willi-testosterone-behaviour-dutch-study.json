@@ -1,0 +1,56 @@
+{
+  "slug": "prader-willi-testosterone-behaviour-dutch-study",
+  "title": "Prader-Willi: Testosterone in Young Men Had Minor Effects on Behavior",
+  "description": "A Dutch study of 59 young males with Prader-Willi syndrome found testosterone did not significantly change behavior scores. It had no placebo group.",
+  "date": "2026-10-09",
+  "disease": "prader-willi",
+  "keywords": ["Prader-Willi syndrome", "testosterone", "hypogonadism", "behavior", "bone density", "Prader-Willi treatment"],
+  "summary": "A Dutch study in Clinical Endocrinology (published October 6, 2026) followed 59 males with Prader-Willi syndrome, 44 of whom took testosterone. Parent-rated behavior scores did not change significantly, and 3 of the 44 (6.8%) stopped testosterone because of challenging behavior. It was an observational study with no placebo group, and the authors stress close monitoring.",
+  "sections": [
+    {
+      "h": "Why this question matters",
+      "p": [
+        "Most males with Prader-Willi syndrome (PWS) have low sex hormones (hypogonadism). Low hormones are linked to weaker bones. Testosterone replacement can help bone health and sexual development, but doctors have worried it could make challenging behavior worse in people who already have behavior difficulties."
+      ]
+    },
+    {
+      "h": "How the study worked",
+      "p": [
+        "Researchers followed 59 males with PWS in the Netherlands, all older than 14 and all on growth hormone. Their median age was about 22.6 years. Of these, 44 took testosterone, starting at a median age of 16.6 years.",
+        "Parents rated behavior with a standard checklist (the Developmental Behaviour Checklist-Parents). Bone density and body makeup were measured with DXA scans."
+      ]
+    },
+    {
+      "h": "What they found",
+      "ul": [
+        "The total behavior score did not change significantly during testosterone treatment.",
+        "Three of the 44 (6.8%) stopped testosterone for good because of challenging behavior. In 30 (68.2%), no behavior problem led to a dose change or stop.",
+        "Bone density scores stabilized after testosterone began, and lean body mass improved. Fat percentage stayed similar."
+      ]
+    },
+    {
+      "h": "Limits of the study",
+      "p": [
+        "This was an observational study of one group over time. There was no placebo group and people were not assigned by chance, so it cannot show that testosterone caused any change, or that it did not. The authors say that, under close surveillance, testosterone looks efficacious for maintaining bone density and improving body makeup, with minor effects on behavior in most cases.",
+        "Whether to use testosterone, and how to watch for behavior changes, is a decision for each person's doctors and family."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does testosterone make behavior worse in Prader-Willi syndrome?",
+      "a": "In this Dutch study, total behavior scores did not change significantly, and 3 of 44 males (6.8%) stopped testosterone because of behavior problems. There was no placebo group, so the study cannot settle the question."
+    },
+    {
+      "q": "Is there a cure for Prader-Willi syndrome?",
+      "a": "No. Prader-Willi syndrome is a genetic condition with no cure. Care focuses on managing symptoms such as hormone problems, appetite and behavior. This study looked at one hormone treatment, not a cure."
+    },
+    {
+      "q": "What did testosterone do for bone health in this study?",
+      "a": "Bone density scores stabilized after testosterone started, and lean body mass improved. The authors describe testosterone as helpful for maintaining bone density when used under close surveillance."
+    }
+  ],
+  "sources": [
+    { "title": "Testosterone Replacement Therapy in Adolescents and Young Adults With Prader-Willi Syndrome: Efficacy and Effects on Behaviour", "publisher": "Clinical Endocrinology (PubMed), October 6, 2026", "url": "https://pubmed.ncbi.nlm.nih.gov/42836443/" }
+  ]
+}

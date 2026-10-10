@@ -1,0 +1,61 @@
+{
+  "slug": "hiv-doravirine-raltegravir-doral-phase-2",
+  "title": "HIV: Two-Drug Doravirine and Raltegravir Switch Held Up in Phase 2",
+  "description": "In the DORAL phase 2 trial of 114 adults with HIV, switching to once-daily doravirine plus raltegravir kept the virus suppressed, with one rebound.",
+  "date": "2026-10-09",
+  "disease": "hiv",
+  "keywords": [
+    "HIV",
+    "doravirine",
+    "raltegravir",
+    "two-drug regimen",
+    "DORAL",
+    "HIV switch study"
+  ],
+  "summary": "The DORAL phase 2 trial (Journal of Antimicrobial Chemotherapy, October 6, 2026) tested switching to once-daily doravirine plus raltegravir in 114 adults whose HIV was already under control. One person in the switch group (1.3%) had a confirmed virus rebound by week 48, none in the delayed-switch group, and no more through week 96. It was small and open-label, so it supports feasibility and is not proof the swap suits everyone. HIV has no cure.",
+  "sections": [
+    {
+      "h": "What the trial tested",
+      "p": [
+        "Most people with HIV take a combination of medicines that keeps the virus at very low levels. DORAL tested a daily two-drug regimen of doravirine (100 mg) plus raltegravir (1,200 mg) as a switch for people whose virus was already suppressed.",
+        "The study took place in France, Italy and Spain. The 114 adults had HIV that was already suppressed on stable treatment, had not used doravirine, and had no raltegravir resistance. By chance, 2 of every 3 switched right away, and the others kept their old treatment until week 48 and then switched."
+      ]
+    },
+    {
+      "h": "What they found",
+      "ul": [
+        "By week 48, one person in the immediate-switch group (1.3%) had virological failure, meaning a confirmed return of virus at 50 copies/mL or more. None did in the delayed-switch group.",
+        "No additional failures were seen through week 96.",
+        "Immune measures stayed stable. Three side effects considered related to the drugs led people to stop treatment, and one grade 3 (severe) event, anxiety, was reported."
+      ]
+    },
+    {
+      "h": "How to read the result",
+      "p": [
+        "The participants were older (median age 57) and had kept the virus suppressed for a median of 10 years. The trial was open-label, so participants and doctors knew which drugs were used, and it was a phase 2 study. The authors call it proof of concept that supports feasibility of this pair in selected people, especially where avoiding drug interactions or avoiding a class of HIV drugs called NRTIs matters.",
+        "This is not a cure. HIV treatment must be taken continuously, and anyone with HIV should talk to their care team before changing medicines."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cure for HIV?",
+      "a": "No. Current medicines keep the virus under control but do not remove it from the body, so treatment is needed long term. This trial tested a simpler two-drug regimen, not a cure."
+    },
+    {
+      "q": "Can people with HIV take just two drugs?",
+      "a": "In this small trial, doravirine plus raltegravir kept the virus suppressed in selected adults who were already doing well on treatment. It was a phase 2 study, so larger trials would be needed before it is known how widely it works. Medicine changes should only be made with a doctor."
+    },
+    {
+      "q": "How many people had the virus return in DORAL?",
+      "a": "One person in the immediate-switch group (1.3%) had a confirmed virus rebound by week 48. None occurred in the delayed-switch group, and no more occurred through week 96."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Efficacy and safety of switching to once-daily oral doravirine plus raltegravir in virologically suppressed people with HIV-1: a randomized, open-label, multicentre phase 2 study (DORAL)",
+      "publisher": "Journal of Antimicrobial Chemotherapy (PubMed), October 6, 2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42841932/"
+    }
+  ]
+}

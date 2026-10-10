@@ -1,0 +1,68 @@
+{
+  "slug": "neuroblastoma-complete-tumor-removal-survival",
+  "title": "Neuroblastoma: Removing Most of the Tumor Linked to Better Survival",
+  "description": "Children with high-risk neuroblastoma whose surgeons removed 90% or more of the main tumor had better 5-year survival in a look-back study of 326.",
+  "date": "2026-10-09",
+  "disease": "neuroblastoma",
+  "keywords": [
+    "neuroblastoma",
+    "high-risk neuroblastoma",
+    "surgery",
+    "Children's Oncology Group",
+    "ANBL0532",
+    "neuroblastoma survival"
+  ],
+  "summary": "A study in Annals of Surgery (published October 7, 2026) looked at 326 children with high-risk neuroblastoma treated in a Children's Oncology Group trial. Those whose surgeons removed at least 90% of the main tumor had higher 5-year event-free survival (50.3% vs 31.0%) and overall survival (61.8% vs 41.1%) than those with less removed. It was a look back at trial data, so it cannot prove that the surgery caused the difference.",
+  "sections": [
+    {
+      "h": "What the researchers studied",
+      "p": [
+        "High-risk neuroblastoma is a childhood cancer that is treated with several methods together: chemotherapy, surgery, stem-cell transplant, radiation and immunotherapy. Doctors have not been sure how much the amount of tumor removed in surgery changes the outcome.",
+        "The team looked at 326 children from Children's Oncology Group trial ANBL0532 who had surgery on their main (primary) tumor during the first phase of treatment. The surgeon recorded whether at least 90% of the tumor was removed (called complete excision, 269 children) or less than 90% (called incomplete excision, 57 children)."
+      ]
+    },
+    {
+      "h": "What they found",
+      "ul": [
+        "Five-year event-free survival (living without the cancer coming back, growing or other major setbacks) was 50.3% with complete excision and 31.0% with incomplete excision.",
+        "Five-year overall survival was 61.8% versus 41.1%.",
+        "The chance that the tumor came back at the original site within 5 years was 12.8% versus 24.8%.",
+        "There was no difference in surgical complications between the two groups."
+      ]
+    },
+    {
+      "h": "Why this does not prove surgery is the cause",
+      "p": [
+        "This was an analysis of past trial data, not a trial that randomly assigned children to more or less surgery. The authors note that complete removal was more likely in children with tumors in the adrenal gland, tumors with the MYCN change, and tumors without certain surgical risk factors. Tumors that are easier to reach may also differ in other ways that affect survival.",
+        "The authors conclude that, as part of a full treatment plan, removing the primary tumor completely when it is feasible is an important part of care."
+      ]
+    },
+    {
+      "h": "What this means for families",
+      "p": [
+        "The result fits with how pediatric cancer teams already approach surgery: they aim to remove as much as can be done safely. It does not add a new treatment, and it does not mean surgery alone helps. Decisions about surgery depend on where the tumor is and what is safe for each child, and they are made by the child's care team."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does removing more of a neuroblastoma tumor improve survival?",
+      "a": "In this study, children whose surgeons removed at least 90% of the main tumor had better 5-year survival than those with less removed. Because it was a look back at trial data, it shows a link, not proof that the surgery itself caused the difference."
+    },
+    {
+      "q": "Is there a cure for high-risk neuroblastoma?",
+      "a": "Some children are cured, but many with high-risk disease still relapse. In this study about 50% of children with complete excision and 31% with incomplete excision were free of events at 5 years. This study did not test a new cure."
+    },
+    {
+      "q": "Was surgery riskier when more tumor was removed?",
+      "a": "The study found no difference in surgical complications between children with at least 90% removed and those with less removed."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Impact of Extent of Surgical Resection on Survival in Patients With High-risk Neuroblastoma: A Report From Children's Oncology Group ANBL0532",
+      "publisher": "Annals of Surgery (PubMed), October 7, 2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42839317/"
+    }
+  ]
+}
