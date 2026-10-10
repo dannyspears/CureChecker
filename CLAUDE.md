@@ -71,7 +71,7 @@ No build step. Preview locally with the `site` config in `.claude/launch.json` (
 - The daily refresh must keep editing the plain sections in the HTML. Never hand-wrap sections in details; layout.js does that in the browser.
 
 ## Update cadence
-- Each entry in `assets/diseases.js` has `cadence`: `daily` (incurable diseases) or `weekly` (conditions).
+- Each entry in `assets/diseases.js` has `cadence`: `daily` (incurable diseases) or `weekly` (other conditions, and slow-moving chronic diseases the owner chose to refresh weekly, currently including male pattern baldness and autism; the owner may move any report between daily and weekly to manage usage).
 - Decide when adding a new report: an incurable disease is `daily`; a condition that is not an incurable disease (cosmetic, quality-of-life, or otherwise manageable/curable) is `weekly`. If unsure, ask the owner by noting it in the final message and default to `daily`.
 - The daily refresh updates every `daily` report every day. It updates `weekly` reports only on Mondays (Eastern time); on other days it must not touch them at all (leave their edition date, `updated` field and content alone).
 - The masthead shows `Last updated`, the date in `#edition-date` (for example `Monday, October 5, 2026`) and the Eastern time in `#edition-time` (for example `7:41 AM ET`). Every refresh must update BOTH to the Eastern date and time at which it commits (run `TZ=America/New_York date` right before committing). Weekly reports keep ` · Updated weekly` after the time. 'Updated daily' no longer appears in any masthead.
