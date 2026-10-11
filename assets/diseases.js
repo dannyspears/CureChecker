@@ -282,7 +282,7 @@ window.CURECHECKER_DISEASES = [
     palette: "lavender",
     category: "Cancer · Pancreas",
     summary: "The FDA approved daraxonrasib, a new kind of RAS-blocking pill that nearly doubled survival in previously treated spread cancer.",
-    updated: "Oct 8, 2026",
+    updated: "Oct 11, 2026",
     search: "pancreatic cancer",
     pubmed: "\"pancreatic cancer\"[ti] OR \"pancreatic ductal adenocarcinoma\"[ti]",
     drugs: ["daraxonrasib", "gemcitabine", "olaparib", "irinotecan liposome"],
