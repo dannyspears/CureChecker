@@ -544,3 +544,7 @@ details[open].fold>summary{margin-bottom:6px}
 .missing-link p+p{margin-top:10px}
 .missing-link .ml-wrong{margin-top:10px}
 .missing-link .ml-date{font-size:13.5px;color:var(--muted);border-top:1px dashed var(--amber);padding-top:12px;margin-top:16px}
+/* Pine (type 2 diabetes): a deep blue-green; its blue-circle color is the landing page's and navy, ultramarine and indigo were taken */
+[data-palette="pine"]{--paper:#EEF7F7; --panel:#FFFFFF; --ink:#0E3133; --muted:#4C696B; --line:#C7DFE0; --signal:#1F5E62; --signal-soft:#DCEFF0; --sky:#B3DBDD; --blue:#164447; --blue-soft:#E0EFF0}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) [data-palette="pine"]{--paper:#0A1B1C; --panel:#102829; --ink:#E2F3F4; --muted:#92B6B8; --line:#1F4042; --signal:#7FD4D6; --signal-soft:#123E40; --sky:#1F575A; --blue:#9EDEE0; --blue-soft:#143436}}
+:root[data-theme="dark"] [data-palette="pine"]{--paper:#0A1B1C; --panel:#102829; --ink:#E2F3F4; --muted:#92B6B8; --line:#1F4042; --signal:#7FD4D6; --signal-soft:#123E40; --sky:#1F575A; --blue:#9EDEE0; --blue-soft:#143436}

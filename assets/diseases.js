@@ -428,5 +428,19 @@ window.CURECHECKER_DISEASES = [
     drugs: ["dinutuximab", "naxitamab", "eflornithine", "isotretinoin", "cyclophosphamide"],
     cancer: true,
     cadence: "daily"
+  },
+  {
+    slug: "type-2-diabetes",
+    name: "Type 2 diabetes",
+    page: "type-2-diabetes.html",
+    palette: "pine",
+    category: "Metabolic · Endocrine",
+    summary: "More than 40 million Americans have diabetes, and 90–95% of them have type 2. There's no cure, but major weight loss brings remission for some.",
+    updated: "Oct 11, 2026",
+    search: "type 2 diabetes",
+    pubmed: "\"type 2 diabetes\"[ti]",
+    drugs: ["metformin", "tirzepatide", "semaglutide", "empagliflozin", "dapagliflozin", "canagliflozin", "dulaglutide", "sitagliptin", "pioglitazone", "orforglipron"],
+    cancer: false,
+    cadence: "daily"
   }
 ];
