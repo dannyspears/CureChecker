@@ -1,0 +1,56 @@
+{
+  "slug": "huntingtons-som3355-phase-2b-chorea-results",
+  "title": "Huntington's: SOM3355 Misses Main Goal in Phase 2b Chorea Trial",
+  "description": "A Phase 2b trial of SOM3355 for Huntington's chorea missed its main goal. A planned subgroup analysis was positive, and a Phase 3 trial is planned.",
+  "date": "2026-10-13",
+  "disease": "huntingtons",
+  "keywords": ["SOM3355", "Huntington's disease chorea", "SOMCT03", "Phase 2b Huntington's", "SOM Biotech", "Huntington's chorea treatment"],
+  "summary": "A peer-reviewed Phase 2b trial of SOM3355 in 139 people with Huntington's disease did not meet its main goal of reducing chorea (involuntary movements). A planned analysis of people not taking antipsychotics did show a benefit. The drug maker funded the study and says a Phase 3 trial is planned. SOM3355 is not approved.",
+  "sections": [
+    {
+      "h": "What was reported",
+      "p": [
+        "Results of the SOMCT03 trial were published in EClinicalMedicine in autumn 2026. The trial tested SOM3355, a pill meant to treat chorea, the jerky involuntary movements common in Huntington's disease. The study did not meet its main goal."
+      ]
+    },
+    {
+      "h": "How the trial worked",
+      "p": [
+        "SOMCT03 was a double-blind, randomized, placebo-controlled Phase 2b study at 23 sites in seven European countries. Adults with genetically confirmed Huntington's and a chorea score (Total Maximal Chorea) of at least 10 took 400 mg a day, 600 mg a day or placebo for 12 weeks. In all, 139 people were enrolled and treated."
+      ]
+    },
+    {
+      "h": "The results",
+      "ul": [
+        "Main goal: at 600 mg a day, chorea score fell by 1.0 point more than with placebo. That was not statistically significant (p = 0.0961).",
+        "A planned analysis of 122 people not taking antipsychotic drugs (88% of the group) showed a significant difference of 1.3 points (p = 0.0449).",
+        "A later, post-hoc analysis of 57 people not on antipsychotics with higher starting chorea scores showed a 1.8-point difference (p = 0.0320). Post-hoc analyses are less reliable because they are chosen after the data are seen.",
+        "The most common side effect was slow heartbeat (bradycardia): 12% at 600 mg and 5% at 400 mg. No suicidal thoughts or attempts were reported in the SOM3355 groups."
+      ]
+    },
+    {
+      "h": "How to read it",
+      "p": [
+        "The authors say the trial did not meet its main goal, but that the drug looked safe and well tolerated and showed preliminary evidence of benefit in people not on antipsychotics. They say more research is needed.",
+        "The study was funded by SOM Biotech, the drug's developer, and several authors work for the company. A Phase 3 trial is planned. SOM3355 is not approved anywhere, and this drug targets chorea symptoms rather than the underlying disease. Huntington's disease has no cure."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did SOM3355 work for Huntington's chorea?",
+      "a": "Not on the trial's main measure. The difference from placebo at 600 mg a day was not statistically significant. A planned analysis of people not taking antipsychotics did reach significance, but that needs confirming in a larger trial."
+    },
+    {
+      "q": "Is SOM3355 approved?",
+      "a": "No. It is an experimental drug. The company says a Phase 3 trial is planned."
+    },
+    {
+      "q": "Does this treat the cause of Huntington's disease?",
+      "a": "No. SOM3355 is aimed at chorea, a symptom. It is not a cure and it does not target the gene change that causes the disease."
+    }
+  ],
+  "sources": [
+    { "title": "Safety and efficacy of SOM3355 in patients with Huntington's disease (SOMCT03): a phase 2b, randomised, placebo-controlled, multicentre, dose-ranging study", "publisher": "EClinicalMedicine, 2026 (PubMed 42857615)", "url": "https://pubmed.ncbi.nlm.nih.gov/42857615/" }
+  ]
+}

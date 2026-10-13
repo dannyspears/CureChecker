@@ -1,0 +1,63 @@
+{
+  "slug": "parkinsons-solengepras-arise-phase-3-results",
+  "title": "Parkinson's: Solengepras Cuts \"Off\" Time in Phase 3 Trial",
+  "description": "A once-daily pill that does not act on dopamine met its main goal in a Phase 3 Parkinson's trial, cutting daily \"off\" time by 0.61 hours more than placebo.",
+  "date": "2026-10-13",
+  "disease": "parkinsons",
+  "keywords": ["solengepras", "Cerevance", "ARISE trial", "Parkinson's off time", "GPR6 inhibitor", "Parkinson's Phase 3", "MDS Congress 2026"],
+  "summary": "On October 7-8, 2026, Cerevance reported that its pill solengepras met the main goal of the Phase 3 ARISE trial in Parkinson's disease. The 150 mg dose cut daily \"off\" time by 0.61 hours more than placebo. The results are company-reported, and the drug is not approved. Parkinson's still has no cure.",
+  "sections": [
+    {
+      "h": "What was reported",
+      "p": [
+        "Cerevance said the Phase 3 ARISE trial of solengepras, a once-daily pill, met its primary endpoint in people with Parkinson's disease who have motor fluctuations. The company presented the results at the 2026 International Congress of Parkinson's Disease and Movement Disorders (MDS Congress) in Seoul. NeurologyLive covered the data on October 8, 2026.",
+        "\"Off\" time is the part of the day when Parkinson's medicines wear off and symptoms such as stiffness and slowness return."
+      ]
+    },
+    {
+      "h": "How the trial worked",
+      "p": [
+        "ARISE was randomized, double-blind and placebo-controlled. Of 710 people screened, 341 were randomized to solengepras 150 mg (113 people), 75 mg (114 people) or placebo (114 people) once a day for 12 weeks. All were on stable Parkinson's medicines and averaged at least 3 hours of off time a day. Average baseline off time was 5.65 hours."
+      ]
+    },
+    {
+      "h": "The results",
+      "ul": [
+        "Daily off time fell by 1.56 hours on 150 mg, compared with 0.95 hours on placebo. The difference was 0.61 hours (p = .035).",
+        "\"On\" time without troublesome dyskinesia (extra movements) rose by 1.58 hours versus 0.98 hours with placebo (p = .0468).",
+        "Headache (8.0% vs 3.5%), insomnia (6.2% vs 0.9%) and nausea (6.2% vs 1.8%) were more common on 150 mg than on placebo. No serious side effects occurred in the 150 mg group."
+      ]
+    },
+    {
+      "h": "Why it is different",
+      "p": [
+        "Most Parkinson's drugs act on dopamine. Solengepras blocks a brain receptor called GPR6, which helps regulate movement circuits. It is meant to restore balance in those circuits without directly changing dopamine levels.",
+        "An earlier, smaller Phase 2 trial also reported less off time, according to the company."
+      ]
+    },
+    {
+      "h": "What this does not show",
+      "p": [
+        "The numbers come from the company and a conference presentation, not a published paper. The gain over placebo is modest, and the main result was only just below the usual cutoff for significance. Nothing has been filed or approved: Cerevance says it will discuss the results with the FDA to decide next steps.",
+        "Solengepras treats symptoms. It has not been shown to slow or stop Parkinson's disease, and there is still no cure."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is solengepras approved for Parkinson's disease?",
+      "a": "No. As of October 2026, Cerevance says it plans to discuss the Phase 3 results with the FDA. No application is reported as filed."
+    },
+    {
+      "q": "What is Parkinson's \"off\" time?",
+      "a": "Off time is when medicines are not working well and symptoms like slowness, stiffness or tremor come back. Reducing it is a common goal of add-on Parkinson's treatments."
+    },
+    {
+      "q": "Does solengepras cure or slow Parkinson's?",
+      "a": "No such claim has been made. The trial measured symptoms (off time) over 12 weeks. It did not test whether the drug changes the course of the disease."
+    }
+  ],
+  "sources": [
+    { "title": "Solengepras Meets Primary Endpoint in Phase 3 ARISE Trial of Parkinson Disease", "publisher": "NeurologyLive, October 8, 2026", "url": "https://www.neurologylive.com/view/solengepras-meets-primary-endpoint-phase-3-arise-trial-parkinson-disease" }
+  ]
+}
