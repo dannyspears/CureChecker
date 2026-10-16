@@ -1,0 +1,82 @@
+{
+  "slug": "duchenne-del-zota-explore44-lancet-neurology",
+  "title": "Duchenne Exon 44 Drug Del-zota: Phase 1/2 Results Published",
+  "description": "Del-zota raised dystrophin about 25% in a small Lancet Neurology trial for exon 44 Duchenne. No movement benefit shown yet; not approved.",
+  "date": "2026-10-16",
+  "disease": "duchenne",
+  "keywords": [
+    "del-zota",
+    "delpacibart zotadirsen",
+    "EXPLORE44",
+    "Duchenne exon 44",
+    "Avidity Biosciences",
+    "Duchenne clinical trial"
+  ],
+  "summary": "Peer-reviewed Phase 1/2 results for del-zota, an experimental Duchenne drug for people with exon 44 skipping-amenable gene changes, appeared in The Lancet Neurology. The drug raised dystrophin and had an acceptable safety profile in a small trial. It is not approved, and Duchenne has no cure.",
+  "sections": [
+    {
+      "h": "What was published",
+      "p": [
+        "The Lancet Neurology published results from EXPLORE44, a Phase 1/2 trial of delpacibart zotadirsen (del-zota). The paper was added to PubMed on October 14, 2026, and its print issue is dated November 2026.",
+        "Del-zota is for Duchenne muscular dystrophy caused by gene changes that can be treated by skipping exon 44 of the DMD gene. The paper says no exon-skipping treatment is approved for this group. It is an antibody linked to a molecule that skips exon 44, and it is designed to deliver that molecule to muscle."
+      ]
+    },
+    {
+      "h": "What the trial found",
+      "p": [
+        "Part B of the trial included 26 boys and men with Duchenne aged 7 to 27. They were randomly assigned to del-zota or placebo and received three infusions. Neither they nor the staff knew who got the drug. The trial also tested 45 healthy adult volunteers in Part A."
+      ],
+      "ul": [
+        "Exon 44 skipping rose by an average of 36.6% at 5 mg/kg and 43.4% at 10 mg/kg, versus 1.6% on placebo.",
+        "Dystrophin levels rose by an average of 25.0% at 5 mg/kg and 25.6% at 10 mg/kg, versus a 0.7% drop on placebo.",
+        "Most side effects were mild or moderate. Two people on the 5 mg/kg dose stopped treatment because of side effects, one with an anaphylactic reaction and one with an infusion-related reaction.",
+        "The authors also report lower levels of markers of muscle damage."
+      ]
+    },
+    {
+      "h": "How to read these results",
+      "p": [
+        "This was a small, early trial built mainly to test safety. Part B had 19 people on del-zota and 7 on placebo. The measured outcomes were exon skipping and dystrophin, not walking or strength. A higher dystrophin level is a lab result, and the paper does not show that people moved or felt better. The authors say the findings support a larger Phase 3 study to look at benefit and long-term safety.",
+        "The trial was sponsored by Avidity Biosciences, now part of Novartis."
+      ]
+    },
+    {
+      "h": "Where del-zota stands",
+      "p": [
+        "Del-zota is not approved. Our Duchenne report lists a September 2026 report from patient groups that the FDA accepted the company's application for accelerated approval with priority review, and that a Phase 3 confirmatory trial called SAFARI44 has started. Acceptance for review is not approval, and the FDA may or may not approve it."
+      ]
+    },
+    {
+      "h": "Where to read more",
+      "p": [
+        "Our Duchenne report covers this paper and the other drugs under review. This post is AI-written from the sources below, has not been reviewed by a doctor, and is not medical advice. Duchenne muscular dystrophy has no cure."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is del-zota approved for Duchenne?",
+      "a": "No. As of October 16, 2026, our report lists it as under FDA review for accelerated approval. Acceptance for review is not approval."
+    },
+    {
+      "q": "Does del-zota help boys with Duchenne move better?",
+      "a": "This trial did not measure that. It showed more exon skipping and more dystrophin, and the authors say a larger Phase 3 study is needed to look at benefit."
+    },
+    {
+      "q": "Is there a cure for Duchenne muscular dystrophy?",
+      "a": "No. Treatments aim to slow the disease or replace missing dystrophin, but there is no cure today."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Safety and efficacy of delpacibart zotadirsen in Duchenne muscular dystrophy mutations amenable to exon 44 skipping in the USA (EXPLORE44)",
+      "publisher": "The Lancet Neurology, November 2026 issue (PubMed abstract, added October 14, 2026)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42874619/"
+    },
+    {
+      "title": "FDA grants priority review to potential Duchenne treatment del-zota",
+      "publisher": "CureDuchenne",
+      "url": "https://cureduchenne.org/research/fda-grants-priority-review-to-potential-duchenne-treatment-del-zota/"
+    }
+  ]
+}

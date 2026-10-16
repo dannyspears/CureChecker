@@ -1,0 +1,81 @@
+{
+  "slug": "hiv-impala-long-acting-injections-africa-nejm",
+  "title": "HIV Injections Every 8 Weeks Matched Daily Pills in an African Trial",
+  "description": "The IMPALA trial (NEJM, Oct 15, 2026): cabotegravir plus rilpivirine shots every 8 weeks kept HIV suppressed in 91.0% vs 89.2% on pills. Not a cure.",
+  "date": "2026-10-16",
+  "disease": "hiv",
+  "keywords": [
+    "IMPALA trial",
+    "long-acting HIV injections",
+    "cabotegravir rilpivirine",
+    "HIV treatment Africa",
+    "HIV adherence",
+    "HIV clinical trial"
+  ],
+  "summary": "A Phase 3b trial published in the New England Journal of Medicine on October 15, 2026 found that HIV injections given every 8 weeks worked about as well as daily pills in African adults who had trouble taking pills on time. HIV has no cure. Both treatments only keep the virus under control while they are used.",
+  "sections": [
+    {
+      "h": "What was published",
+      "p": [
+        "On October 15, 2026, the New England Journal of Medicine published IMPALA, a Phase 3b trial. It compared two ways of treating HIV in adults in Kenya, South Africa and Uganda: long-acting injections of cabotegravir plus rilpivirine given into the muscle every 8 weeks, and daily pills based on dolutegravir.",
+        "The people in the trial already had HIV under control, but they had trouble taking pills on time or staying in care. The authors note that about 1 million people in eastern and southern Africa who take HIV pills still do not have the virus suppressed because of problems like these."
+      ]
+    },
+    {
+      "h": "What the numbers show",
+      "p": [
+        "540 adults joined the trial and 537 were included in the main analysis. They were randomly assigned to injections or pills, and the study was open-label, so everyone knew which treatment they got."
+      ],
+      "ul": [
+        "At week 48, the virus was below 50 copies per milliliter of blood in 244 of 268 people (91.0%) on injections and 240 of 269 (89.2%) on pills. This met the study's goal of being no worse than pills by more than a set margin (noninferior).",
+        "Confirmed treatment failure, meaning two blood tests in a row at 200 copies or higher, happened in 5 people (1.9%) on injections and in none on pills.",
+        "Serious side effects were reported in 11 of 271 people (4.1%) on injections and 8 of 269 (3.0%) on pills."
+      ]
+    },
+    {
+      "h": "How to read these results",
+      "p": [
+        "The trial shows injections worked about as well as pills for keeping the virus down over 48 weeks in this group. It does not show that injections work better. The five treatment failures, all in the injection group, are worth noting.",
+        "The authors say drug-resistance testing was not done at the start of the trial. The study was funded by Johnson & Johnson, which makes rilpivirine and sells the injectable combination with ViiV Healthcare's cabotegravir. The trial lasted 48 weeks in 540 people, so it cannot answer questions about longer-term safety."
+      ]
+    },
+    {
+      "h": "Is this a cure?",
+      "p": [
+        "No. Both treatments keep HIV under control only while a person keeps using them. There is no cure for HIV today. The news here is about giving people another way to stay on treatment, not about getting rid of the virus."
+      ]
+    },
+    {
+      "h": "Where to read more",
+      "p": [
+        "Our HIV report lists this paper in its Latest studies section, along with other recent results, approvals and trials. The full paper is in the New England Journal of Medicine, and the trial is registered as NCT05546242 on ClinicalTrials.gov. This post is AI-written from those sources, has not been reviewed by a doctor, and is not medical advice."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Are HIV injections as good as daily pills?",
+      "a": "In this trial, injections every 8 weeks kept the virus suppressed in 91.0% of people at week 48, compared with 89.2% on pills. That met the study's noninferiority goal. It does not show that injections are better."
+    },
+    {
+      "q": "Is there a cure for HIV?",
+      "a": "No. Both the injections and the pills keep HIV under control only while they are taken. There is no cure for HIV today."
+    },
+    {
+      "q": "Who took part in the IMPALA trial?",
+      "a": "Adults with HIV in Kenya, South Africa and Uganda whose virus was suppressed but who had trouble taking pills on time or staying in care. 537 people were in the main analysis."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Long-Acting HIV Therapy in African Adults with Adherence Challenges (IMPALA)",
+      "publisher": "New England Journal of Medicine, October 15, 2026 (PubMed abstract)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42874104/"
+    },
+    {
+      "title": "IMPALA trial registration NCT05546242",
+      "publisher": "ClinicalTrials.gov",
+      "url": "https://clinicaltrials.gov/study/NCT05546242"
+    }
+  ]
+}
