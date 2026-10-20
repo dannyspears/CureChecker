@@ -1,0 +1,80 @@
+{
+  "slug": "ipf-admilparant-aloft-ipf-phase-3-topline",
+  "title": "IPF: Admilparant Meets Main Goal in Phase 3 Trial, Company Says",
+  "description": "BMS says admilparant beat placebo on lung capacity in the Phase 3 ALOFT-IPF trial at 60 mg. What is known, what is not yet public, and what is next.",
+  "date": "2026-10-20",
+  "disease": "ipf",
+  "keywords": [
+    "admilparant",
+    "ALOFT-IPF",
+    "idiopathic pulmonary fibrosis",
+    "IPF treatment",
+    "BMS-986278",
+    "LPA1 antagonist",
+    "Bristol Myers Squibb"
+  ],
+  "summary": "On October 12, 2026, Bristol Myers Squibb said its Phase 3 ALOFT-IPF trial of admilparant met its main goal in idiopathic pulmonary fibrosis (IPF) at the 60 mg twice-daily dose. This is a company announcement with no numbers yet. Admilparant is not approved.",
+  "sections": [
+    {
+      "h": "What the company announced",
+      "p": [
+        "Bristol Myers Squibb (BMS) announced topline results from ALOFT-IPF, a Phase 3 trial of admilparant, on October 12, 2026. The trial enrolled about 1,255 adults aged 40 or older with IPF.",
+        "Admilparant is a pill taken twice a day. It is meant to block a signal called LPA1 that is thought to help drive scarring in the lungs. This post draws on the BMS press release, which is a company source and has not been peer reviewed."
+      ]
+    },
+    {
+      "h": "What the trial found",
+      "ul": [
+        "The main measure was the change in forced vital capacity (FVC), a measure of how much air the lungs can hold, from the start of the trial to week 52.",
+        "At the 60 mg twice-daily dose, admilparant improved FVC compared with placebo by a statistically significant amount, according to BMS.",
+        "At the 120 mg dose, FVC fell more slowly than on placebo, but the difference was not statistically significant.",
+        "BMS described the pill as well tolerated at both doses, with few people stopping because of side effects, at a rate similar to placebo."
+      ]
+    },
+    {
+      "h": "What is not known yet",
+      "p": [
+        "The release gives no effect sizes, p-values or side-effect numbers. Without them, it is not possible to say how large the benefit is, or how it compares with the approved IPF medicines. BMS says detailed results will be presented at a future medical meeting, without naming one.",
+        "It is also not yet clear why the lower dose worked while the higher one did not reach significance. Peer-reviewed data would be needed to look at that."
+      ]
+    },
+    {
+      "h": "What happens next",
+      "p": [
+        "BMS says it will review the full data and talk with health authorities about planned filings. Admilparant is not approved anywhere for IPF. A related trial, ALOFT-PPF, in progressive pulmonary fibrosis, is expected to report topline results in early 2027."
+      ]
+    },
+    {
+      "h": "Where this fits among IPF treatments",
+      "p": [
+        "IPF has no cure. Medicines such as nintedanib, pirfenidone and, in some countries, nerandomilast (Jascayd) slow lung function loss. Our IPF report tracks these and other treatments in testing, including inhaled treprostinil, which is under FDA review."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is admilparant approved for IPF?",
+      "a": "No. As of October 20, 2026, admilparant is an investigational medicine. BMS says it plans to talk with health authorities about filings."
+    },
+    {
+      "q": "Does this mean there is a cure for IPF?",
+      "a": "No. The trial measured lung capacity over 52 weeks. IPF has no cure, and this result does not change that."
+    },
+    {
+      "q": "Why are there no numbers in the results?",
+      "a": "The company announced only topline results in a press release. Detailed data are expected at a future medical meeting and are not yet public."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bristol Myers Squibb Announces Phase 3 ALOFT-IPF Trial Evaluating Admilparant in Adults with Idiopathic Pulmonary Fibrosis Met Primary Endpoint",
+      "publisher": "Bristol Myers Squibb, October 12, 2026 (company press release)",
+      "url": "https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Phase-3-ALOFT-IPF-Trial-Evaluating-Admilparant-in-Adults-with-Idiopathic-Pulmonary-Fibrosis-Met-Primary-Endpoint/default.aspx"
+    },
+    {
+      "title": "ALOFT-IPF trial record (NCT06003426)",
+      "publisher": "ClinicalTrials.gov",
+      "url": "https://clinicaltrials.gov/study/NCT06003426"
+    }
+  ]
+}
