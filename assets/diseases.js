@@ -324,7 +324,7 @@ window.CURECHECKER_DISEASES = [
     palette: "graphite",
     category: "Lungs · Chronic",
     summary: "The FDA is reviewing inhaled Tyvaso for IPF after two Phase 3 trials slowed lung-function loss, and the newest IPF pill, Jascayd, won EU approval in July 2026.",
-    updated: "Oct 6, 2026",
+    updated: "Oct 20, 2026",
     search: "pulmonary fibrosis",
     pubmed: "\"idiopathic pulmonary fibrosis\"[ti] OR \"pulmonary fibrosis\"[ti]",
     drugs: ["nintedanib", "pirfenidone", "nerandomilast"],
