@@ -1,0 +1,67 @@
+{
+  "slug": "crohns-risankizumab-subcutaneous-induction-affirm-results",
+  "title": "Crohn's Disease: Skyrizi Injected Starter Doses in AFFIRM Phase 3",
+  "description": "Full Phase 3 AFFIRM data: injected risankizumab starter doses beat placebo at week 12 in Crohn's disease. An FDA decision on the injected start is pending.",
+  "date": "2026-10-23",
+  "disease": "crohns",
+  "keywords": [
+    "Crohn's disease",
+    "risankizumab",
+    "Skyrizi",
+    "AFFIRM",
+    "subcutaneous induction"
+  ],
+  "summary": "At the ACG meeting in October 2026, researchers presented Phase 3 AFFIRM results for starting risankizumab (Skyrizi) with injections instead of IV infusions in Crohn's disease. At week 12, 55% on risankizumab were in clinical remission versus 29.6% on placebo. This is a conference report, and the injected start is not yet approved.",
+  "sections": [
+    {
+      "h": "What was reported",
+      "p": [
+        "Results of AFFIRM, a Phase 3 trial of 289 adults with moderate to severe Crohn's disease, were presented at the American College of Gastroenterology meeting (October 12 to 14, 2026), as reported by Healio. People were randomly assigned to injected risankizumab (191) or placebo (98)."
+      ]
+    },
+    {
+      "h": "Week 12 results",
+      "p": [
+        "At week 12, 55% of the risankizumab group were in clinical remission versus 29.6% on placebo. An endoscopic response, meaning visible healing of the gut lining, was seen in 44% versus 14.3%."
+      ]
+    },
+    {
+      "h": "Week 24 results",
+      "p": [
+        "Among people who continued to week 24, clinical remission was 67.2% on risankizumab versus 29.6% on placebo. Only people who stayed in the study are counted, and the report does not give a statistical test for this comparison."
+      ]
+    },
+    {
+      "h": "Safety and approval status",
+      "p": [
+        "Side effects were described as similar between the groups. Skyrizi is already approved for Crohn's with an IV start. AbbVie asked the FDA in April 2026 to approve an injected start, and no decision has been reported."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is Skyrizi injected starter dose approved for Crohn's?",
+      "a": "Not yet. Skyrizi is approved for Crohn's with an IV start. The injected start is under FDA review."
+    },
+    {
+      "q": "Is there a cure for Crohn's disease?",
+      "a": "No. Treatments aim to calm inflammation and bring remission. This trial did not test a cure."
+    },
+    {
+      "q": "Does 67.2% remission mean most people get better?",
+      "a": "That number counts only people who stayed in the study to week 24, so it likely looks better than the full group. A doctor can explain what it means for an individual."
+    }
+  ],
+  "sources": [
+    {
+      "title": "High-efficacy subcutaneous risankizumab sustains Crohn's remission, response at week 24",
+      "publisher": "Healio, October 14, 2026",
+      "url": "https://www.healio.com/news/gastroenterology/20261014/high-efficacy-subcutaneous-risankizumab-sustains-crohns-remission-response-at-week-24"
+    },
+    {
+      "title": "AbbVie submits application for Skyrizi subcutaneous induction in Crohn's disease",
+      "publisher": "AbbVie press release, April 27, 2026",
+      "url": "https://news.abbvie.com/2026-04-27-AbbVie-Submits-Regulatory-Application-to-FDA-for-SKYRIZI-R-risankizumab-rzaa-Subcutaneous-Induction-for-Adults-with-Moderately-to-Severely-Active-Crohns-Disease"
+    }
+  ]
+}

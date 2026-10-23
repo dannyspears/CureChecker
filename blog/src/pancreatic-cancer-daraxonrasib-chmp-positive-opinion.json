@@ -1,0 +1,63 @@
+{
+  "slug": "pancreatic-cancer-daraxonrasib-chmp-positive-opinion",
+  "title": "Pancreatic Cancer: EU Regulator Panel Backs Daraxonrasib",
+  "description": "The EMA's CHMP recommended approval of daraxonrasib (Rasonque) for previously treated metastatic pancreatic cancer. The final EU decision is still pending.",
+  "date": "2026-10-23",
+  "disease": "pancreatic-cancer",
+  "keywords": [
+    "pancreatic cancer",
+    "daraxonrasib",
+    "Rasonque",
+    "CHMP",
+    "EMA",
+    "RASolute 302"
+  ],
+  "summary": "An expert committee of the European Medicines Agency (the CHMP) has recommended approving daraxonrasib (Rasonque) for adults with metastatic pancreatic cancer who have had at least one earlier treatment. The European Commission still has to make the final decision, so it is not yet approved in the EU. The recommendation rests on the RASolute 302 trial.",
+  "sections": [
+    {
+      "h": "What was announced",
+      "p": [
+        "On about October 15, 2026, the European Medicines Agency's drug committee (the CHMP) gave a positive opinion for daraxonrasib, sold as Rasonque. It would be used alone in adults with metastatic pancreatic adenocarcinoma who have already had at least one systemic treatment, as reported by OncLive."
+      ]
+    },
+    {
+      "h": "What the opinion is based on",
+      "p": [
+        "The recommendation draws on the RASolute 302 trial. In the overall group, people on daraxonrasib lived a median of 13.2 months, compared with 6.7 months for those given the chemotherapy their doctor chose (hazard ratio 0.40), according to OncLive's report."
+      ]
+    },
+    {
+      "h": "What happens next",
+      "p": [
+        "A CHMP opinion is a recommendation, not an approval. The European Commission now considers it and issues the final decision, which has not been announced yet."
+      ]
+    },
+    {
+      "h": "What it does not mean",
+      "p": [
+        "Daraxonrasib is not a cure. Pancreatic cancer remains very hard to treat, and the results apply to people who have already had treatment. Anyone with questions about options can ask their care team."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is daraxonrasib approved in Europe?",
+      "a": "Not yet. The EMA's committee recommended approval, but the European Commission has not yet made its final decision."
+    },
+    {
+      "q": "Is there a cure for pancreatic cancer?",
+      "a": "No. Daraxonrasib is a treatment that helped people live longer in a trial, not a cure."
+    },
+    {
+      "q": "Who would daraxonrasib be for?",
+      "a": "The recommendation covers adults with metastatic pancreatic adenocarcinoma who have had at least one earlier systemic treatment. A doctor decides who is a fit."
+    }
+  ],
+  "sources": [
+    {
+      "title": "CHMP recommends approval of daraxonrasib for previously treated metastatic pancreatic cancer",
+      "publisher": "OncLive, October 15, 2026",
+      "url": "https://www.onclive.com/view/chmp-recommends-approval-of-daraxonrasib-for-previously-treated-metastatic-pancreatic-cancer"
+    }
+  ]
+}
