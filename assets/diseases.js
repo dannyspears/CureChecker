@@ -296,7 +296,7 @@ window.CURECHECKER_DISEASES = [
     palette: "bronze",
     category: "Neurological · Dementia",
     summary: "No drug slows FTD yet: latozinemab failed Phase 3, two gene therapies were stopped, and DNL593 results are due in 2027.",
-    updated: "Oct 26, 2026",
+    updated: "Oct 28, 2026",
     search: "frontotemporal",
     pubmed: "frontotemporal[ti]",
     drugs: ["latozinemab"],
