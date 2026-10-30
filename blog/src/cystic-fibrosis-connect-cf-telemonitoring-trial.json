@@ -1,0 +1,56 @@
+{
+  "slug": "cystic-fibrosis-connect-cf-telemonitoring-trial",
+  "title": "Cystic Fibrosis: Home Monitoring Trial Misses Main Goal",
+  "description": "In the conneCT CF trial, home monitoring and coaching raised use of inhaled treatments in cystic fibrosis, but did not delay the first lung flare-up.",
+  "date": "2026-10-30",
+  "disease": "cystic-fibrosis",
+  "keywords": ["cystic fibrosis", "conneCT CF", "telemonitoring", "inhaled therapy adherence", "pulmonary exacerbation", "randomized trial"],
+  "summary": "A randomized trial of 296 people with cystic fibrosis, published October 28, 2026 in the Annals of the American Thoracic Society, found that home monitoring and coaching raised how often people used their inhaled treatments. It missed its main goal: time to the first lung flare-up did not differ between the groups. Cystic fibrosis has no cure.",
+  "sections": [
+    {
+      "h": "What was tested",
+      "p": [
+        "The conneCT CF trial asked whether a package of remote tools could help people with cystic fibrosis (CF) stick to their inhaled treatments and avoid lung flare-ups, called pulmonary exacerbations. It was a multicenter, randomized trial in Germany. It was not blinded, so everyone knew which group they were in.",
+        "People aged 12 and older were split 1:1 into usual care or an 18-month program. The program had objective home monitoring of inhaler use, weekly home spirometry (a breathing test), a self-management app, coaching by phone, and optional video visits."
+      ]
+    },
+    {
+      "h": "Who took part",
+      "p": [
+        "There were 296 participants. The average age was 31.3 years, 54.1% were female, and the average lung function (FEV1) was 70.2% of the predicted value. About 52.7% were chronically infected with Pseudomonas aeruginosa, and 85.1% were already taking triple CFTR modulator therapy."
+      ]
+    },
+    {
+      "h": "What the trial found",
+      "ul": [
+        "Use of inhaled treatments was higher in the program group throughout. In the last 6 months it was 49.2% versus 32.6%. Baseline use was also higher in the program group (58.1% versus 44.0%).",
+        "The main goal was missed. Time to the first lung flare-up did not differ between the groups.",
+        "Across all participants, a 10% rise in adherence went along with a 9% lower risk of flare-ups. This is an association, not proof of cause.",
+        "People with FEV1 below 40% had a 2.4 times higher risk of flare-ups."
+      ]
+    },
+    {
+      "h": "What it means",
+      "p": [
+        "The tools changed behavior, but that did not translate into fewer flare-ups within the trial. The authors say the link between higher adherence and fewer flare-ups shows inhaled treatment still matters even with widespread CFTR modulator use. This study is not a cure and does not test one. People with CF should talk with their CF care team about their own treatment plan."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cure for cystic fibrosis?",
+      "a": "No. Cystic fibrosis has no cure today. This trial tested a monitoring and coaching program, not a cure."
+    },
+    {
+      "q": "Did home monitoring prevent lung flare-ups in cystic fibrosis?",
+      "a": "Not in this trial. The main goal was time to the first lung flare-up, and it did not differ between the program group and the usual-care group."
+    },
+    {
+      "q": "Does taking inhaled treatments reduce cystic fibrosis flare-ups?",
+      "a": "Across all participants, 10% higher adherence went along with a 9% lower flare-up risk. That is an association seen in the data, so it does not prove the inhaled treatments caused the difference."
+    }
+  ],
+  "sources": [
+    { "title": "Effect of telemonitoring on adherence to inhalation therapy and pulmonary exacerbations in people with cystic fibrosis (conneCT CF): a multicenter randomized controlled trial", "publisher": "Annals of the American Thoracic Society, October 28, 2026 (PubMed 42949105)", "url": "https://pubmed.ncbi.nlm.nih.gov/42949105/" }
+  ]
+}

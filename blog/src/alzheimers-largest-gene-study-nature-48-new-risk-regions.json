@@ -1,0 +1,55 @@
+{
+  "slug": "alzheimers-largest-gene-study-nature-48-new-risk-regions",
+  "title": "Alzheimer's: Largest Gene Study Finds 48 New Risk Regions",
+  "description": "A Nature study of over 2.7 million people found 118 common gene regions tied to Alzheimer's risk, 48 of them new. It points to drug targets, not a treatment.",
+  "date": "2026-10-30",
+  "disease": "alzheimers",
+  "keywords": ["Alzheimer's disease", "genetics", "risk genes", "microglia", "Nature", "drug targets"],
+  "summary": "A study published October 28, 2026 in Nature combined genetic data from people with and without Alzheimer's disease and found 118 common gene regions linked to risk in its main analysis, plus 9 more in ancestry-specific analyses. Of these, 48 are new. It points to possible drug targets. It is not a treatment, and Alzheimer's has no cure.",
+  "sections": [
+    {
+      "h": "What the researchers did",
+      "p": [
+        "Researchers combined genetic data from 109,479 people with Alzheimer's disease, 74,141 'proxy' cases (people whose parent had the disease), 2,131,799 controls and 499,708 proxy controls. The data came from people of diverse ancestries. They looked for common DNA differences that are more frequent in people with Alzheimer's."
+      ]
+    },
+    {
+      "h": "What they found",
+      "ul": [
+        "118 gene regions linked to risk in the multi-ancestry analysis, and 9 more in ancestry-specific analyses. The paper says 48 are new.",
+        "New risk genes and possible drug targets were identified.",
+        "Genes that are more active in microglia (the brain's immune cells) and less active in neurons in people with the disease were enriched for genetic risk.",
+        "The estimate of how much common DNA variants explain Alzheimer's risk (about 16%) is nearly three times higher than earlier estimates."
+      ]
+    },
+    {
+      "h": "What it does not show",
+      "p": [
+        "A gene region linked to risk is a clue, not a treatment. Each of these DNA differences adds only a small amount of risk, and many people who carry them never develop Alzheimer's. The authors describe targets for future drug development research. No drug has been shown to work from this study."
+      ]
+    },
+    {
+      "h": "Why it matters",
+      "p": [
+        "Finding more genes helps scientists see which cell types and pathways drive the disease, especially the immune role of microglia. That can guide which drugs are worth testing. Alzheimer's has no cure today. People worried about their own risk should talk with a doctor."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is there a cure for Alzheimer's disease?",
+      "a": "No. Alzheimer's disease has no cure today. This study is about genetic risk and possible future drug targets, not a treatment."
+    },
+    {
+      "q": "How many Alzheimer's risk genes were found in the new Nature study?",
+      "a": "The study identified 118 regions in its multi-ancestry analysis and 9 more in ancestry-specific analyses. The paper reports that 48 of them are new."
+    },
+    {
+      "q": "Does having these gene variants mean I will get Alzheimer's?",
+      "a": "No. Each common variant adds only a small amount of risk. Talk with a doctor about your own family history and concerns."
+    }
+  ],
+  "sources": [
+    { "title": "Alzheimer's disease genetics converges on microglial and neuronal dysregulation", "publisher": "Nature, October 28, 2026 (PubMed 42951976)", "url": "https://pubmed.ncbi.nlm.nih.gov/42951976/" }
+  ]
+}
