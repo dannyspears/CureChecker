@@ -1,0 +1,55 @@
+{
+  "slug": "hiv-vrc01-amp-final-analysis",
+  "title": "HIV Prevention: One Antibody Blocked Sensitive Virus, Not All",
+  "description": "Final results from the AMP trials: the VRC01 antibody blocked sensitive HIV strains, but breakthrough infections rose after dosing stopped.",
+  "date": "2026-11-06",
+  "disease": "hiv",
+  "keywords": ["HIV prevention", "VRC01", "broadly neutralizing antibody", "AMP trials", "HIV antibody infusion", "Science Translational Medicine"],
+  "summary": "A final analysis of the two AMP trials, published November 4, 2026 in Science Translational Medicine, found that infusions of the antibody VRC01 kept preventing HIV from sensitive strains through week 104. But after dosing stopped, more infections with less-sensitive virus appeared in the VRC01 groups. The authors say several antibodies will probably be needed. VRC01 is not an approved HIV prevention product.",
+  "sections": [
+    {
+      "h": "What the AMP trials tested",
+      "p": [
+        "The two parallel Antibody Mediated Prevention (AMP) trials tested whether an antibody called VRC01, given by infusion into a vein, could stop people from getting HIV. VRC01 is a broadly neutralizing antibody, meaning it can block many HIV strains.",
+        "The new paper looks at HIV infections through week 104, the final study visit. The last dose was given at week 72."
+      ]
+    },
+    {
+      "h": "What worked",
+      "p": [
+        "Against viruses that are highly sensitive to VRC01, prevention efficacy stayed at 66.3% (95% confidence interval 32.4% to 83.2%). The authors say this suggests the antibody successfully blocked or cleared these infections."
+      ]
+    },
+    {
+      "h": "What went wrong after dosing stopped",
+      "p": [
+        "After week 80, HIV diagnoses and resistance to VRC01 were more frequent and greater in the VRC01 groups than in the placebo groups. For example, infections with viruses moderately sensitive or resistant to VRC01 were found in 11 people in the VRC01 groups vs 1 in the placebo groups.",
+        "The authors suggest that as the antibody level in the body fell, viruses that had been held back, and had evolved more resistance under pressure, emerged as detectable infections."
+      ]
+    },
+    {
+      "h": "What this means",
+      "p": [
+        "The authors conclude that a single antibody can block sensitive strains, but multiple antibodies are likely needed to prevent both viral escape and breakthrough infections.",
+        "VRC01 is not an approved way to prevent HIV. This is research on the science of antibody prevention, not a cure and not prevention advice. People concerned about HIV should talk with a clinician about the prevention options available today."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Can an antibody prevent HIV?",
+      "a": "In the AMP trials, VRC01 helped block HIV strains that were sensitive to it, but it did not stop all infections. It is not an approved product."
+    },
+    {
+      "q": "Why were there more resistant infections after the antibody wore off?",
+      "a": "The authors suggest that, as VRC01 levels fell, viruses that had been suppressed and had become more resistant emerged. This is their interpretation of the data."
+    },
+    {
+      "q": "Is there a cure for HIV?",
+      "a": "No. Current medicines control HIV but do not remove it, and this study is about prevention, not cure."
+    }
+  ],
+  "sources": [
+    { "title": "Extended in vivo activity of VRC01 HIV-1 prophylaxis entails initial protective efficacy and subsequent breakthrough infections", "publisher": "Science Translational Medicine (PubMed), Nov 4, 2026", "url": "https://pubmed.ncbi.nlm.nih.gov/42981432/" }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "pancreatic-cancer-toripalimab-folfirinox-phase-2",
+  "title": "Pancreatic Cancer: Immune Drug Plus FOLFIRINOX Phase 2 Results",
+  "description": "A 392-patient Phase 2 trial in China found that adding toripalimab to FOLFIRINOX delayed pancreatic cancer progression. Survival gains were not clear-cut.",
+  "date": "2026-11-06",
+  "disease": "pancreatic-cancer",
+  "keywords": ["pancreatic cancer", "toripalimab", "FOLFIRINOX", "borderline resectable pancreatic cancer", "locally advanced pancreatic cancer", "PD-1 immunotherapy", "Journal of Clinical Oncology"],
+  "summary": "A randomized Phase 2 trial in China, published in the Journal of Clinical Oncology on November 2, 2026, tested adding the immune drug toripalimab to FOLFIRINOX chemotherapy before surgery in 392 people. Time without the cancer worsening was longer with the add-on (11.1 vs 9.6 months). Overall survival was longer on paper, but the gap could be due to chance. It is not a cure, and toripalimab is not approved for pancreatic cancer in the U.S.",
+  "sections": [
+    {
+      "h": "What the trial tested",
+      "p": [
+        "Researchers at Zhejiang University in China ran an open-label, randomized Phase 2 trial. It enrolled people with borderline resectable or locally advanced pancreatic cancer. These are tumors that are hard to remove at first because they sit close to major blood vessels.",
+        "Between April 2019 and March 2025, 392 people were split evenly into two groups. One group received modified FOLFIRINOX, a standard four-drug chemotherapy, plus toripalimab, a PD-1 immune drug. The other group received modified FOLFIRINOX alone."
+      ]
+    },
+    {
+      "h": "What the results showed",
+      "ul": [
+        "Main goal, event-free survival (time before the cancer worsened or blocked surgery): median 11.1 months with the add-on vs 9.6 months with chemotherapy alone.",
+        "Overall survival: median 20.6 vs 17.1 months. The statistical range (hazard ratio 0.81, 95% CI 0.63 to 1.03) includes no difference, so this gap could be due to chance.",
+        "Tumors shrank in 30.1% of people on the add-on and 18.9% on chemotherapy alone.",
+        "Surgery to remove the tumor was done in 42.3% vs 43.9%. Tumor-free surgical edges (R0) were reported in 84.1% vs 74.7% of those who had surgery."
+      ]
+    },
+    {
+      "h": "Side effects",
+      "p": [
+        "Serious (grade 3 or higher) side effects were similar: 47.9% with the add-on and 49.2% with chemotherapy alone. Serious complications after surgery were 30.1% vs 25.6%. The authors say the add-on did not raise treatment-related toxicity or surgical risk."
+      ]
+    },
+    {
+      "h": "Who seemed to benefit",
+      "p": [
+        "In planned subgroup analyses, the benefit looked clearer in borderline resectable cancer than in locally advanced cancer. Subgroup results are less reliable than the main result and need confirming in other trials."
+      ]
+    },
+    {
+      "h": "What this does and does not mean",
+      "p": [
+        "This is a Phase 2 trial, done in one country and without masking of who received which treatment. A larger Phase 3 trial would be needed to confirm the findings. Immune drugs like toripalimab have not worked well for most pancreatic cancers in the past, so this result is notable but early.",
+        "Toripalimab is not approved for pancreatic cancer in the U.S. This is not a cure and is not treatment advice. People with pancreatic cancer should talk with their own cancer team about options and clinical trials."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does immunotherapy work for pancreatic cancer?",
+      "a": "For most pancreatic cancers, immune drugs have had limited success. This Phase 2 trial found a modest delay in progression when toripalimab was added to chemotherapy, but it needs confirming in a larger trial."
+    },
+    {
+      "q": "Is toripalimab approved for pancreatic cancer?",
+      "a": "Not in the U.S. This study tested it in a trial. Approval would need further evidence."
+    },
+    {
+      "q": "Did people live longer with toripalimab plus FOLFIRINOX?",
+      "a": "Median overall survival was 20.6 vs 17.1 months, but the range of uncertainty includes no difference, so the trial did not clearly show longer survival."
+    }
+  ],
+  "sources": [
+    { "title": "Immunochemotherapy for Borderline Resectable or Locally Advanced Pancreatic Cancer: A Randomized Controlled Trial", "publisher": "Journal of Clinical Oncology (PubMed), Nov 2, 2026", "url": "https://pubmed.ncbi.nlm.nih.gov/42970668/" }
+  ]
+}
