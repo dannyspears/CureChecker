@@ -1,0 +1,66 @@
+{
+  "slug": "hiv-empirical-infants-tb-treatment-lancet",
+  "title": "HIV in Infants: Early TB Treatment Did Not Save More Lives",
+  "description": "The EMPIRICAL trial in The Lancet found that starting TB treatment without a test did not improve survival in infants with HIV and severe pneumonia.",
+  "date": "2026-11-17",
+  "disease": "hiv",
+  "keywords": [
+    "EMPIRICAL trial",
+    "HIV infants",
+    "tuberculosis treatment",
+    "HIV pneumonia",
+    "Lancet",
+    "infants living with HIV"
+  ],
+  "summary": "The EMPIRICAL trial, published in The Lancet on November 14, 2026, tested whether giving tuberculosis (TB) treatment to infants with HIV and severe pneumonia right away, without a TB diagnosis, would save lives. It did not. By 12 months, 48% of infants in the early-TB-treatment groups and 43% in the other groups had died, a difference that was not statistically clear.",
+  "sections": [
+    {
+      "h": "What the trial tested",
+      "p": [
+        "Infants with HIV who are hospitalized with severe pneumonia are at high risk of dying. Doctors suspected some of those deaths might come from undiagnosed tuberculosis. EMPIRICAL tested giving six months of TB treatment right away, versus the current approach of treating TB only when a test or a doctor's judgment points to it.",
+        "The trial ran at 19 hospitals in Cote d'Ivoire, Malawi, Mozambique, Uganda, Zambia and Zimbabwe. It enrolled infants aged 28 to 365 days from 2020 to 2024. It was randomized and open-label, so families and doctors knew which treatment was given. 558 infants were analyzed."
+      ]
+    },
+    {
+      "h": "What it found",
+      "p": [
+        "At 12 months, 132 of 276 infants (48%) in the early-TB-treatment groups and 121 of 282 (43%) in the other groups had died. The adjusted hazard ratio for death was 1.12 (95% CI 0.87 to 1.43), which is not a statistically clear difference. At 15 days the result was also not clear.",
+        "Serious side effects did not differ between groups, and no deaths were linked to the treatment."
+      ]
+    },
+    {
+      "h": "Caveats",
+      "p": [
+        "In the groups without early TB treatment, 46% of infants (130 of 282) started TB treatment anyway during follow-up, often within days, because of a positive test or a doctor's judgment. The authors say this may have narrowed the difference between groups and made it harder to detect a benefit.",
+        "The trial also tested the antiviral valganciclovir in a two-by-two design. Those results are reported separately and are not covered here."
+      ]
+    },
+    {
+      "h": "What this means",
+      "p": [
+        "The authors found no evidence that treating for TB right away beats the current test-and-treat approach in these infants. The trial was funded by the European and Developing Countries Clinical Trials Partnership. This is research, not medical advice. Parents should talk with their child's care team about treatment."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Should infants with HIV and pneumonia get TB treatment without a test?",
+      "a": "This trial found no survival benefit from doing so compared with treating when a test or clinical signs point to TB. Decisions belong to the child's doctors."
+    },
+    {
+      "q": "What is the EMPIRICAL trial?",
+      "a": "A randomized trial in six African countries of 558 infants with HIV and severe pneumonia, published in The Lancet on November 14, 2026."
+    },
+    {
+      "q": "Is there a cure for HIV?",
+      "a": "No. HIV can be controlled with daily medicine, but there is no widely available cure."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Empirical tuberculosis treatment in infants living with HIV hospitalised with severe pneumonia in Africa (EMPIRICAL)",
+      "publisher": "The Lancet (PubMed), Nov 14, 2026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43020097/"
+    }
+  ]
+}
