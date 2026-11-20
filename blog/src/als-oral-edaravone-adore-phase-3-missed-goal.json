@@ -1,0 +1,76 @@
+{
+  "slug": "als-oral-edaravone-adore-phase-3-missed-goal",
+  "title": "ALS: Oral Edaravone Misses Its Goal in Phase 3 ADORE Trial",
+  "description": "A once-daily oral form of edaravone (FNP122) did not slow ALS decline versus placebo over 48 weeks in the Phase 3 ADORE trial, published in Lancet Neurology.",
+  "date": "2026-11-20",
+  "disease": "als",
+  "keywords": [
+    "oral edaravone",
+    "FNP122",
+    "ADORE trial",
+    "ALS treatment",
+    "amyotrophic lateral sclerosis",
+    "Lancet Neurology",
+    "Ferrer"
+  ],
+  "summary": "A Phase 3 trial called ADORE tested FNP122, a once-daily oral form of edaravone, in people with ALS. After 48 weeks it did not slow decline more than placebo. The drug was well tolerated, but the authors say the results do not support using this dose to slow the disease. This is a negative result, not a new treatment.",
+  "sections": [
+    {
+      "h": "What was tested",
+      "p": [
+        "Edaravone is a medicine approved for ALS in several countries. It is thought to work by clearing harmful molecules called free radicals. The approved forms are given by infusion or as a liquid taken by mouth. FNP122 is a new once-daily oral form made by Ferrer, which also funded the trial.",
+        "The trial, called ADORE, was published in The Lancet Neurology (December 2026 issue; the record appeared on PubMed on November 18, 2026). It was registered as NCT05178810 and is complete."
+      ]
+    },
+    {
+      "h": "How the trial was run",
+      "p": [
+        "ADORE was a Phase 3, double-blind, placebo-controlled trial at 37 hospitals in 12 European countries. Adults aged 18 to 80 with ALS were included if their symptoms began 24 months ago or less, their lung capacity was at least 70%, and their disease was progressing at a steady pace.",
+        "People were randomly assigned 2 to 1 to take 100 mg of oral edaravone each day or a placebo. The main measure was the change in the ALSFRS-R score, a 48-point scale of daily function, after 48 weeks. In all, 302 people were treated and analyzed: 205 on edaravone and 97 on placebo."
+      ]
+    },
+    {
+      "h": "What it found",
+      "ul": [
+        "Function fell by an average of 12.6 points on edaravone and 13.4 points on placebo.",
+        "The difference of 0.78 points was not statistically significant (95% confidence interval -1.44 to 3.00; p = 0.49).",
+        "Side effects that arose during treatment were similar: 88% on edaravone and 85% on placebo.",
+        "No deaths were judged to be related to the study treatment."
+      ]
+    },
+    {
+      "h": "What the authors conclude",
+      "p": [
+        "The authors write that oral edaravone was well tolerated but did not significantly slow functional decline versus placebo. They say the results do not support its use at the tested dose to change the course of ALS in the general ALS population, and that more effective approaches are needed.",
+        "This result is about one new oral form tested at one dose. It does not change the status of the edaravone products already approved in some countries."
+      ]
+    },
+    {
+      "h": "What it means for people with ALS",
+      "p": [
+        "ALS has no cure. Negative trials still matter, because they show researchers which paths to drop. People with ALS should talk with their neurology team about any treatment decisions."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Did the oral edaravone trial for ALS work?",
+      "a": "No. In the Phase 3 ADORE trial, people on oral edaravone (FNP122) declined by 12.6 points on the ALSFRS-R scale and those on placebo by 13.4 points over 48 weeks. The difference was not statistically significant."
+    },
+    {
+      "q": "Was oral edaravone safe in the trial?",
+      "a": "It was well tolerated. Treatment-emergent side effects were reported by 88% on edaravone and 85% on placebo, and no deaths were considered related to treatment."
+    },
+    {
+      "q": "Is there a cure for ALS?",
+      "a": "No. This trial did not find a new treatment. Existing approved medicines are described on the Cure Checker ALS report."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Safety and efficacy of daily oral edaravone (FNP122) in patients with amyotrophic lateral sclerosis (ADORE): a multicentre, double-blind, phase 3, randomised controlled trial",
+      "publisher": "The Lancet Neurology, Dec 2026 (PubMed record Nov 18, 2026)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43051186/"
+    }
+  ]
+}
