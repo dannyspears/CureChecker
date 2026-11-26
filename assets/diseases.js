@@ -310,7 +310,7 @@ window.CURECHECKER_DISEASES = [
     palette: "magenta",
     category: "Autoimmune · Chronic",
     summary: "Small trials of one-dose CAR-T cell therapies report lasting remissions, and an FDA decision on Gazyva for lupus is due by December 2026.",
-    updated: "Nov 23, 2026",
+    updated: "Nov 26, 2026",
     search: "lupus",
     pubmed: "lupus[ti]",
     drugs: ["belimumab", "anifrolumab", "voclosporin", "hydroxychloroquine"],
