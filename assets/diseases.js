@@ -16,7 +16,7 @@ window.CURECHECKER_DISEASES = [
     palette: "violet",
     category: "Neurological",
     summary: "Gene-silencing drugs are changing inherited ALS. TDP-43 is the target for everyone else.",
-    updated: "Nov 18, 2026",
+    updated: "Nov 28, 2026",
     search: "amyotrophic lateral sclerosis",
     pubmed: "\"amyotrophic lateral sclerosis\"[ti] OR \"motor neuron disease\"[ti]",
     drugs: ["riluzole", "edaravone", "tofersen"],
